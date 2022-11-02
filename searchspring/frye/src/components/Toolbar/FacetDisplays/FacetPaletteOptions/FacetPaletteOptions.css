@@ -1,0 +1,94 @@
+.ss__facet-palette-options {
+    max-width: 90rem !important;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    display: flex;
+}
+
+.ss__facet--mfield_cql_generic_colors .ss__facet-palette-options {
+    gap: 4rem !important;
+}
+
+.ss__facet--color_family .ss__facet-palette-options {
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 990px) {
+    .Type .ss__facet-palette-options {
+        gap: 0.2rem !important;
+    }
+
+    .ss__facet-palette-options {
+        display: flex !important;
+        gap: 3rem;
+        margin: 0 auto;
+    }
+}
+
+.ss__facet-palette-options__option {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    grid-column: auto;
+    grid-row: auto;
+    width: auto !important;
+    flex: unset !important;
+    text-decoration: none !important;
+}
+
+.ss__facet-palette-options__option__value {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #444 !important;
+    text-transform: capitalize;
+    display: block;
+    margin-top: -.5rem
+}
+
+.ss__facet-palette-options__option img {
+    padding: 3px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.ss__facet-palette-options__option:hover img {
+    border-color: #444;
+}
+
+.ss__facet-palette-options__option--filtered img,
+.ss__facet-palette-options__option--filtered:hover img {
+    border-color: #444;
+}
+
+.ss__facet--color_family .ss__facet-palette-options__option {
+    flex: 0 0 21%;
+}
+
+@media screen and (min-width: 500px) {
+    .ss__facet-palette-options__option {
+        flex: 1 0 12%;
+    }
+
+    .ss__facet--color_family .ss__facet-palette-options__option {
+        flex: 0 0 15%;
+    }
+}
+
+
+@media screen and (min-width: 990px) {
+    .ss__facet-palette-options__option {
+        flex: auto;
+    }
+
+    .ss__facet--color_family .ss__facet-palette-options__option {
+        flex: auto;
+    }
+
+    .ss__facet-palette-options__option__value {
+        font-size: 1.35rem;
+        line-height: 1.8rem;
+        margin-top: -.3rem
+    }
+}

@@ -1,0 +1,33 @@
+<div class="banner__media media">
+  {%- if desktop_image != blank -%}
+    <div class="banner__media media {% if mobile_image != blank %}small-hide{% endif %}">
+      <img srcset="{%- if desktop_image.width >= 375 -%}{{ desktop_image | image_url: width: 375 }} 375w,{%- endif -%}
+        {%- if desktop_image.width >= 750 -%}{{ desktop_image | image_url: width: 750 }} 750w,{%- endif -%}
+        {%- if desktop_image.width >= 1100 -%}{{ desktop_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+        {%- if desktop_image.width >= 1500 -%}{{ desktop_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+        {%- if desktop_image.width >= 1780 -%}{{ desktop_image | image_url: width: 1780 }} 1780w,{%- endif -%}
+        {%- if desktop_image.width >= 2000 -%}{{ desktop_image | image_url: width: 2000 }} 2000w,{%- endif -%}
+        {%- if desktop_image.width >= 2800 -%}{{ desktop_image | image_url: width: 2800 }} 2800w{%- endif -%}"
+        src="{{ desktop_image | image_url: width: 1500 }}"
+        alt="{{ desktop_image.alt | escape }}"
+        width="{{ desktop_image.width }}"
+        height="{{ desktop_image.height }}"
+        loading="lazy"
+      />
+    </div>
+  {%- endif -%}
+
+  {%- if mobile_image != blank -%}
+    <div class="banner__media media medium-hide large-up-hide">
+      <img srcset="{%- if mobile_image.width >= 375 -%}{{ mobile_image | image_url: width: 375 }} 375w,{%- endif -%}
+        {%- if mobile_image.width >= 750 -%}{{ mobile_image | image_url: width: 750 }} 750w,{%- endif -%}
+        {%- if mobile_image.width >= 1100 -%}{{ mobile_image | image_url: width: 1100 }} 1100w,{%- endif -%}"
+        src="{{ mobile_image | image_url: width: 750 }}"
+        alt="{{ mobile_image.alt | escape }}"
+        width="{{ mobile_image.width }}"
+        height="{{ mobile_image.height }}"
+        loading="lazy"
+      />
+    </div>
+  {%- endif -%}
+</div>

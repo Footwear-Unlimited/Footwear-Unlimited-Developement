@@ -1,0 +1,267 @@
+{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+.main-collection #Banner-{{ section.id }} .media{
+  background-color:{{ section.settings.section_background_color }};
+}
+{% endstyle %}
+{%- if collection.image != blank  -%}
+  <div id="Banner-{{ section.id }}" style="background-color: {{ section.settings.section_background_color }};"
+      class="banner banner--content-align-{{ section.settings.desktop_content_alignment }}
+            banner--content-align-mobile-{{ section.settings.mobile_content_alignment }}
+            {% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}
+            {% if section.settings.show_container_mobile %} banner--mobile-content{%- endif -%}
+            {% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}
+            {% if settings.scroll_appear == "fadein" %} fadeIn {% endif %}">
+
+      {%- render 'image-banner-media', desktop_image: {{collection.image}}, mobile_image: {{collection.image}} -%}
+
+    {%- if section.blocks -%}
+    <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+      <div class="banner__box" style="background-color: {{ section.settings.content_background_color }};">
+        {%- render 'image-banner-content', blocks: section.blocks, eyebrow_title: collection.title -%}
+      </div>
+    </div>
+    {%- endif -%}
+  </div>
+
+  {% else %}
+
+    <div class="collection-hero">
+      <div class="collection-hero__inner page-width">
+        <div class="collection-hero__text-wrapper">
+          <h1 class="collection-hero__title">
+            <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+            {{- collection.title | escape -}}
+          </h1>
+        </div>
+      </div>
+    </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Collection Banner",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-collection-banner.settings.paragraph.content"
+    },
+    {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "Section background color",
+      "info": "Only seen through transparent images or if no images are configured."
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "Top Left"
+        },
+        {
+          "value": "top-center",
+          "label": "Top Center"
+        },
+        {
+          "value": "top-right",
+          "label": "Top Right"
+        },
+        {
+          "value": "middle-left",
+          "label": "Middle Left"
+        },
+        {
+          "value": "middle-center",
+          "label": "Middle Center"
+        },
+        {
+          "value": "middle-right",
+          "label": "Middle Right"
+        },
+        {
+          "value": "bottom-left",
+          "label": "Bottom Left"
+        },
+        {
+          "value": "bottom-center",
+          "label": "Bottom Center"
+        },
+        {
+          "value": "bottom-right",
+          "label": "Bottom Right"
+        }
+      ],
+      "default": "middle-center",
+      "label": "Desktop content position"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Desktop content alignment"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_box",
+      "default": true,
+      "label": "Show background on desktop?",
+      "info": "Info: If unchecked, the content area won't have a background. Ensure the content has high contrast against the image."
+    },
+    {
+      "type": "color",
+      "id": "content_background_color",
+      "label": "Container background color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "select",
+      "id": "mobile_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Mobile content alignment"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_below",
+      "default": true,
+      "label": "Show content below image on mobile?"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_container_mobile",
+      "label": "Show background on mobile?",
+      "default": false,
+      "info": "Info: If unchecked, the content area won't have a background. Ensure the content has high contrast against the image."
+    }
+  ],
+  "blocks":
+  [
+    {
+      "type": "eyebrow",
+      "name": "Eyebrow",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "eyebrow_color",
+          "label": "Eyebrow color",
+          "default": "#000000"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Headline",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "Headline"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "cql-headline-1",
+              "label": "Custom Headline 1"
+            },
+            {
+              "value": "cql-headline-2",
+              "label": "Custom Headline 2"
+            },
+            {
+              "value": "cql-headline-3",
+              "label": "Custom Headline 3"
+            },
+            {
+              "value": "h4",
+              "label": "X-Small"
+            },
+            {
+              "value": "h3",
+              "label": "Small"
+            },
+            {
+              "value": "h2",
+              "label": "Medium"
+            },
+            {
+              "value": "h1",
+              "label": "Large"
+            },
+            {
+              "value": "h0",
+              "label": "X-Large"
+            }
+          ],
+          "default": "h1",
+          "label": "Headline size"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Headline color",
+          "default": "#000000"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Description color",
+          "default": "#000000"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

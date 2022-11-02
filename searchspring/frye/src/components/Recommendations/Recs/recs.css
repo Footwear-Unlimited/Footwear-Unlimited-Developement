@@ -1,0 +1,132 @@
+@media screen and (max-width: 749px) {
+  .ss__recommendation .ss__result--grid,
+  .ss__recommendation .ss__inline-banner.ss__results__inline-banner {
+    width: 100%;
+  }
+}
+
+.swiper-container .swiper-pagination {
+  margin-top: 3rem;
+}
+
+.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background: #444 !important;
+}
+
+.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 1.5rem;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0.1rem solid #000;
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 749px) {
+  .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 1rem;
+  }
+
+  /* .swiper-slide {
+    width: 80% !important;
+  } */
+
+  .swiper-container .swiper-pagination {
+    margin-top: 1rem;
+  }
+
+  .ss__carousel__prev-wrapper,
+  .ss__carousel__next-wrapper {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+.ss__carousel__prev-wrapper svg,
+.ss__carousel__next-wrapper svg {
+  width: 2.8rem;
+  height: auto;
+}
+
+.ss__carousel__prev-wrapper svg {
+  transform: rotate(-90deg);
+}
+
+.ss__carousel__next-wrapper svg {
+  transform: rotate(90deg);
+}
+
+.ss__carousel__prev-wrapper {
+  margin-right: 1.5rem;
+}
+
+.ss__carousel__next-wrapper {
+  margin-left: 1.5rem;
+}
+
+.recommendations__collection-selectors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.recommendations__collection-inner .flickity-button {
+  display: none;
+  visibility: hidden;
+}
+
+.recommendations__collection-selector {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 500px) and (max-width: 989px) {
+  .recommendations__collection-selectors {
+    gap: 2rem;
+  }
+
+  .recommendations__collection-selector span {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .recommendations__collection-selectors {
+    gap: 1rem;
+  }
+
+  .recommendations__collection-selector span {
+    font-size: 1.1rem;
+  }
+}
+
+.recommendations__collection-selector.active span {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #999;
+  text-underline-offset: 0.5rem;
+}
+
+.recommendations__collection.active {
+  display: block;
+}
+
+.recommendations__collection {
+  display: none;
+}
+
+.recommendations__collection-carousels .swiper-slide,
+.recommendations__collection-carousels .swiper-slide .ss__result--grid {
+  height: 100% !important;
+}
+
+@media screen and (min-width: 990px) {
+  /* If there is only 1 or 2 recently viewed products, prevent it from becoming huge on the screen */
+  .recommendations__collection-carousels .swiper-slide {
+    max-width: 32%;
+  }
+}

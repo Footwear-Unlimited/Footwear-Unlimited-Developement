@@ -1,0 +1,55 @@
+{%- for block in blocks -%}
+  {%- case block.type -%}
+    {%- when 'eyebrow' -%}
+      <div class="banner__eyebrow {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
+        {% assign block_selector = '#block-section-' | append: block.id %}
+        {% style %}
+        {% if block.settings.eyebrow_color  != 'rgba(0,0,0,0)' %}
+        .banner__eyebrow {
+          color: {{ block.settings.eyebrow_color  }};
+        }
+        {% endif %}
+        {% endstyle %}
+
+        {% if template contains 'collection' %}
+          <span>{{ eyebrow_title | escape }}</span>
+        {% endif %}
+        <span>{{ block.settings.eyebrow | escape }}</span>
+      </div>
+
+    {%- when 'heading' -%}
+      {% assign block_selector = '#block-section-' | append: block.id %}
+      {% style %}
+      {% if block.settings.heading_color  != 'rgba(0,0,0,0)' %}
+      .banner__heading {
+        color: {{ block.settings.heading_color  }};
+      }
+      {% endif %}
+      {% endstyle %}
+
+      <h2 class="banner__heading {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }} {{ block.settings.heading_size }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
+        <span>{{ block.settings.heading | escape }}</span>
+      </h2>
+
+    {%- when 'text' -%}
+      {% assign block_selector = '#block-section-' | append: block.id %}
+      {% style %}
+      {% if block.settings.text_color  != 'rgba(0,0,0,0)' %}
+      .banner__text {
+        color: {{ block.settings.text_color  }};
+      }
+      {% endif %}
+      {% endstyle %}
+
+      <div class="banner__text {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
+        <span>{{ block.settings.text }}</span>
+      </div>
+
+    {%- when 'button' -%}
+      <div class="banner__button {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
+        {%- if block.settings.button_label != blank -%}
+          <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button button--{{ block.settings.button_style }}">{{ block.settings.button_label | escape }}</a>
+        {%- endif -%}
+      </div>
+  {%- endcase -%}
+{%- endfor -%}

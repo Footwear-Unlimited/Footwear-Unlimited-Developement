@@ -1,0 +1,15 @@
+.search__input.field__input {
+  padding-right: 5rem;
+  border: 0.1rem solid var(--color-base-text);
+  border-radius: 0;
+}
+
+.search__button .icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+/* Remove extra spacing for search inputs in Safari */
+input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}

@@ -1,0 +1,14 @@
+development:
+  password:  <your themekit password>
+  theme_id: ""
+  store: frye-fui-dev.myshopify.com
+
+staging:
+  password:  <your themekit password>
+  theme_id: "122315636865"
+  store: frye-fui-dev.myshopify.com
+
+production:
+  password:  <your themekit password>
+  theme_id: "122315538561"
+  store: frye-fui-dev.myshopify.com

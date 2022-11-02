@@ -1,0 +1,70 @@
+.recommendations .product-card {
+  max-width: 27rem;
+  width: calc(100%/4 - 3rem + 3rem/4);
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+.recommendations__carousel:focus {
+  outline: none;
+}
+
+.recommendations .flickity-button:focus {
+  box-shadow: none;
+}
+
+.recommendations__carousel:focus-visible {
+  outline: none;
+  outline-offset: none;
+  box-shadow: none;
+}
+
+.recommendations .flickity-button:disabled {
+  display: none;
+}
+
+.recommendations .flickity-button {
+  background: initial;
+}
+
+.recommendations .flickity-prev-next-button.next {
+  right: 0;
+}
+
+.recommendations .flickity-prev-next-button.previous {
+  left: 0;
+}
+
+.recommendations .flickity-button {
+  color: currentColor;
+}
+
+.recommendations__head {
+  text-align: center;
+}
+
+@media screen and (max-width: 749px) {
+  .recommendations .product-card {
+    width: 50%;
+  }
+
+  .recommendations .flickity-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .recommendations .product-card {
+    width: 100%;
+    max-width: initial;
+  }
+
+  .recommendations__carousel {
+    padding: 0;
+  }
+
+  .recommendations .product-card {
+    margin: 0 1rem;
+    max-width: calc(75% - 2rem);
+  }
+}

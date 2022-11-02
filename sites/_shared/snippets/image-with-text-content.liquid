@@ -1,0 +1,80 @@
+<div class="image-with-text__text-item grid__item">
+  <div id="ImageWithText--{{ section.id }}"
+      class="image-with-text__content
+      image-with-text__content--{{ section.settings.desktop_content_position }}
+      image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }}
+      image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }}
+      image-with-text__content--{{ section.settings.height }}">
+    {%- for block in blocks -%}
+      {% case block.type %}
+        {%- when 'eyebrow' -%}
+          <div class="image-with-text__eyebrow" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">
+            <span>{{ block.settings.text | escape }}</span>
+          </div>
+
+          {% assign block_selector = '#block-section-' | append: block.id %}
+          {% style %}
+          {% if block.settings.text_color != 'rgba(0,0,0,0)' %}
+          {{ block_selector }}.image-with-text__eyebrow {
+            color: {{ block.settings.text_color }};
+          }
+          {% endif %}
+          {% endstyle %}
+
+          {%- when 'heading' -%}
+          <h2 class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">
+            {{ block.settings.heading | escape }}
+          </h2>
+
+          {% assign block_selector = '#block-section-' | append: block.id %}
+          {% style %}
+          {% if block.settings.heading_color != 'rgba(0,0,0,0)' %}
+          {{ block_selector }}.image-with-text__heading {
+            color: {{ block.settings.heading_color }};
+          }
+          {% endif %}
+          {% endstyle %}
+
+          {%- when 'caption' -%}
+          <p class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">
+            {{ block.settings.caption | escape }}
+          </p>
+
+          {% assign block_selector = '#block-section-' | append: block.id %}
+          {% style %}
+          {% if block.settings.text_color != 'rgba(0,0,0,0)' %}
+          {{ block_selector }}.image-with-text__text {
+            color: {{ block.settings.text_color }};
+          }
+          {% endif %}
+          {% endstyle %}
+
+          {%- when 'text' -%}
+          <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">{{ block.settings.text }}</div>
+
+          {% assign block_selector = '#block-section-' | append: block.id %}
+          {% style %}
+          {{ block_selector }}.image-with-text__text p {
+            {% if block.settings.text_color != 'rgba(0,0,0,0)' %}
+              color: {{ block.settings.text_color }};
+            {% endif %}
+          }
+          {% endstyle %}
+
+          {%- when 'button' -%}
+          {%- if block.settings.button_label != blank -%}
+            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button button--{{ block.settings.button_style }}" {{ block.shopify_attributes }}>
+              {{ block.settings.button_label | escape }}
+            </a>
+          {%- endif -%}
+
+        {%- when 'padding' -%}
+          {% render 'padding',
+            id: block.id,
+            mobile_padding_amount: block.settings.mobile_padding_amount,
+            desktop_padding_amount: block.settings.desktop_padding_amount
+          %}
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>

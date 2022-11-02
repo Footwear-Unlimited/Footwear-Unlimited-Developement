@@ -1,0 +1,138 @@
+.ss-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-styleguide-white);
+  }
+
+  .ss-header-results-not-found,
+  .ss-header-results-found {
+    padding: 3rem 2rem!important;
+  }
+  
+  .ss-results-title,
+  .ss-no-results-title {
+    margin: 0;
+    text-align: center;
+    color: var(--color-styleguide-text-heading);
+    line-height: 4rem;
+    letter-spacing: normal;
+  }
+
+  .ss-header-results-found .ss-header__search--desktop-search {
+    display: none;
+  }
+
+  .template-search .ss-header-container h2 {
+    text-transform: none;
+  }
+  
+  .template-search .ss-header__search--desktop-search {
+    margin: 0 auto;
+  }
+
+.ss-header-results-found .ss-header__search--desktop-search {
+  display: none;
+}
+
+.template-search .ss-header-container h2 {
+  margin: 3rem auto;
+  text-transform: none;
+}
+
+.template-search .ss-header__search--desktop-search {
+  margin: 0 auto;
+}
+
+.template-search .header__search--desktop .search__button.field__button {
+  top: -1rem!important;
+}
+
+.template-search .header__search--desktop .search__input.field__input {
+  font-size: 2.2rem!important;
+  letter-spacing: .067rem;
+  line-height: 2.25rem;
+  /* Trying to improve legibility for this label */
+  -webkit-font-smoothing: auto !important;
+}
+
+.template-search .header__search--desktop .field__label {
+  display: none;
+  visibility: hidden;
+}
+
+.template-search .header__search--desktop {
+  width: 37rem;
+}
+
+.ss-results-query {
+  text-transform: none;
+}
+
+.ss-no-results-title .ss-results-header-body {
+  display: block;
+  letter-spacing: normal;
+  font-size: 2rem;
+  font-family: var(--font-body-family);
+  line-height: 3.2rem;
+  margin: .7rem 0 3rem 0;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 749px) {
+  .ss-header-container .page-width {
+    max-width: 100%;
+  }
+
+  .template-search .header__search--desktop {
+    width: 100%;
+  }
+
+  .ss-header-results-not-found {
+    padding: 3.7rem 1.5rem!important;
+  }
+
+  .ss-header-results-found {
+    padding: 2.5rem 1.5rem .5rem !important
+  }
+
+  .ss-results-title,
+  .ss-no-results-title {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    letter-spacing: normal;
+  }
+
+  .ss-no-results-title .ss-results-header-body {
+    font-size: 1.8rem;
+    line-height: 3.15rem;
+    letter-spacing: normal;
+  }
+
+    .ss-header-results-not-found {
+      padding: 3.7rem 1.5rem!important;
+    }
+
+    .ss-header-results-found {
+      padding: 2.5rem 1.5rem .5rem !important
+    }
+
+    .ss-results-title,
+    .ss-no-results-title {
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+      letter-spacing: normal;
+    }
+
+    .ss-no-results-title .ss-results-header-body {
+      font-size: 1.8rem;
+      line-height: 3.15rem;
+      letter-spacing: normal;
+    }
+  
+    .ss-header-container {
+      padding: 3.7rem 1.5rem;
+    }
+
+  }

@@ -1,0 +1,33 @@
+{
+  "name": "shopify-frye",
+  "version": "0.1.0",
+  "description": "Dawn-based architecture for multisite Shopify builds.",
+  "author": "CQL Corp",
+  "private": true,
+  "scripts": {
+    "postinstall": "cd ./searchspring/frye && npm i",
+    "frye:build": "node scripts/deploy.js -s frye",
+    "frye:check": "cd ./deploy && shopify theme check",
+    "frye:deploy": "npm run frye:build && cd ./deploy && theme deploy",
+    "frye:deploy-staging": "npm run frye:build && cd ./deploy && theme deploy -e staging",
+    "frye:deploy-production": "npm run frye:build && cd ./deploy && theme deploy -e production --allow-live",
+    "frye:download": "node scripts/download-pre.js -s frye && cd ./download && theme download && cd .. && node scripts/download-post.js -s frye",
+    "frye:download-staging": "node scripts/download-pre.js -s frye && cd ./download && theme download -e staging && cd .. && node scripts/download-post.js -s frye",
+    "frye:download-production": "node scripts/download-pre.js -s frye && cd ./download && theme download -e production && cd .. && node scripts/download-post.js -s frye",
+    "frye:list": "cd ./sites/frye && theme get --list",
+    "frye:open": "cd ./sites/frye && theme open",
+    "frye:watch": "npm-run-all \"create-deploy-folder -s frye\" --parallel \"watch -s frye\" \"watch-deploy-folder\"",
+    "create-deploy-folder": "node scripts/deploy.js",
+    "watch": "node scripts/watch",
+    "watch-deploy-folder": "cd ./deploy && theme watch",
+    "prune-files": "node scripts/prune"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.0.1",
+    "npm-run-all": "^4.1.5",
+    "watchpack": "^2.1.0",
+    "yargs": "^16.2.0"
+  },
+  "dependencies": {}
+}
