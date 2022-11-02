@@ -21,10 +21,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: recursive
-      - name: Build Propel
+      - name: Build Frye
         run: |
           npm install
-          npm run propel:build
+          npm run frye:build
       - name: Theme Check
         uses: shopify/theme-check-action@v1
         with:
