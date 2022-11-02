@@ -13,7 +13,7 @@
         "a19e470c-e80c-43ea-8bcb-3c15e9c0050c": {
           "type": "heading",
           "settings": {
-            "heading": "{{ collection.metafields.cql.headline.value }}",
+            "heading": "",
             "heading_size": "large",
             "heading_color": "#ffffff"
           }
@@ -21,7 +21,7 @@
         "2f138bbf-049f-4e37-a6be-799dfd8e2392": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.metafields.cql.description | metafield_tag }}<\/p>",
+            "text": "",
             "text_color": "#ffffff"
           }
         }

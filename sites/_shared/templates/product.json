@@ -7,7 +7,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.cql.eyebrow.value }}"
+            "text": ""
           }
         },
         "title": {
@@ -31,7 +31,7 @@
         "c7caa4c0-ada8-4157-82e3-40aa32f26f06": {
           "type": "featured_description",
           "settings": {
-            "featured_description": "<p>{{ product.metafields.cql.product_featured_description | metafield_tag }}<\/p>"
+            "featured_description": ""
           }
         },
         "variant_picker": {
@@ -63,7 +63,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Care & Maintenance",
-            "content": "<p>{{ product.metafields.cql.care_information | metafield_tag }}<\/p>",
+            "content": "",
             "page": ""
           }
         },
@@ -72,16 +72,16 @@
           "settings": {
             "link_1_icon": "shopify:\/\/shop_images\/Screenshot_2022-04-07_at_11.09.31.png",
             "link_1_text": "Size & Specifications",
-            "link_1_url": "{{ product.metafields.cql.configurable_links_1.value }}",
+            "link_1_url": "",
             "link_2_icon": "shopify:\/\/shop_images\/Screenshot_2022-04-07_at_11.09.41.png",
             "link_2_text": "Owner’s Manuals",
-            "link_2_url": "{{ product.metafields.cql.configurable_links_2.value }}"
+            "link_2_url": ""
           }
         },
         "c1b7e763-5646-484d-b5a9-c7075abd3bf9": {
           "type": "addon_product",
           "settings": {
-            "addon_title": "{{ product.metafields.cql.addon_product_heading.value }}"
+            "addon_title": ""
           }
         }
       },
@@ -295,85 +295,85 @@
         "1a70fc76-e1f8-4cf9-bc2e-d25cf59f9139": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_1_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_1_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "4195cb87-13dd-4764-b7bf-7b21b616f5d9": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_2_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_2_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "d185a50c-f8f0-4eb2-978b-73db8c5036a5": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_3_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_3_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "394ba349-8ca6-4ea0-8074-4f700488eaea": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_4_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_4_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "cc1157bd-f0b3-48b9-a74e-efd070fe7668": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_5_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_5_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "bd3052e6-c3f9-4110-ab00-201167d110ce": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_6_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_6_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "82950056-1d68-487d-80e4-29630353f1fa": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_7_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_7_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "579752f2-ecf0-47c4-b4a6-52c1b734d971": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_8_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_8_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "448ccc4d-d206-435a-bd61-4a7d00a2e92c": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_9_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_9_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "a1cd6dec-0e69-4ba4-9f5f-17d47b54a011": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_10_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_10_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "875ddd9d-14dd-4177-b188-f337ed8ffd8d": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_11_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_11_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         },
         "14e5d97f-bfb7-4f53-a0ef-704546fd3cf5": {
           "type": "specification",
           "settings": {
-            "spec_type": "{{ product.metafields.cql.spec_12_title.value }}",
-            "spec_description": "<p>{{ product.metafields.cql.spec_12_description | metafield_tag }}<\/p>"
+            "spec_type": "",
+            "spec_description": ""
           }
         }
       },
