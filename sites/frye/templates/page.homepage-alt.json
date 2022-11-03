@@ -1,80 +1,68 @@
 {
   "sections": {
-    "image_banner": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "0278d781-a254-47bf-bfd5-4f6102410903": {
       "type": "image-banner",
       "blocks": {
-        "3479bdec-2fa9-4d3e-9b75-11c686d9253b": {
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Ride out cold temps",
+            "heading": "Image banner",
             "heading_size": "h1",
-            "heading_color": "#ffffff"
+            "heading_color": ""
           }
         },
-        "95f7c774-423e-4049-825b-b538a5b8d443": {
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Get ready to weather the season changes and falling temps with our warmest accessories.<\/p>",
-            "text_color": "#ffffff"
+            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+            "text_color": ""
           }
         },
-        "a5ee69df-7aa4-4637-b3a1-26afbea68dd5": {
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-2": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Cold Weather Essentials",
-            "button_link": "#",
-            "button_style": "tertiary"
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary"
           }
         }
       },
       "block_order": [
-        "3479bdec-2fa9-4d3e-9b75-11c686d9253b",
-        "95f7c774-423e-4049-825b-b538a5b8d443",
-        "a5ee69df-7aa4-4637-b3a1-26afbea68dd5"
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-0",
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-1",
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-2"
       ],
       "settings": {
-        "section_background_color": "rgba(0,0,0,0)",
-        "desktop_content_position": "middle-left",
-        "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "content_background_color": "#000000",
-        "mobile_content_alignment": "left",
-        "animation": "fadeInLeft",
-        "animation_time": "1s",
+        "section_background_color": "",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "content_background_color": "",
+        "mobile_content_alignment": "center",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
         "show_text_below": true,
-        "show_container_mobile": true
+        "show_container_mobile": false
       }
     },
-    "1645433899f17c1025": {
+    "b80b8917-3207-40b3-b421-f754f888dab7": {
       "type": "featured-links",
       "blocks": {
-        "66deeb3a-8330-415c-8dac-71fc7a458e19": {
+        "756d7960-c08e-46b8-9dca-ebb5b2899447": {
           "type": "link",
           "settings": {
-            "heading": "Performance Race Bikes",
-            "heading_size": "h4",
-            "heading_color": "#ffffff",
+            "heading": "",
+            "heading_size": "h3",
+            "heading_color": "",
             "heading_on_image": false,
-            "link_url": "#",
+            "link_url": "",
             "image_hover": "noeffect",
-            "description": "<p>lorem ipsum lightweight, built for paved roads, speed, and endurance <\/p>",
-            "button_label": "",
-            "background_color": "rgba(0,0,0,0)",
-            "button_style": "primary",
-            "featured_animation": "NoEffect",
-            "featured_animation_time": "0.2s"
-          }
-        },
-        "1255cb75-a05a-47dc-a3a6-4350dd8e04a8": {
-          "type": "link",
-          "settings": {
-            "heading": "Mountain Bikes",
-            "heading_size": "h4",
-            "heading_color": "#ffffff",
-            "heading_on_image": false,
-            "link_url": "#",
-            "image_hover": "noeffect",
-            "description": "<p>lorem ipsum durable, built for adventure and exploration dolor sit amet consectetur<\/p>",
+            "description": "",
             "button_label": "",
             "background_color": "",
             "button_style": "primary",
@@ -82,16 +70,33 @@
             "featured_animation_time": "0.2s"
           }
         },
-        "fcdc71e2-e4da-4bca-b322-a01bf8a12fc3": {
+        "5aaf651c-6438-42b3-a482-d758c91fc33c": {
           "type": "link",
           "settings": {
-            "heading": "Electric Bikes",
-            "heading_size": "h4",
-            "heading_color": "#ffffff",
+            "heading": "",
+            "heading_size": "h3",
+            "heading_color": "",
             "heading_on_image": false,
-            "link_url": "#",
+            "link_url": "",
             "image_hover": "noeffect",
-            "description": "<p>lorem ipsum built for high-performance and efficient commuting<\/p>",
+            "description": "",
+            "button_label": "",
+            "background_color": "",
+            "button_style": "primary",
+            "featured_animation": "NoEffect",
+            "featured_animation_time": "0.2s"
+          }
+        },
+        "2ca0addb-32fe-497d-8d35-47f74782fe89": {
+          "type": "link",
+          "settings": {
+            "heading": "",
+            "heading_size": "h3",
+            "heading_color": "",
+            "heading_on_image": false,
+            "link_url": "",
+            "image_hover": "noeffect",
+            "description": "",
             "button_label": "",
             "background_color": "",
             "button_style": "primary",
@@ -101,62 +106,62 @@
         }
       },
       "block_order": [
-        "66deeb3a-8330-415c-8dac-71fc7a458e19",
-        "1255cb75-a05a-47dc-a3a6-4350dd8e04a8",
-        "fcdc71e2-e4da-4bca-b322-a01bf8a12fc3"
+        "756d7960-c08e-46b8-9dca-ebb5b2899447",
+        "5aaf651c-6438-42b3-a482-d758c91fc33c",
+        "2ca0addb-32fe-497d-8d35-47f74782fe89"
       ],
       "settings": {
-        "background_color": "#131313",
-        "heading": "Conquer All Terrains",
-        "heading_size": "h1",
-        "heading_color": "#ffffff",
-        "eyebrow": "From Urban Streets to Outback Inclines",
-        "eyebrow_color": "#ffffff",
+        "background_color": "",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_color": "",
+        "eyebrow": "",
+        "eyebrow_color": "",
         "heading_wrapper_animation": "NoEffect",
         "heading_wrapper_animation_time": "0.2s",
         "link_display": "margins",
-        "desktop_columns": "3",
+        "desktop_columns": "2",
         "desktop_tile_layout": "image-on-top",
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "mobile_tile_layout": "image-on-top",
-        "mobile_content_alignment": "center",
-        "desktop_top_padding": 45,
-        "desktop_bottom_padding": 100,
+        "mobile_content_alignment": "left",
+        "desktop_top_padding": 80,
+        "desktop_bottom_padding": 80,
         "mobile_top_padding": 50,
         "mobile_bottom_padding": 50
       }
     },
-    "164273977304b2131b": {
+    "f61bb48b-7651-4c2f-a0df-358aa280009d": {
       "type": "image-with-text",
       "blocks": {
-        "fad43971-a4c0-43e4-9989-dc34e94fe512": {
+        "25ce3d1f-c044-462a-965d-ffb7dca25643": {
           "type": "eyebrow",
           "settings": {
-            "text": "TIMELESS",
+            "text": "CARSON",
             "text_color": "#ffffff"
           }
         },
-        "164273977340c04936-0": {
+        "template--14454937780353__f61bb48b-7651-4c2f-a0df-358aa280009d-16674948072b3254cc-0": {
           "type": "heading",
           "settings": {
-            "heading": "CLASSICS",
+            "heading": "BELTED BOOTIE",
             "heading_size": "h1",
             "heading_color": "#ffffff"
           }
         },
-        "164273977340c04936-1": {
+        "template--14454937780353__f61bb48b-7651-4c2f-a0df-358aa280009d-16674948072b3254cc-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <\/p>",
+            "text": "<p>A variation of the top selling, full grain leather Carson Piping Bootie with an inside zipper.<\/p>",
             "text_style": "text-body",
             "text_color": "#ffffff"
           }
         },
-        "164273977340c04936-2": {
+        "template--14454937780353__f61bb48b-7651-4c2f-a0df-358aa280009d-16674948072b3254cc-2": {
           "type": "button",
           "settings": {
-            "button_label_1": "Shop Classic Styles",
-            "button_link_1": "#",
+            "button_label_1": "Shop Belted Booties",
+            "button_link_1": "",
             "button_style_1": "primary",
             "button_label_2": "",
             "button_link_2": "",
@@ -168,16 +173,15 @@
         }
       },
       "block_order": [
-        "fad43971-a4c0-43e4-9989-dc34e94fe512",
-        "164273977340c04936-0",
-        "164273977340c04936-1",
-        "164273977340c04936-2"
+        "25ce3d1f-c044-462a-965d-ffb7dca25643",
+        "template--14454937780353__f61bb48b-7651-4c2f-a0df-358aa280009d-16674948072b3254cc-0",
+        "template--14454937780353__f61bb48b-7651-4c2f-a0df-358aa280009d-16674948072b3254cc-1",
+        "template--14454937780353__f61bb48b-7651-4c2f-a0df-358aa280009d-16674948072b3254cc-2"
       ],
       "settings": {
         "background_color": "#000000",
-        "image": "shopify:\/\/shop_images\/frye_homepage-classics-desktop.jpg",
         "animation": "NoEffect",
-        "animation_time": "5s",
+        "animation_time": "0.2s",
         "height": "adapt",
         "image_hover": "noeffect",
         "desktop_image_width": "normal",
@@ -191,32 +195,32 @@
         "mobile_content_alignment": "center"
       }
     },
-    "b66b85b6-fea8-44d1-8ca4-a5efad0bacef": {
+    "4ad7fcac-97c6-474c-adab-71854b48b121": {
       "type": "bluecore-recommendations",
       "settings": {
         "heading": "Bestsellers",
         "heading_size": "brighton-h2",
         "eyebrow": "Shop Our",
         "content_alignment": "center",
-        "background_color": "rgba(0,0,0,0)",
-        "text_color": "#000000",
+        "background_color": "",
+        "text_color": "",
         "desktop_top_padding": 60,
         "desktop_bottom_padding": 60,
         "mobile_top_padding": 45,
         "mobile_bottom_padding": 45
       }
     },
-    "1642739949b5943f7b": {
+    "bef910a0-9612-485e-bb3a-4de5c3b9d9f0": {
       "type": "image-with-text",
       "blocks": {
-        "4dae092b-07ac-42c2-b8d6-7c7041b2dd9e": {
+        "815f57ea-c6bb-4545-b043-4c6a8562f309": {
           "type": "eyebrow",
           "settings": {
             "text": "CELEBRATING 160 YEARS OF FRYE",
             "text_color": "#ffffff"
           }
         },
-        "9854f8f5-b738-4267-b36b-084cdea5a5c4": {
+        "template--14454937780353__bef910a0-9612-485e-bb3a-4de5c3b9d9f0-16674948196d9e99ff-0": {
           "type": "heading",
           "settings": {
             "heading": "MADE IN THE USA",
@@ -224,7 +228,7 @@
             "heading_color": "#ffffff"
           }
         },
-        "cee0aaa9-88ea-4a8d-95a6-3fe7cb136199": {
+        "template--14454937780353__bef910a0-9612-485e-bb3a-4de5c3b9d9f0-16674948196d9e99ff-1": {
           "type": "text",
           "settings": {
             "text": "<p>Pellentesque laoreet consequat dolor. Maecenas rhoncus orci ut sapien posuere.<\/p>",
@@ -232,7 +236,7 @@
             "text_color": "#ffffff"
           }
         },
-        "62aba382-bfae-409c-a10f-33322ed3d244": {
+        "template--14454937780353__bef910a0-9612-485e-bb3a-4de5c3b9d9f0-16674948196d9e99ff-2": {
           "type": "button",
           "settings": {
             "button_label_1": "Shop Made in the USA",
@@ -240,7 +244,7 @@
             "button_style_1": "primary",
             "button_label_2": "Learn About Our Heritage",
             "button_link_2": "#",
-            "button_style_2": "tertiary",
+            "button_style_2": "link-1",
             "show_side_by_side": false,
             "show_separator": false,
             "separator_color": ""
@@ -248,18 +252,17 @@
         }
       },
       "block_order": [
-        "4dae092b-07ac-42c2-b8d6-7c7041b2dd9e",
-        "9854f8f5-b738-4267-b36b-084cdea5a5c4",
-        "cee0aaa9-88ea-4a8d-95a6-3fe7cb136199",
-        "62aba382-bfae-409c-a10f-33322ed3d244"
+        "815f57ea-c6bb-4545-b043-4c6a8562f309",
+        "template--14454937780353__bef910a0-9612-485e-bb3a-4de5c3b9d9f0-16674948196d9e99ff-0",
+        "template--14454937780353__bef910a0-9612-485e-bb3a-4de5c3b9d9f0-16674948196d9e99ff-1",
+        "template--14454937780353__bef910a0-9612-485e-bb3a-4de5c3b9d9f0-16674948196d9e99ff-2"
       ],
       "settings": {
         "background_color": "rgba(0,0,0,0)",
         "background_desktop_image": "shopify:\/\/shop_images\/frye_pattern-bg-desktop.jpg",
         "background_mobile_image": "shopify:\/\/shop_images\/frye_pattern-bg-mobile.jpg",
-        "image": "shopify:\/\/shop_images\/frye_usa-boot-desktop.jpg",
         "animation": "NoEffect",
-        "animation_time": "5s",
+        "animation_time": "0.2s",
         "height": "adapt",
         "image_hover": "noeffect",
         "desktop_image_width": "normal",
@@ -273,7 +276,7 @@
         "mobile_content_alignment": "center"
       }
     },
-    "164489916253b02aca": {
+    "72461933-c476-4adf-be36-ee30d0ce1be7": {
       "type": "social-media-feed",
       "settings": {
         "heading": "#INMYFRYE",
@@ -282,7 +285,7 @@
         "media_text_animation": "NoEffect",
         "media_text_time": "0.2s",
         "integration": "<div class=\"yotpo yotpo-pictures-widget\" data-gallery-id=\"60eef5edcc022703c542af7f\">\n<\/div>",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "",
         "heading_color": "#000000",
         "text_color": "#000000",
         "desktop_top_padding": 10,
@@ -293,11 +296,12 @@
     }
   },
   "order": [
-    "image_banner",
-    "1645433899f17c1025",
-    "164273977304b2131b",
-    "b66b85b6-fea8-44d1-8ca4-a5efad0bacef",
-    "1642739949b5943f7b",
-    "164489916253b02aca"
+    "main",
+    "0278d781-a254-47bf-bfd5-4f6102410903",
+    "b80b8917-3207-40b3-b421-f754f888dab7",
+    "f61bb48b-7651-4c2f-a0df-358aa280009d",
+    "4ad7fcac-97c6-474c-adab-71854b48b121",
+    "bef910a0-9612-485e-bb3a-4de5c3b9d9f0",
+    "72461933-c476-4adf-be36-ee30d0ce1be7"
   ]
 }
