@@ -33,8 +33,6 @@
         "a5ee69df-7aa4-4637-b3a1-26afbea68dd5"
       ],
       "settings": {
-        "desktop_image": "shopify:\/\/shop_images\/enviro-bike.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/enviro-bike_396f1123-204f-4dfb-bc8f-04954863c3f3.jpg",
         "section_background_color": "rgba(0,0,0,0)",
         "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
@@ -45,57 +43,6 @@
         "animation_time": "1s",
         "show_text_below": true,
         "show_container_mobile": true
-      }
-    },
-    "16427360944b4df878": {
-      "type": "image-with-text",
-      "blocks": {
-        "1642736094243701cb-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "PROPEL YOUR ADVENTURE",
-            "heading_size": "h1",
-            "heading_color": "#4a4a4a"
-          }
-        },
-        "1642736094243701cb-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We’ve got miles of stories to tell and many more to discover. Travel to our roots to see just what makes Propel so special.<\/p>",
-            "text_style": "text-body",
-            "text_color": "#4a4a4a"
-          }
-        },
-        "1642736094243701cb-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "READ OUR STORY →",
-            "button_link": "#",
-            "button_style": "link-2"
-          }
-        }
-      },
-      "block_order": [
-        "1642736094243701cb-0",
-        "1642736094243701cb-1",
-        "1642736094243701cb-2"
-      ],
-      "settings": {
-        "background_color": "rgba(0,0,0,0)",
-        "image": "shopify:\/\/shop_images\/sprocket-img2.png",
-        "animation": "fadeInUp",
-        "animation_time": "2s",
-        "height": "adapt",
-        "image_hover": "noeffect",
-        "desktop_image_width": "small",
-        "mobile_image_width": "small",
-        "section_padding": "normal",
-        "layout": "image_first",
-        "mobile_layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "mobile_content_alignment": "center"
       }
     },
     "1645433899f17c1025": {
@@ -109,7 +56,6 @@
             "heading_color": "#ffffff",
             "heading_on_image": false,
             "link_url": "#",
-            "image": "shopify:\/\/shop_images\/home-category-performance.jpg",
             "image_hover": "noeffect",
             "description": "<p>lorem ipsum lightweight, built for paved roads, speed, and endurance <\/p>",
             "button_label": "",
@@ -127,7 +73,6 @@
             "heading_color": "#ffffff",
             "heading_on_image": false,
             "link_url": "#",
-            "image": "shopify:\/\/shop_images\/Screenshot_2022-05-29_at_11.00.37.png",
             "image_hover": "noeffect",
             "description": "<p>lorem ipsum durable, built for adventure and exploration dolor sit amet consectetur<\/p>",
             "button_label": "",
@@ -145,7 +90,6 @@
             "heading_color": "#ffffff",
             "heading_on_image": false,
             "link_url": "#",
-            "image": "shopify:\/\/shop_images\/home-category-electric.jpg",
             "image_hover": "noeffect",
             "description": "<p>lorem ipsum built for high-performance and efficient commuting<\/p>",
             "button_label": "",
@@ -180,167 +124,6 @@
         "desktop_bottom_padding": 100,
         "mobile_top_padding": 50,
         "mobile_bottom_padding": 50
-      }
-    },
-    "1645547036f674b80e": {
-      "type": "featured-collections",
-      "disabled": true,
-      "blocks": {
-        "a63dcd66-b10a-43c4-8bb4-6718c4ce479f": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories",
-            "tab_nav_label": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary"
-          }
-        },
-        "b5d8c657-14ee-469f-a352-085b67c0792a": {
-          "type": "collection",
-          "settings": {
-            "collection": "mens-apparel",
-            "tab_nav_label": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary"
-          }
-        },
-        "7f515f38-8198-4945-88ee-2a4f2bf1883e": {
-          "type": "collection",
-          "settings": {
-            "collection": "womens-apparel",
-            "tab_nav_label": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "a63dcd66-b10a-43c4-8bb4-6718c4ce479f",
-        "b5d8c657-14ee-469f-a352-085b67c0792a",
-        "7f515f38-8198-4945-88ee-2a4f2bf1883e"
-      ],
-      "settings": {
-        "heading": "TOP RATED GEAR",
-        "heading_size": "h0",
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_product_labels": true,
-        "image_hover": "noeffect",
-        "heading_color": "#4a4a4a",
-        "background_color": "rgba(0,0,0,0)"
-      }
-    },
-    "bd76cfb5-0b5f-4511-adfe-dbc2a3b7df2d": {
-      "type": "searchspring-recommendations",
-      "blocks": {
-        "8b2c7334-4628-47a0-99c4-dc5938b75c70": {
-          "type": "recommendations",
-          "settings": {
-            "profile_id": "test",
-            "max_recommendations": 8,
-            "tab_title": "Off Road Bikes"
-          }
-        },
-        "453b42d6-8f78-487c-8cfe-c336af78251f": {
-          "type": "recommendations",
-          "settings": {
-            "profile_id": "test-two",
-            "max_recommendations": 8,
-            "tab_title": "Best Sellers"
-          }
-        }
-      },
-      "block_order": [
-        "8b2c7334-4628-47a0-99c4-dc5938b75c70",
-        "453b42d6-8f78-487c-8cfe-c336af78251f"
-      ],
-      "settings": {
-        "heading": "TOP RATED GEAR",
-        "heading_size": "brighton-h2",
-        "content_alignment": "center",
-        "background_color": "",
-        "text_color": "",
-        "desktop_top_padding": 60,
-        "desktop_bottom_padding": 60,
-        "mobile_top_padding": 45,
-        "mobile_bottom_padding": 45
-      }
-    },
-    "1644980664e60e5196": {
-      "type": "features-list",
-      "blocks": {
-        "16449806640b52a474-0": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-Bike-Frame.png",
-            "image_hover": "noeffect",
-            "heading": "Thoughtful Designs",
-            "description": "<p>Award-winning, premium products from the minds of top designers<\/p>",
-            "features_list_animation": "NoEffect",
-            "features_list_animation_time": "0.2s"
-          }
-        },
-        "25de0845-330d-4672-baed-c0824608a602": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-Bike-Gear.png",
-            "image_hover": "noeffect",
-            "heading": "Built to Last",
-            "description": "<p>Guaranteed to bring you years of top-notch comfort and value<\/p>",
-            "features_list_animation": "NoEffect",
-            "features_list_animation_time": "0.2s"
-          }
-        },
-        "f259baf4-82ca-413f-beb8-40ee35d591f3": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-Bike-Chain.png",
-            "image_hover": "noeffect",
-            "heading": "Sustainable Materials",
-            "description": "<p>We’re committed to using eco-conscious, recycled materials<\/p>",
-            "features_list_animation": "NoEffect",
-            "features_list_animation_time": "0.2s"
-          }
-        },
-        "8b60e6a4-df3f-4919-a6fe-88021c3ab0f9": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-Bike.png",
-            "image_hover": "noeffect",
-            "heading": "Free Shipping & Returns",
-            "description": "<p>All orders ship free; we’ll even assemble your bike!<\/p>",
-            "features_list_animation": "NoEffect",
-            "features_list_animation_time": "0.2s"
-          }
-        }
-      },
-      "block_order": [
-        "16449806640b52a474-0",
-        "25de0845-330d-4672-baed-c0824608a602",
-        "f259baf4-82ca-413f-beb8-40ee35d591f3",
-        "8b60e6a4-df3f-4919-a6fe-88021c3ab0f9"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "features_head_animation": "NoEffect",
-        "features_head_animation_time": "0.2s",
-        "background_desktop": "shopify:\/\/shop_images\/bg-black-bikes-min.jpg",
-        "background_color": "#131313",
-        "heading_color": "#ffffff",
-        "feature_heading_color": "#ffffff",
-        "feature_text_color": "#ffffff",
-        "desktop_top_padding": 125,
-        "desktop_bottom_padding": 20,
-        "mobile_top_padding": 55,
-        "mobile_bottom_padding": 5
       }
     },
     "164273977304b2131b": {
@@ -386,7 +169,6 @@
       ],
       "settings": {
         "background_color": "rgba(0,0,0,0)",
-        "image": "shopify:\/\/shop_images\/content-bike-care.jpg",
         "animation": "NoEffect",
         "animation_time": "5s",
         "height": "adapt",
@@ -445,7 +227,6 @@
       ],
       "settings": {
         "background_color": "rgba(0,0,0,0)",
-        "image": "shopify:\/\/shop_images\/content-gifts.jpg",
         "animation": "NoEffect",
         "animation_time": "5s",
         "height": "adapt",
@@ -461,139 +242,29 @@
         "mobile_content_alignment": "left"
       }
     },
-    "video": {
-      "type": "video",
-      "settings": {
-        "cover_image": "shopify:\/\/shop_images\/video-im-previewframe.jpg",
-        "image_hover": "noeffect",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "Bike around town",
-        "full_width": true,
-        "enable_autoplay": false,
-        "button_fill_color": "#ffffff"
-      }
-    },
-    "1645036574a6d98c9c": {
-      "type": "info-carousel",
-      "blocks": {
-        "16450365745b533c04-0": {
-          "type": "testimonial_slide",
-          "settings": {
-            "slide_animation": "NoEffect",
-            "testimonial": "<p>I will never shop anywhere else for my cycling gear. Not only are the products top-notch, but the service and expertise of the team is unmatched.<\/p>",
-            "slide_animation_time": "0.2s",
-            "byline": "<p>- Samantha St. Louis, MO<\/p>",
-            "slide_name_time": "0.2s",
-            "text_color": "#ffffff",
-            "display_icon": false,
-            "slide_icon_time": "0.2s",
-            "icon_color": "#0092ff"
-          }
-        }
-      },
-      "block_order": [
-        "16450365745b533c04-0"
-      ],
-      "settings": {
-        "background_color": "#000000",
-        "slider_visual": "dots",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "accessibility_info": "Slideshow about our brand",
-        "desktop_top_padding": 30,
-        "desktop_bottom_padding": 35,
-        "mobile_top_padding": 15,
-        "mobile_bottom_padding": 20
-      }
-    },
     "164489916253b02aca": {
       "type": "social-media-feed",
-      "blocks": {
-        "1cd85fd4-9601-4a64-812b-10c674e09e66": {
-          "type": "media_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ugc-1.jpg",
-            "add_hover": true,
-            "link": "#",
-            "image_animation": "NoEffect",
-            "image_time": "0.2s"
-          }
-        },
-        "53ed41b5-01d4-4447-ac6b-deaa01c2a95c": {
-          "type": "media_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ugc-2.jpg",
-            "add_hover": true,
-            "link": "#",
-            "image_animation": "NoEffect",
-            "image_time": "0.2s"
-          }
-        },
-        "ed89e76c-c814-42db-97bd-5fdd3cbf3182": {
-          "type": "media_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ugc-3.jpg",
-            "add_hover": true,
-            "link": "#",
-            "image_animation": "NoEffect",
-            "image_time": "0.2s"
-          }
-        },
-        "949baa90-ddbe-4a21-8dda-867fd76e8075": {
-          "type": "media_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ugc-4.jpg",
-            "add_hover": true,
-            "link": "#",
-            "image_animation": "NoEffect",
-            "image_time": "0.2s"
-          }
-        }
-      },
-      "block_order": [
-        "1cd85fd4-9601-4a64-812b-10c674e09e66",
-        "53ed41b5-01d4-4447-ac6b-deaa01c2a95c",
-        "ed89e76c-c814-42db-97bd-5fdd3cbf3182",
-        "949baa90-ddbe-4a21-8dda-867fd76e8075"
-      ],
       "settings": {
-        "heading": "#Propel Your Adventure",
+        "heading": "#INMYFRYE",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Follow us on Instagram for a glimpse into our world<\/p>",
         "media_text_animation": "NoEffect",
         "media_text_time": "0.2s",
-        "background_color": "#ffffff",
-        "heading_color": "#4a4a4a",
-        "text_color": "#4a4a4a",
+        "background_color": "rgba(0,0,0,0)",
+        "heading_color": "#000000",
+        "text_color": "#000000",
         "desktop_top_padding": 10,
         "desktop_bottom_padding": 10,
         "mobile_top_padding": 45,
         "mobile_bottom_padding": 45
       }
-    },
-    "d2f64278-8352-4f6a-868f-871986afcc6b": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div\n     class=\"yotpo yotpo-pictures-widget\"\n     data-gallery-id=\"635ac26fc5e0e91b4323ca08\">\n<\/div>"
-      }
     }
   },
   "order": [
     "image_banner",
-    "16427360944b4df878",
     "1645433899f17c1025",
-    "1645547036f674b80e",
-    "bd76cfb5-0b5f-4511-adfe-dbc2a3b7df2d",
-    "1644980664e60e5196",
     "164273977304b2131b",
     "1642739949b5943f7b",
-    "video",
-    "1645036574a6d98c9c",
-    "164489916253b02aca",
-    "d2f64278-8352-4f6a-868f-871986afcc6b"
+    "164489916253b02aca"
   ]
 }

@@ -16,7 +16,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "color_scheme": "background-1"
+              "text_color": "#ffffff",
+              "link_color": "#0092ff",
+              "background_color": "#000000"
             }
           }
         },
@@ -45,7 +47,9 @@
             "announcement-bar-0": {
               "type": "announcement",
               "settings": {
-                "color_scheme": "background-1"
+                "text_color": "#ffffff",
+                "link_color": "#0092ff",
+                "background_color": "#000000"
               }
             }
           },

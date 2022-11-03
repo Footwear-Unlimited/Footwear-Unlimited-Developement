@@ -3,25 +3,7 @@
   "sections": {
     "main": {
       "type": "main-search",
-      "settings": {
-        "background_color": "#131313",
-        "heading_color": "#ffffff",
-        "input_color": "#ffffff",
-        "input_text_color": "#222222",
-        "icon_search_background_color": "#0092ff",
-        "icon_search_color": "#ffffff",
-        "input_detail_color": "#222222",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": false,
-        "show_rating": true,
-        "show_product_labels": true,
-        "collapse_on_larger_devices": false,
-        "article_show_date": true,
-        "article_show_author": true
-      }
+      "settings": {}
     },
     "no-results-content-begin": {
       "type": "search-no-results-boundary",
