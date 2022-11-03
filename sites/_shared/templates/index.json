@@ -158,9 +158,11 @@
             "button_label_1": "Shop Classic Styles",
             "button_link_1": "#",
             "button_style_1": "primary",
+            "show_arrow_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_2": "primary",
+            "show_arrow_2": false,
             "show_side_by_side": false,
             "show_separator": false,
             "separator_color": ""
@@ -176,6 +178,7 @@
       "settings": {
         "background_color": "#000000",
         "image": "shopify:\/\/shop_images\/frye_homepage-classics-desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_homepage-classics-mobile.jpg",
         "animation": "NoEffect",
         "animation_time": "5s",
         "height": "adapt",
@@ -238,9 +241,11 @@
             "button_label_1": "Shop Made in the USA",
             "button_link_1": "#",
             "button_style_1": "primary",
+            "show_arrow_1": false,
             "button_label_2": "Learn About Our Heritage",
             "button_link_2": "#",
             "button_style_2": "tertiary",
+            "show_arrow_2": false,
             "show_side_by_side": false,
             "show_separator": false,
             "separator_color": ""

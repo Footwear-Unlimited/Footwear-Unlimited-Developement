@@ -182,7 +182,8 @@
       ],
       "settings": {
         "background_color": "#000000",
-        "image": "shopify:\/\/shop_images\/frye_homepage-belt-desktop.jpg",
+        "image": "shopify:\/\/shop_images\/frye_homepage-belt-desktop_6043d688-2f70-4b1f-bc79-a3cb0e510514.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_homepage-belt-mobile.jpg",
         "animation": "NoEffect",
         "animation_time": "0.2s",
         "height": "adapt",
