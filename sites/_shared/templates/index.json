@@ -250,6 +250,7 @@
         "description": "<p>Follow us on Instagram for a glimpse into our world<\/p>",
         "media_text_animation": "NoEffect",
         "media_text_time": "0.2s",
+        "integration": "<div class=\"yotpo yotpo-pictures-widget\" data-gallery-id=\"6331d04c27f79610f049d904\">",
         "background_color": "rgba(0,0,0,0)",
         "heading_color": "#000000",
         "text_color": "#000000",
