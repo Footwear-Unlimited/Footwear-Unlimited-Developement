@@ -184,6 +184,21 @@
         "mobile_content_alignment": "left"
       }
     },
+    "b66b85b6-fea8-44d1-8ca4-a5efad0bacef": {
+      "type": "bluecore-recommendations",
+      "settings": {
+        "heading": "Bestsellers",
+        "heading_size": "brighton-h2",
+        "eyebrow": "Shop Our",
+        "content_alignment": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "text_color": "#000000",
+        "desktop_top_padding": 60,
+        "desktop_bottom_padding": 60,
+        "mobile_top_padding": 45,
+        "mobile_bottom_padding": 45
+      }
+    },
     "1642739949b5943f7b": {
       "type": "image-with-text",
       "blocks": {
@@ -265,6 +280,7 @@
     "image_banner",
     "1645433899f17c1025",
     "164273977304b2131b",
+    "b66b85b6-fea8-44d1-8ca4-a5efad0bacef",
     "1642739949b5943f7b",
     "164489916253b02aca"
   ]
