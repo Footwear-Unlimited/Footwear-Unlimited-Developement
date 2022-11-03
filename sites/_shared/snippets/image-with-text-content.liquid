@@ -82,6 +82,11 @@
           {%- endif -%}
 
           {%- if block.settings.button_label_2 != blank -%}
+            {% if block.settings.show_separator %}
+              <span class="image-with-text__button-separator">|</span>
+            {% endif %}
+
+
             {% render 'button',
               label: block.settings.button_label_2,
               link: block.settings.button_link_2,
@@ -106,6 +111,12 @@
             {% if block.settings.show_side_by_side %}
               flex-direction: row;
               justify-content: space-between;
+            {% endif %}
+          }
+
+          {{ block_selector }}.image-with-text__button-wrapper .image-with-text__button-separator {
+            {% if block.settings.show_side_by_side %}
+              color: {{ block.settings.separator_color }};
             {% endif %}
           }
           {% endstyle %}

@@ -288,6 +288,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
 }
 
 .image-with-text__button-wrapper .image-with-text__button + .image-with-text__button {
@@ -296,6 +297,10 @@
 
 .image-with-text__button-wrapper.side-by-side .image-with-text__button + .image-with-text__button {
   margin: 0 0 0 2rem;
+}
+
+.image-with-text__button-wrapper.side-by-side .image-with-text__button-separator {
+  margin: 0 2rem;
 }
 
 /* Category Landing */
