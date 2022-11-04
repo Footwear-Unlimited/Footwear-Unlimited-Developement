@@ -51,16 +51,18 @@
         "66deeb3a-8330-415c-8dac-71fc7a458e19": {
           "type": "link",
           "settings": {
-            "heading": "Performance Race Bikes",
+            "image": "shopify:\/\/shop_images\/frye_homepage-womens-boots.jpg",
+            "image_hover": "noeffect",
+            "heading": "WOMEN'S BOOTS",
             "heading_size": "h4",
-            "heading_color": "#ffffff",
+            "heading_color": "#000000",
             "heading_on_image": false,
             "link_url": "#",
-            "image_hover": "noeffect",
-            "description": "<p>lorem ipsum lightweight, built for paved roads, speed, and endurance <\/p>",
+            "description": "",
             "button_label": "",
-            "background_color": "rgba(0,0,0,0)",
             "button_style": "primary",
+            "show_arrow": false,
+            "background_color": "rgba(0,0,0,0)",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -68,16 +70,18 @@
         "1255cb75-a05a-47dc-a3a6-4350dd8e04a8": {
           "type": "link",
           "settings": {
-            "heading": "Mountain Bikes",
+            "image": "shopify:\/\/shop_images\/frye_homepage-mens-boots.jpg",
+            "image_hover": "noeffect",
+            "heading": "MEN'S BOOTS",
             "heading_size": "h4",
-            "heading_color": "#ffffff",
+            "heading_color": "#000000",
             "heading_on_image": false,
             "link_url": "#",
-            "image_hover": "noeffect",
-            "description": "<p>lorem ipsum durable, built for adventure and exploration dolor sit amet consectetur<\/p>",
+            "description": "",
             "button_label": "",
-            "background_color": "",
             "button_style": "primary",
+            "show_arrow": false,
+            "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -85,16 +89,18 @@
         "fcdc71e2-e4da-4bca-b322-a01bf8a12fc3": {
           "type": "link",
           "settings": {
-            "heading": "Electric Bikes",
+            "image": "shopify:\/\/shop_images\/frye_homepage-bags-accessories.jpg",
+            "image_hover": "noeffect",
+            "heading": "BAGS & ACCESSORIES",
             "heading_size": "h4",
-            "heading_color": "#ffffff",
+            "heading_color": "#000000",
             "heading_on_image": false,
             "link_url": "#",
-            "image_hover": "noeffect",
-            "description": "<p>lorem ipsum built for high-performance and efficient commuting<\/p>",
+            "description": "",
             "button_label": "",
-            "background_color": "",
             "button_style": "primary",
+            "show_arrow": false,
+            "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -106,12 +112,12 @@
         "fcdc71e2-e4da-4bca-b322-a01bf8a12fc3"
       ],
       "settings": {
-        "background_color": "#131313",
-        "heading": "Conquer All Terrains",
+        "background_color": "rgba(0,0,0,0)",
+        "heading": "FALL FAVORITES",
         "heading_size": "h1",
-        "heading_color": "#ffffff",
-        "eyebrow": "From Urban Streets to Outback Inclines",
-        "eyebrow_color": "#ffffff",
+        "heading_color": "#000000",
+        "eyebrow": "SHOP OUR BEST SELLING",
+        "eyebrow_color": "#000000",
         "heading_wrapper_animation": "NoEffect",
         "heading_wrapper_animation_time": "0.2s",
         "link_display": "margins",

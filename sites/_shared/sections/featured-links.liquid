@@ -86,19 +86,11 @@
                   <a href="{{ link_url }}" class="featured-link__image-link">
                 {% endif %}
 
-               
-
-                
-                  <img
-                    class="featured-link__image"
-                    src="{{ block.settings.image | image_url: width: 1500 }}"
-                    loading="lazy"
-                    alt="{{ block.settings.image.alt }}"
-                    width="{{ block.settings.image.width }}"
-                    height="{{ block.settings.image.height }}"
-                  />
-
-                 
+                  {% render 'image',
+                    image: block.settings.image,
+                    image_max_width: 1500,
+                    class: "featured-link__image"
+                  %}
 
                   {% if block.settings.heading_on_image %}
                     {{ featured_link_heading_content }}
@@ -122,9 +114,21 @@
                 {% endif %}
 
               {% if link_url != blank and block.settings.button_label != blank %}
-                <a class="button button--{{ block.settings.button_style }}" href="{{ link_url }}">
-                  {{ block.settings.button_label }}
-                </a>
+                {% render 'button',
+                  label: block.settings.button_label,
+                  link: block.settings.link_url,
+                  variation: block.settings.button_style,
+                  arrow: block.settings.show_arrow,
+                  class: "featured-link__button button small-hide"
+                %}
+
+                {% render 'button',
+                  label: block.settings.button_label,
+                  link: block.settings.button_link,
+                  variation: block.settings.button_style,
+                  arrow: block.settings.show_arrow,
+                  class: "featured-link__button button medium-hide large-up-hide"
+                %}
               {% endif %}
             </div>
           </div>
@@ -471,6 +475,32 @@
       "name": "Link",
       "settings": [
         {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "An aspect ratio of 4:3 is recommended."
+        },
+        {
+          "type": "select",
+          "id": "image_hover",
+          "options": [
+            {
+              "value": "easein",
+              "label": "Ease in"
+            },
+            {
+              "value": "noeffect",
+              "label": "No effect"
+            }
+          ],
+          "default": "noeffect",
+          "label": "Image hover"
+        },
+        {
+          "type": "header",
+          "content": "Contents"
+        },
+        {
           "type": "text",
           "id": "heading",
           "label": "Heading"
@@ -479,20 +509,8 @@
           "type": "select",
           "id": "heading_size",
           "label": "Heading size",
-          "default": "h3",
+          "default": "h4",
           "options": [
-            {
-              "value": "cql-headline-1",
-              "label": "Custom Headline 1"
-            },
-            {
-              "value": "cql-headline-2",
-              "label": "Custom Headline 2"
-            },
-            {
-              "value": "cql-headline-3",
-              "label": "Custom Headline 3"
-            },
             {
               "value": "h0",
               "label": "X-Large"
@@ -532,28 +550,6 @@
           "label": "Link destination"
         },
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image",
-          "info": "An aspect ratio of 4:3 is recommended."
-        },
-        {
-          "type": "select",
-          "id": "image_hover",
-          "options": [
-            {
-              "value": "easein",
-              "label": "Ease in"
-            },
-            {
-              "value": "noeffect",
-              "label": "No effect"
-            }
-          ],
-          "default": "noeffect",
-          "label": "Image hover"
-        },
-        {
           "type": "richtext",
           "id": "description",
           "label": "Description"
@@ -562,12 +558,6 @@
           "type": "text",
           "id": "button_label",
           "label": "Button label"
-        },
-        {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background color",
-          "info": "This applies when Desktop tile layout is Image on side."
         },
         {
           "type": "select",
@@ -589,13 +579,25 @@
             },
             {
               "value": "link-1",
-              "label": "Link style 1"
-            },
-            {
-              "value": "link-2",
-              "label": "Link style 2"
+              "label": "Link style"
             }
           ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "default": false,
+          "label": "Display arrow next to button"
+        },
+        {
+          "type": "header",
+          "content": "Options"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color",
+          "info": "This applies when Desktop tile layout is Image on side."
         },
         {
         "type": "select",
