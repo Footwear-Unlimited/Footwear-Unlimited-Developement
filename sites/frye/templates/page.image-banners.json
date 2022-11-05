@@ -1,0 +1,196 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "0278d781-a254-47bf-bfd5-4f6102410903": {
+      "type": "image-banner",
+      "blocks": {
+        "31922133-d559-4876-8cd3-58678188e87e": {
+          "type": "eyebrow",
+          "settings": {
+            "eyebrow": "VERONICA BOOTIE FOR THE",
+            "eyebrow_color": "#ffffff"
+          }
+        },
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "COURAGEOUS & COOL",
+            "heading_size": "h1",
+            "heading_color": "#ffffff"
+          }
+        },
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Frye's iconic boots have defined eras and defied time. Shop our Fall campaign rooted in American craftsmanship and built to last for generations.<\/p>",
+            "text_color": "#ffffff"
+          }
+        },
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-2": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop the Veronica Collection",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_arrow_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "31922133-d559-4876-8cd3-58678188e87e",
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-0",
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-1",
+        "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-2"
+      ],
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/frye_hero-veronica-bootie.jpg",
+        "section_background_color": "",
+        "content_background_color": "",
+        "content_background_color_opacity": 100,
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "mobile_content_alignment": "center",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "show_text_below": false,
+        "show_container_mobile": false
+      }
+    },
+    "062cabcd-89b4-46f1-ab62-b605348eefec": {
+      "type": "image-banner",
+      "blocks": {
+        "327eeda4-e079-46ee-97cd-622e638488fa": {
+          "type": "eyebrow",
+          "settings": {
+            "eyebrow": "FALL 2022",
+            "eyebrow_color": "#ffffff"
+          }
+        },
+        "template--14455592353921__062cabcd-89b4-46f1-ab62-b605348eefec-16676040672bc60728-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ICONIC FALL STYLES",
+            "heading_size": "h1",
+            "heading_color": "#ffffff"
+          }
+        },
+        "template--14455592353921__062cabcd-89b4-46f1-ab62-b605348eefec-16676040672bc60728-2": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop the Fall Collection",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_arrow_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "327eeda4-e079-46ee-97cd-622e638488fa",
+        "template--14455592353921__062cabcd-89b4-46f1-ab62-b605348eefec-16676040672bc60728-0",
+        "template--14455592353921__062cabcd-89b4-46f1-ab62-b605348eefec-16676040672bc60728-2"
+      ],
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/frye_hero-mens-womens.jpg",
+        "section_background_color": "",
+        "content_background_color": "#000000",
+        "content_background_color_opacity": 55,
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "mobile_content_alignment": "center",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "show_text_below": true,
+        "show_container_mobile": true
+      }
+    },
+    "c11f5391-2c21-4d63-a391-48cc44529bc2": {
+      "type": "image-banner",
+      "blocks": {
+        "ef86c63e-5ea4-416f-87aa-fc08d070b9cf": {
+          "type": "eyebrow",
+          "settings": {
+            "eyebrow": "GENERATIONS HAVE ENJOYED OUR",
+            "eyebrow_color": "#ffffff"
+          }
+        },
+        "template--14455592353921__c11f5391-2c21-4d63-a391-48cc44529bc2-16676041797b324396-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "TIMELESS STYLES",
+            "heading_size": "h1",
+            "heading_color": "#ffffff"
+          }
+        },
+        "template--14455592353921__c11f5391-2c21-4d63-a391-48cc44529bc2-16676041797b324396-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>An exciting description to support this headline that will make the user want to click the CTA.<\/p>",
+            "text_color": "#ffffff"
+          }
+        },
+        "template--14455592353921__c11f5391-2c21-4d63-a391-48cc44529bc2-16676041797b324396-2": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop New Arrivals",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_arrow_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "ef86c63e-5ea4-416f-87aa-fc08d070b9cf",
+        "template--14455592353921__c11f5391-2c21-4d63-a391-48cc44529bc2-16676041797b324396-0",
+        "template--14455592353921__c11f5391-2c21-4d63-a391-48cc44529bc2-16676041797b324396-1",
+        "template--14455592353921__c11f5391-2c21-4d63-a391-48cc44529bc2-16676041797b324396-2"
+      ],
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/frye_hero-product-focused.jpg",
+        "section_background_color": "",
+        "content_background_color": "",
+        "content_background_color_opacity": 100,
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "mobile_content_alignment": "center",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "show_text_below": false,
+        "show_container_mobile": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0278d781-a254-47bf-bfd5-4f6102410903",
+    "062cabcd-89b4-46f1-ab62-b605348eefec",
+    "c11f5391-2c21-4d63-a391-48cc44529bc2"
+  ]
+}

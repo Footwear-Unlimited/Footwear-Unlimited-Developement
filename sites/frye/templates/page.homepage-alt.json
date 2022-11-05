@@ -8,46 +8,65 @@
     "0278d781-a254-47bf-bfd5-4f6102410903": {
       "type": "image-banner",
       "blocks": {
+        "e358cc6f-e975-46a5-ad1b-751b643601df": {
+          "type": "eyebrow",
+          "settings": {
+            "eyebrow": "FRYE STYLES ARE",
+            "eyebrow_color": "#ffffff"
+          }
+        },
         "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "FREE & UNTAMED",
             "heading_size": "h1",
-            "heading_color": ""
+            "heading_color": "#ffffff"
           }
         },
         "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
-            "text_color": ""
+            "text": "<p>An exciting description to support this headline that will make the user want to click the CTA.<\/p>",
+            "text_color": "#ffffff"
           }
         },
         "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary"
+            "button_label_1": "Shop New Arrivals",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_arrow_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
           }
         }
       },
       "block_order": [
+        "e358cc6f-e975-46a5-ad1b-751b643601df",
         "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-0",
         "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-1",
         "template--14454937780353__0278d781-a254-47bf-bfd5-4f6102410903-16674947760df3312f-2"
       ],
       "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/frye_spring-homepage-hero-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/frye_spring-homepage-hero-mobile.jpg",
         "section_background_color": "",
+        "content_background_color": "#000000",
+        "content_background_color_opacity": 100,
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "content_background_color": "",
+        "show_text_box": false,
         "mobile_content_alignment": "center",
         "animation": "NoEffect",
         "animation_time": "0.2s",
         "show_text_below": true,
-        "show_container_mobile": false
+        "show_container_mobile": true
       }
     },
     "b80b8917-3207-40b3-b421-f754f888dab7": {

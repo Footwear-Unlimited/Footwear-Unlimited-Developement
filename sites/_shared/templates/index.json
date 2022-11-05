@@ -3,46 +3,57 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "0563ed31-0416-4082-b9ff-1d492a47bfbf": {
+          "type": "eyebrow",
+          "settings": {
+            "eyebrow": "FALL 2022",
+            "eyebrow_color": "#ffffff"
+          }
+        },
         "3479bdec-2fa9-4d3e-9b75-11c686d9253b": {
           "type": "heading",
           "settings": {
-            "heading": "Ride out cold temps",
+            "heading": "ICONIC FALL STYLES",
             "heading_size": "h1",
             "heading_color": "#ffffff"
-          }
-        },
-        "95f7c774-423e-4049-825b-b538a5b8d443": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Get ready to weather the season changes and falling temps with our warmest accessories.<\/p>",
-            "text_color": "#ffffff"
           }
         },
         "a5ee69df-7aa4-4637-b3a1-26afbea68dd5": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Cold Weather Essentials",
-            "button_link": "#",
-            "button_style": "tertiary"
+            "button_label_1": "Shop the Fall Collection",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_arrow_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
           }
         }
       },
       "block_order": [
+        "0563ed31-0416-4082-b9ff-1d492a47bfbf",
         "3479bdec-2fa9-4d3e-9b75-11c686d9253b",
-        "95f7c774-423e-4049-825b-b538a5b8d443",
         "a5ee69df-7aa4-4637-b3a1-26afbea68dd5"
       ],
       "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/frye_homepage-hero-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/frye_homepage-hero-mobile.jpg",
         "section_background_color": "rgba(0,0,0,0)",
-        "desktop_content_position": "middle-left",
+        "content_background_color": "#000000",
+        "content_background_color_opacity": 100,
+        "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
-        "content_background_color": "#000000",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "animation": "fadeInLeft",
         "animation_time": "1s",
-        "show_text_below": true,
-        "show_container_mobile": true
+        "show_text_below": false,
+        "show_container_mobile": false
       }
     },
     "1645433899f17c1025": {
