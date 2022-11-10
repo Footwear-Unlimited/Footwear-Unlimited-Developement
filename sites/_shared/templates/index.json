@@ -295,6 +295,61 @@
         "mobile_content_alignment": "center"
       }
     },
+    "015ad1f7-0137-437e-b080-12cb1ed862ff": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "7e6c3bd2-f8ea-42b6-8bd6-72bb8f52df69": {
+          "type": "heading",
+          "settings": {
+            "text": "MEET ABBY",
+            "text_color": "#000000",
+            "text_size": "h2"
+          }
+        },
+        "71455d86-4122-444d-ba0a-f0457bd7abb9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover how Frye fashion helps Abby, an artist, musician, and traveler, take on new opportunities.<\/p>",
+            "text_color": "#000000",
+            "text_size": "text-body"
+          }
+        },
+        "c7b6398f-97f9-418f-a464-b072013e15eb": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop Abby’s Picks",
+            "button_link_1": "",
+            "button_style_1": "secondary",
+            "show_arrow_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "7e6c3bd2-f8ea-42b6-8bd6-72bb8f52df69",
+        "71455d86-4122-444d-ba0a-f0457bd7abb9",
+        "c7b6398f-97f9-418f-a464-b072013e15eb"
+      ],
+      "settings": {
+        "background_color": "rgba(0,0,0,0)",
+        "image": "shopify:\/\/shop_images\/frye_meet-abby-desktop.png",
+        "image_mobile": "shopify:\/\/shop_images\/frye_meet-abby-mobile.jpg",
+        "content_background_color": "#f2ebe5",
+        "layout": "image_first",
+        "layout_mobile": "image_first",
+        "show_timeline": false,
+        "desktop_top_padding": 80,
+        "desktop_bottom_padding": 0,
+        "mobile_top_padding": 50,
+        "mobile_bottom_padding": 0
+      }
+    },
     "164489916253b02aca": {
       "type": "social-media-feed",
       "settings": {
@@ -320,6 +375,7 @@
     "164273977304b2131b",
     "b66b85b6-fea8-44d1-8ca4-a5efad0bacef",
     "1642739949b5943f7b",
+    "015ad1f7-0137-437e-b080-12cb1ed862ff",
     "164489916253b02aca"
   ]
 }

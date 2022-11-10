@@ -1,150 +1,704 @@
 {
   "sections": {
-    "1642992090ad755862": {
-      "type": "info-accordion",
-      "blocks": {
-        "a217400f-cbb0-4c4b-9095-76a14c38141b": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "Where can I buy Kan Jam products in person?",
-            "heading_color": "#000000",
-            "content": "<p>Kan Jam is sold by a variety of major retailers such as Walmart and Target. To find all locations near you where Kan Jam is sold, see our Where to Buy page.<\/p>",
-            "content_color": "#000000"
-          }
-        },
-        "2ef7ef5a-6ecb-4010-97f1-dfa46afe8d3e": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "What should I do if I lost \/ broke part of my set?",
-            "heading_color": "#000000",
-            "content": "<p>Powder croissant jelly marzipan pudding cake gingerbread pie. Jelly beans lollipop I love croissant caramels cake. Jelly-o ice cream danish I love jujubes pudding sesame snaps cake pie. Chocolate soufflé icing muffin apple pie bonbon wafer pastry pie.<\/p>",
-            "content_color": "#000000"
-          }
-        },
-        "0537cf95-00f5-428e-b333-59e7eb2aa587": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "Is there a warranty on my product?",
-            "heading_color": "#000000",
-            "content": "<p>Lemon drops gingerbread ice cream dragée lollipop marzipan. Soufflé pie lemon drops biscuit soufflé I love tiramisu. Liquorice I love cake tiramisu donut lollipop croissant topping ice cream.<\/p>",
-            "content_color": "#000000"
-          }
-        },
-        "f9f725f4-dac0-4521-99cf-7c8048216972": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "Can I get my Kan Jam set customized?",
-            "heading_color": "#000000",
-            "content": "<p>Ice cream pudding cake I love topping toffee. Halvah fruitcake I love lollipop chocolate cake. Sweet donut pudding muffin tiramisu lollipop cookie liquorice pie. Donut cake danish cake soufflé.<\/p>",
-            "content_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "a217400f-cbb0-4c4b-9095-76a14c38141b",
-        "2ef7ef5a-6ecb-4010-97f1-dfa46afe8d3e",
-        "0537cf95-00f5-428e-b333-59e7eb2aa587",
-        "f9f725f4-dac0-4521-99cf-7c8048216972"
-      ],
-      "settings": {
-        "heading": "Product Support",
-        "heading_color": "#000000",
-        "heading_size": "h2"
-      }
-    },
-    "1642992158ef1b9794": {
-      "type": "info-accordion",
-      "blocks": {
-        "2a4be9a9-53e0-44c1-b4c2-22eeaa98be5a": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "How can I get help scoring a play?",
-            "heading_color": "#000000",
-            "content": "<p>Topping chupa chups pastry brownie macaroon sugar plum chupa chups. I love I love pastry sweet roll candy liquorice. Toffee liquorice donut sweet I love. Soufflé cupcake cotton candy biscuit gummi bears I love brownie.<\/p>",
-            "content_color": "#000000"
-          }
-        },
-        "b1f6fc1c-4339-44a6-8495-0d7686bb6dd0": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "Lorem ipsum dolor sit amet?",
-            "heading_color": "#000000",
-            "content": "<p>Gummi bears macaroon oat cake lollipop sweet roll I love jelly-o jujubes cheesecake. Carrot cake lollipop ice cream topping jelly beans gummi bears macaroon I love muffin. Oat cake donut I love chocolate cake gummi bears cake. Sweet marshmallow gummi bears lollipop gingerbread donut halvah.<\/p>",
-            "content_color": "#000000"
-          }
-        },
-        "64fc248d-89c4-4bc5-aa4d-92b730c85efe": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "Adipiscing consectetur dolor amet ipsum?",
-            "heading_color": "#000000",
-            "content": "<p>Ice cream pudding cake I love topping toffee. Halvah fruitcake I love lollipop chocolate cake. Sweet donut pudding muffin tiramisu lollipop cookie liquorice pie. Donut cake danish cake soufflé.<\/p>",
-            "content_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "2a4be9a9-53e0-44c1-b4c2-22eeaa98be5a",
-        "b1f6fc1c-4339-44a6-8495-0d7686bb6dd0",
-        "64fc248d-89c4-4bc5-aa4d-92b730c85efe"
-      ],
-      "settings": {
-        "heading": "Rules & Gameplay",
-        "heading_color": "#000000",
-        "heading_size": "h2"
-      }
-    },
-    "1642992277d864ded3": {
-      "type": "info-accordion",
-      "blocks": {
-        "eb3dbd23-fa17-46d4-999c-332977c478da": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "What is the World League?",
-            "heading_color": "#000000",
-            "content": "<p>Lemon drops gingerbread ice cream dragée lollipop marzipan. Soufflé pie lemon drops biscuit soufflé I love tiramisu. Liquorice I love cake tiramisu donut lollipop croissant topping ice cream.<\/p>",
-            "content_color": "#000000"
-          }
-        },
-        "6f895ec7-50ae-43f5-8ee4-71dd2f101d5d": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "Does it cost money to attend events?",
-            "heading_color": "#000000",
-            "content": "<p>Powder croissant jelly marzipan pudding cake gingerbread pie. Jelly beans lollipop I love croissant caramels cake. Jelly-o ice cream danish I love jujubes pudding sesame snaps cake pie. Chocolate soufflé icing muffin apple pie bonbon wafer pastry pie.<\/p>",
-            "content_color": "#000000"
-          }
-        },
-        "4e1796b2-6255-46eb-b5fe-3546691a95b6": {
-          "type": "accordion_dropdown",
-          "settings": {
-            "heading": "What does it take to become an ambassador?",
-            "heading_color": "#000000",
-            "content": "<p>Topping chupa chups pastry brownie macaroon sugar plum chupa chups. I love I love pastry sweet roll candy liquorice. Toffee liquorice donut sweet I love. Soufflé cupcake cotton candy biscuit gummi bears I love brownie.<\/p>",
-            "content_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "eb3dbd23-fa17-46d4-999c-332977c478da",
-        "6f895ec7-50ae-43f5-8ee4-71dd2f101d5d",
-        "4e1796b2-6255-46eb-b5fe-3546691a95b6"
-      ],
-      "settings": {
-        "heading": "Kan Jam World League",
-        "heading_color": "#000000",
-        "heading_size": "h2"
-      }
-    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
+    },
+    "575eb176-b5b6-40a7-afa9-273774ac936c": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14457365233793__575eb176-b5b6-40a7-afa9-273774ac936c-1668032285e1864491-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "heading_color": ""
+          }
+        },
+        "template--14457365233793__575eb176-b5b6-40a7-afa9-273774ac936c-1668032285e1864491-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+            "text_color": ""
+          }
+        },
+        "template--14457365233793__575eb176-b5b6-40a7-afa9-273774ac936c-1668032285e1864491-2": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "show_arrow_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14457365233793__575eb176-b5b6-40a7-afa9-273774ac936c-1668032285e1864491-0",
+        "template--14457365233793__575eb176-b5b6-40a7-afa9-273774ac936c-1668032285e1864491-1",
+        "template--14457365233793__575eb176-b5b6-40a7-afa9-273774ac936c-1668032285e1864491-2"
+      ],
+      "settings": {
+        "section_background_color": "",
+        "content_background_color": "",
+        "content_background_color_opacity": 100,
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "mobile_content_alignment": "center",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "show_text_below": true,
+        "show_container_mobile": false
+      }
+    },
+    "69ecb3b8-53f8-4de5-9cb0-5ed2ed705a83": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14457365233793__69ecb3b8-53f8-4de5-9cb0-5ed2ed705a83-1668032310b770fe1a-0": {
+          "type": "heading",
+          "settings": {
+            "headline_animation": "NoEffect",
+            "headline_animation_time": "0.2s",
+            "heading": "Talk about your brand",
+            "heading_color": "#000000",
+            "heading_size": "h1"
+          }
+        },
+        "template--14457365233793__69ecb3b8-53f8-4de5-9cb0-5ed2ed705a83-1668032310b770fe1a-1": {
+          "type": "text",
+          "settings": {
+            "richtext_animation": "NoEffect",
+            "richtext_animation_time": "0.2s",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_color": "#000000",
+            "text_style": "text-body"
+          }
+        },
+        "template--14457365233793__69ecb3b8-53f8-4de5-9cb0-5ed2ed705a83-1668032310b770fe1a-2": {
+          "type": "button",
+          "settings": {
+            "button_animation": "NoEffect",
+            "button_animation_time": "0.2s",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--14457365233793__69ecb3b8-53f8-4de5-9cb0-5ed2ed705a83-1668032310b770fe1a-0",
+        "template--14457365233793__69ecb3b8-53f8-4de5-9cb0-5ed2ed705a83-1668032310b770fe1a-1",
+        "template--14457365233793__69ecb3b8-53f8-4de5-9cb0-5ed2ed705a83-1668032310b770fe1a-2"
+      ],
+      "settings": {
+        "background_color": "",
+        "desktop_top_padding": 60,
+        "desktop_bottom_padding": 60,
+        "mobile_top_padding": 45,
+        "mobile_bottom_padding": 45
+      }
+    },
+    "1ff0d1b1-f0cf-40c4-81de-9365cf1b43c3": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14457365233793__1ff0d1b1-f0cf-40c4-81de-9365cf1b43c3-16680323232015a8ab-0": {
+          "type": "heading",
+          "settings": {
+            "headline_animation": "NoEffect",
+            "headline_animation_time": "0.2s",
+            "heading": "Talk about your brand",
+            "heading_color": "#000000",
+            "heading_size": "h1"
+          }
+        },
+        "template--14457365233793__1ff0d1b1-f0cf-40c4-81de-9365cf1b43c3-16680323232015a8ab-1": {
+          "type": "text",
+          "settings": {
+            "richtext_animation": "NoEffect",
+            "richtext_animation_time": "0.2s",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_color": "#000000",
+            "text_style": "text-body"
+          }
+        },
+        "template--14457365233793__1ff0d1b1-f0cf-40c4-81de-9365cf1b43c3-16680323232015a8ab-2": {
+          "type": "button",
+          "settings": {
+            "button_animation": "NoEffect",
+            "button_animation_time": "0.2s",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--14457365233793__1ff0d1b1-f0cf-40c4-81de-9365cf1b43c3-16680323232015a8ab-0",
+        "template--14457365233793__1ff0d1b1-f0cf-40c4-81de-9365cf1b43c3-16680323232015a8ab-1",
+        "template--14457365233793__1ff0d1b1-f0cf-40c4-81de-9365cf1b43c3-16680323232015a8ab-2"
+      ],
+      "settings": {
+        "background_color": "",
+        "desktop_top_padding": 60,
+        "desktop_bottom_padding": 60,
+        "mobile_top_padding": 45,
+        "mobile_bottom_padding": 45
+      }
+    },
+    "0f258b53-2c17-4985-8693-c110256dbfbf": {
+      "type": "video",
+      "settings": {
+        "image_hover": "noeffect",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "enable_autoplay": false,
+        "button_fill_color": "#ffffff"
+      }
+    },
+    "6c5f29ca-9f81-42a5-88f3-7fd7d9d79dfe": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14457365233793__6c5f29ca-9f81-42a5-88f3-7fd7d9d79dfe-1668032344524cd941-0": {
+          "type": "heading",
+          "settings": {
+            "headline_animation": "NoEffect",
+            "headline_animation_time": "0.2s",
+            "heading": "Innovation in the Pursuit of Timelessness",
+            "heading_color": "#000000",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--14457365233793__6c5f29ca-9f81-42a5-88f3-7fd7d9d79dfe-1668032344524cd941-0"
+      ],
+      "settings": {
+        "background_color": "",
+        "desktop_top_padding": 60,
+        "desktop_bottom_padding": 60,
+        "mobile_top_padding": 45,
+        "mobile_bottom_padding": 45
+      }
+    },
+    "2983e6cc-893d-4563-aec7-aa8422ddd279": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "5257d1a3-ae8c-477f-8eb9-0b56b3527009": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "1863",
+            "text_color": "#ffffff"
+          }
+        },
+        "1c05d600-dce6-4b58-95df-7dbf697d6a6a": {
+          "type": "heading",
+          "settings": {
+            "text": "THE FRYE COMPANY FOUNDED",
+            "text_color": "#be9b7b",
+            "text_size": "h2"
+          }
+        },
+        "a9da469e-a10a-46db-8fb1-1a2c43c745c1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 1863, John A. Frye opened the doors to the very first Frye shop on Elm Street in Marlboro, MA, paving the way for countless generations of Frye artisans dedicated entirely to the art of craftmanship.<\/p>",
+            "text_color": "#ffffff",
+            "text_size": "text-body"
+          }
+        }
+      },
+      "block_order": [
+        "5257d1a3-ae8c-477f-8eb9-0b56b3527009",
+        "1c05d600-dce6-4b58-95df-7dbf697d6a6a",
+        "a9da469e-a10a-46db-8fb1-1a2c43c745c1"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-1.jpg",
+        "content_background_color": "#000",
+        "layout": "image_first",
+        "layout_mobile": "image_first",
+        "show_timeline": true,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
+    },
+    "84109a91-8f3f-4551-82b1-04da4bb41112": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "1064c3a1-35a6-4361-b0e3-fe27bdddd1d2": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "1888",
+            "text_color": "#000000"
+          }
+        },
+        "82af9e1c-7756-4063-b02b-2b29e87a87f1": {
+          "type": "heading",
+          "settings": {
+            "text": "THE VERY FIRST FRYE BOOT",
+            "text_color": "#000000",
+            "text_size": "h2"
+          }
+        },
+        "3c09fa0f-cf74-4592-937f-452d9731522b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>1888 marks the year that the very first boot ever was made by The Frye Company. With its precision stitching and quality leather, this boot is testimony to Frye’s unparalleled craftsmanship. Housed today at the Marlboro Historical Society, this boot was the beginning of a storied commitment to design expertise and quality.<\/p>",
+            "text_color": "#000000",
+            "text_size": "text-body"
+          }
+        }
+      },
+      "block_order": [
+        "1064c3a1-35a6-4361-b0e3-fe27bdddd1d2",
+        "82af9e1c-7756-4063-b02b-2b29e87a87f1",
+        "3c09fa0f-cf74-4592-937f-452d9731522b"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-2.jpg",
+        "content_background_color": "#f5f5f5",
+        "layout": "text_first",
+        "layout_mobile": "image_first",
+        "show_timeline": true,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
+    },
+    "e379b3a1-a023-42ff-8e5b-31b132940831": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "0ba72b83-21d3-42ce-a1dd-7301ce1a3334": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "1889",
+            "text_color": "#000000"
+          }
+        },
+        "b89261e6-aebb-4aa9-9c63-ccf0795d7f8a": {
+          "type": "heading",
+          "settings": {
+            "text": "FROM STEAM TO ELECTRICITY",
+            "text_color": "#000000",
+            "text_size": "h2"
+          }
+        },
+        "a38a3fab-e66c-43ea-a8ed-d7832a39d116": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Frye factory was the first of the nearly twenty firms in Marlboro to convert from steam to electrical power for its operation. Making Frye the first factory in town to run on electricity.<\/p>",
+            "text_color": "#000000",
+            "text_size": "text-body"
+          }
+        }
+      },
+      "block_order": [
+        "0ba72b83-21d3-42ce-a1dd-7301ce1a3334",
+        "b89261e6-aebb-4aa9-9c63-ccf0795d7f8a",
+        "a38a3fab-e66c-43ea-a8ed-d7832a39d116"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-3.jpg",
+        "content_background_color": "#f5f5f5",
+        "layout": "image_first",
+        "layout_mobile": "image_first",
+        "show_timeline": true,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
+    },
+    "923077bb-81c1-4481-ba17-45f7f8f01c02": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "d9b186fd-0f07-4d5f-a7d5-a3f01cf8cde7": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "1923",
+            "text_color": "#000000"
+          }
+        },
+        "f438cf0e-65a8-4282-a692-a42cbc66b6b2": {
+          "type": "heading",
+          "settings": {
+            "text": "YEAR OF THE GOODYEAR WELT",
+            "text_color": "#000000",
+            "text_size": "h2"
+          }
+        },
+        "36d8e8af-8ad4-4d30-b22e-c1f21ecc4f7c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>One of the sturdiest of all footwear construction methods which also allows the boots to be repeatedly resoled. The adoption of the Goodyear Welt process proved so successful that two-thirds of Frye’s output consisted of Goodyear Welts by 1930 and three-fourths by 1936.<\/p>",
+            "text_color": "#000000",
+            "text_size": "text-body"
+          }
+        }
+      },
+      "block_order": [
+        "d9b186fd-0f07-4d5f-a7d5-a3f01cf8cde7",
+        "f438cf0e-65a8-4282-a692-a42cbc66b6b2",
+        "36d8e8af-8ad4-4d30-b22e-c1f21ecc4f7c"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-4.jpg",
+        "content_background_color": "#f5f5f5",
+        "layout": "text_first",
+        "layout_mobile": "image_first",
+        "show_timeline": false,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
+    },
+    "8c8b4875-ebd0-4b48-a6c4-7382b0c78592": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "c2620e72-7266-48c7-9d32-c3b2afffd56e": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "1930s",
+            "text_color": "#ffffff"
+          }
+        },
+        "51354864-c426-4494-8549-b948ce0941b0": {
+          "type": "heading",
+          "settings": {
+            "text": "JOHN ADDISON FRYE",
+            "text_color": "#ffffff",
+            "text_size": "h2"
+          }
+        },
+        "9f41d4b1-194e-47f1-9e30-e240f4997a46": {
+          "type": "text",
+          "settings": {
+            "text": "<p>After the death of his father Walter P. Frye, John Addison Frye (grandson of the founder) became the third generation of Frye men to act as President of the John A. Frye Shoe Company. He led the company until 1949.<\/p>",
+            "text_color": "#ffffff",
+            "text_size": "text-body"
+          }
+        }
+      },
+      "block_order": [
+        "c2620e72-7266-48c7-9d32-c3b2afffd56e",
+        "51354864-c426-4494-8549-b948ce0941b0",
+        "9f41d4b1-194e-47f1-9e30-e240f4997a46"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-5.jpg",
+        "content_background_color": "#000",
+        "layout": "image_first",
+        "layout_mobile": "image_first",
+        "show_timeline": true,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
+    },
+    "b3a7c3fe-3350-46ac-8816-a70124349a07": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "735a37a5-3de4-45fc-9ad6-112678a0f497": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "1940s",
+            "text_color": "#000000"
+          }
+        },
+        "103248b0-15c1-43bb-8985-205f07bebefc": {
+          "type": "heading",
+          "settings": {
+            "text": "THE FIRST FRYE",
+            "text_color": "#000000",
+            "text_size": "h2"
+          }
+        },
+        "16a374c1-ead3-4a3e-8ddf-1225ef9b7cd0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our first cowboy boots, the Rancher started a western trend for Frye.<\/p>",
+            "text_color": "#000000",
+            "text_size": "text-body"
+          }
+        },
+        "af2dd190-9040-44f3-b6a5-950d7f0c430a": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "View 1940s Vintage Archive",
+            "button_link_1": "",
+            "button_style_1": "link-1",
+            "show_arrow_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "735a37a5-3de4-45fc-9ad6-112678a0f497",
+        "103248b0-15c1-43bb-8985-205f07bebefc",
+        "16a374c1-ead3-4a3e-8ddf-1225ef9b7cd0",
+        "af2dd190-9040-44f3-b6a5-950d7f0c430a"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-6.jpg",
+        "content_background_color": "#f5f5f5",
+        "layout": "text_first",
+        "layout_mobile": "image_first",
+        "show_timeline": true,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
+    },
+    "43eeea29-489f-4a38-b8ce-67546b20d5c8": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "ff13a796-037a-40a3-9032-9a899d6e5d14": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "1943",
+            "text_color": "#ffffff"
+          }
+        },
+        "11a510e8-5c63-4011-9875-f280fea79c98": {
+          "type": "heading",
+          "settings": {
+            "text": "WORLD WAR II",
+            "text_color": "#ffffff",
+            "text_size": "h2"
+          }
+        },
+        "0f9d7007-59b5-4910-9a04-298ec56d431d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>During World War II, Frye traveled the world from Normandy to Okinawa on the feet of US servicemen – even General Patton. News of Frye’s outstanding quality and reputation spread worldwide.<\/p>",
+            "text_color": "#ffffff",
+            "text_size": "text-body"
+          }
+        }
+      },
+      "block_order": [
+        "ff13a796-037a-40a3-9032-9a899d6e5d14",
+        "11a510e8-5c63-4011-9875-f280fea79c98",
+        "0f9d7007-59b5-4910-9a04-298ec56d431d"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-7.jpg",
+        "content_background_color": "#000000",
+        "layout": "image_first",
+        "layout_mobile": "image_first",
+        "show_timeline": true,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
+    },
+    "f79cb13c-e9c2-47e2-85c6-03c112d44b00": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "77602da6-e4f8-4ac1-8c31-41e277566a2b": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "1950s",
+            "text_color": "#000000"
+          }
+        },
+        "39c86ede-e9ee-4a96-9233-3b359a1d1d3f": {
+          "type": "heading",
+          "settings": {
+            "text": "JET BOOTS",
+            "text_color": "#000000",
+            "text_size": "h2"
+          }
+        },
+        "898d49e5-be65-4c42-8533-610d99c9cf55": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Half  Wellingtons, nicknamed “Jet Boots,” were worn by countless navy and army men who continued to order them post-war, well into the 1950s.<\/p>",
+            "text_color": "#000000",
+            "text_size": "text-body"
+          }
+        },
+        "e2de16ef-d345-4c87-8b7c-798263f343cc": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "View 1950s Vintage Archive",
+            "button_link_1": "",
+            "button_style_1": "link-1",
+            "show_arrow_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "77602da6-e4f8-4ac1-8c31-41e277566a2b",
+        "39c86ede-e9ee-4a96-9233-3b359a1d1d3f",
+        "898d49e5-be65-4c42-8533-610d99c9cf55",
+        "e2de16ef-d345-4c87-8b7c-798263f343cc"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-8.jpg",
+        "content_background_color": "#f5f5f5",
+        "layout": "text_first",
+        "layout_mobile": "image_first",
+        "show_timeline": true,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
+    },
+    "e8109a66-2009-4832-b6bb-9a6c4d85152d": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "3655bea7-bda5-48e0-b297-ad9cf4f8d1fc": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "1960s",
+            "text_color": "#be9b7b"
+          }
+        },
+        "caad20ae-d312-4119-a05a-77c844afe4bc": {
+          "type": "heading",
+          "settings": {
+            "text": "CUSTOM-MADE BOOTS",
+            "text_color": "#ffffff",
+            "text_size": "h2"
+          }
+        },
+        "80f8954f-33ef-40f2-a32b-8cff01702569": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Frye crafted custom boots for a number of well known people including Jackie Kennedy, Bing Crosby, Jerry Lewis, Barbra Streisand, Bette Midler, Ann Margaret, Walt Frazier, Laurel & Hardy, Candice Bergen, Liza Minnelli, Carole King, Gene Autry, even President Richard Nixon.<\/p>",
+            "text_color": "#ffffff",
+            "text_size": "text-body"
+          }
+        }
+      },
+      "block_order": [
+        "3655bea7-bda5-48e0-b297-ad9cf4f8d1fc",
+        "caad20ae-d312-4119-a05a-77c844afe4bc",
+        "80f8954f-33ef-40f2-a32b-8cff01702569"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-9.jpg",
+        "content_background_color": "#000",
+        "layout": "image_first",
+        "layout_mobile": "image_first",
+        "show_timeline": true,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
+    },
+    "fe0aff4c-a4bd-4873-b75c-7891101bf0a1": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "6d05bac1-1f28-4945-af04-2a2b5a5af1fc": {
+          "type": "heading",
+          "settings": {
+            "text": "THE HARNESS BOOT",
+            "text_color": "#000000",
+            "text_size": "h2"
+          }
+        },
+        "7e2d673f-caed-489e-a301-6625384880d7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The birth of The Harness. Nothing says “Frye” like the signature harness ring and studs on The Harness Boot. Inspired by cavalry soldiers in the Civil War, The Harness Boot is an American icon.<\/p>",
+            "text_color": "#000000",
+            "text_size": "text-body"
+          }
+        },
+        "3a4755dd-5abb-4cb0-88bd-e1d768f1c9da": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "View 1960s Vintage Archive",
+            "button_link_1": "",
+            "button_style_1": "link-1",
+            "show_arrow_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "6d05bac1-1f28-4945-af04-2a2b5a5af1fc",
+        "7e2d673f-caed-489e-a301-6625384880d7",
+        "3a4755dd-5abb-4cb0-88bd-e1d768f1c9da"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_heritage-timeline-10.jpg",
+        "content_background_color": "#f5f5f5",
+        "layout": "text_first",
+        "layout_mobile": "image_first",
+        "show_timeline": true,
+        "desktop_top_padding": 40,
+        "desktop_bottom_padding": 40,
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20
+      }
     }
   },
   "order": [
-    "1642992090ad755862",
-    "1642992158ef1b9794",
-    "1642992277d864ded3",
-    "main"
+    "main",
+    "575eb176-b5b6-40a7-afa9-273774ac936c",
+    "69ecb3b8-53f8-4de5-9cb0-5ed2ed705a83",
+    "1ff0d1b1-f0cf-40c4-81de-9365cf1b43c3",
+    "0f258b53-2c17-4985-8693-c110256dbfbf",
+    "6c5f29ca-9f81-42a5-88f3-7fd7d9d79dfe",
+    "2983e6cc-893d-4563-aec7-aa8422ddd279",
+    "84109a91-8f3f-4551-82b1-04da4bb41112",
+    "e379b3a1-a023-42ff-8e5b-31b132940831",
+    "923077bb-81c1-4481-ba17-45f7f8f01c02",
+    "8c8b4875-ebd0-4b48-a6c4-7382b0c78592",
+    "b3a7c3fe-3350-46ac-8816-a70124349a07",
+    "43eeea29-489f-4a38-b8ce-67546b20d5c8",
+    "f79cb13c-e9c2-47e2-85c6-03c112d44b00",
+    "e8109a66-2009-4832-b6bb-9a6c4d85152d",
+    "fe0aff4c-a4bd-4873-b75c-7891101bf0a1"
   ]
 }

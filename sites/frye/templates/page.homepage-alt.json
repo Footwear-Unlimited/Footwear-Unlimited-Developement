@@ -308,6 +308,61 @@
         "mobile_content_alignment": "center"
       }
     },
+    "242e6a22-6558-48c0-bbe8-eae02e0a3681": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "085c6544-b471-410e-b85a-d327cec49486": {
+          "type": "heading",
+          "settings": {
+            "text": "MEET ABBY",
+            "text_color": "#000000",
+            "text_size": "h2"
+          }
+        },
+        "2352b70f-514a-4e16-bbb9-2d1f5cf2565c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover how Frye fashion helps Abby, an artist, musician, and traveler, take on new opportunities.<\/p>",
+            "text_color": "#000000",
+            "text_size": "text-body"
+          }
+        },
+        "8f2aca7c-f2b0-4085-88b0-34f5c6bdf14b": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop Abby's Picks",
+            "button_link_1": "",
+            "button_style_1": "secondary",
+            "show_arrow_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_arrow_2": false,
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "085c6544-b471-410e-b85a-d327cec49486",
+        "2352b70f-514a-4e16-bbb9-2d1f5cf2565c",
+        "8f2aca7c-f2b0-4085-88b0-34f5c6bdf14b"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_meet-abby-desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_meet-abby-mobile_04bc4417-a713-4cae-b303-d53e684a7ef8.jpg",
+        "content_background_color": "#f5f5f5",
+        "layout": "image_first",
+        "layout_mobile": "image_first",
+        "show_timeline": false,
+        "desktop_top_padding": 80,
+        "desktop_bottom_padding": 0,
+        "mobile_top_padding": 50,
+        "mobile_bottom_padding": 0
+      }
+    },
     "72461933-c476-4adf-be36-ee30d0ce1be7": {
       "type": "social-media-feed",
       "settings": {
@@ -334,6 +389,7 @@
     "f61bb48b-7651-4c2f-a0df-358aa280009d",
     "4ad7fcac-97c6-474c-adab-71854b48b121",
     "bef910a0-9612-485e-bb3a-4de5c3b9d9f0",
+    "242e6a22-6558-48c0-bbe8-eae02e0a3681",
     "72461933-c476-4adf-be36-ee30d0ce1be7"
   ]
 }
