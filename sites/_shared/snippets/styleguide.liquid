@@ -35,3 +35,108 @@
     --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
   }
 {% endstyle %}
+
+{% style %}
+  :root {
+    --color-styleguide-black: {{ settings.color_frye_black }};
+    --color-styleguide-charcoal: {{ settings.color_frye_charcoal }};
+    --color-styleguide-darkgray: {{ settings.color_frye_darkgray }};
+    --color-styleguide-gray: {{ settings.color_frye_gray }};
+    --color-styleguide-lightgray: {{ settings.color_frye_lightgray }};
+    --color-styleguide-white: {{ settings.color_frye_white }};
+    --color-styleguide-darkbrown: {{ settings.color_frye_darkbrown }};
+    --color-styleguide-brown: {{ settings.color_frye_brown }};
+    --color-styleguide-bright-tan: {{settings.color_frye_bright_tan }};
+    --color-styleguide-badge-tan: {{ settings.color_frye_badge_tan }};
+    --color-styleguide-tan: {{ settings.color_frye_tan }};
+    --color-styleguide-light-tan: {{ settings.color_frye_light_tan }};
+    --color-styleguide-red: {{ settings.color_frye_red }};
+
+
+  } 
+{% endstyle %}
+
+{% style %}
+  .color-swatches-styleguide .swatch {
+    display: flex;
+    align-items: flex-end;
+    min-height: 30rem;
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid var(--color-styleguide-accent-2);
+    border-radius: 10px;
+  }
+
+  .brand-black {
+    color: var(--color-styleguide-white);
+    background-color: var(--color-styleguide-black);
+  }
+
+  .brand-charcoal {
+    color: var(--color-styleguide-white);
+    background-color: var(--color-styleguide-charcoal);
+  }
+
+  .brand-darkgray {
+    color: var(--color-styleguide-white);
+    background-color: var(--color-styleguide-darkgray);
+  }
+
+  .brand-gray {
+    color: var(--color-styleguide-text);
+    background-color: var(--color-styleguide-gray);
+  }
+
+  .brand-lightgray {
+    color: var(--color-styleguide-text);
+    background-color: var(--color-styleguide-lightgray);
+  }
+
+  .brand-darkbrown {
+    color: var(--color-styleguide-white);
+    background-color: var(--color-styleguide-darkbrown);
+  }
+
+  .brand-brown {
+    color: var(--color-styleguide-white);
+    background-color: var(--color-styleguide-brown);
+  }
+
+  .brand-white {
+    color: var(--color-styleguide-text);
+    background-color: var(--color-styleguide-white);
+  }
+
+  .brand-bright-tan {
+    color: var(--color-styleguide-white);
+    background-color: var(--color-styleguide-bright-tan);
+  }
+
+  .brand-badge-tan {
+    color: var(--color-styleguide-white);
+    background-color: var(--color-styleguide-badge-tan);
+  }
+
+  .brand-tan {
+    color: var(--color-styleguide-white);
+    background-color: var(--color-styleguide-tan);
+  }
+
+  .brand-light-tan {
+    color: var(--color-styleguide-text);
+    background-color: var(--color-styleguide-light-tan);
+  }
+
+  .brand-red {
+    color: var(--color-styleguide-white);
+    background-color: var(--color-styleguide-red);
+  }
+
+  .inputs-set {
+    display: flex;
+  }
+
+  .inputs-set input {
+    margin-right: 1rem !important;
+  }
+{% endstyle %}

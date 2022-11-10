@@ -46,6 +46,88 @@
       },
       {
         "type": "header",
+        "content": "Styleguide Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_black",
+        "default": "#000000",
+        "label": "Frye Black"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_charcoal",
+        "default": "#262626",
+        "label": "Frye Charcoal"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_darkgray",
+        "default": "#808080",
+        "label": "Frye Dark Gray"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_gray",
+        "default": "#CCCCCC",
+        "label": "Frye Gray"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_lightgray",
+        "default": "#F5F5F5",
+        "label": "Frye Light Gray"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_white",
+        "default": "#FFFFFF",
+        "label": "Frye White"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_darkbrown",
+        "default": "#7B3F2A",
+        "label": "Frye Dark Brown"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_brown",
+        "default": "#9D5A18",
+        "label": "Frye Brown"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_bright_tan",
+        "default": "#BE8756",
+        "label": "Frye Bright Tan"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_badge_tan",
+        "default": "#9F7362",
+        "label": "Frye Badge Tan"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_tan",
+        "default": "#BE9B7B",
+        "label": "Frye Tan"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_light_tan",
+        "default": "#F2EDE6",
+        "label": "Frye Light Tan"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_red",
+        "default": "#C00404",
+        "label": "Frye Red"
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.colors.settings.header__2.content"
       },
       {
