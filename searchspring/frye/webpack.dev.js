@@ -6,7 +6,7 @@ module.exports = merge(common, {
 	mode: 'development',
 	entry: './src/index.js',
 	output: {
-		path: path.resolve(__dirname, '../../sites/propel/assets'),
+		path: path.resolve(__dirname, '../../sites/frye/assets'),
 		filename: 'searchspring.bundle.js',
 		chunkFilename: 'searchspring.bundle.chunk.[fullhash:8].[id].js',
     },
