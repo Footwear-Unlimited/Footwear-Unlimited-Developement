@@ -125,7 +125,7 @@
           </div>
       </div>
 
-      <h2>Typography</h2>
+      {% comment %} <h2>Typography</h2>
       <div class="h0">X-Large Headline (.h0)</div>
       <h1 class="h1">Large Headline (.h1)</h1>
       <h2 class="h2">Medium Headline (.h2)</h2>
@@ -191,7 +191,7 @@
           Paragraph text 4 - Roboto (.bauer-roboto-paragraph-4)
           <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
+      </p> {% endcomment %}
 
       <h2>Buttons</h2>
       <div class="buttons-styleguide">
@@ -199,319 +199,86 @@
 
           <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
               <div>
-                  <p>Default</p>
-                  <p>{% render 'button', label: 'Large', size: 'large'%}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium'%}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small'%}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall'%}</p>
+                  <p>Primary (Key Path)</p>
+                  <p>{% render 'button', label: 'Shop Now', size: 'large' %}</p>
               </div>
               <div>
-                  <p>Hover</p>
-                  <p>{% render 'button', label: 'Large', size: 'large', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall', class: 'hover' %}</p>
+                  <p>Primary - Hover</p>
+                  <p>{% render 'button', label: 'Shop Now', size: 'large', class: 'hover' %}</p>
               </div>
               <div>
-                  <p>Active</p>
-                  <p>{% render 'button', label: 'Large', size: 'large', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus</p>
-                  <p>{% render 'button', label: 'Large', size: 'large', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall', class: 'focus' %}</p>
-              </div>
-              <div>
-                  <p>Disabled</p>
-                  <p>{% render 'button', label: 'Large', size: 'large', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall', class: 'disabled' %}</p>
+                  <p>Primary - Active</p>
+                  <p>{% render 'button', label: 'Shop Now', size: 'large', class: 'active' %}</p>
               </div>
           </div>
 
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div>
-                  <p>Default - Round</p>
-                  <p>{% render 'button', label: 'Large', size: 'large', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall', shape: 'round' %}</p>
-              </div>
-              <div>
-                  <p>Hover - Round</p>
-                  <p>{% render 'button', label: 'Large', size: 'large', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall', shape: 'round', class: 'hover' %}</p>
-              </div>
-              <div>
-                  <p>Active - Round</p>
-                  <p>{% render 'button', label: 'Large', size: 'large', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall', shape: 'round', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus - Round</p>
-                  <p>{% render 'button', label: 'Large', size: 'large', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall', shape: 'round', class: 'focus' %}</p>
-              </div>
-              <div>
-                  <p>Disabled - Round</p>
-                  <p>{% render 'button', label: 'Large', size: 'large', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Med', size: 'medium', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Small', size: 'small', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', size: 'xsmall', shape: 'round', class: 'disabled' %}</p>
-              </div>
-          </div>
       </div>
+
+      <div class="buttons-styleguide" style="background:black;padding: 1rem 2rem">
+        <h3 style="color:white">Primary (On Dark Backgrounds) (.button.button--primary-dark)</h3>
+
+        <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
+            <div>
+                <p style="color:white">Primary (Key Path)</p>
+                <p>{% render 'button', label: 'Shop Now', size: 'large', variation: 'primary-dark' %}</p>
+            </div>
+            <div>
+                <p style="color:white">Primary - Hover</p>
+                <p>{% render 'button', label: 'Shop Now', size: 'large', variation: 'primary-dark', class: 'hover' %}</p>
+            </div>
+            <div>
+                <p style="color:white">Primary - Active</p>
+                <p>{% render 'button', label: 'Shop Now', size: 'large', variation: 'primary-dark', class: 'active' %}</p>
+            </div>
+        </div>
+
+    </div>
 
       <div class="buttons-styleguide">
           <h3>Button Secondary (.button.button--secondary)</h3>
 
           <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
               <div>
-                  <p>Default</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large'%}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium'%}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small'%}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall'%}</p>
+                  <p>Secondary (Key Path)</p>
+                  <p>{% render 'button', label: 'Cancel', variation: 'secondary', size: 'large'%}</p>
               </div>
               <div>
-                  <p>Hover</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall', class: 'hover' %}</p>
+                  <p>Secondary - Hover</p>
+                  <p>{% render 'button', label: 'Cancel', variation: 'secondary', size: 'large', class: 'hover' %}</p>
               </div>
               <div>
-                  <p>Active</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall', class: 'focus' %}</p>
-              </div>
-              <div>
-                  <p>Disabled</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall', class: 'disabled' %}</p>
-              </div>
-          </div>
-
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div>
-                  <p>Default - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall', shape: 'round' %}</p>
-              </div>
-              <div>
-                  <p>Hover - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall', shape: 'round', class: 'hover' %}</p>
-              </div>
-              <div>
-                  <p>Active - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall', shape: 'round', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall', shape: 'round', class: 'focus' %}</p>
-              </div>
-              <div>
-                  <p>Disabled - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'secondary', size: 'large', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'secondary', size: 'medium', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'secondary', size: 'small', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'secondary', size: 'xsmall', shape: 'round', class: 'disabled' %}</p>
+                  <p>Secondary - Active</p>
+                  <p>{% render 'button', label: 'Cancel', variation: 'secondary', size: 'large', class: 'active' %}</p>
               </div>
           </div>
       </div>
 
+      <div class="buttons-styleguide" style="background:black;padding: 1rem 2rem">
+        <h3 style="color:white">Secondary (On Dark Backgrounds)  (.button.button--secondary-dark)</h3>
+
+        <div style="color:white;display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
+            <div>
+                <p style="color:white">Secondary (Key Path)</p>
+                <p>{% render 'button', label: 'Cancel', variation: 'secondary-dark', size: 'large'%}</p>
+            </div>
+            <div>
+                <p style="color:white">Secondary - Hover</p>
+                <p>{% render 'button', label: 'Cancel', variation: 'secondary-dark', size: 'large', class: 'hover' %}</p>
+            </div>
+            <div>
+                <p style="color:white">Secondary - Active</p>
+                <p>{% render 'button', label: 'Cancel', variation: 'secondary-dark', size: 'large', class: 'active' %}</p>
+            </div>
+        </div>
+    </div>
+
+      
+
       <div class="buttons-styleguide">
-          <h3>Button Tertiary (.button.button--tertiary)</h3>
-
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div>
-                  <p>Default</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large'%}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium'%}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small'%}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall'%}</p>
-              </div>
-              <div>
-                  <p>Hover</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall', class: 'hover' %}</p>
-              </div>
-              <div>
-                  <p>Active</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall', class: 'focus' %}</p>
-              </div>
-              <div>
-                  <p>Disabled</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall', class: 'disabled' %}</p>
-              </div>
-          </div>
-
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div>
-                  <p>Default - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall', shape: 'round' %}</p>
-              </div>
-              <div>
-                  <p>Hover - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall', shape: 'round', class: 'hover' %}</p>
-              </div>
-              <div>
-                  <p>Active - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall', shape: 'round', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall', shape: 'round', class: 'focus' %}</p>
-              </div>
-              <div>
-                  <p>Disabled - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'tertiary', size: 'large', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'tertiary', size: 'medium', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'tertiary', size: 'small', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'tertiary', size: 'xsmall', shape: 'round', class: 'disabled' %}</p>
-              </div>
-          </div>
+        <div>
+          <p>Disabled</p>
+          <p>{% render 'button', label: 'Shop Now', variation: 'secondary-dark', size: 'large', class: "disabled"%}</p>
       </div>
-
-      <div class="buttons-styleguide">
-          <h3>Button Quaternary (.button.button--quaternary)</h3>
-
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div>
-                  <p>Default</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large'%}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium'%}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small'%}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall'%}</p>
-              </div>
-              <div>
-                  <p>Hover</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall', class: 'hover' %}</p>
-              </div>
-              <div>
-                  <p>Active</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall', class: 'focus' %}</p>
-              </div>
-              <div>
-                  <p>Disabled</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall', class: 'disabled' %}</p>
-              </div>
-          </div>
-
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div>
-                  <p>Default - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small', shape: 'round' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall', shape: 'round' %}</p>
-              </div>
-              <div>
-                  <p>Hover - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small', shape: 'round', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall', shape: 'round', class: 'hover' %}</p>
-              </div>
-              <div>
-                  <p>Active - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small', shape: 'round', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall', shape: 'round', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small', shape: 'round', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall', shape: 'round', class: 'focus' %}</p>
-              </div>
-              <div>
-                  <p>Disabled - Round</p>
-                  <p>{% render 'button', label: 'Large', variation: 'quaternary', size: 'large', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'quaternary', size: 'medium', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'quaternary', size: 'small', shape: 'round', class: 'disabled' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'quaternary', size: 'xsmall', shape: 'round', class: 'disabled' %}</p>
-              </div>
-          </div>
       </div>
 
       <div class="buttons-styleguide">
@@ -520,31 +287,15 @@
           <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
               <div>
                   <p>Default</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large'%}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'link-1', size: 'medium'%}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'link-1', size: 'small'%}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'link-1', size: 'xsmall'%}</p>
+                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large', arrow: 'right' %}</p>
               </div>
               <div>
                   <p>Hover</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'link-1', size: 'medium', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'link-1', size: 'small', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'link-1', size: 'xsmall', class: 'hover' %}</p>
+                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large', class: 'hover', arrow: 'right' %}</p>
               </div>
               <div>
                   <p>Active</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'link-1', size: 'medium', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'link-1', size: 'small', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'link-1', size: 'xsmall', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'link-1', size: 'medium', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'link-1', size: 'small', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'link-1', size: 'xsmall', class: 'focus' %}</p>
+                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large', class: 'active', arrow: 'right' %}</p>
               </div>
           </div>
       </div>
