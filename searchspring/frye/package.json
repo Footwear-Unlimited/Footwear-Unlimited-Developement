@@ -1,5 +1,5 @@
 {
-  "name": "searchspring-propel",
+  "name": "searchspring-frye",
   "private": true,
   "version": "0.27.5",
   "author": "Searchspring & CQL",
@@ -7,9 +7,10 @@
     "analyze": "webpack --config webpack.prod.js --analyze",
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack --config webpack.dev.js --watch",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'"
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\""
   },
+  "prettier": "@searchspring/prettier",
   "dependencies": {
     "@searchspring/snap-preact": "^0.28.0",
     "@searchspring/snap-preact-components": "^0.28.0",
@@ -18,10 +19,14 @@
     "mobx": "^6.3.12",
     "mobx-react": "^7.2.1",
     "preact": "^10.7.3",
+    "react": ">= 16.14.0 < 18",
+    "react-dom": ">= 16.14.0 < 18",
+    "react-scripts": "3.4.3",
     "react-flickity-component": "^3.6.3"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
+    "@babel/eslint-parser": "^7.16.5",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-proposal-decorators": "^7.16.7",
     "@babel/plugin-transform-react-jsx": "^7.16.7",
@@ -30,11 +35,16 @@
     "@babel/preset-react": "^7.16.7",
     "@babel/runtime": "^7.16.7",
     "@lhci/cli": "^0.8.2",
-    "@searchspring/browserslist-config-snap": "^1.0.6",
+    "@searchspring/browserslist-config-snap": "^1.0.5",
+    "@searchspring/prettier": "^1.0.2",
     "babel-loader": "^8.2.3",
     "core-js": "^3.20.2",
     "css-loader": "^6.5.1",
+    "eslint": "^8.6.0",
+    "eslint-plugin-react": "^7.28.0",
     "file-loader": "^6.2.0",
+    "lint-staged": "^12.1.7",
+    "prettier": "^2.5.1",
     "sass": "^1.46.0",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
