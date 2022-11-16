@@ -1455,44 +1455,88 @@ deferred-media {
 
 .button--link-1 {
   background-color: transparent;
-  color: var(--color-link-1);
-  font-size: 1.6rem;
+  color: var(--color-styleguide-black);
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 0;
 }
 
 .button--link-1:hover,
 .button--link-1.hover {
-  color: var(--color-link-hover-1);
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  color: var(--color-styleguide-brown);
+  text-decoration: none;
 }
 
 .button--link-1:active,
 .button--link-1.active {
-  color: var(--color-link-active-1);
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  color: var(--color-styleguide-darkbrown);
+  text-decoration: none;
+}
+
+.button--link-1-dark {
+  background-color: transparent;
+  color: var(--color-styleguide-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0;
+}
+
+.button--link-1-dark:hover,
+.button--link-1-dark.hover {
+  color: var(--color-styleguide-tan);
+  text-decoration: none;
+}
+
+.button--link-1-dark:active,
+.button--link-1-dark.active {
+  color: var(--color-styleguide-bright-tan);
+  text-decoration: none;
 }
 
 .button--link-2 {
   background-color: transparent;
-  color: var(--color-link-2);
-  font-size: 1.6rem;
+  color: var(--color-styleguide-black);
+  text-underline-offset: 0.3rem;
+  text-decoration: underline;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 0;
 }
 
 .button--link-2:hover,
 .button--link-2.hover {
-  color: var(--color-link-hover-2);
+  color: var(--color-styleguide-brown);
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
 
 .button--link-2:active,
 .button--link-2.active {
-  color: var(--color-link-active-2);
+  color: var(--color-styleguide-darkbrown);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.button--link-2-dark {
+  background-color: transparent;
+  color: var(--color-styleguide-white);
+  text-underline-offset: 0.3rem;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0;
+}
+
+.button--link-2-dark:hover,
+.button--link-2-dark.hover {
+  color: var(--color-styleguide-tan);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.button--link-2-dark:active,
+.button--link-2-dark.active {
+  color: var(--color-styleguide-bright-tan);
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
@@ -1711,10 +1755,10 @@ details[open] > .share-button__fallback {
   -webkit-appearance: none;
   appearance: none;
   background-color: var(--color-styleguide-white);
-  border: 0.1rem solid transparent;
+  border: 0.1rem solid var(--color-styleguide-black);
   border-radius: 0;
   color: var(--color-foreground);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   width: 100%;
   box-shadow: 0 0 0 0.1rem var(--color-accent-2);
   height: 4.4rem;
@@ -1726,7 +1770,7 @@ details[open] > .share-button__fallback {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: var(--color-foreground);
 }
 
@@ -1911,7 +1955,7 @@ input[type="radio"]::before {
   border-radius: 50%;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--color-styleguide-primary);
+  box-shadow: inset 1em 1em var(--color-styleguide-black);
 }
 
 input[type="radio"]:checked::before {
@@ -1920,7 +1964,7 @@ input[type="radio"]:checked::before {
 
 input[type='checkbox'] {
   border: 0.1rem solid currentColor;
-  border-radius: 0.6rem;
+  border-radius: 0;
 }
 
 input[type="checkbox"]::before {
@@ -1938,9 +1982,13 @@ input[type="checkbox"]::before {
   transition: 120ms transform ease-in-out;
 }
 
+input[type='checkbox']:checked {
+  background-color: var(--color-styleguide-black);
+}
+
 input[type='checkbox']:checked::before {
   transform: rotate(45deg);
-  border-color: var(--color-styleguide-primary);
+  border-color: var(--color-styleguide-white);
 }
 
 /* Form global */
@@ -1954,7 +2002,7 @@ input[type='checkbox']:checked::before {
 }
 
 .field__input ~ .field__label {
-  color: var(--color-accent-2);
+  color: #AAAAAA;
 }
 
 .form__message {

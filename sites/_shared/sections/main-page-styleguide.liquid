@@ -282,89 +282,96 @@
       </div>
 
       <div class="buttons-styleguide">
-          <h3>Link 1 (.button.button--link-1)</h3>
+          <h3>Link Leading to New Page (.button.button--link-1)</h3>
 
           <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
               <div>
                   <p>Default</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large', arrow: 'right' %}</p>
+                  <p>{% render 'button', label: 'Learn About Our Heritage', variation: 'link-1', size: 'small', arrow: 'right' %}</p>
               </div>
               <div>
                   <p>Hover</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large', class: 'hover', arrow: 'right' %}</p>
+                  <p>{% render 'button', label: 'Learn About Our Heritage', variation: 'link-1', size: 'small', class: 'hover', arrow: 'right' %}</p>
               </div>
               <div>
                   <p>Active</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-1', size: 'large', class: 'active', arrow: 'right' %}</p>
+                  <p>{% render 'button', label: 'Learn About Our Heritage', variation: 'link-1', size: 'small', class: 'active', arrow: 'right' %}</p>
               </div>
           </div>
       </div>
 
-      <div class="buttons-styleguide">
-          <h3>Link 2 (.button.button--link-2)</h3>
+      <div class="buttons-styleguide" style="background:black;padding: 1rem 2rem">
+        <h3 style="color:white">Link Leading to New Page - Dark Background (.button.button--link-1-dark)</h3>
 
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div>
-                  <p>Default</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-2', size: 'large'%}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'link-2', size: 'medium'%}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'link-2', size: 'small'%}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'link-2', size: 'xsmall'%}</p>
-              </div>
-              <div>
-                  <p>Hover</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-2', size: 'large', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'link-2', size: 'medium', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'link-2', size: 'small', class: 'hover' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'link-2', size: 'xsmall', class: 'hover' %}</p>
-              </div>
-              <div>
-                  <p>Active</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-2', size: 'large', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'link-2', size: 'medium', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'link-2', size: 'small', class: 'active' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'link-2', size: 'xsmall', class: 'active' %}</p>
-              </div>
-              <div>
-                  <p>Focus</p>
-                  <p>{% render 'button', label: 'Large', variation: 'link-2', size: 'large', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Med', variation: 'link-2', size: 'medium', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Small', variation: 'link-2', size: 'small', class: 'focus' %}</p>
-                  <p>{% render 'button', label: 'Xsmall', variation: 'link-2', size: 'xsmall', class: 'focus' %}</p>
-              </div>
-          </div>
+        <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
+            <div>
+                <p style="color:white">Default</p>
+                <p>{% render 'button', label: 'Learn About Our Heritage', variation: 'link-1', size: 'small', arrow: 'right', class: 'button--link-1-dark' %}</p>
+            </div>
+            <div>
+                <p style="color:white">Hover</p>
+                <p>{% render 'button', label: 'Learn About Our Heritage', variation: 'link-1', size: 'small', class: 'hover button--link-1-dark', arrow: 'right' %}</p>
+            </div>
+            <div>
+                <p style="color:white">Active</p>
+                <p>{% render 'button', label: 'Learn About Our Heritage', variation: 'link-1', size: 'small', class: 'active button--link-1-dark', arrow: 'right' %}</p>
+            </div>
+        </div>
+    </div>
+
+      <div class="buttons-styleguide">
+        <h3>Link to Modal or Different Page State (.button.button--link-2)</h3>
+
+        <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
+            <div>
+                <p>Default</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small' %}</p>
+            </div>
+            <div>
+                <p>Hover</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'hover' %}</p>
+            </div>
+            <div>
+                <p>Active</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'active' %}</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="buttons-styleguide" style="background:black;padding: 1rem 2rem">
+        <h3 style="color:white">Link to Modal or Different Page State - Dark Background (.button.button--link-2-dark)</h3>
+
+        <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
+            <div>
+                <p style="color:white">Default</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'button--link-2-dark' %}</p>
+            </div>
+            <div>
+                <p style="color:white">Hover</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'hover button--link-2-dark' %}</p>
+            </div>
+            <div>
+                <p style="color:white">Active</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'active button--link-2-dark' %}</p>
+            </div>
+        </div>
       </div>
 
       <h2>Inputs</h2>
       <div class="inputs">
-          <h3>Primary text input</h3>
           <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
               <div>
-                  <p>Placeholder</p>
+                  <p>Input Field - Blank</p>
                   <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
                       <div class="field">
                           <input class="field__input input--large" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
                           <label class="field__label input--large" for="name-form">Placeholder label</label>
                       </div>
                   </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--medium" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--small" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
               </div>
 
               <div>
-                  <p>Value present</p>
+                  <p>Input Field - Filled</p>
                   <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
                       <div class="field">
                           <input class="field__input input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
@@ -372,345 +379,36 @@
                       </div>
                   </div>
 
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Hover</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input-hover input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input-hover input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input-hover input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Focus</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input-focus input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input-focus input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input-focus input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Disabled</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input disabled class="field__input input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input disabled class="field__input input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input disabled class="field__input input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
+              </div>             
           </div>
 
-          <h3>Primary text input round (.input--round)</h3>
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div>
-                  <p>Placeholder</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input--large" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input--medium" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input--small" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Value present</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Hover</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input-hover input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input-hover input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input-hover input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Focus</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input-focus input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input-focus input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--round input-focus input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Disabled</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input disabled class="field__input input--round input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input disabled class="field__input input--round input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input disabled class="field__input input--round input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-
-          <h3>Secondary text input (.input--secondary)</h3>
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div>
-                  <p>Placeholder</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input--large" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input--medium" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input--small" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Value present</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Hover</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input-hover input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input-hover input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input-hover input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Focus</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input-focus input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input-focus input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input class="field__input input--secondary input-focus input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-
-              <div>
-                  <p>Disabled</p>
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input disabled class="field__input input--secondary input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--large" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input disabled class="field__input input--secondary input--medium" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--medium" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-
-                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
-                      <div class="field">
-                          <input disabled class="field__input input--secondary input--small" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
-                          <label class="field__label input--small" for="name-form">Placeholder label</label>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <h3>Primary select input</h3>
+  
           <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
               <div style="width: 250px">
-                  <p>Default</p>
+                  <p>Dropdown Blank</p>
+                  <div style="margin-bottom: 2rem;">
+                      <div class="name__input--dropdown">
+                          <label class="form__label" for="Option-">Select label</label>
+                          <div class="select">
+                              <span> </span>
+                              <select class="select__select input--large" name="options[option]" form="form-name">
+                                  <option value="" disabled selected>Select your option</option>
+                                  <option value="value-1">Value 1</option>
+                                  <option value="value-2">Value 2</option>
+                                  <option value="value-3">Value 3</option>
+                              </select>
+                              <span> </span>
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div style="width: 250px">
+                  <p>Dropdown Selected</p>
                   <div style="margin-bottom: 2rem;">
                       <div class="name__input--dropdown">
                           <label class="form__label" for="Option-">Select label</label>
@@ -728,675 +426,8 @@
                           </div>
                       </div>
                   </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
               </div>
 
-              <div style="width: 250px">
-                  <p>Hover</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input-hover input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input-hover input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input-hover input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div style="width: 250px">
-                  <p>Focus</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input-focus input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input-focus input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input-focus input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div style="width: 250px">
-                  <p>Disabled</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select disabled class="select__select input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select disabled class="select__select input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select disabled class="select__select input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <h3>Primary select input round (.input--round)</h3>
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div style="width: 250px">
-                  <p>Default</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--round input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--round input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--round input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div style="width: 250px">
-                  <p>Hover</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--round input-hover input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--round input-hover input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--round input-hover input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div style="width: 250px">
-                  <p>Focus</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--round input-focus input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--round input-focus input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--round input-focus input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div style="width: 250px">
-                  <p>Disabled</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select disabled class="select__select input--round input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select disabled class="select__select input--round input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select disabled class="select__select input--round input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <h3>Secondary select input (.input--secondary)</h3>
-          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
-              <div style="width: 250px">
-                  <p>Default</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--secondary input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--secondary input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--secondary input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div style="width: 250px">
-                  <p>Hover</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--secondary input-hover input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--secondary input-hover input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--secondary input-hover input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div style="width: 250px">
-                  <p>Focus</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--secondary input-focus input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--secondary input-focus input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select class="select__select input--secondary input-focus input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div style="width: 250px">
-                  <p>Disabled</p>
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select disabled class="select__select input--secondary input--large" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select disabled class="select__select input--secondary input--medium" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div style="margin-bottom: 2rem;">
-                      <div class="name__input--dropdown">
-                          <label class="form__label" for="Option-">Select label</label>
-                          <div class="select">
-                              <span> </span>
-                              <select disabled class="select__select input--secondary input--small" name="options[option]" form="form-name">
-                                  <option value="value-1">Value 1</option>
-                                  <option value="value-2">Value 2</option>
-                                  <option value="value-3">Value 3</option>
-                              </select>
-                              <span> </span>
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                              </svg>
-                          </div>
-                      </div>
-                  </div>
               </div>
           </div>
 
@@ -1412,9 +443,6 @@
               <input type="checkbox" checked="checked" /><span> </span><input type="checkbox" />
           </p>
 
-          <p class="inputs-set">
-              <input class="checkbox-secondaryBg" type="checkbox" checked="checked" /><span> </span><input class="checkbox-secondaryBg" type="checkbox" />
-          </p>
       </div>
   </div>
 
