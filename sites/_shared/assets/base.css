@@ -234,29 +234,24 @@ html.no-js .no-js-hidden {
 }
 
 p,
-.text-body {
-  font-size: calc(var(--font-body-scale) * 1.6rem);
-  letter-spacing: 0.06rem;
-  line-height: calc(1 + 0.3 / var(--font-body-scale));
+.text-body,
+ .frye-body {
+  font-size: calc(var(--font-body-scale) * 1.5rem);
+  letter-spacing: normal;
+  line-height: 1.8;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
 }
 
-.text-body-small {
-  font-size: 1.6rem;
-  line-height: 1.9rem;
+.text-body-small,
+ .frye-body-small {
+  font-size: 1.3rem;
+  line-height: 1.8;
   letter-spacing: normal;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
-}
-
-@media only screen and (min-width: 750px) {
-  .text-body-small {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-  }
 }
 
 .text-body-medium {
@@ -311,13 +306,17 @@ h6,
   line-height: calc(1 + 0.15 / max(1, var(--font-heading-scale)));
 }
 
-.h0 {
-  font-size: calc(var(--font-heading-scale) * 4rem);
+.h0, 
+ .frye-headline0 {
+  font-size: calc(var(--font-heading-scale) * 4.5rem);
+  font-family: var(--font-heading-family);
+  line-height: 0.95;
 }
 
 @media only screen and (min-width: 750px) {
-  .h0 {
-    font-size: calc(var(--font-heading-scale) * 6.2rem);
+ .h0, 
+  .frye-headline0 {
+    font-size: calc(var(--font-heading-scale) * 8rem);
   }
 }
 
@@ -342,21 +341,21 @@ h1,
   }
 }
 
-.cql-headline-1 {
-  font-size: calc(var(--font-heading-scale) * 2.4rem);
-  font-weight: 700;
-  letter-spacing: 0.06em;
+.frye-headline-1 {
+  font-size: calc(var(--font-heading-scale) * 4rem);
+  font-family: var(--font-heading-family);
+  line-height: 0.95;
 }
 
 @media only screen and (min-width: 750px) {
-  .cql-headline-1 {
-    font-size: calc(var(--font-heading-scale) * 3.6rem);
+  .frye-headline-1 {
+    font-size: calc(var(--font-heading-scale) * 5.5rem);
   }
 }
 
 @media only screen and (min-width: 990px) {
-  .cql-headline-1 {
-    font-size: calc(var(--font-heading-scale) * 5.2rem);
+  .frye-headline-1 {
+    font-size: calc(var(--font-heading-scale) * 6rem);
   }
 }
 
@@ -379,21 +378,15 @@ h2,
   }
 }
 
-.cql-headline-2 {
-  font-size: calc(var(--font-heading-scale) * 2.4rem);
-  font-weight: 700;
-  letter-spacing: 0.06em;
+.frye-headline-2 {
+  font-size: calc(var(--font-heading-scale) * 3.5rem);
+  font-family: var(--font-heading-family);
+  line-height: 0.95;
 }
 
 @media only screen and (min-width: 750px) {
-  .cql-headline-2 {
-    font-size: calc(var(--font-heading-scale) * 2.8rem);
-  }
-}
-
-@media only screen and (min-width: 990px) {
-  .cql-headline-2 {
-    font-size: calc(var(--font-heading-scale) * 3.2rem);
+  .frye-headline-2 {
+    font-size: calc(var(--font-heading-scale) * 4rem);
   }
 }
 
@@ -417,10 +410,16 @@ h3,
   }
 }
 
-.cql-headline-3 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
-  font-weight: 700;
-  letter-spacing: normal;
+.frye-headline-3 {
+  font-size: calc(var(--font-heading-scale) * 2.8rem);
+  font-family: var(--font-heading-family);
+  line-height: 1;
+}
+
+@media only screen and (min-width: 750px) {
+  .frye-headline-3 {
+    font-size: calc(var(--font-heading-scale) * 3rem);
+  }
 }
 
 h4,
@@ -446,6 +445,20 @@ h4,
   }
 }
 
+.frye-headline-4 {
+  font-family: var(--font-body-family);
+  font-size: calc(var(--font-body-scale) * 4rem);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+@media only screen and (min-width: 750px) {
+  .frye-headline-4 {
+    font-size: calc(var(--font-heading-scale) * 1.6rem);
+  }
+}
+
+
 h5,
 .h5 {
   font-family: var(--font-body-family);
@@ -456,6 +469,19 @@ h5,
   h5,
   .h5 {
     font-size: calc(var(--font-heading-scale) * 1.5rem);
+  }
+}
+
+.frye-headline-5 {
+  font-family: var(--font-body-family);
+  font-size: calc(var(--font-body-scale) * 1.6rem);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+@media only screen and (min-width: 750px) {
+  .frye-headline-5 {
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
 }
 
@@ -470,6 +496,75 @@ h6,
   h6,
   .h6 {
     font-size: calc(var(--font-heading-scale) * 1.3rem);
+  }
+}
+
+.frye-headline-6 {
+  font-family: var(--font-body-family);
+  font-size: calc(var(--font-body-scale) * 1.3rem);
+  letter-spacing: .05rem;
+  line-height: 1.15;
+}
+
+@media only screen and (min-width: 750px) {
+  .frye-headline-6 {
+    font-size: calc(var(--font-heading-scale) * 1.4rem);
+  }
+}
+
+.frye-eyebrow {
+  font-family: var(--font-body-family);
+  font-size: calc(var(--font-body-scale) * 1.3rem);
+  letter-spacing: 0.3rem;
+}
+
+.frye-pullquote {
+  font-family: var(--font-heading-family);
+  font-size: calc(var(--font-body-scale) * 2.5rem); 
+  line-height: 1.375;
+}
+
+.frye-headline-7 {
+  font-family: var(--font-body-secondary-bold);
+  font-size: calc(var(--font-body-scale) * 4rem);
+  line-height: 1.25;
+}
+
+@media only screen and (min-width: 750px) {
+  .frye-headline-7 {
+    font-size: calc(var(--font-heading-scale) * 6.5rem);
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .frye-headline-7 {
+    font-size: calc(var(--font-heading-scale) * 7rem);
+    line-height: 1.1;
+  }
+}
+
+.frye-headline-8 {
+  font-family: var(--font-body-secondary-regular);
+  font-size: calc(var(--font-body-scale) * 4rem);
+  line-height: 1.25;
+}
+
+@media only screen and (min-width: 750px) {
+  .frye-headline-8 {
+    font-size: calc(var(--font-heading-scale) * 6.5rem);
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .frye-headline-8 {
+    font-size: calc(var(--font-heading-scale) * 7rem);
+    line-height: 1.1;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .frye-pullquote {
+    font-size: calc(var(--font-heading-scale) * 4rem);
   }
 }
 
@@ -1752,6 +1847,7 @@ details[open] > .share-button__fallback {
 .select__select,
 .customer .field input,
 .customer select {
+  font-family: var(--font-body-family);
   -webkit-appearance: none;
   appearance: none;
   background-color: var(--color-styleguide-white);
