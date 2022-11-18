@@ -410,6 +410,17 @@
     ]
   },
   {
+    "name": "App Keys and IDs",
+    "settings": [
+      {
+        "type": "text",
+        "id": "key_yotpo_app_key",
+        "label": "Yotpo app key",
+        "default": "MT4XBwiMLrLGIJJwgeZnbSgfih0BiSJi08nznyl4"
+      }
+    ]
+  },
+  {
     "name": "Contact Information",
     "settings": [
       {

@@ -14,13 +14,13 @@
         }
       {%endstyle%}
       {%- if section.settings.heading != blank -%}
-      <h2 class="social-media-feed__heading animated {{section.settings.media_text_animation}} rte frye-headline{{ section.settings.heading_size }}">
+      <h2 class="social-media-feed__heading animated {{section.settings.media_text_animation}} rte {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
       </h2>
       {%- endif -%}
 
       {%- if section.settings.description != blank -%}
-      <div class="social-media-feed__description rte {{ section.settings.text_size }}">
+      <div class="social-media-feed__description rte {{ section.settings.text_style }}">
         {{ section.settings.description }}
       </div>
       {%- endif -%}
@@ -125,43 +125,43 @@
       "id": "heading_size",
       "options": [
         {
-          "value": "0",
+          "value": "frye-headline-0",
           "label": "X-Large"
         },
         {
-          "value": "1",
+          "value": "frye-headline-1",
           "label": "Large"
         },
         {
-          "value": "2",
+          "value": "frye-headline-2",
           "label": "Medium"
         },
         {
-          "value": "3",
+          "value": "frye-headline-3",
           "label": "Small"
         },
         {
-          "value": "4",
+          "value": "frye-headline-4",
           "label": "X-Small"
         },
         {
-          "value": "5",
+          "value": "frye-headline-5",
           "label": "Tiny"
         },
         {
-          "value": "6",
+          "value": "frye-headline-6",
           "label": "Very Tiny"
         },
         {
-          "value": "7",
+          "value": "frye-headline-7",
           "label": "Custom 1"
         },
         {
-          "value": "8",
+          "value": "frye-headline-8",
           "label": "Custom 2"
         }
       ],
-      "default": "2",
+      "default": "frye-headline-2",
       "label": "Headline size"
     },
     {
