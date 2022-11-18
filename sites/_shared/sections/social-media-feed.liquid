@@ -52,12 +52,12 @@
               <a id="media-{{block.id}}" {% if block.settings.link == blank %} role="link"aria-disabled="true"{% else %} href="{{ block.settings.link }}"{% endif %} class="social-media-feed__item grid__item animated {{block.settings.image_animation}} {% if block.settings.add_hover==true %} social-media-feed__item--hover-added {% endif%}">
                 <div class="media media--transparent media--square media--hover-effect">
                   <img srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
-                                                  {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
-                                                  {%- if block.settings.image.width >= 533 -%}{{ block.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
-                                                  {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
-                                                  {%- if block.settings.image.width >= 940 -%}{{ block.settings.image | image_url: width: 940 }} 940w,{%- endif -%}
-                                                  {%- if block.settings.image.width >= 1066 -%}{{ block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
-                                                  {{ block.settings.image | image_url }} {{ block.settings.image.width }}w" src="{{ block.settings.image | image_url: width: 533 }}" alt="{{ block.settings.image.alt | escape }}" loading="lazy" class="motion-reduce" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
+                                                    {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                                                    {%- if block.settings.image.width >= 533 -%}{{ block.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
+                                                    {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
+                                                    {%- if block.settings.image.width >= 940 -%}{{ block.settings.image | image_url: width: 940 }} 940w,{%- endif -%}
+                                                    {%- if block.settings.image.width >= 1066 -%}{{ block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                                                    {{ block.settings.image | image_url }} {{ block.settings.image.width }}w" src="{{ block.settings.image | image_url: width: 533 }}" alt="{{ block.settings.image.alt | escape }}" loading="lazy" class="motion-reduce" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
                 </div>
               </a>
           {%- endcase -%}
