@@ -130,7 +130,7 @@ cart-items .underlined-link {
 
 cart-remove-button .button {
   box-shadow: none;
-  color: rgba(var(--color-base-text), 0.75);
+  color: rgba(var(--color-base-foreground), 0.75);
   min-width: calc(4.5rem / var(--font-body-scale));
   min-height: 4.5rem;
   padding: 0;

@@ -1517,37 +1517,6 @@ deferred-media {
   text-decoration: none;
 }
 
-.button--tertiary {
-  background-color: var(--color-button-background-3);
-  color: var(--color-button-foreground-3);
-  border-color: var(--color-button-foreground-3);
-  text-decoration: none;
-}
-
-.button--tertiary:hover,
-.button--tertiary.hover {
-  background-color: var(--color-button-background-3);
-  color: var(--color-button-hover-3);
-  border-color: var(--color-button-hover-3);
-  text-decoration: none;
-}
-
-.button--tertiary:active,
-.button--tertiary.active {
-  background-color: var(--color-button-background-3);
-  color: var(--color-button-active-3);
-  border-color: var(--color-button-active-3);
-  text-decoration: none;
-}
-
-.button--tertiary:disabled,
-.button--tertiary.disabled {
-  background-color: var(--color-button-background-3);
-  color: var(--color-button-foreground-3);
-  border-color: var(--color-button-background-3);
-  text-decoration: none;
-}
-
 .button--link-1 {
   background-color: transparent;
   color: var(--color-styleguide-black);

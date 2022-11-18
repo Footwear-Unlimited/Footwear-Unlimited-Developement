@@ -11,78 +11,104 @@
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
-        "type": "header",
-        "content": "t:settings_schema.colors.settings.header__1.content"
+        "type": "color",
+        "id": "colors_background",
+        "default": "#FFF",
+        "label": "Background"
       },
       {
         "type": "color",
-        "id": "colors_solid_button_labels",
-        "default": "#FFFFFF",
-        "label": "t:settings_schema.colors.settings.colors_solid_button_labels.label",
-        "info": "t:settings_schema.colors.settings.colors_solid_button_labels.info"
+        "id": "colors_foreground",
+        "default": "#000",
+        "label": "Foreground"
       },
       {
         "type": "color",
-        "id": "colors_accent_1",
-        "default": "#121212",
-        "label": "t:settings_schema.colors.settings.colors_accent_1.label",
-        "info": "t:settings_schema.colors.settings.colors_accent_1.info"
-      },
-      {
-        "id": "gradient_accent_1",
-        "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_accent_1.label"
-      },
-      {
-        "type": "color",
-        "id": "colors_accent_2",
-        "default": "#334FB4",
-        "label": "t:settings_schema.colors.settings.colors_accent_2.label"
-      },
-      {
-        "id": "gradient_accent_2",
-        "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
+        "id": "colors_border",
+        "default": "#CCC",
+        "label": "Borders"
       },
       {
         "type": "header",
-        "content": "t:settings_schema.colors.settings.header__2.content"
+        "content": "Styleguide Colors"
       },
       {
         "type": "color",
-        "id": "colors_text",
-        "default": "#121212",
-        "label": "t:settings_schema.colors.settings.colors_text.label",
-        "info": "t:settings_schema.colors.settings.colors_text.info"
+        "id": "color_frye_black",
+        "default": "#000000",
+        "label": "Frye Black"
       },
       {
         "type": "color",
-        "id": "colors_outline_button_labels",
-        "default": "#121212",
-        "label": "t:settings_schema.colors.settings.colors_outline_button_labels.label",
-        "info": "t:settings_schema.colors.settings.colors_outline_button_labels.info"
+        "id": "color_frye_charcoal",
+        "default": "#262626",
+        "label": "Frye Charcoal"
       },
       {
         "type": "color",
-        "id": "colors_background_1",
+        "id": "color_frye_darkgray",
+        "default": "#808080",
+        "label": "Frye Dark Gray"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_gray",
+        "default": "#CCCCCC",
+        "label": "Frye Gray"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_lightgray",
+        "default": "#F5F5F5",
+        "label": "Frye Light Gray"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_white",
         "default": "#FFFFFF",
-        "label": "t:settings_schema.colors.settings.colors_background_1.label"
-      },
-      {
-        "id": "gradient_background_1",
-        "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_background_1.label"
+        "label": "Frye White"
       },
       {
         "type": "color",
-        "id": "colors_background_2",
-        "default": "#F3F3F3",
-        "label": "t:settings_schema.colors.settings.colors_background_2.label"
+        "id": "color_frye_darkbrown",
+        "default": "#7B3F2A",
+        "label": "Frye Dark Brown"
       },
       {
-        "id": "gradient_background_2",
-        "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+        "type": "color",
+        "id": "color_frye_brown",
+        "default": "#9D5A18",
+        "label": "Frye Brown"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_bright_tan",
+        "default": "#BE8756",
+        "label": "Frye Bright Tan"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_badge_tan",
+        "default": "#9F7362",
+        "label": "Frye Badge Tan"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_tan",
+        "default": "#BE9B7B",
+        "label": "Frye Tan"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_light_tan",
+        "default": "#F2EDE6",
+        "label": "Frye Light Tan"
+      },
+      {
+        "type": "color",
+        "id": "color_frye_red",
+        "default": "#C00404",
+        "label": "Frye Red"
       }
     ]
   },
@@ -406,17 +432,6 @@
         "type": "text",
         "id": "contact_chat",
         "label": "Chat link"
-      }
-    ]
-  },
-  {
-    "name": "App Keys and IDs",
-    "settings": [
-      {
-        "type": "text",
-        "id": "key_yotpo_app_key",
-        "label": "Yotpo app key",
-        "default": "MT4XBwiMLrLGIJJwgeZnbSgfih0BiSJi08nznyl4"
       }
     ]
   }
