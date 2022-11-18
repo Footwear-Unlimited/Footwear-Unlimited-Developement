@@ -1,43 +1,38 @@
 {% style %}
-  {{ settings.type_body_font | font_face: font_display: 'swap' }}{{ body_font_bold | font_face: font_display: 'swap' }}{{ body_font_italic | font_face: font_display: 'swap' }}{{ body_font_bold_italic | font_face: font_display: 'swap' }}{{ settings.type_header_font | font_face: font_display: 'swap' }}/* Fonts */
+  {{ settings.type_body_font | font_face: font_display: 'swap' }}
+  {{ body_font_bold | font_face: font_display: 'swap' }}
+  {{ body_font_italic | font_face: font_display: 'swap' }}
+  {{ body_font_bold_italic | font_face: font_display: 'swap' }}
+  {{ settings.type_header_font | font_face: font_display: 'swap' }}
+
+  /* Fonts */
 
   @font-face {
     font-family: "TradeGothicBold";
-    src: url('{{ "TradeGothic.woff2" | asset_url }}') format('woff2'), url('{{ "TradeGothic.woff2" | asset_url }}') format('woff');
+    src: url({{ "TradeGothic.woff2" | asset_url }}) format('woff2'),
+        url({{ "TradeGothic.woff2" | asset_url }}) format('woff');
     font-weight: bold;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'addington_cf_regular';
-    src: url('{{ "addingtoncf-regular-webfont.woff2" | asset_url }}') format('woff2'), url('{{ "addingtoncf-regular-webfont.woff" | asset_url }}') format('woff');
-    font-weight: normal;
-    font-style: normal;
+      font-family: 'addington_cf_regular';
+      src: url({{ "addingtoncf-regular-webfont.woff2" | asset_url }}) format('woff2'),
+          url({{ "addingtoncf-regular-webfont.woff" | asset_url }}) format('woff');
+      font-weight: normal;
+      font-style: normal;
   }
 
   @font-face {
-    font-family: 'addington_cf_bold';
-    src: url('{{ "addingtoncf-bold-webfont.woff2" | asset_url }}') format('woff2'), url('{{ "addingtoncf-bold-webfont.woff" | asset_url }}') format('woff');
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'addington_cf_regular';
-    src: url('{{ "addingtoncf-regular-webfont.woff2" | asset_url }}') format('woff2'), url('{{ "addingtoncf-regular-webfont.woff" | asset_url }}') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'addington_cf_bold';
-    src: url('{{ "addingtoncf-bold-webfont.woff2" | asset_url }}') format('woff2'), url('{{ "addingtoncf-bold-webfont.woff" | asset_url }}') format('woff');
-    font-weight: bold;
-    font-style: normal;
+      font-family: 'addington_cf_bold';
+      src: url({{ "addingtoncf-bold-webfont.woff2" | asset_url }}) format('woff2'),
+          url({{ "addingtoncf-bold-webfont.woff" | asset_url }}) format('woff');
+      font-weight: bold;
+      font-style: normal;
   }
 
 
-  :root{
+  :root {
     --font-body-family: 'sweet-sans-pro', 'Arial', 'sans-serif';
     --font-body-style: normal;
     --font-body-weight: normal;
@@ -52,22 +47,14 @@
     --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
     --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
 
-    --color-base-foreground: 
-    {{ settings.colors_foreground.red }},
-    {{ settings.colors_foreground.green }}, {{ settings.colors_foreground.blue }};
-    --color-base-background: 
-    {{ settings.colors_background.red }},
-    {{ settings.colors_background.green }}, {{ settings.colors_background.blue }};
-    --color-base-border: 
-    {{ settings.colors_border.red }},
-    {{ settings.colors_border.green }}, {{ settings.colors_border.blue }};
+    --color-base-foreground: {{ settings.colors_foreground.red }}, {{ settings.colors_foreground.green }}, {{ settings.colors_foreground.blue }};
+    --color-base-background: {{ settings.colors_background.red }}, {{ settings.colors_background.green }}, {{ settings.colors_background.blue }};
+    --color-base-border: {{ settings.colors_border.red }}, {{ settings.colors_border.green }}, {{ settings.colors_border.blue }};
 
     /* Other settings */
     --payment-terms-background-color: {{ settings.colors_background }};
     --page-width: {{ settings.page_width | divided_by: 10 }}rem;
-    --page-width-margin: {% if settings.page_width == '1600' %}
-      2{% else %}
-      0{% endif %}rem;
+    --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
   }
 {% endstyle %}
 
@@ -82,22 +69,16 @@
     --color-styleguide-white: {{ settings.color_frye_white }};
     --color-styleguide-darkbrown: {{ settings.color_frye_darkbrown }};
     --color-styleguide-brown: {{ settings.color_frye_brown }};
-    --color-styleguide-bright-tan: {{ settings.color_frye_bright_tan }};
+    --color-styleguide-bright-tan: {{settings.color_frye_bright_tan }};
     --color-styleguide-badge-tan: {{ settings.color_frye_badge_tan }};
     --color-styleguide-tan: {{ settings.color_frye_tan }};
     --color-styleguide-light-tan: {{ settings.color_frye_light_tan }};
     --color-styleguide-red: {{ settings.color_frye_red }};
 
     /* RGB values for general use */
-    --color-base-foreground: 
-    {{ settings.colors_foreground.red }},
-    {{ settings.colors_foreground.green }}, {{ settings.colors_foreground.blue }};
-    --color-base-background: 
-    {{ settings.colors_background.red }},
-    {{ settings.colors_background.green }}, {{ settings.colors_background.blue }};
-    --color-base-border: 
-    {{ settings.colors_border.red }},
-    {{ settings.colors_border.green }}, {{ settings.colors_border.blue }};
+    --color-base-foreground: {{ settings.colors_foreground.red }}, {{ settings.colors_foreground.green }}, {{ settings.colors_foreground.blue }};
+    --color-base-background: {{ settings.colors_background.red }}, {{ settings.colors_background.green }}, {{ settings.colors_background.blue }};
+    --color-base-border: {{ settings.colors_border.red }}, {{ settings.colors_border.green }}, {{ settings.colors_border.blue }};
 
     /* Hex values for general use */
     --color-foreground: rgb(var(--color-base-foreground));
@@ -112,9 +93,7 @@
     /* Other settings */
     --payment-terms-background-color: {{ settings.colors_background }};
     --page-width: {{ settings.page_width | divided_by: 10 }}rem;
-    --page-width-margin: {% if settings.page_width == '1600' %}
-      2{% else %}
-      0{% endif %}rem;
+    --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
   }
 {% endstyle %}
 
