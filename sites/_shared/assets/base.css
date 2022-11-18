@@ -306,16 +306,16 @@ h6,
   line-height: calc(1 + 0.15 / max(1, var(--font-heading-scale)));
 }
 
-.h0, 
- .frye-headline0 {
+.h0,
+ .frye-headline-0 {
   font-size: calc(var(--font-heading-scale) * 4.5rem);
   font-family: var(--font-heading-family);
   line-height: 0.95;
 }
 
 @media only screen and (min-width: 750px) {
- .h0, 
-  .frye-headline0 {
+ .h0,
+  .frye-headline-0 {
     font-size: calc(var(--font-heading-scale) * 8rem);
   }
 }
@@ -520,7 +520,7 @@ h6,
 
 .frye-pullquote {
   font-family: var(--font-heading-family);
-  font-size: calc(var(--font-body-scale) * 2.5rem); 
+  font-size: calc(var(--font-body-scale) * 2.5rem);
   line-height: 1.375;
 }
 

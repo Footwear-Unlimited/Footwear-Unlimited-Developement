@@ -246,7 +246,7 @@
       "type": "social-media-feed",
       "settings": {
         "heading": "#INMYFRYE",
-        "heading_size": "h2",
+        "heading_size": "2",
         "description": "<p>Follow us on Instagram for a glimpse into our world<\/p>",
         "media_text_animation": "NoEffect",
         "media_text_time": "0.2s",
