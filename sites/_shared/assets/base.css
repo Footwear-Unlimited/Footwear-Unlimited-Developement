@@ -238,7 +238,7 @@ p,
  .frye-body {
   font-size: calc(var(--font-body-scale) * 1.5rem);
   letter-spacing: normal;
-  line-height: 1.8;
+  line-height: 1.9rem;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
@@ -247,7 +247,7 @@ p,
 .text-body-small,
  .frye-body-small {
   font-size: 1.3rem;
-  line-height: 1.8;
+  line-height: 1.9rem;
   letter-spacing: normal;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);

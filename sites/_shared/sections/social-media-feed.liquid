@@ -1,7 +1,7 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'section-social-media-feed.css' | asset_url | stylesheet_tag }}
 
-<div id="social-media-feed-{{section.id}}" class="social-media-feed page-width  {% if settings.scroll_appear == "fadein" %} fadeIn {% endif %}" style="background-color: {{ section.settings.background_color }};" data-section-id="{{ section.id }}" data-section-type="social-media">
+<div id="social-media-feed-{{section.id}}" class="{% if settings.scroll_appear == "fadein" %} fadeIn {% endif %}" style="background-color: {{ section.settings.background_color }};" data-section-id="{{ section.id }}" data-section-type="social-media">
   <div class="social-media-feed-container">
     {%- if section.settings.heading != blank or section.settings.description != blank -%}
       <header id="heading-{{section.id}}">
@@ -51,13 +51,7 @@
               {%endstyle%}
               <a id="media-{{block.id}}" {% if block.settings.link == blank %} role="link"aria-disabled="true"{% else %} href="{{ block.settings.link }}"{% endif %} class="social-media-feed__item grid__item animated {{block.settings.image_animation}} {% if block.settings.add_hover==true %} social-media-feed__item--hover-added {% endif%}">
                 <div class="media media--transparent media--square media--hover-effect">
-                  <img srcset="{%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
-                                                    {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
-                                                    {%- if block.settings.image.width >= 533 -%}{{ block.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
-                                                    {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
-                                                    {%- if block.settings.image.width >= 940 -%}{{ block.settings.image | image_url: width: 940 }} 940w,{%- endif -%}
-                                                    {%- if block.settings.image.width >= 1066 -%}{{ block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
-                                                    {{ block.settings.image | image_url }} {{ block.settings.image.width }}w" src="{{ block.settings.image | image_url: width: 533 }}" alt="{{ block.settings.image.alt | escape }}" loading="lazy" class="motion-reduce" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
+                  {% render 'image', image: block.settings.image, image_max_width: 1066 %}
                 </div>
               </a>
           {%- endcase -%}
@@ -109,7 +103,7 @@
   {
     "name": "Social Media Feed",
     "tag": "section",
-    "class": "spaced-section spaced-section--full-width",
+    "class": "social-media-feed page-width",
     "settings": [
       {
         "type": "text",
@@ -198,7 +192,8 @@
             "label": "Subtitle"
           }
         ]
-      }, {
+      },
+      {
         "type": "header",
         "content": "Third-Party integration"
       }, {

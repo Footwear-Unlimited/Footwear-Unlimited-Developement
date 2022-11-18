@@ -247,16 +247,16 @@
       "settings": {
         "heading": "#INMYFRYE",
         "heading_size": "frye-headline-2",
-        "description": "<p>Follow us on Instagram for a glimpse into our world<\/p>",
-        "text_style": "frye-body",
-        "integration": "<div class=\\\"yotpo yotpo-pictures-widget\\\" data-gallery-id=\\\"60eef5edcc022703c542af7f\\\">\\n<\\\/div>",
+        "description": "<p>Follow us on Instagram for a glimpse into our world →<\/p>",
+        "text_style": "frye-body-small",
+        "integration": "<div class=\"yotpo yotpo-pictures-widget\" data-gallery-id=\"60eef5edcc022703c542af7f\"><\/div>",
         "background_color": "rgba(0,0,0,0)",
         "heading_color": "#000000",
         "text_color": "#000000",
-        "desktop_top_padding": 10,
-        "desktop_bottom_padding": 50,
-        "mobile_top_padding": 10,
-        "mobile_bottom_padding": 25,
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 0,
+        "mobile_top_padding": 0,
+        "mobile_bottom_padding": 0,
         "media_text_animation": "NoEffect",
         "media_text_time": "0.2s"
       }
