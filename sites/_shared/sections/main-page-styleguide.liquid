@@ -162,19 +162,19 @@
 
         <div style="display:flex; flex-wrap: wrap; gap: 3rem;">
             <div>
-              <div style="margin:2rem 0 0" class="frye-headline0">QUALITY AND CRAFT  .frye-headline0</div>
-              <h1 class="frye-headline-1">FALL FAVORITES  .frye-headline-1</h1>
-              <h2 class="frye-headline-2">#INMYFRYE  .frye-headline-2</h2>
-              <h3 class="frye-headline-3">MEET ABBY .frye-headline-3</h3>
-              <h4 class="frye-headline-4">WOMEN'S BOOTS .frye-headline-4</h4>
-              <h5 class="frye-headline-5">1863  .frye-headline-5</h2>
-              <h6 class="frye-headline-6">PRODUCT TYPE .frye-headline-6</h6>
-              <h1 class="frye-eyebrow">SHOP OUR BEST SELLING .frye-eyebrow</h1>
-              <p class="frye-body">While all our products are built to last, we know that styles and moods change. That’s why we have created The Frye Exchange - .frye-body</p>
-              <p class="frye-body-small">Experience for yourself the Frye craftsmanship and quality that have made the Frye name synonymous with the finest - .frye-body-small</p>
-              <p class="frye-pullquote">With a heritage rooted in craftsmanship .frye-pullquote</p>
-              <p class="frye-headline-7">Sacha Chelsea .frye-headline-7</p>
-              <p class="frye-headline-8">SACHA CHELSEA .frye-headline-8</p>
+              <div style="margin:2rem 0 0" class="frye-headline-0">QUALITY AND CRAFT  .frye-headline-0 - X-Large</div>
+              <h1 class="frye-headline-1">FALL FAVORITES  .frye-headline-1 - Large</h1>
+              <h2 class="frye-headline-2">#INMYFRYE  .frye-headline-2 - Medium</h2>
+              <h3 class="frye-headline-3">MEET ABBY  .frye-headline-3 - Small</h3>
+              <h4 class="frye-headline-4">WOMEN'S BOOTS  .frye-headline-4 - X-Small</h4>
+              <h5 class="frye-headline-5">1863  .frye-headline-5 - Tiny</h2>
+              <h6 class="frye-headline-6">PRODUCT TYPE  .frye-headline-6 - Very Tiny</h6>
+              <h1 class="frye-eyebrow">SHOP OUR BEST SELLING  .frye-eyebrow - Eyebrow</h1>
+              <p class="frye-body">While all our products are built to last, we know that styles and moods change. That’s why we have created The Frye Exchange -  .frye-body - Body - Default</p>
+              <p class="frye-body-small">Experience for yourself the Frye craftsmanship and quality that have made the Frye name synonymous with the finest -  .frye-body-small - Body - Small</p>
+              <p class="frye-pullquote">With a heritage rooted in craftsmanship  .frye-pullquote - Pullquote</p>
+              <p class="frye-headline-7">Sacha Chelsea  .frye-headline-7 - Custom 1</p>
+              <p class="frye-headline-8">SACHA CHELSEA  .frye-headline-8 - Custom 2</p>
             </div>
         </div>
 
@@ -491,6 +491,131 @@
         </div>
     </div>
 
+      <div class="buttons-styleguide">
+        <h3>Link to Modal or Different Page State (.button.button--link-2)</h3>
+
+        <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
+            <div>
+                <p>Default</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small' %}</p>
+            </div>
+            <div>
+                <p>Hover</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'hover' %}</p>
+            </div>
+            <div>
+                <p>Active</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'active' %}</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="buttons-styleguide" style="background:black;padding: 1rem 2rem">
+        <h3 style="color:white">Link to Modal or Different Page State - Dark Background (.button.button--link-2-dark)</h3>
+
+        <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
+            <div>
+                <p style="color:white">Default</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'button--link-2-dark' %}</p>
+            </div>
+            <div>
+                <p style="color:white">Hover</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'hover button--link-2-dark' %}</p>
+            </div>
+            <div>
+                <p style="color:white">Active</p>
+                <p>{% render 'button', label: 'Notify Me When Back in Stock', variation: 'link-2', size: 'small', class: 'active button--link-2-dark' %}</p>
+            </div>
+        </div>
+      </div>
+
+      <h2>Inputs</h2>
+      <div class="inputs">
+          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
+              <div>
+                  <p>Input Field - Blank</p>
+                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
+                      <div class="field">
+                          <input class="field__input input--large" value="" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
+                          <label class="field__label input--large" for="name-form">Placeholder label</label>
+                      </div>
+                  </div>
+              </div>
+
+              <div>
+                  <p>Input Field - Filled</p>
+                  <div class="name-form__field-wrapper" style="margin-bottom: 2rem;">
+                      <div class="field">
+                          <input class="field__input input--large" value="Input content here" aria-required="true" autocorrect="off" autocapitalize="none" placeholder="Placeholder goes here" required="" type="text" /><span> </span>
+                          <label class="field__label input--large" for="name-form">Placeholder label</label>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+
+          <div style="display:flex; flex-wrap: wrap; gap: 3rem; margin-bottom: 2rem;">
+              <div style="width: 250px">
+                  <p>Dropdown Blank</p>
+                  <div style="margin-bottom: 2rem;">
+                      <div class="name__input--dropdown">
+                          <label class="form__label" for="Option-">Select label</label>
+                          <div class="select">
+                              <span> </span>
+                              <select class="select__select input--large" name="options[option]" form="form-name">
+                                  <option value="" disabled selected>Select your option</option>
+                                  <option value="value-1">Value 1</option>
+                                  <option value="value-2">Value 2</option>
+                                  <option value="value-3">Value 3</option>
+                              </select>
+                              <span> </span>
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div style="width: 250px">
+                  <p>Dropdown Selected</p>
+                  <div style="margin-bottom: 2rem;">
+                      <div class="name__input--dropdown">
+                          <label class="form__label" for="Option-">Select label</label>
+                          <div class="select">
+                              <span> </span>
+                              <select class="select__select input--large" name="options[option]" form="form-name">
+                                  <option value="value-1">Value 1</option>
+                                  <option value="value-2">Value 2</option>
+                                  <option value="value-3">Value 3</option>
+                              </select>
+                              <span> </span>
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewbox="0 0 10 6">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              </div>
+          </div>
+
+          <h3>Radio Selectors</h3>
+
+          <p class="inputs-set">
+              <input type="radio" checked="checked" name="test-input" /><span> </span><input type="radio" name="test-input" />
+          </p>
+
+          <h3>Checkbox Selectors</h3>
+
+          <p class="inputs-set">
+              <input type="checkbox" checked="checked" /><span> </span><input type="checkbox" />
+          </p>
+
+      </div>
   </div>
 
   <style>
