@@ -14,7 +14,7 @@
   );
   top: 100%;
   left: 0;
-  background: var(--color-accent-2);
+  background: var(--color-styleguide-white);
   opacity: 0;
   visibility: hidden;
   z-index: 2;
@@ -96,6 +96,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__inner-submenu {
   height: 100%;
   overflow: hidden;
+  background: var(--color-styleguide-white);
 }
 
 .menu-drawer__inner-submenu-scroll {
@@ -264,7 +265,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   font-size: 1.8rem;
   line-height: 2.2rem;
   text-decoration: none;
-  background-color: var(--color-accent-3);
+  background-color: var(--color-styleguide-white);
 }
 
 .no-js .menu-drawer__close-button {
@@ -282,7 +283,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   height: 100%;
   margin-top: 3rem;
   padding: 2rem;
-  background-color: var(--color-accent-3);
+  background-color: var(--color-styleguide-white);
 }
 
 .menu-drawer__account,
@@ -295,7 +296,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   margin-left: -1.2rem;
   font-size: 1.8rem;
   line-height: 2.2rem;
-  color: var(--color-foreground);
+  color: var(--color-styleguide-black);
 }
 
 .menu-drawer__account .icon-account,
@@ -312,4 +313,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer .header__menu-promos .promo__link img {
   max-width: initial;
+}
+
+.header__shop-all .icon-arrow-right {
+  margin: .5rem 0 0 .5rem;
 }

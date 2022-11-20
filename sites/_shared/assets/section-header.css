@@ -483,10 +483,12 @@ details > .header__menu-item:hover {
   padding-right: 0;
   padding-bottom: 0;
   justify-content: flex-start;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .header__submenu .header__submenu .header__menu-item.parent-item {
-  color: var(--color-styleguide-primary);
+  color: var(--color-styleguide-black);
   font-weight: 700;
   padding-bottom: 0.75rem;
 }
@@ -518,13 +520,18 @@ details-disclosure > details > .header__submenu-contents {
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
-  background-color: var(--color-background);
+  background-color: var(--color-styleguide-white);
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
 }
 
 details-disclosure > details .header__submenu-contents-inner {
   display: flex;
   justify-content: end;
   padding: 0 10rem;
+}
+
+.header__submenu-contents-inner .header__menu-item {
+  padding: 1.2rem 1.8rem .5rem;
 }
 
 .header__image-blocks .header__submenu.list-menu {
@@ -535,22 +542,31 @@ details-disclosure > details .header__submenu-contents-inner {
   overflow: hidden;
 }
 
+
 .header__image-blocks .header__submenu.list-menu li.grid__item {
   padding-left: 2rem;
 }
 
 .header__image-blocks .header__menu-item {
   padding: 0;
-  font-size: 1.8rem;
-  line-height: 2.2rem;
-  color: var(--color-link-2);
+  font-size: 1.5rem;
+  line-height: 3.2rem;
+  color: var(--color-styleguide-black);
+  flex-direction: column;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 750px) {
+  .header__image-blocks {
+    max-width: fit-content;
+  }
 }
 
 .header__image-blocks .header__submenu .header__menu-item img {
   margin-bottom: 1rem;
   width: auto;
-  max-width: 26rem;
-  height: 26rem;
+  max-width: 24rem;
+  height: auto;
   object-fit: cover;
 }
 
@@ -580,6 +596,9 @@ details-disclosure > details .header__submenu-contents-inner {
   padding-left: 0;
   padding-top: 1rem;
   justify-content: flex-start;
+  font-size: 1.5rem;
+  font-family: var(--font-heading-family);
+  line-height: 1.8rem;
 }
 
 .header__link-lists .header__submenu-has-children > .header__menu-item:hover {
@@ -601,13 +620,14 @@ details-disclosure > details .header__submenu-contents-inner {
 .header__menu-promos .promo__link {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: fit-content;
   padding: 0 0 2rem 2rem;
   font-size: 1.4rem;
   line-height: 1.7rem;
   text-align: center;
   text-decoration: none;
-  color: var(--color-foreground);
+  color: var(--color-styleguide-black);
+  font-weight: 500;
 }
 
 .header__menu-promos .promo__link:hover {

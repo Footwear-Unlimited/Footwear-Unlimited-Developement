@@ -247,7 +247,7 @@
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
-      "menu_list_shop_all": "All",
+      "menu_list_shop_all": "Shop All",
       "cart_count": {
         "one": "{{ count }} item",
         "other": "{{ count }} items"
