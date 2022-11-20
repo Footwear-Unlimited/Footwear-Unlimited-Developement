@@ -68,11 +68,55 @@
               "promo_label__4": "",
               "promo_link__4": ""
             }
+          },
+          "16571bd7-e6e7-4649-9821-af7f97c1c45d": {
+            "type": "megamenu_image_blocks",
+            "settings": {
+              "parent_menu_item_name": "New Arrivals",
+              "block_image__1": "shopify:\/\/shop_images\/frye_nav-new-arrivals-women.jpg",
+              "block_label__1": "Women",
+              "block_image__2": "shopify:\/\/shop_images\/frye_nav-new-arrivals-men.jpg",
+              "block_label__2": "Men",
+              "block_image__3": "shopify:\/\/shop_images\/frye_nav-new-arrivals-collection-1.jpg",
+              "block_label__3": "Out West",
+              "block_image__4": "shopify:\/\/shop_images\/frye_nav-new-arrivals-collection-2.jpg",
+              "block_label__4": "The Melissa Collection"
+            }
+          },
+          "5413d357-33dd-4523-9aaf-75807a747764": {
+            "type": "megamenu_image_blocks",
+            "settings": {
+              "parent_menu_item_name": "Sale",
+              "block_image__1": "shopify:\/\/shop_images\/frye_nav-sale-women.jpg",
+              "block_label__1": "Women",
+              "block_image__2": "shopify:\/\/shop_images\/frye_nav-sale-men.jpg",
+              "block_label__2": "Men",
+              "block_image__3": "shopify:\/\/shop_images\/frye_nav-sale-summer.jpg",
+              "block_label__3": "Summer Sale",
+              "block_label__4": ""
+            }
+          },
+          "351ceb3e-605f-458a-a989-a1c5b5413621": {
+            "type": "megamenu_image_blocks",
+            "settings": {
+              "parent_menu_item_name": "Heritage",
+              "block_image__1": "shopify:\/\/shop_images\/frye_nav-heritage-story.jpg",
+              "block_label__1": "The Frye Story",
+              "block_image__2": "shopify:\/\/shop_images\/frye_nav-heritage-usa-her.jpg",
+              "block_label__2": "Made in the USA for Her",
+              "block_image__3": "shopify:\/\/shop_images\/frye_nav-heritage-usa-him.jpg",
+              "block_label__3": "Made in the USA for Him",
+              "block_image__4": "shopify:\/\/shop_images\/frye_nav-heritage-shop-the-campaign.jpg",
+              "block_label__4": "Shop the Campaign"
+            }
           }
         },
         "block_order": [
           "f59d7d3b-c3b3-4e46-bc3f-425841bf3e7b",
-          "2073604c-6ca3-48b7-86a0-cd6cc7886627"
+          "2073604c-6ca3-48b7-86a0-cd6cc7886627",
+          "16571bd7-e6e7-4649-9821-af7f97c1c45d",
+          "5413d357-33dd-4523-9aaf-75807a747764",
+          "351ceb3e-605f-458a-a989-a1c5b5413621"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/frye_primary-logo-black.png",
