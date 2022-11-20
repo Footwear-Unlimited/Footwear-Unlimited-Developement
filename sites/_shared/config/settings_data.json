@@ -16,16 +16,120 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "color_scheme": "background-1"
+              "message": "Welcome to our store",
+              "link_label": "",
+              "link_url": "",
+              "text_color": "#ffffff",
+              "link_color": "#0092ff",
+              "background_color": "#000000"
             }
           }
         },
         "block_order": [
           "announcement-bar-0"
         ],
+        "settings": {
+          "scroll_speed": 5
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "f59d7d3b-c3b3-4e46-bc3f-425841bf3e7b": {
+            "type": "megamenu_link_lists",
+            "settings": {
+              "parent_menu_item_name": "Women",
+              "parent_menu_item_all": true,
+              "promo_override": "",
+              "promo_image__1": "shopify:\/\/shop_images\/frye_nav-womens-promo-desktop.jpg",
+              "promo_label__1": "The Melissa Collection",
+              "promo_link__1": "#",
+              "promo_label__2": "",
+              "promo_link__2": "",
+              "promo_label__3": "",
+              "promo_link__3": "",
+              "promo_label__4": "",
+              "promo_link__4": ""
+            }
+          },
+          "2073604c-6ca3-48b7-86a0-cd6cc7886627": {
+            "type": "megamenu_link_lists",
+            "settings": {
+              "parent_menu_item_name": "Men",
+              "parent_menu_item_all": true,
+              "promo_override": "",
+              "promo_image__1": "shopify:\/\/shop_images\/Bitmap_Copy_5.jpg",
+              "promo_label__1": "The Paul Collection",
+              "promo_link__1": "",
+              "promo_label__2": "",
+              "promo_link__2": "",
+              "promo_label__3": "",
+              "promo_link__3": "",
+              "promo_label__4": "",
+              "promo_link__4": ""
+            }
+          }
+        },
+        "block_order": [
+          "f59d7d3b-c3b3-4e46-bc3f-425841bf3e7b",
+          "2073604c-6ca3-48b7-86a0-cd6cc7886627"
+        ],
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/frye_primary-logo-black.png",
+          "logo_width": 70,
+          "logo_width_mobile": 50,
+          "logo_width_mobile_sticky": 100,
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "enable_header_animation": true,
+          "enable_header_items_animation": true,
+          "enable_mobile_icon_animation": true
+        }
+      },
+      "promos-banner": {
+        "type": "promos-banner",
         "settings": {}
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "text",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "logo_text": "",
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_text": "",
+          "show_social": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "copyright_menu": "",
+          "copyright_menu_display_mobile": "column",
+          "copyright_text": ""
+        }
       }
-    }
+    },
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -45,7 +149,9 @@
             "announcement-bar-0": {
               "type": "announcement",
               "settings": {
-                "color_scheme": "background-1"
+                "text_color": "#ffffff",
+                "link_color": "#0092ff",
+                "background_color": "#000000"
               }
             }
           },
