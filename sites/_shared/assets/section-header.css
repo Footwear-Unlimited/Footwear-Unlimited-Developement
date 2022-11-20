@@ -457,10 +457,10 @@ details > .header__menu-item:hover {
   content: "";
   display: block;
   position: absolute;
-  width: calc(100% - 4rem);
-  height: .2rem;
+  width: calc(100% - 4.4rem);
+  height: 0.3rem;
   background-color: var(--color-styleguide-tan);
-  bottom: .7rem;
+  bottom: 0;
 }
 
 .header__submenu {
