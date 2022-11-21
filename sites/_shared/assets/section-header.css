@@ -630,6 +630,16 @@ details-disclosure > details .header__submenu-contents-inner {
   font-weight: 500;
 }
 
+@media screen and (max-width: 749px) {
+  .header__menu-promos .promo__link {
+    display: unset;
+  }
+
+  .header__menu-promos .promo__link img {
+    width: 100%;
+  }
+}
+
 .header__menu-promos .promo__link:hover {
   text-decoration: underline;
   text-underline-offset: 0.3rem;

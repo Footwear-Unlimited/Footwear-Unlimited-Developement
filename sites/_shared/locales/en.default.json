@@ -254,7 +254,9 @@
       },
       "store_locator": "Store Locator",
       "customer_care": "Customer Care",
-      "wishlist": "Wishlist"
+      "wishlist": "Wishlist",
+      "exchange": "Frye Exchange",
+      "vip": "Frye Vip"
     },
     "cart": {
       "title": "Your cart",

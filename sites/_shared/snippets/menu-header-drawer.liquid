@@ -135,7 +135,6 @@
         <div class="menu-drawer__utility-links">
           {%- if shop.customer_accounts_enabled -%}
             <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account menu-drawer__secondary link focus-inset">
-              {% render 'icon-account' %}
               {%- liquid
                 if customer
                   echo 'customer.account_fallback' | t
@@ -146,19 +145,24 @@
             </a>
           {%- endif -%}
 
-          <a href="/pages/store-locator" class="menu-drawer__secondary link focus-inset">
-            {% render 'icon-location' %}
-            {%- liquid
-              echo 'sections.header.store_locator' | t
-            -%}
-          </a>
-
           <a href="/pages/customer-care" class="menu-drawer__secondary link focus-inset">
-            {% render 'icon-chat' %}
             {%- liquid
               echo 'sections.header.customer_care' | t
             -%}
           </a>
+
+          <a href="/pages/frye-exchange" class="menu-drawer__secondary link focus-inset">
+            {%- liquid
+              echo 'sections.header.exchange' | t
+            -%}
+          </a>
+
+          <a href="/pages/frye-vip" class="menu-drawer__secondary link focus-inset">
+            {%- liquid
+              echo 'sections.header.vip' | t
+            -%}
+          </a>
+
         </div>
       </nav>
     </div>
