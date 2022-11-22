@@ -16,12 +16,14 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "message": "Welcome to our store",
-              "link_label": "",
-              "link_url": "",
+              "message": "<b>30% Off<\/b> Leather Care With Boot Purchase.",
+              "link_label": "Details",
+              "link_url": "#",
               "text_color": "#ffffff",
-              "link_color": "#0092ff",
-              "background_color": "#000000"
+              "link_color": "#be8756",
+              "background_color": "#000000",
+              "announcement_menu": "frye-announcement-menu",
+              "menu_link_color": "#ffffff"
             }
           }
         },
@@ -69,7 +71,7 @@
               "promo_link__4": ""
             }
           },
-          "16571bd7-e6e7-4649-9821-af7f97c1c45d": {
+          "47a856be-4d57-4ea1-a92e-bf15016d530a": {
             "type": "megamenu_image_blocks",
             "settings": {
               "parent_menu_item_name": "New Arrivals",
@@ -83,7 +85,7 @@
               "block_label__4": "The Melissa Collection"
             }
           },
-          "5413d357-33dd-4523-9aaf-75807a747764": {
+          "41be1b34-1028-4f89-b884-290b69960ca6": {
             "type": "megamenu_image_blocks",
             "settings": {
               "parent_menu_item_name": "Sale",
@@ -96,7 +98,7 @@
               "block_label__4": ""
             }
           },
-          "351ceb3e-605f-458a-a989-a1c5b5413621": {
+          "41d0a90f-8ce5-4f3d-bc73-7eb6beb55346": {
             "type": "megamenu_image_blocks",
             "settings": {
               "parent_menu_item_name": "Heritage",
@@ -114,9 +116,9 @@
         "block_order": [
           "f59d7d3b-c3b3-4e46-bc3f-425841bf3e7b",
           "2073604c-6ca3-48b7-86a0-cd6cc7886627",
-          "16571bd7-e6e7-4649-9821-af7f97c1c45d",
-          "5413d357-33dd-4523-9aaf-75807a747764",
-          "351ceb3e-605f-458a-a989-a1c5b5413621"
+          "47a856be-4d57-4ea1-a92e-bf15016d530a",
+          "41be1b34-1028-4f89-b884-290b69960ca6",
+          "41d0a90f-8ce5-4f3d-bc73-7eb6beb55346"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/frye_primary-logo-black.png",
@@ -195,7 +197,8 @@
               "settings": {
                 "text_color": "#ffffff",
                 "link_color": "#0092ff",
-                "background_color": "#000000"
+                "background_color": "#000000",
+                "menu_link_color": "#ffffff"
               }
             }
           },

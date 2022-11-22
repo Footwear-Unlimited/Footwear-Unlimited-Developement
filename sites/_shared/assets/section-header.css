@@ -48,7 +48,7 @@ header-drawer {
 }
 
 summary.list-menu__item {
-  padding-right: 2.7rem;
+  padding-right: 2rem;
 }
 
 .list-menu__item {
@@ -454,13 +454,13 @@ details > .header__menu-item:hover {
 } 
 
 .list-menu--inline > li > details-disclosure > details[open] > summary:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-  width: calc(100% - 4.4rem);
-  height: 0.3rem;
+  width: calc(100% - 4rem);
+  height: .2rem;
   background-color: var(--color-styleguide-tan);
-  bottom: 0;
+  bottom: .7rem;
 }
 
 .header__submenu {
