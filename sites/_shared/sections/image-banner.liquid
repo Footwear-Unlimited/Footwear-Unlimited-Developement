@@ -23,7 +23,8 @@
 
   {%- if section.blocks -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box" style="background-color: {{ section.settings.content_background_color }};">
+    <div class="banner__box"
+         style="background: {{ section.settings.content_background_color }}; background: rgba({{ section.settings.content_background_color.red }}, {{ section.settings.content_background_color.green }}, {{ section.settings.content_background_color.blue }}, {{ section.settings.content_background_color_opacity | decimal | append: '.00' | divided_by: 100 | round: 2 }});">
       {%- render 'image-banner-content', blocks: section.blocks, animation: section.settings.animation -%}
     </div>
   </div>
@@ -39,9 +40,8 @@
   "settings": [
     {
       "type": "header",
-      "content": "Images"
+      "content": "Background"
     },
-    
     {
       "type": "image_picker",
       "id": "desktop_image",
@@ -57,6 +57,24 @@
       "id": "section_background_color",
       "label": "Section background color",
       "info": "Only seen through transparent images or if no images are configured."
+    },
+    {
+      "type": "color",
+      "id": "content_background_color",
+      "label": "Content container background color"
+    },
+    {
+      "type": "range",
+      "id": "content_background_color_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 100,
+      "label": "Content container background color opacity"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Options"
     },
     {
       "type": "select",
@@ -130,13 +148,8 @@
       "info": "Info: If unchecked, the content area won't have a background. Ensure the content has high contrast against the image."
     },
     {
-      "type": "color",
-      "id": "content_background_color",
-      "label": "Container background color"
-    },
-    {
       "type": "header",
-      "content": "Mobile layout"
+      "content": "Mobile Options"
     },
     {
       "type": "select",
@@ -242,18 +255,6 @@
           "id": "heading_size",
           "options": [
             {
-              "value": "cql-headline-1",
-              "label": "Custom Headline 1"
-            },
-            {
-              "value": "cql-headline-2",
-              "label": "Custom Headline 2"
-            },
-            {
-              "value": "cql-headline-3",
-              "label": "Custom Headline 3"
-            },
-            {
               "value": "h4",
               "label": "X-Small"
             },
@@ -304,25 +305,29 @@
     },
     {
       "type": "button",
-      "name": "Button",
+      "name": "Buttons",
       "limit": 1,
       "settings": [
         {
+          "type": "header",
+          "content": "Button 1 options"
+        },
+        {
           "type": "text",
-          "id": "button_label",
+          "id": "button_label_1",
           "default": "Button label",
-          "label": "Button label",
+          "label": "Label",
           "info": "Leave the label blank to hide the button."
         },
         {
           "type": "url",
-          "id": "button_link",
-          "label": "Button link"
+          "id": "button_link_1",
+          "label": "Link"
         },
         {
           "type": "select",
-          "id": "button_style",
-          "label": "Button style",
+          "id": "button_style_1",
+          "label": "Style",
           "default": "primary",
           "options": [
             {
@@ -339,13 +344,82 @@
             },
             {
               "value": "link-1",
-              "label": "Link style 1"
-            },
-            {
-              "value": "link-2",
-              "label": "Link style 2"
+              "label": "Link style"
             }
           ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow_1",
+          "default": false,
+          "label": "Display arrow next to button"
+        },
+        {
+          "type": "header",
+          "content": "Button 2 options"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "Button label",
+          "label": "Label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_style_2",
+          "label": "Style",
+          "default": "primary",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "tertiary",
+              "label": "Tertiary"
+            },
+            {
+              "value": "link-1",
+              "label": "Link style"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow_2",
+          "default": false,
+          "label": "Display arrow next to button"
+        },
+        {
+          "type": "header",
+          "content": "Block options"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_side_by_side",
+          "default": false,
+          "label": "Display buttons side-by-side"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_separator",
+          "default": false,
+          "label": "Display buttons separator"
+        },
+        {
+          "type": "color",
+          "id": "separator_color",
+          "label": "Separator color"
         }
       ]
     }
