@@ -1351,7 +1351,7 @@ deferred-media {
   box-shadow: 0 0 0 0.1rem var(--color-button);
   color: var(--color-foreground);
   min-width: 12rem;
-  min-height: 4.5rem;
+  min-height: 3.5rem;
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
@@ -1384,12 +1384,12 @@ deferred-media {
 .shopify-challenge__button,
 .customer button {
   font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: calc(1 + 0.2 / var(--font-body-scale));
+  font-weight: 600;
+  letter-spacing: normal;
 }
 
 .button--small {
-  padding: 1.2rem 2.6rem;
+  padding: 0.5rem 1.56rem;
 }
 
 .button--primary {

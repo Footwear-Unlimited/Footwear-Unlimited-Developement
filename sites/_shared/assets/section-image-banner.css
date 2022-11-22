@@ -474,7 +474,7 @@
 }
 
 .banner__heading {
-  max-width: 40rem;
+  max-width: 50rem;
   margin-top: 0.75rem;
   margin-bottom: 1.25rem;
 }
@@ -533,12 +533,12 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
 .banner__button {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 1rem;
   max-width: 45rem;
   word-break: break-word;
   max-width: fit-content;
