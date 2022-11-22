@@ -43,13 +43,12 @@
 
   {% case variation %}
       {% when 'primary' %}{% assign class = class | append: ' button--primary' %}
-      {% when 'primary-dark' %}{% assign class = class | append: ' button--primary-dark' %}
       {% when 'secondary' %}{% assign class = class | append: ' button--secondary' %}
-      {% when 'secondary-dark' %}{% assign class = class | append: ' button--secondary-dark' %}
       {% when 'tertiary' %}{% assign class = class | append: ' button--tertiary' %}
       {% when 'quaternary' %}{% assign class = class | append: ' button--quaternary' %}
       {% when 'link-1' %}{% assign class = class | append: ' button--link-1' %}
       {% when 'link-2' %}{% assign class = class | append: ' button--link-2' %}
+      {% when 'brighton-cta' %}{% assign class = class | append: ' brighton-cta' %}
   {% endcase %}
 
   {% case size %}

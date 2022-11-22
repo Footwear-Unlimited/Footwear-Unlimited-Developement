@@ -508,7 +508,7 @@
       {
         "type": "richtext",
         "id": "contact_address",
-        "default": "<p>Add store address here.</p>",
+        "default": "<p>Add store address here.<\/p>",
         "label": "Address"
       },
       {
