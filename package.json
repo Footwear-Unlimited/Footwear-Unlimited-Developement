@@ -17,7 +17,7 @@
     "frye:download-staging": "node scripts/download-pre.js -s frye && cd ./download && theme download -e staging && cd .. && node scripts/download-post.js -s frye",
     "frye:download-production": "node scripts/download-pre.js -s frye && cd ./download && theme download -e production && cd .. && node scripts/download-post.js -s frye",
     "frye:list": "cd ./sites/frye && theme get --list",
-    "frye:open": "cd ./sites/profryepel && theme open",
+    "frye:open": "cd ./sites/frye && theme open",
     "frye:watch": "npm-run-all \"create-deploy-folder -s frye\" --parallel \"frye:ss-dev\" \"watch -s frye\" \"watch-deploy-folder\"",
     "create-deploy-folder": "node scripts/deploy.js",
     "watch": "node scripts/watch",
