@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "164489916253b02aca": {
+      "type": "social-media-feed",
+      "settings": {
+        "heading": "#INMYFRYE",
+        "heading_size": "frye-headline-2",
+        "description": "<p>Follow us on Instagram for a glimpse into our world →<\/p>",
+        "media_text_animation": "NoEffect",
+        "media_text_time": "0.2s",
+        "background_color": "rgba(0,0,0,0)",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "desktop_top_padding": 0,
+        "desktop_bottom_padding": 0,
+        "mobile_top_padding": 0,
+        "mobile_bottom_padding": 0
+      }
+    }
+  },
+  "order": [
+    "164489916253b02aca"
+  ]
+}
