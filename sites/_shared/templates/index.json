@@ -14,7 +14,7 @@
           "type": "heading",
           "settings": {
             "heading": "ICONIC FALL STYLES",
-            "heading_size": "h1",
+            "heading_size": "frye-headline-1",
             "heading_color": "#ffffff"
           }
         },
@@ -22,12 +22,14 @@
           "type": "button",
           "settings": {
             "button_label_1": "Shop the Fall Collection",
-            "button_link_1": "",
-            "button_style_1": "secondary",
+            "button_link_1": "#",
+            "button_style_1": "primary",
+            "show_dark_1": true,
             "show_arrow_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_2": "primary",
+            "show_dark_2": false,
             "show_arrow_2": false,
             "show_side_by_side": false,
             "show_separator": false,

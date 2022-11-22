@@ -255,27 +255,38 @@
           "id": "heading_size",
           "options": [
             {
-              "value": "h4",
-              "label": "X-Small"
+              "value": "frye-headline-0",
+              "label": "X-Large"
             },
             {
-              "value": "h3",
-              "label": "Small"
-            },
-            {
-              "value": "h2",
-              "label": "Medium"
-            },
-            {
-              "value": "h1",
+              "value": "frye-headline-1",
               "label": "Large"
             },
             {
-              "value": "h0",
-              "label": "X-Large"
+              "value": "frye-headline-2",
+              "label": "Medium"
+            },
+            {
+              "value": "frye-headline-3",
+              "label": "Small"
+            }, {
+              "value": "frye-headline-4",
+              "label": "X-Small"
+            }, {
+              "value": "frye-headline-5",
+              "label": "Tiny"
+            }, {
+              "value": "frye-headline-6",
+              "label": "Very Tiny"
+            }, {
+              "value": "frye-headline-7",
+              "label": "Custom 1"
+            }, {
+              "value": "frye-headline-8",
+              "label": "Custom 2"
             }
           ],
-          "default": "h1",
+          "default": "frye-headline-1",
           "label": "Headline size"
         },
         {
@@ -295,6 +306,42 @@
           "id": "text",
           "default": "<p>Give customers details about the banner image(s) or content on the template.</p>",
           "label": "Description"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "label": "Text style",
+          "default": "frye-body",
+          "options": [
+            {
+              "value": "frye-body",
+              "label": "Body - Default"
+            },
+            {
+              "value": "frye-body-small",
+              "label": "Body - Small"
+            },
+            {
+              "value": "text-body-medium",
+              "label": "Body - Medium"
+            },
+            {
+              "value": "text-body-large",
+              "label": "Body - Large"
+            }, {
+              "value": "frye-eyebrow",
+              "label": "Eyebrow"
+            }, {
+              "value": "frye-pullquote",
+              "label": "Pullquote"
+            }, {
+              "value": "caption",
+              "label": "Caption"
+            }, {
+              "value": "subtitle",
+              "label": "Subtitle"
+            }
+          ]
         },
         {
           "type": "color",
@@ -339,14 +386,20 @@
               "label": "Secondary"
             },
             {
-              "value": "tertiary",
-              "label": "Tertiary"
+              "value": "link-1",
+              "label": "Link style 1"
             },
             {
-              "value": "link-1",
-              "label": "Link style"
+              "value": "link-2",
+              "label": "Link style 2"
             }
           ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_dark_1",
+          "default": false,
+          "label": "Display button on dark background"
         },
         {
           "type": "checkbox",
@@ -385,14 +438,20 @@
               "label": "Secondary"
             },
             {
-              "value": "tertiary",
-              "label": "Tertiary"
+              "value": "link-1",
+              "label": "Link style 1"
             },
             {
-              "value": "link-1",
-              "label": "Link style"
+              "value": "link-2",
+              "label": "Link style 2"
             }
           ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_dark_2",
+          "default": false,
+          "label": "Display button on dark background"
         },
         {
           "type": "checkbox",

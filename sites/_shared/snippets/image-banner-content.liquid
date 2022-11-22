@@ -1,7 +1,7 @@
 {%- for block in blocks -%}
   {%- case block.type -%}
     {%- when 'eyebrow' -%}
-      <div class="banner__eyebrow {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
+      <div class="banner__eyebrow frye-eyebrow {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
         {% assign block_selector = '#block-section-' | append: block.id %}
         {% style %}
         {% if block.settings.eyebrow_color  != 'rgba(0,0,0,0)' %}
@@ -41,7 +41,7 @@
       {% endif %}
       {% endstyle %}
 
-      <div class="banner__text {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
+      <div class="banner__text {{ block.settings.text_style }} {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
         <span>{{ block.settings.text }}</span>
       </div>
 
@@ -52,6 +52,7 @@
               label: block.settings.button_label_1,
               link: block.settings.button_link_1,
               variation: block.settings.button_style_1,
+              dark: block.settings.show_dark_1,
               arrow: block.settings.arrow_1,
               class: "banner__button small-hide"
             %}
@@ -60,6 +61,7 @@
               label: block.settings.button_label_1,
               link: block.settings.button_link_1,
               variation: block.settings.button_style_1,
+              dark: block.settings.show_dark_1,
               arrow: block.settings.arrow_1,
               class: "banner__button medium-hide large-up-hide"
             %}
@@ -74,6 +76,7 @@
             label: block.settings.button_label_2,
             link: block.settings.button_link_2,
             variation: block.settings.button_style_2,
+            dark: block.settings.show_dark_2,
             arrow: block.settings.arrow_2,
             class: "banner__button small-hide"
           %}
@@ -82,6 +85,7 @@
             label: block.settings.button_label_2,
             link: block.settings.button_link_2,
             variation: block.settings.button_style_2,
+            dark: block.settings.show_dark_2,
             arrow: block.settings.arrow_2,
             class: "banner__button medium-hide large-up-hide"
           %}
