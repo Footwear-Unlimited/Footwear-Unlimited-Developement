@@ -4,6 +4,7 @@
     Accepts:
     - (Optional) label: {text} Display label
     - (Optional) variation: {'primary'|'secondary'|'tertiary'|'quaternary'|'link-1'|'link-2'} Button variation. Default: 'primary'
+    - (Optional) dark: {'true'|'false'} Button variation. Default: ''
     - (Optional) size: {'xsmall'|'small'|'medium'|'large'} Button size. Default: 'small'
     - (Optional) shape: {'default'|'round'} Button shape. Default: 'default'
     - (Optional) icon: {text} Snippet name representing desired icon.
@@ -22,6 +23,7 @@
         {% render 'button',
             label: 'Large',
             variation: 'quaternary',
+            dark: 'true',
             size: 'large',
             shape: 'round',
             class: 'hover',
@@ -44,11 +46,21 @@
   {% case variation %}
       {% when 'primary' %}{% assign class = class | append: ' button--primary' %}
       {% when 'secondary' %}{% assign class = class | append: ' button--secondary' %}
-      {% when 'tertiary' %}{% assign class = class | append: ' button--tertiary' %}
-      {% when 'quaternary' %}{% assign class = class | append: ' button--quaternary' %}
       {% when 'link-1' %}{% assign class = class | append: ' button--link-1' %}
       {% when 'link-2' %}{% assign class = class | append: ' button--link-2' %}
-      {% when 'brighton-cta' %}{% assign class = class | append: ' brighton-cta' %}
+  {% endcase %}
+
+  {% case dark %}
+    {% when true %}
+        {% if variantion == 'primary' %}
+            {% assign class = class | append: ' button--primary-dark' %}
+        {% elsif variation == 'secondary' %}
+            {% assign class = class | append: ' button--secondary-dark' %}
+        {% elsif variation == 'link-1' %}
+            {% assign class = class | append: ' button--link-1-dark' %}
+        {% elsif variant == 'link-2' %}
+            {% assign class = class | append: ' button--link-2-dark' %}
+        {% endif %}
   {% endcase %}
 
   {% case size %}
