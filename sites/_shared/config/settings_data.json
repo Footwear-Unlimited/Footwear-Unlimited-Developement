@@ -16,16 +16,81 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "color_scheme": "background-1"
+              "message": "<b>30% Off<\/b> Leather Care With Boot Purchase.",
+              "link_label": "Details",
+              "link_url": "#",
+              "text_color": "#ffffff",
+              "link_color": "#be8756",
+              "background_color": "#000000",
+              "announcement_menu": "frye-announcement-menu",
+              "menu_link_color": "#ffffff"
             }
           }
         },
         "block_order": [
           "announcement-bar-0"
         ],
+        "settings": {
+          "scroll_speed": 5
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_width": 100,
+          "logo_width_mobile": 100,
+          "logo_width_mobile_sticky": 100,
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "enable_header_animation": true,
+          "enable_header_items_animation": true,
+          "enable_mobile_icon_animation": true
+        }
+      },
+      "promos-banner": {
+        "type": "promos-banner",
         "settings": {}
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "text",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "logo_text": "",
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_text": "",
+          "show_social": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "copyright_menu": "",
+          "copyright_menu_display_mobile": "column",
+          "copyright_text": ""
+        }
       }
-    }
+    },
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -45,7 +110,9 @@
             "announcement-bar-0": {
               "type": "announcement",
               "settings": {
-                "color_scheme": "background-1"
+                "text_color": "#ffffff",
+                "link_color": "#0092ff",
+                "background_color": "#000000"
               }
             }
           },
