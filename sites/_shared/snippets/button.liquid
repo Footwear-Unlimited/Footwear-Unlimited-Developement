@@ -44,23 +44,14 @@
   {% assign shape = shape | default: 'default' %}
 
   {% case variation %}
-      {% when 'primary' %}{% assign class = class | append: ' button--primary' %}
-      {% when 'secondary' %}{% assign class = class | append: ' button--secondary' %}
-      {% when 'link-1' %}{% assign class = class | append: ' button--link-1' %}
-      {% when 'link-2' %}{% assign class = class | append: ' button--link-2' %}
-  {% endcase %}
-
-  {% case dark %}
-    {% when true %}
-        {% if variantion == 'primary' %}
-            {% assign class = class | append: ' button--primary-dark' %}
-        {% elsif variation == 'secondary' %}
-            {% assign class = class | append: ' button--secondary-dark' %}
-        {% elsif variation == 'link-1' %}
-            {% assign class = class | append: ' button--link-1-dark' %}
-        {% elsif variant == 'link-2' %}
-            {% assign class = class | append: ' button--link-2-dark' %}
-        {% endif %}
+    {% when 'primary' %}{% assign class = class | append: ' button--primary' %}
+    {% when 'primary-dark' %}{% assign class = class | append: ' button--primary-dark' %}
+    {% when 'secondary' %}{% assign class = class | append: ' button--secondary' %}
+    {% when 'secondary-dark' %}{% assign class = class | append: ' button--secondary-dark' %}
+    {% when 'link-1' %}{% assign class = class | append: ' button--link-1' %}
+    {% when 'link-1-dark' %}{% assign class = class | append: ' button--link-1-dark' %}
+    {% when 'link-2' %}{% assign class = class | append: ' button--link-2' %}
+    {% when 'link-2-dark' %}{% assign class = class | append: ' button--link-2-dark' %}
   {% endcase %}
 
   {% case size %}
