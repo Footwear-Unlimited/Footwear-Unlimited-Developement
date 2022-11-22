@@ -56,6 +56,7 @@
                                       <li>
                                         <a href="{{ childlink.url }}" class="menu-drawer__menu-item parent-item list-menu__item link link--text focus-inset {% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                           {{ 'sections.header.menu_list_shop_all' | t }} {{ childlink.title | escape }}
+                                          {% render 'icon-arrow-right' %}
                                         </a>
                                       </li>
                                     {%- endif -%}

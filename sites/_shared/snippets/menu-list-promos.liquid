@@ -27,7 +27,7 @@
               <a class="promo__link" href="{{ block.settings[promo_link_key] }}">
                 {%- if block.settings[promo_image_key] != blank -%}
                   {% assign img = block.settings[promo_image_key] %}
-                  {% assign imgWidth = img.width | at_most: 300 %}
+                  {% assign imgWidth = img.width | at_most: 240 %}
 
                   <img class="promo__image"
                     src="{{ img | image_url: width: imgWidth }}"

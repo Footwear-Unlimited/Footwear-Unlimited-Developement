@@ -127,6 +127,24 @@
         "label": "Frye Red"
       },
       {
+        "type": "color",
+        "id": "color_border",
+        "default": "#E6E6E6",
+        "label": "Border Color"
+      },
+      {
+        "type": "color",
+        "id": "color_border_styleguide",
+        "default": "#E6E6E6",
+        "label": "Border Color"
+      },
+      {
+        "type": "color",
+        "id": "background_accent",
+        "default": "#F5F5F5",
+        "label": "Background Accent"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__2.content"
       },

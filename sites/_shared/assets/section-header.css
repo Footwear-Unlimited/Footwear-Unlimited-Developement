@@ -530,6 +530,12 @@ details-disclosure > details .header__submenu-contents-inner {
   padding: 0 10rem;
 }
 
+@media screen and (min-width: 990px) and (max-width: 1100px) {
+  .header__image-blocks .header__submenu .header__menu-item img {
+    max-width: 18rem;
+  }
+}
+
 .header__submenu-contents-inner .header__menu-item {
   padding: 1.2rem 1.8rem .5rem;
 }
@@ -570,6 +576,12 @@ details-disclosure > details .header__submenu-contents-inner {
   object-fit: cover;
 }
 
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .header__image-blocks .header__submenu .header__menu-item img {
+    max-width: 20rem;
+  }
+}
+
 .header__link-lists .header__submenu {
   display: flex;
   min-width: initial;
@@ -577,10 +589,6 @@ details-disclosure > details .header__submenu-contents-inner {
   background-color: inherit;
   font-size: 1.6rem;
   line-height: 1.9rem;
-}
-
-.header__link-lists > .header__submenu li {
-  padding: 0 3rem 0 0;
 }
 
 .header__link-lists .header__submenu .header__submenu {
@@ -599,6 +607,7 @@ details-disclosure > details .header__submenu-contents-inner {
   font-size: 1.5rem;
   font-family: var(--font-heading-family);
   line-height: 1.8rem;
+  text-transform: uppercase;
 }
 
 .header__link-lists .header__submenu-has-children > .header__menu-item:hover {
@@ -630,16 +639,6 @@ details-disclosure > details .header__submenu-contents-inner {
   font-weight: 500;
 }
 
-@media screen and (max-width: 749px) {
-  .header__menu-promos .promo__link {
-    display: unset;
-  }
-
-  .header__menu-promos .promo__link img {
-    width: 100%;
-  }
-}
-
 .header__menu-promos .promo__link:hover {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
@@ -648,6 +647,17 @@ details-disclosure > details .header__submenu-contents-inner {
 .header__menu-promos .promo__link img {
   margin-bottom: 1rem;
   height: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .header__menu-promos .promo__link {
+    display: unset;
+  }
+
+  .header__menu-promos .promo__link img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @keyframes animateMenuOpen {
@@ -668,6 +678,21 @@ details-disclosure > details .header__submenu-contents-inner {
   100% {
     opacity: 1;
   }
+}
+
+@media screen and (min-width: 990px) {
+  .header__submenu-contents-inner > ul {
+    gap: 3rem;
+  }
+
+  .header__submenu-has-children {
+    max-width: 15rem;
+  }
+
+  .header__image-blocks > ul {
+    gap: unset;
+  }
+
 }
 
 .overflow-hidden-mobile,
