@@ -246,18 +246,18 @@ p,
 
 .text-body-small,
  .frye-body-small {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  letter-spacing: normal;
+  font-size: 1.3rem !important;
+  line-height: 1.8 !important;
+  letter-spacing: normal !important;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
 }
 
 .text-body-medium {
-  font-size: 1.6rem;
-  line-height: 2rem;
-  letter-spacing: normal;
+  font-size: 1.4rem !important;
+  line-height: 2.6rem !important;
+  letter-spacing: normal !important;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
@@ -265,15 +265,15 @@ p,
 
 @media only screen and (min-width: 750px) {
   .text-body-medium {
-    font-size: 2.4rem;
-    line-height: 3.7rem;
+    font-size: 1.7rem !important;
+    line-height: 2.7rem !important;
   }
 }
 
 .text-body-large {
-  font-size: 2.4rem;
-  line-height: 3.7rem;
-  letter-spacing: normal;
+  font-size: 2.4rem !important;
+  line-height: 3.7rem !important;
+  letter-spacing: normal !important;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
@@ -281,8 +281,8 @@ p,
 
 @media only screen and (min-width: 750px) {
   .text-body-large {
-    font-size: 3.2rem;
-    line-height: 4.5rem;
+    font-size: 3.2rem !important;
+    line-height: 4.5rem !important;
   }
 }
 
@@ -344,7 +344,7 @@ h1,
 .frye-headline-1 {
   font-size: calc(var(--font-heading-scale) * 4rem);
   font-family: var(--font-heading-family);
-  line-height: 4.8rem;
+  line-height: 4rem;
   letter-spacing: normal;
 }
 
