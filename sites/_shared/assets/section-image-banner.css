@@ -475,18 +475,23 @@
 
 .banner__heading {
   max-width: 50rem;
-  margin-top: 0.75rem;
-  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .banner__box .banner__heading + * {
-  margin: 0.5rem 0 0;
+  margin: 1rem 0 0;
+}
+
+@media screen and (min-width: 750px) {
+  .banner__box .banner__heading + * {
+    margin: 2rem 0 0;
+  }
 }
 
 @media screen and (max-width: 749px) {
   .banner--content-align-mobile-center .banner__heading {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.75rem auto 0;
   }
 }
 
@@ -533,7 +538,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 
 .banner__button {
@@ -545,7 +549,13 @@
 }
 
 .banner__button-wrapper .banner__button + .banner__button {
-  margin: 2rem 0 0 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .banner__button-wrapper .banner__button + .banner__button {
+    margin: 2rem 0 0 0;
+  }
 }
 
 .banner__button-wrapper.side-by-side .banner__button + .banner__button {
