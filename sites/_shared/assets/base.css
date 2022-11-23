@@ -1392,7 +1392,13 @@ deferred-media {
 }
 
 .button--small {
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 750px) {
+  .button--small {
+    padding: 1rem 4rem;
+  }
 }
 
 .button--primary {
