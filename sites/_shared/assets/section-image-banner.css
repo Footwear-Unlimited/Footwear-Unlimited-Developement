@@ -422,7 +422,7 @@
 
 .banner__box {
   border: 0;
-  padding: 3.5rem 2rem 4rem;
+  padding: 3rem 2rem 3.5rem;
   position: relative;
   height: fit-content;
   align-items: center;
@@ -451,7 +451,7 @@
 }
 
 .banner__box > * + * {
-  margin-top: 1rem;
+  margin-top: 2.25rem;
 }
 
 .banner__box > *:first-child {
@@ -476,16 +476,16 @@
 .banner__heading {
   max-width: 50rem;
   margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .banner__box .banner__heading + * {
-  margin: 1rem 0 0;
+  margin: 1.5rem 0 0;
 }
 
 @media screen and (min-width: 750px) {
   .banner__box .banner__heading + * {
-    margin: 2rem 0 0;
+    margin: 2.25rem 0 0;
   }
 }
 
@@ -498,6 +498,9 @@
 .banner__box .banner__text,
 .banner__box .banner__text p {
   margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
 }
 
 .banner__box > * + .banner__text * {
