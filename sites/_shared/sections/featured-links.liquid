@@ -36,7 +36,7 @@
     {% if section.settings.eyebrow != blank or section.settings.heading != blank %}
       <div class="featured-links__heading-wrapper animated {{section.settings.heading_wrapper_animation}}">
         {% if section.settings.eyebrow %}
-          <p class="featured-links__eyebrow cql-headline4">{{ section.settings.eyebrow }}</p>
+          <p class="featured-links__eyebrow frye-eyebrow">{{ section.settings.eyebrow }}</p>
         {% endif %}
 
         {% if section.settings.heading %}
@@ -67,7 +67,7 @@
             {% capture featured_link_heading_content %}
               <div class="featured-link__heading-wrapper">
                 {% if block.settings.eyebrow %}
-                  <p class="featured-link__heading-eyebrow" {{ heading_color }}>
+                  <p class="featured-link__heading-eyebrow frye-eyebrow" {{ heading_color }}>
                     {{ block.settings.eyebrow }}
                   </p>
                 {% endif %}
@@ -86,19 +86,15 @@
                   <a href="{{ link_url }}" class="featured-link__image-link">
                 {% endif %}
 
-               
-
-                
-                  <img
+                {% render 'image', image: block.settings.image, image_max_width: 1500, class: "featured-link__image" %}
+                  {%- comment -%} <img
                     class="featured-link__image"
                     src="{{ block.settings.image | image_url: width: 1500 }}"
                     loading="lazy"
                     alt="{{ block.settings.image.alt }}"
                     width="{{ block.settings.image.width }}"
                     height="{{ block.settings.image.height }}"
-                  />
-
-                 
+                  /> {%- endcomment -%}
 
                   {% if block.settings.heading_on_image %}
                     {{ featured_link_heading_content }}
@@ -122,12 +118,15 @@
                 {% endif %}
 
               {% if link_url != blank and block.settings.button_label != blank %}
-                <a class="button button--{{ block.settings.button_style }}" href="{{ link_url }}">
+                {{ block.settings.button_style }}
+                {% render 'button', label: block.settings.button_label, link: link_url, variant: block.settings.button_style %}
+                {%- comment -%} <a class="button button--{{ block.settings.button_style }}" href="{{ link_url }}">
                   {{ block.settings.button_label }}
-                </a>
+                </a> {%- endcomment -%}
               {% endif %}
             </div>
           </div>
+
           {% style %}
             #featured-block-{{block.id}}.featured-link.animated.active {
               animation-duration: {{block.settings.featured_animation_time}};
@@ -238,51 +237,50 @@
     },
     {
       "type": "header",
-      "content": "Heading"
+      "content": "Headline"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading"
+      "label": "Text"
     },
     {
       "type": "select",
       "id": "heading_size",
       "options": [
         {
-          "value": "cql-headline-1",
-          "label": "Custom Headline 1"
+          "value": "frye-headline-0",
+          "label": "X-Large"
         },
         {
-          "value": "cql-headline-2",
-          "label": "Custom Headline 2"
-        },
-        {
-          "value": "cql-headline-3",
-          "label": "Custom Headline 3"
-        },
-        {
-          "value": "h4",
-          "label": "X-Small"
-        },
-        {
-          "value": "h3",
-          "label": "Small"
-        },
-        {
-          "value": "h2",
-          "label": "Medium"
-        },
-        {
-          "value": "h1",
+          "value": "frye-headline-1",
           "label": "Large"
         },
         {
-          "value": "h0",
-          "label": "X-Large"
+          "value": "frye-headline-2",
+          "label": "Medium"
+        },
+        {
+          "value": "frye-headline-3",
+          "label": "Small"
+        }, {
+          "value": "frye-headline-4",
+          "label": "X-Small"
+        }, {
+          "value": "frye-headline-5",
+          "label": "Tiny"
+        }, {
+          "value": "frye-headline-6",
+          "label": "Very Tiny"
+        }, {
+          "value": "frye-headline-7",
+          "label": "Custom 1"
+        }, {
+          "value": "frye-headline-8",
+          "label": "Custom 2"
         }
       ],
-      "default": "h2",
+      "default": "frye-headline-1",
       "label": "Headline size"
     },
     {
@@ -291,15 +289,22 @@
       "label": "Heading color"
     },
     {
+      "type": "header",
+      "content": "Eyebrow"
+    },
+    {
       "type": "text",
       "id": "eyebrow",
-      "label": "Eyebrow",
-      "info": "Text to display above the Heading"
+      "label": "Text"
     },
     {
       "type": "color",
       "id": "eyebrow_color",
       "label": "Eyebrow color"
+    },
+    {
+      "type": "header",
+      "content": "Headline animation options"
     },
     {
       "type": "select",
@@ -330,7 +335,7 @@
     },
     {
       "type": "header",
-      "content": "Layout"
+      "content": "Layout options"
     },
     {
       "type": "select",
@@ -479,39 +484,38 @@
           "type": "select",
           "id": "heading_size",
           "label": "Heading size",
-          "default": "h3",
+          "default": "frye-headline-4",
           "options": [
             {
-              "value": "cql-headline-1",
-              "label": "Custom Headline 1"
-            },
-            {
-              "value": "cql-headline-2",
-              "label": "Custom Headline 2"
-            },
-            {
-              "value": "cql-headline-3",
-              "label": "Custom Headline 3"
-            },
-            {
-              "value": "h0",
+              "value": "frye-headline-0",
               "label": "X-Large"
             },
             {
-              "value": "h1",
+              "value": "frye-headline-1",
               "label": "Large"
             },
             {
-              "value": "h2",
+              "value": "frye-headline-2",
               "label": "Medium"
             },
             {
-              "value": "h3",
+              "value": "frye-headline-3",
               "label": "Small"
-            },
-            {
-              "value": "h4",
+            }, {
+              "value": "frye-headline-4",
               "label": "X-Small"
+            }, {
+              "value": "frye-headline-5",
+              "label": "Tiny"
+            }, {
+              "value": "frye-headline-6",
+              "label": "Very Tiny"
+            }, {
+              "value": "frye-headline-7",
+              "label": "Custom 1"
+            }, {
+              "value": "frye-headline-8",
+              "label": "Custom 2"
             }
           ]
         },
@@ -580,20 +584,32 @@
               "label": "Primary"
             },
             {
+              "value": "primary-dark",
+              "label": "Primary on Dark Background"
+            },
+            {
               "value": "secondary",
               "label": "Secondary"
             },
             {
-              "value": "tertiary",
-              "label": "Tertiary"
+              "value": "secondary-dark",
+              "label": "Secondary on Dark Background"
             },
             {
               "value": "link-1",
               "label": "Link style 1"
             },
             {
+              "value": "link-1-dark",
+              "label": "Link style 1 on Dark Background"
+            },
+            {
               "value": "link-2",
               "label": "Link style 2"
+            },
+            {
+              "value": "link-2-dark",
+              "label": "Link style 2 on Dark Background"
             }
           ]
         },
@@ -631,6 +647,12 @@
     {
       "name": "Featured links",
       "blocks": [
+        {
+          "type": "link"
+        },
+        {
+          "type": "link"
+        }
       ]
     }
   ]
