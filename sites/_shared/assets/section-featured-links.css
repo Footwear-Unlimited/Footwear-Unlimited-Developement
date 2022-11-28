@@ -13,14 +13,8 @@
   text-transform: uppercase;
 }
 
-.featured-links__heading {
-  letter-spacing: 0.256rem;
-}
-
 .featured-links__eyebrow {
   margin-bottom: 1.4rem;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
 }
 
 .featured-links__heading-wrapper {
@@ -30,15 +24,10 @@
 @media screen and (max-width: 749px) {
   .featured-links__eyebrow {
     margin-bottom: 1.1rem;
-    line-height: 1.7rem;
   }
 
   .featured-links__heading-wrapper {
     margin-bottom: 3.9rem;
-  }
-
-  .featured-links__heading {
-    letter-spacing: 0.155rem;
   }
 }
 
@@ -48,12 +37,7 @@
   display: flex;
 }
 
-
 @media screen and (min-width: 750px) {
-  .featured-link__heading-wrapper .h2 {
-    font-size: 3.2rem;
-  }
-
   .featured-links__link-grid {
     flex-wrap: wrap;
     gap: 0.25rem;
@@ -108,7 +92,6 @@
 
 .featured-link__heading {
   margin: 0;
-  font-weight: 700;
 }
 
 .featured-link__content-top {
@@ -128,11 +111,6 @@
 .featured-link__heading-wrapper {
   margin-top: 3.2rem;
   margin-bottom: 1.5rem;
-}
-
-.featured-link-content__description p {
-  font-size: 1.8rem;
-  line-height: 2.4rem;
 }
 
 .featured-link__content-body .button {
@@ -227,17 +205,6 @@
     margin-bottom: 0.8rem;
   }
 
-  .featured-link__heading {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    font-weight: 700;
-  }
-
-  .featured-link-content__description p {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-
   .featured-links__link--tile-mobile-image-on-side .featured-links__link {
     display: flex;
   }
@@ -267,5 +234,3 @@
     object-fit: cover;
   }
 }
-
-
