@@ -32,15 +32,21 @@
     </div>
   {% endif %}
 
-  <div class="featured-links__content page-width">
+  <div class="featured-links__content page-width page-width--narrow">
     {% if section.settings.eyebrow != blank or section.settings.heading != blank %}
       <div class="featured-links__heading-wrapper animated {{section.settings.heading_wrapper_animation}}">
-        {% if section.settings.eyebrow %}
-          <p class="featured-links__eyebrow frye-eyebrow">{{ section.settings.eyebrow }}</p>
+        {% if section.settings.eyebrow != blank %}
+          <p class="featured-links__eyebrow frye-eyebrow"
+            {%- if section.settings.eyebrow_color != 'rgba(0,0,0,0)' -%}style="color: {{ section.settings.eyebrow_color }}"{%- endif -%}>
+            {{ section.settings.eyebrow }}
+          </p>
         {% endif %}
 
         {% if section.settings.heading %}
-          <h2 class="featured-links__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+          <h2 class="featured-links__heading {{ section.settings.heading_size }}"
+            {%- if section.settings.heading_color != 'rgba(0,0,0,0)' -%}style="color: {{ section.settings.heading_color }}"{%- endif -%}>
+              <span>{{ section.settings.heading }}</span>
+          </h2>
         {% endif %}
       </div>
     {% endif %}
@@ -66,14 +72,16 @@
 
             {% capture featured_link_heading_content %}
               <div class="featured-link__heading-wrapper">
-                {% if block.settings.eyebrow %}
-                  <p class="featured-link__heading-eyebrow frye-eyebrow" {{ heading_color }}>
+                {% if block.settings.eyebrow != blank %}
+                  <p class="featured-link__heading-eyebrow frye-eyebrow"
+                    {%- if block.settings.eyebrow_color != 'rgba(0,0,0,0)' -%}style="color: {{ block.settings.eyebrow_color }}"{%- endif -%}>
                     {{ block.settings.eyebrow }}
                   </p>
                 {% endif %}
 
                 {% if block.settings.heading %}
-                  <h4 class="featured-link__heading  {{ block.settings.heading_size }}" {{ heading_color }}>
+                  <h4 class="featured-link__heading {{ block.settings.heading_size }}"
+                    {%- if block.settings.heading_color != 'rgba(0,0,0,0)' -%}style="color: {{ block.settings.heading_color }}"{%- endif -%}>
                     {{ block.settings.heading }}
                   </h4>
                 {% endif %}
@@ -81,21 +89,12 @@
             {% endcapture %}
 
             <div class="featured-link__content-top {% if block.settings.image_hover == 'easein' %} hoverAnimation {% endif %}">
-              {% if block.settings.image %}
+              {% if block.settings.image != blank %}
                 {% if link_url != blank %}
                   <a href="{{ link_url }}" class="featured-link__image-link">
                 {% endif %}
 
                 {% render 'image', image: block.settings.image, image_max_width: 1500, class: "featured-link__image" %}
-                  {%- comment -%} <img
-                    class="featured-link__image"
-                    src="{{ block.settings.image | image_url: width: 1500 }}"
-                    loading="lazy"
-                    alt="{{ block.settings.image.alt }}"
-                    width="{{ block.settings.image.width }}"
-                    height="{{ block.settings.image.height }}"
-                  /> {%- endcomment -%}
-
                   {% if block.settings.heading_on_image %}
                     {{ featured_link_heading_content }}
                   {% endif %}
@@ -111,18 +110,15 @@
                   {{ featured_link_heading_content }}
                 {% endunless %}
 
-                {% if block.settings.description %}
-                  <div class="featured-link-content__description rte">
+                {% if block.settings.description != blank %}
+                  <div class="featured-link-content__description rte {{ block.settings.text_style }}"
+                  {%- if block.settings.text_color != 'rgba(0,0,0,0)' -%}style="color: {{ block.settings.text_color }}"{%- endif -%}>
                     {{ block.settings.description }}
                   </div>
                 {% endif %}
 
-              {% if link_url != blank and block.settings.button_label != blank %}
-                {{ block.settings.button_style }}
-                {% render 'button', label: block.settings.button_label, link: link_url, variant: block.settings.button_style %}
-                {%- comment -%} <a class="button button--{{ block.settings.button_style }}" href="{{ link_url }}">
-                  {{ block.settings.button_label }}
-                </a> {%- endcomment -%}
+              {% if block.settings.button_label != blank %}
+                {% render 'button', label: block.settings.button_label, link: link_url, variation: block.settings.button_style %}
               {% endif %}
             </div>
           </div>
@@ -167,18 +163,6 @@
     -webkit-animation-duration: {{section.settings.heading_wrapper_animation_time}};
     -webkit-animation-fill-mode: both;
   }
-  {% if section.settings.eyebrow_color != 'rgba(0,0,0,0)' %}
-  #shopify-section-{{ section.id }} .featured-links__eyebrow {
-    color: {{ section.settings.eyebrow_color }};
-  }
-  {% endif %}
-
-  {% if section.settings.heading_color != 'rgba(0,0,0,0)' %}
-  #shopify-section-{{ section.id }} .featured-links__heading,
-  #shopify-section-{{ section.id }} .featured-link-content__description {
-    color: {{ section.settings.heading_color }};
-  }
-  {% endif %}
 
   @media screen and (max-width: 749px) {
     #shopify-section-{{ section.id }} .featured-links {
@@ -476,9 +460,44 @@
       "name": "Link",
       "settings": [
         {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link destination"
+        },
+        {
+          "type": "header",
+          "content": "Image options"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "An aspect ratio of 4:3 is recommended."
+        },
+        {
+          "type": "select",
+          "id": "image_hover",
+          "options": [
+            {
+              "value": "easein",
+              "label": "Ease in"
+            },
+            {
+              "value": "noeffect",
+              "label": "No effect"
+            }
+          ],
+          "default": "noeffect",
+          "label": "Image hover"
+        },
+        {
+          "type": "header",
+          "content": "Headline"
+        },
+        {
           "type": "text",
           "id": "heading",
-          "label": "Heading"
+          "label": "Text"
         },
         {
           "type": "select",
@@ -522,56 +541,80 @@
         {
           "type": "color",
           "id": "heading_color",
-          "label": "Heading color"
+          "label": "Color"
         },
         {
-          "type": "checkbox",
-          "id": "heading_on_image",
-          "label": "Display heading in image?",
-          "default": false
+          "type": "header",
+          "content": "Eyebrow"
         },
         {
-          "type": "url",
-          "id": "link_url",
-          "label": "Link destination"
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Text"
         },
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image",
-          "info": "An aspect ratio of 4:3 is recommended."
+          "type": "color",
+          "id": "eyebrow_color",
+          "label": "Eyebrow color"
         },
         {
-          "type": "select",
-          "id": "image_hover",
-          "options": [
-            {
-              "value": "easein",
-              "label": "Ease in"
-            },
-            {
-              "value": "noeffect",
-              "label": "No effect"
-            }
-          ],
-          "default": "noeffect",
-          "label": "Image hover"
+          "type": "header",
+          "content": "Description"
         },
         {
           "type": "richtext",
           "id": "description",
-          "label": "Description"
+          "label": "Text"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "label": "Text style",
+          "default": "frye-body",
+          "options": [
+            {
+              "value": "frye-body",
+              "label": "Body - Default"
+            },
+            {
+              "value": "frye-body-small",
+              "label": "Body - Small"
+            },
+            {
+              "value": "text-body-medium",
+              "label": "Body - Medium"
+            },
+            {
+              "value": "text-body-large",
+              "label": "Body - Large"
+            }, {
+              "value": "frye-eyebrow",
+              "label": "Eyebrow"
+            }, {
+              "value": "frye-pullquote",
+              "label": "Pullquote"
+            }, {
+              "value": "caption",
+              "label": "Caption"
+            }, {
+              "value": "subtitle",
+              "label": "Subtitle"
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Color"
+        },
+        {
+          "type": "header",
+          "content": "Button options"
         },
         {
           "type": "text",
           "id": "button_label",
-          "label": "Button label"
-        },
-        {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background color",
-          "info": "This applies when Desktop tile layout is Image on side."
+          "label": "Label"
         },
         {
           "type": "select",
@@ -612,6 +655,26 @@
               "label": "Link style 2 on Dark Background"
             }
           ]
+        },
+        {
+          "type": "header",
+          "content": "Layout options"
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_on_image",
+          "label": "Display heading in image?",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color",
+          "info": "This applies when section's desktop tile layout is set to Image on side."
+        },
+        {
+          "type": "header",
+          "content": "Animation options"
         },
         {
         "type": "select",
