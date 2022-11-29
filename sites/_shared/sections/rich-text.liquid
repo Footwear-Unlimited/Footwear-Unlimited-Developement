@@ -27,47 +27,100 @@
           {% endstyle %}
 
         {%- when 'text' -%}
-          <div class="rich-text__text rte animated {{block.settings.richtext_animation}} {{ block.settings.text_style }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">{{ block.settings.text }}</div>
-
           {% assign block_selector = '#block-section-' | append: block.id %}
           {% style %}
-          #rich-text-{{ section.id }} {{ block_selector }}.rich-text__text.animated.active {
+          #rich-text-{{ section.id }} {{ block_selector }}.rich-text__description.animated.active {
             animation-duration: {{block.settings.richtext_animation_time}};
             animation-fill-mode: both;
             -webkit-animation-duration: {{block.settings.richtext_animation_time}};
             -webkit-animation-fill-mode: both;
           }
-          #rich-text-{{ section.id }} {{ block_selector }}.rich-text__text p {
-            font-size: inherit;
-            line-height: inherit;
-            letter-spacing: inherit;
-            {% if block.settings.text_color != 'rgba(0,0,0,0)' %}
-              color: {{ block.settings.text_color }};
+          {% endstyle %}
+
+          <div class="rich-text__description rte animated {{block.settings.richtext_animation}} {{ block.settings.text_style }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}"
+            {% if block.settings.text_color != 'rgba(0,0,0,0)' %} style="color: {{ block.settings.text_color }};"{% endif %}>
+            {{ block.settings.text }}
+          </div>
+
+        {%- when 'button' -%}
+          {% assign block_selector = '#block-section-' | append: block.id %}
+          {% style %}
+            #rich-text-{{ section.id }} {{ block_selector }}.rich-text__button-wrapper.animated.active {
+              animation-duration: {{block.settings.button_animation_time}};
+              animation-fill-mode: both;
+              -webkit-animation-duration: {{block.settings.button_animation_time}};
+              -webkit-animation-fill-mode: both;
+            }
+          {% endstyle %}
+
+          <div class="rich-text__button-wrapper {% if block.settings.show_side_by_side %}side-by-side{% endif %} animated {{block.settings.logo_animation}}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}" id="block-section-{{ block.id }}">
+          {%- if block.settings.button_label_1 != blank -%}
+              {% render 'button',
+                label: block.settings.button_label_1,
+                link: block.settings.button_link_1,
+                variation: block.settings.button_style_1,
+                arrow: block.settings.show_arrow_1,
+                class: "rich-text__button small-hide"
+              %}
+
+              {% render 'button',
+                label: block.settings.button_label_1,
+                link: block.settings.button_link_1,
+                variation: block.settings.button_style_1,
+                arrow: block.settings.show_arrow_1,
+                class: "rich-text__button medium-hide large-up-hide"
+              %}
+          {%- endif -%}
+
+          {%- if block.settings.button_label_2 != blank -%}
+            {% if block.settings.show_separator %}
+              <span class="rich-text__button-separator">|</span>
+            {% endif %}
+
+            {% render 'button',
+              label: block.settings.button_label_2,
+              link: block.settings.button_link_2,
+              variation: block.settings.button_style_2,
+              arrow: block.settings.show_arrow_2,
+              class: "rich-text__button small-hide"
+            %}
+
+            {% render 'button',
+              label: block.settings.button_label_2,
+              link: block.settings.button_link_2,
+              variation: block.settings.button_style_2,
+              arrow: block.settings.show_arrow_2,
+              class: "rich-text__button medium-hide large-up-hide"
+            %}
+          {%- endif -%}
+          </div>
+
+          {% assign block_selector = '#block-section-' | append: block.id %}
+          {% style %}
+          {{ block_selector }}.rich-text__button-wrapper {
+            {% if block.settings.show_side_by_side %}
+              flex-direction: row;
+              justify-content: space-between;
+            {% endif %}
+          }
+
+          {{ block_selector }}.rich-text__button-wrapper .rich-text__button-separator {
+            {% if block.settings.show_side_by_side %}
+              color: {{ block.settings.separator_color }};
             {% endif %}
           }
           {% endstyle %}
 
-        {%- when 'button' -%}
-        {% style %}
-          #rich-text-{{ section.id }} .button--{{ block.id }}.animated.active {
-            animation-duration: {{block.settings.button_animation_time}};
-            animation-fill-mode: both;
-            -webkit-animation-duration: {{block.settings.button_animation_time}};
-            -webkit-animation-fill-mode: both;
-          }
-        {% endstyle %}
-          <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button button--{{ block.id }} {% if block.settings.button_style %} button--{{ block.settings.button_style }} {% endif %} animated {{block.settings.button_animation}} " {{ block.shopify_attributes }}>
-            {{ block.settings.button_label | escape }}
-          </a>
         {%- when 'logo_list' -%}
-        {% style %}
-        #rich-text-{{ section.id }} .rich-text__logo-list--{{ block.id }}.rich-text__logo-list.animated.active {
-            animation-duration: {{block.settings.animation_time}};
-            animation-fill-mode: both;
-            -webkit-animation-duration: {{block.settings.animation_time}};
-            -webkit-animation-fill-mode: both;
-          }
-        {% endstyle %}
+          {% style %}
+          #rich-text-{{ section.id }} .rich-text__logo-list--{{ block.id }}.rich-text__logo-list.animated.active {
+              animation-duration: {{block.settings.animation_time}};
+              animation-fill-mode: both;
+              -webkit-animation-duration: {{block.settings.animation_time}};
+              -webkit-animation-fill-mode: both;
+            }
+          {% endstyle %}
+
           <div class="rich-text__logo-list rich-text__logo-list--{{ block.id }} animated {{block.settings.logo_animation}}">
             {%- for i in (1..5) -%}
               {%- assign logo_image = "logo_image__" | append: i -%}
@@ -128,13 +181,11 @@
 {
   "name": "Rich text",
   "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "rich-text__section page-width",
   "settings": [
-    
     {
       "type": "header",
-      "content": "Background",
-      "info": "No settings required."
+      "content": "Section background"
     },
     {
       "type": "color",
@@ -146,7 +197,6 @@
       "id": "background_desktop_image",
       "label": "Desktop image"
     },
-    
     {
       "type": "image_picker",
       "id": "background_mobile_image",
@@ -188,6 +238,65 @@
       "limit": 1,
       "settings": [
         {
+          "type": "text",
+          "id": "heading",
+          "default": "Talk about your brand",
+          "label": "Headline"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "frye-headline-0",
+              "label": "X-Large"
+            },
+            {
+              "value": "frye-headline-1",
+              "label": "Large"
+            },
+            {
+              "value": "frye-headline-2",
+              "label": "Medium"
+            },
+            {
+              "value": "frye-headline-3",
+              "label": "Small"
+            },
+            {
+              "value": "frye-headline-4",
+              "label": "X-Small"
+            },
+            {
+              "value": "frye-headline-5",
+              "label": "Tiny"
+            },
+            {
+              "value": "frye-headline-6",
+              "label": "Very Tiny"
+            },
+            {
+              "value": "frye-headline-7",
+              "label": "Custom 1"
+            }, {
+              "value": "frye-headline-8",
+              "label": "Custom 2"
+            }
+          ],
+          "default": "frye-headline-1",
+          "label": "Headline size"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Headline color",
+          "default": "#000000"
+        },
+        {
+          "type": "header",
+          "content": "Block animations"
+        },
+        {
           "type": "select",
           "id": "headline_animation",
           "options":[
@@ -221,58 +330,6 @@
           "default": "0.2s",
           "label": "Headline Animation Time",
           "info": "Must be a number and include 's' at the end. (Example, 0.2s)"
-        },
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Talk about your brand",
-          "label": "Headline"
-        },
-        {
-          "type": "color",
-          "id": "heading_color",
-          "label": "Headline color",
-          "default": "#000000"
-        },
-        {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "cql-headline-1",
-              "label": "Custom Headline 1"
-            },
-            {
-              "value": "cql-headline-2",
-              "label": "Custom Headline 2"
-            },
-            {
-              "value": "cql-headline-3",
-              "label": "Custom Headline 3"
-            },
-            {
-              "value": "h4",
-              "label": "X-Small"
-            },
-            {
-              "value": "h3",
-              "label": "Small"
-            },
-            {
-              "value": "h2",
-              "label": "Medium"
-            },
-            {
-              "value": "h1",
-              "label": "Large"
-            },
-            {
-              "value": "h0",
-              "label": "X-Large"
-            }
-          ],
-          "default": "h1",
-          "label": "Headline size"
         }
       ]
     },
@@ -281,6 +338,77 @@
       "name": "Description",
       "limit": 1,
       "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "label": "Text"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "label": "Text style",
+          "default": "frye-body",
+          "options": [
+            {
+              "value": "frye-body",
+              "label": "Body - Default"
+            },
+            {
+              "value": "frye-body-small",
+              "label": "Body - Small"
+            },
+            {
+              "value": "text-body-medium",
+              "label": "Body - Medium"
+            },
+            {
+              "value": "text-body-large",
+              "label": "Body - Large"
+            },
+            {
+              "value": "frye-eyebrow",
+              "label": "Eyebrow"
+            },
+            {
+              "value": "frye-pullquote",
+              "label": "Pullquote"
+            },
+            {
+              "value": "caption",
+              "label": "Caption"
+            }, {
+              "value": "subtitle",
+              "label": "Subtitle"
+            },
+            {
+              "value": "frye-headline-2",
+              "label": "Medium"
+            },
+            {
+              "value": "frye-headline-3",
+              "label": "Small"
+            },
+            {
+              "value": "frye-headline-4",
+              "label": "X-Small"
+            },
+            {
+              "value": "frye-headline-5",
+              "label": "Tiny"
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Description color",
+          "default": "#000000"
+        },
+        {
+          "type": "header",
+          "content": "Block animations"
+        },
         {
           "type": "select",
           "id": "richtext_animation",
@@ -315,58 +443,151 @@
           "default": "0.2s",
           "label": "RichText Animation Time",
           "info": "Must be a number and include 's' at the end. (Example, 0.2s)"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-          "label": "Description"
-        },
-        {
-          "type": "color",
-          "id": "text_color",
-          "label": "Description color",
-          "default": "#000000"
-        },
-        {
-          "type": "select",
-          "id": "text_style",
-          "label": "Text style",
-          "default": "text-body",
-          "options": [
-            {
-              "value": "caption",
-              "label": "Caption"
-            },
-            {
-              "value": "subtitle",
-              "label": "Subtitle"
-            },
-            {
-              "value": "text-body",
-              "label": "Body - Default"
-            },
-            {
-              "value": "text-body-small",
-              "label": "Body - Small"
-            },
-            {
-              "value": "text-body-medium",
-              "label": "Body - Medium"
-            },
-            {
-              "value": "text-body-large",
-              "label": "Body - Large"
-            }
-          ]
         }
       ]
     },
     {
       "type": "button",
-      "name": "Button",
-      "limit": 2,
+      "name": "Buttons",
+      "limit": 1,
       "settings": [
+        {
+          "type": "header",
+          "content": "Button 1 options"
+        },
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "Label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_style_1",
+          "label": "Style",
+          "default": "primary",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "primary-dark",
+              "label": "Primary on Dark Background"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "secondary-dark",
+              "label": "Secondary on Dark Background"
+            },
+            {
+              "value": "link-1",
+              "label": "Link style 1"
+            },
+            {
+              "value": "link-1-dark",
+              "label": "Link style 1 on Dark Background"
+            },
+            {
+              "value": "link-2",
+              "label": "Link style 2"
+            },
+            {
+              "value": "link-2-dark",
+              "label": "Link style 2 on Dark Background"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Button 2 options"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "Button label",
+          "label": "Label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_style_2",
+          "label": "Style",
+          "default": "primary",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "primary-dark",
+              "label": "Primary on Dark Background"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "secondary-dark",
+              "label": "Secondary on Dark Background"
+            },
+            {
+              "value": "link-1",
+              "label": "Link style 1"
+            },
+            {
+              "value": "link-1-dark",
+              "label": "Link style 1 on Dark Background"
+            },
+            {
+              "value": "link-2",
+              "label": "Link style 2"
+            },
+            {
+              "value": "link-2-dark",
+              "label": "Link style 2 on Dark Background"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Block options"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_side_by_side",
+          "default": false,
+          "label": "Display buttons side-by-side"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_separator",
+          "default": false,
+          "label": "Display buttons separator"
+        },
+        {
+          "type": "color",
+          "id": "separator_color",
+          "label": "Separator color"
+        },
+        {
+          "type": "header",
+          "content": "Block animations"
+        },
         {
           "type": "select",
           "id": "button_animation",
@@ -401,45 +622,6 @@
           "default":"0.2s",
           "label": "Button Animation Time",
           "info": "Must be a number and include 's' at the end. (Example, 0.2s)"
-        },
-        {
-          "type": "text",
-          "id": "button_label",
-          "default": "Button label",
-          "label": "Button label"
-        },
-        {
-          "type": "url",
-          "id": "button_link",
-          "label": "Button link"
-        },
-        {
-          "type": "select",
-          "id": "button_style",
-          "label": "Button style",
-          "default": "primary",
-          "options": [
-            {
-              "value": "primary",
-              "label": "Primary"
-            },
-            {
-              "value": "secondary",
-              "label": "Secondary"
-            },
-            {
-              "value": "tertiary",
-              "label": "Tertiary"
-            },
-            {
-              "value": "link-1",
-              "label": "Link style 1"
-            },
-            {
-              "value": "link-2",
-              "label": "Link style 2"
-            }
-          ]
         }
       ]
     },
@@ -448,41 +630,6 @@
       "name": "Logo list",
       "limit": 2,
       "settings": [
-        {
-          "type": "select",
-          "id": "logo_animation",
-          "options":[
-            {
-              "value": "fadeIn",
-              "label": "Fade In"
-            },
-            {
-              "value": "fadeInUp",
-              "label": "Fade In Up"
-            },
-            {
-              "value": "fadeInLeft",
-              "label": "Fade In Left"
-            },
-            {
-              "value": "fadeInRight",
-              "label": "Fade In Right"
-            },
-            {
-              "value": "NoEffect",
-              "label": "No Effect"
-            }
-          ],
-          "default": "NoEffect",
-          "label": "Select Logo Animation"
-        },
-        {
-          "type": "text",
-          "id": "animation_time",
-          "default": "0.2s",
-          "label": "Logo Animation Time",
-          "info": "Must be a number and include 's' at the end. (Example, 0.2s)"
-        },
         {
         "type": "header",
         "content": "Logo item 1"
@@ -552,6 +699,45 @@
           "type": "url",
           "id": "logo_link__5",
           "label": "Logo link"
+        },
+        {
+          "type": "header",
+          "content": "Block animiations"
+        },
+        {
+          "type": "select",
+          "id": "logo_animation",
+          "options":[
+            {
+              "value": "fadeIn",
+              "label": "Fade In"
+            },
+            {
+              "value": "fadeInUp",
+              "label": "Fade In Up"
+            },
+            {
+              "value": "fadeInLeft",
+              "label": "Fade In Left"
+            },
+            {
+              "value": "fadeInRight",
+              "label": "Fade In Right"
+            },
+            {
+              "value": "NoEffect",
+              "label": "No Effect"
+            }
+          ],
+          "default": "NoEffect",
+          "label": "Select Logo Animation"
+        },
+        {
+          "type": "text",
+          "id": "animation_time",
+          "default": "0.2s",
+          "label": "Logo Animation Time",
+          "info": "Must be a number and include 's' at the end. (Example, 0.2s)"
         }
       ]
     },
