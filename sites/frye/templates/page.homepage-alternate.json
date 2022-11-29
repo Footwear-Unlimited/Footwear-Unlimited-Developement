@@ -52,7 +52,6 @@
         "mobile_image": "shopify:\/\/shop_images\/frye_spring-homepage-hero-mobile.jpg",
         "section_background_color": "rgba(0,0,0,0)",
         "content_background_color": "#000000",
-        "content_background_color_opacity": 100,
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,

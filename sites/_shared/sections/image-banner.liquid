@@ -23,8 +23,10 @@
 
   {%- if section.blocks -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+    {% assign backgroundOpacity = section.settings.content_background_opacity | divided_by: 100.00 %}
+
     <div class="banner__box"
-         style="background: {{ section.settings.content_background_color }}; background: {{ section.settings.content_background_color | color_to_rgb | color_modify: 'alpha', section.settings.content_background_opacity }};">
+         style="background: {{ section.settings.content_background_color }}; background: {{ section.settings.content_background_color | color_to_rgb | color_modify: 'alpha', backgroundOpacity }};">
       {%- render 'image-banner-content', blocks: section.blocks, animation: section.settings.animation -%}
     </div>
   </div>
@@ -66,10 +68,10 @@
     {
       "type": "range",
       "id": "content_background_opacity",
-      "min": 0.00,
-      "max": 1.00,
-      "step": 0.10,
-      "default": 1.00,
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 100,
       "label": "Content container background color opacity"
     },
     {
