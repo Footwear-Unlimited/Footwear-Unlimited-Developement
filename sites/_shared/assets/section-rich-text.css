@@ -2,7 +2,6 @@
   width: 100%;
   max-width: initial;
   margin: 0 auto;
-  padding: 5rem inherit;
   text-align: center;
 }
 
@@ -11,6 +10,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
+  padding: 0 2rem;
   width: calc(100% - 2rem / var(--font-body-scale));
   max-width: 50rem;
   text-align: center;
@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 990px) {
   .rich-text__blocks {
-    max-width: 73.5rem;
+    max-width: 71.5rem;
   }
 }
 
@@ -46,7 +46,7 @@
 }
 
 .rich-text__blocks .rich-text__heading {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .rich-text__blocks .rich-text__description p {

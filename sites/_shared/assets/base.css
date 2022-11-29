@@ -385,15 +385,15 @@ h2,
 }
 
 .frye-headline-2 {
-  font-size: calc(var(--font-heading-scale) * 2.5rem);
+  font-size: calc(var(--font-heading-scale) * 3.5rem);
   font-family: var(--font-heading-family);
-  line-height: 1.375;
+  line-height: 0.96;
 }
 
 @media only screen and (min-width: 750px) {
   .frye-headline-2 {
     font-size: calc(var(--font-heading-scale) * 4rem);
-    line-height: 1.375;
+    line-height: 1;
     letter-spacing: normal;
   }
 }
@@ -567,6 +567,20 @@ h6,
   .frye-headline-8 {
     font-size: calc(var(--font-heading-scale) * 7rem);
     line-height: 1.1;
+  }
+}
+
+.frye-headline-9 {
+  font-size: calc(var(--font-heading-scale) * 2.5rem);
+  font-family: var(--font-heading-family);
+  line-height: 1.275;
+}
+
+@media only screen and (min-width: 750px) {
+  .frye-headline-9 {
+    font-size: calc(var(--font-heading-scale) * 4rem);
+    line-height: 1.375;
+    letter-spacing: normal;
   }
 }
 
