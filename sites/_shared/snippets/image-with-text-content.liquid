@@ -8,7 +8,11 @@
     {%- for block in blocks -%}
       {% case block.type %}
         {%- when 'eyebrow' -%}
+<<<<<<< HEAD
           <div class="image-with-text__eyebrow {{ block.settings.eyebrow_style }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">
+=======
+          <div class="image-with-text__eyebrow frye-eyebrow" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">
+>>>>>>> 6f589da (FUFB-120 Added behavior and styling for Image with Text section. Populated Image with Text sections on Homepage and Homepage Alternate. Fixed spacing in schema of other sections to match.)
             <span>{{ block.settings.text | escape }}</span>
           </div>
 
