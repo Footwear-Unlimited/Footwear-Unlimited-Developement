@@ -4,10 +4,16 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div id="rich-text-{{ section.id }}" class="rich-text gradient  {% if settings.scroll_appear == "fadein" %} fadeIn {% endif %}" style="background-color: {{ section.settings.background_color }};">
+<div id="rich-text-{{ section.id }}" class="rich-text {% if settings.scroll_appear == "fadein" %} fadeIn {% endif %}" style="background-color: {{ section.settings.background_color }};">
   <div class="rich-text__blocks">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
+        {%- when 'eyebrow' -%}
+          <div class="rich-text__eyebrow frye-eyebrow" {{ block.shopify_attributes }} id="block-section-{{ block.id }}"
+            {% if block.settings.eyebrow_color != 'rgba(0,0,0,0)' %} style="color: {{ block.settings.eyebrow_color }};"{% endif %}>
+            <span>{{ block.settings.text | escape }}</span>
+          </div>
+
         {%- when 'heading' -%}
           <h2 class="rich-text__heading animated {{block.settings.headline_animation}} {{ block.settings.heading_size }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">{{ block.settings.heading | escape }}</h2>
 
@@ -181,7 +187,7 @@
 {
   "name": "Rich text",
   "tag": "section",
-  "class": "rich-text__section page-width",
+  "class": "rich-text__section",
   "settings": [
     {
       "type": "header",
@@ -233,6 +239,24 @@
   ],
   "blocks": [
     {
+      "type": "eyebrow",
+      "name": "Eyebrow",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Eyebrow",
+          "label": "Text"
+        },
+        {
+          "type": "color",
+          "id": "eyebrow_color",
+          "label": "Text color"
+        }
+      ]
+    },
+    {
       "type": "heading",
       "name": "Headline",
       "limit": 1,
@@ -241,7 +265,7 @@
           "type": "text",
           "id": "heading",
           "default": "Talk about your brand",
-          "label": "Headline"
+          "label": "Text"
         },
         {
           "type": "select",
@@ -382,20 +406,8 @@
               "label": "Subtitle"
             },
             {
-              "value": "frye-headline-2",
-              "label": "Medium"
-            },
-            {
-              "value": "frye-headline-3",
-              "label": "Small"
-            },
-            {
-              "value": "frye-headline-4",
-              "label": "X-Small"
-            },
-            {
-              "value": "frye-headline-5",
-              "label": "Tiny"
+              "value": "frye-headline-9",
+              "label": "Headline"
             }
           ]
         },
