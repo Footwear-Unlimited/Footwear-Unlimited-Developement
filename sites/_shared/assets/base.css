@@ -246,7 +246,7 @@ p,
 }
 
 .text-body-small,
- .frye-body-small {
+.frye-body-small {
   font-size: 1.3rem !important;
   line-height: 1.8 !important;
   letter-spacing: normal !important;
@@ -255,7 +255,8 @@ p,
   font-weight: var(--font-body-weight);
 }
 
-.text-body-medium {
+.text-body-medium,
+.frye-body-medium {
   font-size: 1.4rem !important;
   line-height: 2.6rem !important;
   letter-spacing: normal !important;
@@ -265,13 +266,15 @@ p,
 }
 
 @media only screen and (min-width: 750px) {
-  .text-body-medium {
+  .text-body-medium,
+  .frye-body-medium {
     font-size: 1.7rem !important;
     line-height: 2.7rem !important;
   }
 }
 
-.text-body-large {
+.text-body-large,
+.frye-body-large {
   font-size: 2.4rem !important;
   line-height: 3.7rem !important;
   letter-spacing: normal !important;
@@ -281,7 +284,8 @@ p,
 }
 
 @media only screen and (min-width: 750px) {
-  .text-body-large {
+  .text-body-large,
+  .frye-body-large {
     font-size: 3.2rem !important;
     line-height: 4.5rem !important;
   }
@@ -518,6 +522,12 @@ h6,
 .frye-eyebrow {
   font-family: var(--font-body-family);
   font-size: calc(var(--font-body-scale) * 1.3rem);
+  letter-spacing: 0.3rem;
+}
+
+.frye-eyebrow-large {
+  font-family: var(--font-body-family);
+  font-size: calc(var(--font-body-scale) * 1.6rem);
   letter-spacing: 0.3rem;
 }
 
