@@ -236,7 +236,7 @@ html.no-js .no-js-hidden {
 
 p,
 .text-body,
- .frye-body {
+.frye-body {
   font-size: calc(var(--font-body-scale) * 1.5rem);
   letter-spacing: normal;
   line-height: 1.8;
@@ -246,7 +246,7 @@ p,
 }
 
 .text-body-small,
- .frye-body-small {
+.frye-body-small {
   font-size: 1.3rem !important;
   line-height: 1.8 !important;
   letter-spacing: normal !important;
@@ -255,9 +255,10 @@ p,
   font-weight: var(--font-body-weight);
 }
 
-.text-body-medium {
+.text-body-medium,
+.frye-body-medium {
   font-size: 1.4rem !important;
-  line-height: 2.6rem !important;
+  line-height: 2.4rem !important;
   letter-spacing: normal !important;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
@@ -265,13 +266,15 @@ p,
 }
 
 @media only screen and (min-width: 750px) {
-  .text-body-medium {
-    font-size: 1.7rem !important;
+  .text-body-medium,
+  .frye-body-medium {
+    font-size: 1.6rem !important;
     line-height: 2.7rem !important;
   }
 }
 
-.text-body-large {
+.text-body-large,
+.frye-body-large {
   font-size: 2.4rem !important;
   line-height: 3.7rem !important;
   letter-spacing: normal !important;
@@ -281,7 +284,8 @@ p,
 }
 
 @media only screen and (min-width: 750px) {
-  .text-body-large {
+  .text-body-large,
+  .frye-body-large {
     font-size: 3.2rem !important;
     line-height: 4.5rem !important;
   }
@@ -352,7 +356,6 @@ h1,
 @media only screen and (min-width: 750px) {
   .frye-headline-1 {
     font-size: calc(var(--font-heading-scale) * 5.5rem);
-    letter-spacing: -0.11rem;
   }
 }
 
@@ -1393,12 +1396,6 @@ deferred-media {
 
 .button--small {
   padding: 1rem 2rem;
-}
-
-@media screen and (min-width: 750px) {
-  .button--small {
-    padding: 1rem 4rem;
-  }
 }
 
 .button--primary {
