@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+.featured-links__content.page-width--narrow {
+  max-width: 82.75rem;
+}
+
 /** Top content **/
 
 .featured-links__heading-wrapper {
