@@ -1,7 +1,7 @@
 {{ 'section-featured-links.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 
-<div class="featured-links  {% if settings.scroll_appear == "fadein" %} fadeIn {% endif %}" {% if section.settings.background_color %}style="background-color: {{ section.settings.background_color }}"{% endif %}>
+<div class="featured-links {% if settings.scroll_appear == "fadein" %} fadeIn {% endif %}" {% if section.settings.background_color %}style="background-color: {{ section.settings.background_color }}"{% endif %}>
   {%- if section.settings.background_desktop != blank or section.settings.background_mobile != blank -%}
     {% liquid
       assign background_mobile = section.settings.background_mobile
@@ -1068,7 +1068,7 @@
                 "label": "Eyebrow - Small"
               }, {
                 "value": "frye-eyebrow-large",
-                "label": "Eyebrow - Large" "label": "Eyebrow"
+                "label": "Eyebrow - Large"
               }, {
                 "value": "frye-pullquote",
                 "label": "Pullquote"
