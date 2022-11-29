@@ -339,38 +339,6 @@
               </localization-form>
             {%- endif -%}
           </div>
-
-          <div class="app-settings__wrapper">
-            {% if section.settings.app_description != blank %}
-              <div class="app-settings__block app-settings__description">
-                <div class="app-rte__wrap">
-                  {{ section.settings.app_description | replace: '<p>', '<p class="app-rte">' }}
-                </div>
-              </div>
-            {% endif %}
-
-            {% if section.settings.app_label_one != blank %}
-              <div class="app-settings__block app-settings__link-wrap">
-                <a
-                  class="app-settings__link button button--primary button--small button--round"
-                  {% if section.settings.app_link_one != blank %}href="{{ section.settings.app_link_two }}"{% endif %}>
-                  {% render 'icon-download' %}
-                  {{ section.settings.app_label_one }}
-                </a>
-              </div>
-            {% endif %}
-
-            {% if section.settings.app_label_two != blank %}
-              <div class="app-settings__block app-settings__link-wrap">
-                <a
-                  class="app-settings__link button button--primary button--small button--round"
-                  {% if section.settings.app_link_two != blank %}href="{{ section.settings.app_link_two }}"{% endif %}>
-                  {% render 'icon-download' %}
-                  {{ section.settings.app_label_two }}
-                </a>
-              </div>
-            {% endif %}
-          </div>
         </div>
       </div>
     </div>
