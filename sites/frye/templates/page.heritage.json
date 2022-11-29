@@ -38,9 +38,49 @@
         "show_text_below": false,
         "show_container_mobile": false
       }
+    },
+    "0cd1157c-e548-458c-856c-52c1d3484c58": {
+      "type": "rich-text",
+      "blocks": {
+        "ceffdcaa-847a-4ce1-86da-0ac678c17a7b": {
+          "type": "logo_list",
+          "settings": {
+            "logo_image__1": "shopify:\/\/shop_images\/Group_7.png",
+            "logo_link__1": "",
+            "logo_link__2": "",
+            "logo_link__3": "",
+            "logo_link__4": "",
+            "logo_link__5": "",
+            "logo_animation": "NoEffect",
+            "animation_time": "0.2s"
+          }
+        },
+        "template--17038883914005__0cd1157c-e548-458c-856c-52c1d3484c58-1669695444539477d4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With a heritage rooted in craftsmanship, Frye awakens the curious, the courageous, the adventurous in all of us.<\/p>",
+            "text_style": "frye-headline-2",
+            "text_color": "#000000",
+            "richtext_animation": "NoEffect",
+            "richtext_animation_time": "0.2s"
+          }
+        }
+      },
+      "block_order": [
+        "ceffdcaa-847a-4ce1-86da-0ac678c17a7b",
+        "template--17038883914005__0cd1157c-e548-458c-856c-52c1d3484c58-1669695444539477d4-1"
+      ],
+      "settings": {
+        "background_color": "rgba(0,0,0,0)",
+        "desktop_top_padding": 35,
+        "desktop_bottom_padding": 55,
+        "mobile_top_padding": 5,
+        "mobile_bottom_padding": 25
+      }
     }
   },
   "order": [
-    "16484545291ecbe325"
+    "16484545291ecbe325",
+    "0cd1157c-e548-458c-856c-52c1d3484c58"
   ]
 }
