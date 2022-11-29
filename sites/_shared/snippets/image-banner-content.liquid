@@ -1,7 +1,7 @@
 {%- for block in blocks -%}
   {%- case block.type -%}
     {%- when 'eyebrow' -%}
-      <div class="banner__eyebrow frye-eyebrow {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
+      <div class="banner__eyebrow {{ block.settings.eyebrow_style }} {% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}">
         {% assign block_selector = '#block-section-' | append: block.id %}
         {% style %}
         {% if block.settings.eyebrow_color  != 'rgba(0,0,0,0)' %}
