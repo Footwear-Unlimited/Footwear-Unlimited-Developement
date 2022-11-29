@@ -149,10 +149,146 @@
         "mobile_top_padding": 40,
         "mobile_bottom_padding": 30
       }
+    },
+    "f10bf129-5ce1-45ec-8780-3420a45a3a91": {
+      "type": "image-with-text",
+      "blocks": {
+        "70e507f9-fc6e-4953-ac3c-83a1bc724b56": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "TIMELESS",
+            "text_color": "#fffdf7"
+          }
+        },
+        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CLASSICS",
+            "heading_size": "frye-headline-1",
+            "heading_color": "#fffdf7"
+          }
+        },
+        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <\/p>",
+            "text_style": "text-body-medium",
+            "text_color": "#fffdf7"
+          }
+        },
+        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-2": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop Classic Styles",
+            "button_link_1": "",
+            "button_style_1": "primary-dark",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "70e507f9-fc6e-4953-ac3c-83a1bc724b56",
+        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-0",
+        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-1",
+        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-2"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "image": "shopify:\/\/shop_images\/frye_homepage-classics-desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_homepage-classics-mobile.jpg",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "height": "adapt",
+        "image_hover": "noeffect",
+        "section_padding": "none",
+        "content_layout": "no-overlap",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "desktop_image_width": "normal",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "mobile_image_width": "large"
+      }
+    },
+    "9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-0": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "CELEBRATING 160 YEARS OF FRYE",
+            "text_color": "#ffffff"
+          }
+        },
+        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "MADE IN THE USA",
+            "heading_size": "frye-headline-1",
+            "heading_color": "#ffffff"
+          }
+        },
+        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pellentesque laoreet consequat dolor. <br\/>Maecenas rhoncus orci ut sapien posuere.<\/p>",
+            "text_style": "text-body-medium",
+            "text_color": "#ffffff"
+          }
+        },
+        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-3": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop Made in the USA",
+            "button_link_1": "",
+            "button_style_1": "primary-dark",
+            "button_label_2": "Learn About Our Heritage",
+            "button_link_2": "",
+            "button_style_2": "secondary-dark",
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-0",
+        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-1",
+        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-2",
+        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-3"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "background_desktop_image": "shopify:\/\/shop_images\/frye_pattern-bg-desktop.jpg",
+        "background_mobile_image": "shopify:\/\/shop_images\/frye_pattern-bg-mobile.jpg",
+        "image": "shopify:\/\/shop_images\/frye_usa-boot-desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_usa-boot-mobile.jpg",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "height": "adapt",
+        "image_hover": "noeffect",
+        "section_padding": "none",
+        "content_layout": "no-overlap",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "desktop_image_width": "normal",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "center",
+        "mobile_image_width": "large"
+      }
     }
   },
   "order": [
     "image_banner",
-    "511aedf5-a6b6-4601-ac83-12e99befa7ab"
+    "511aedf5-a6b6-4601-ac83-12e99befa7ab",
+    "f10bf129-5ce1-45ec-8780-3420a45a3a91",
+    "9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff"
   ]
 }
