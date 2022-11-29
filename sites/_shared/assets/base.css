@@ -268,7 +268,11 @@ p,
 @media only screen and (min-width: 750px) {
   .text-body-medium,
   .frye-body-medium {
+<<<<<<< HEAD
     font-size: 1.6rem !important;
+=======
+    font-size: 1.7rem !important;
+>>>>>>> 567393b (FUFB-118 PR remediation for Image Banner section and updates to Styleguide options.)
     line-height: 2.7rem !important;
   }
 }
