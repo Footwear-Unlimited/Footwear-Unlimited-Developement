@@ -44,15 +44,7 @@
         "mobile_image": "shopify:\/\/shop_images\/frye_homepage-hero-mobile.jpg",
         "section_background_color": "rgba(0,0,0,0)",
         "content_background_color": "#000000",
-<<<<<<< HEAD
-<<<<<<< HEAD
         "content_background_opacity": 100,
-=======
-        "content_background_opacity": 1,
->>>>>>> e7d4b56 (FUFB-118 Fixes for Theme Check errors and warnings where possible.)
-=======
-        "content_background_opacity": 100,
->>>>>>> 5d00343 (FUFB-118 Fixes for Theme Check issues in Image Banner section.)
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
@@ -116,15 +108,7 @@
         "mobile_image": "shopify:\/\/shop_images\/frye_spring-homepage-hero-mobile.jpg",
         "section_background_color": "rgba(0,0,0,0)",
         "content_background_color": "#000000",
-<<<<<<< HEAD
-<<<<<<< HEAD
         "content_background_opacity": 100,
-=======
-        "content_background_opacity": 1,
->>>>>>> e7d4b56 (FUFB-118 Fixes for Theme Check errors and warnings where possible.)
-=======
-        "content_background_opacity": 100,
->>>>>>> 5d00343 (FUFB-118 Fixes for Theme Check issues in Image Banner section.)
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
@@ -164,15 +148,7 @@
         "mobile_image": "shopify:\/\/shop_images\/frye_heritage-hero-mobile.jpg",
         "section_background_color": "",
         "content_background_color": "",
-<<<<<<< HEAD
-<<<<<<< HEAD
         "content_background_opacity": 100,
-=======
-        "content_background_opacity": 1,
->>>>>>> e7d4b56 (FUFB-118 Fixes for Theme Check errors and warnings where possible.)
-=======
-        "content_background_opacity": 100,
->>>>>>> 5d00343 (FUFB-118 Fixes for Theme Check issues in Image Banner section.)
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
@@ -235,15 +211,7 @@
         "desktop_image": "shopify:\/\/shop_images\/frye_hero-veronica-bootie.jpg",
         "section_background_color": "",
         "content_background_color": "#000000",
-<<<<<<< HEAD
-<<<<<<< HEAD
         "content_background_opacity": 100,
-=======
-        "content_background_opacity": 1,
->>>>>>> e7d4b56 (FUFB-118 Fixes for Theme Check errors and warnings where possible.)
-=======
-        "content_background_opacity": 100,
->>>>>>> 5d00343 (FUFB-118 Fixes for Theme Check issues in Image Banner section.)
         "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
