@@ -12,17 +12,23 @@
       endif
     %}
     <div class="featured-links__media {% if background_desktop == blank and background_mobile == blank %}placeholder{% endif %}">
-      <img srcset="
-        {%- if background_mobile.width >= 375 -%}{{ background_mobile | image_url: width: 375 }} 375w,{%- endif -%}
-        {%- if background_mobile.width >= 550 -%}{{ background_mobile | image_url: width: 550 }} 550w,{%- endif -%}
-        {%- if background_mobile.width >= 750 -%}{{ background_mobile | image_url: width: 750 }} 750w,{%- endif -%}
-        {%- if background_desktop.width >= 1100 -%}{{ background_desktop | image_url: width: 1100 }} 1100w,{%- endif -%}
-        {%- if background_desktop.width >= 1500 -%}{{ background_desktop | image_url: width: 1500 }} 1500w,{%- endif -%}
-        {%- if background_desktop.width >= 1780 -%}{{ background_desktop | image_url: width: 1780 }} 1780w,{%- endif -%}
-        {%- if background_desktop.width >= 2000 -%}{{ background_desktop | image_url: width: 2000 }} 2000w,{%- endif -%}
-        {%- if background_desktop.width >= 3000 -%}{{ background_desktop | image_url: width: 3000 }} 3000w,{%- endif -%}
-        {%- if background_desktop.width >= 3840 -%}{{ background_desktop | image_url: width: 3840 }} 3840w,{%- endif -%}
-        {{ background_desktop | image_url }} {{ background_desktop.width }}w" src="{{ background_desktop | image_url: width: 1500 }}" loading="lazy" alt="{{ background_desktop.alt | escape }}" width="{{ background_desktop.width }}" height="{{ background_desktop.width | divided_by: background_desktop.aspect_ratio }}">
+      <img
+        srcset="
+          {%- if background_mobile.width >= 375 -%}{{ background_mobile | image_url: width: 375 }} 375w,{%- endif -%}
+          {%- if background_mobile.width >= 550 -%}{{ background_mobile | image_url: width: 550 }} 550w,{%- endif -%}
+          {%- if background_mobile.width >= 750 -%}{{ background_mobile | image_url: width: 750 }} 750w,{%- endif -%}
+          {%- if background_desktop.width >= 1100 -%}{{ background_desktop | image_url: width: 1100 }} 1100w,{%- endif -%}
+          {%- if background_desktop.width >= 1500 -%}{{ background_desktop | image_url: width: 1500 }} 1500w,{%- endif -%}
+          {%- if background_desktop.width >= 1780 -%}{{ background_desktop | image_url: width: 1780 }} 1780w,{%- endif -%}
+          {%- if background_desktop.width >= 2000 -%}{{ background_desktop | image_url: width: 2000 }} 2000w,{%- endif -%}
+          {%- if background_desktop.width >= 3000 -%}{{ background_desktop | image_url: width: 3000 }} 3000w,{%- endif -%}
+          {%- if background_desktop.width >= 3840 -%}{{ background_desktop | image_url: width: 3840 }} 3840w,{%- endif -%}
+          {{ background_desktop | image_url }} {{ background_desktop.width }}w"
+        src="{{ background_desktop | image_url: width: 1500 }}"
+        loading="lazy"
+        alt="{{ background_desktop.alt | escape }}"
+        width="{{ background_desktop.width }}"
+        height="{{ background_desktop.width | divided_by: background_desktop.aspect_ratio }}">
     </div>
   {% endif %}
 
@@ -30,27 +36,31 @@
     {% if section.settings.eyebrow != blank or section.settings.heading != blank %}
       <div class="featured-links__heading-wrapper animated {{section.settings.heading_wrapper_animation}}">
         {% if section.settings.eyebrow != blank %}
-          <p class="featured-links__eyebrow {{ section.settings.eyebrow_style }}" {%- if section.settings.eyebrow_color != 'rgba(0,0,0,0)' -%}style="color: {{ section.settings.eyebrow_color }}"{%- endif -%}>
+          <p class="featured-links__eyebrow {{ section.settings.eyebrow_style }}"
+            {%- if section.settings.eyebrow_color != 'rgba(0,0,0,0)' -%}style="color: {{ section.settings.eyebrow_color }}"{%- endif -%}>
             {{ section.settings.eyebrow }}
           </p>
         {% endif %}
 
         {% if section.settings.heading %}
-          <h2 class="featured-links__heading {{ section.settings.heading_size }}" {%- if section.settings.heading_color != 'rgba(0,0,0,0)' -%}style="color: {{ section.settings.heading_color }}"{%- endif -%}>
-            <span>{{ section.settings.heading }}</span>
+          <h2 class="featured-links__heading {{ section.settings.heading_size }}"
+            {%- if section.settings.heading_color != 'rgba(0,0,0,0)' -%}style="color: {{ section.settings.heading_color }}"{%- endif -%}>
+              <span>{{ section.settings.heading }}</span>
           </h2>
         {% endif %}
       </div>
     {% endif %}
 
     {% if section.blocks.size %}
-      <div class="featured-links__link-grid
-                  featured-links__link-grid--1/{{ section.settings.desktop_columns }}
-                  featured-links__link--style-{{ section.settings.link_display }}
-                  featured-links__link--tile-mobile-{{ section.settings.mobile_tile_layout }}
-                  featured-links__link--tile-desktop-{{section.settings.desktop_tile_layout }}
-                  featured-links__link--align-desktop-{{ section.settings.desktop_content_alignment }}
-                  featured-links__link--align-mobile-{{ section.settings.mobile_content_alignment }}">
+      <div
+        class="featured-links__link-grid
+          featured-links__link-grid--1/{{ section.settings.desktop_columns }}
+          featured-links__link--style-{{ section.settings.link_display }}
+          featured-links__link--tile-mobile-{{ section.settings.mobile_tile_layout }}
+          featured-links__link--tile-desktop-{{section.settings.desktop_tile_layout }}
+          featured-links__link--align-desktop-{{ section.settings.desktop_content_alignment }}
+          featured-links__link--align-mobile-{{ section.settings.mobile_content_alignment }}"
+        >
 
         {% for block in section.blocks %}
           {% assign link_url = block.settings.link_url %}
@@ -63,13 +73,15 @@
             {% capture featured_link_heading_content %}
               <div class="featured-link__heading-wrapper">
                 {% if block.settings.eyebrow != blank %}
-                  <p class="featured-link__heading-eyebrow frye-eyebrow" {%- if block.settings.eyebrow_color != 'rgba(0,0,0,0)' -%}style="color: {{ block.settings.eyebrow_color }}"{%- endif -%}>
+                  <p class="featured-link__heading-eyebrow frye-eyebrow"
+                    {%- if block.settings.eyebrow_color != 'rgba(0,0,0,0)' -%}style="color: {{ block.settings.eyebrow_color }}"{%- endif -%}>
                     {{ block.settings.eyebrow }}
                   </p>
                 {% endif %}
 
                 {% if block.settings.heading %}
-                  <h4 class="featured-link__heading {{ block.settings.heading_size }}" {%- if block.settings.heading_color != 'rgba(0,0,0,0)' -%}style="color: {{ block.settings.heading_color }}"{%- endif -%}>
+                  <h4 class="featured-link__heading {{ block.settings.heading_size }}"
+                    {%- if block.settings.heading_color != 'rgba(0,0,0,0)' -%}style="color: {{ block.settings.heading_color }}"{%- endif -%}>
                     {{ block.settings.heading }}
                   </h4>
                 {% endif %}
@@ -80,29 +92,30 @@
               {% if block.settings.image != blank %}
                 {% if link_url != blank %}
                   <a href="{{ link_url }}" class="featured-link__image-link">
-                  {% endif %}
+                {% endif %}
 
-                  {% render 'image', image: block.settings.image, image_max_width: 1500, class: "featured-link__image" %}
+                {% render 'image', image: block.settings.image, image_max_width: 1500, class: "featured-link__image" %}
                   {% if block.settings.heading_on_image %}
                     {{ featured_link_heading_content }}
                   {% endif %}
 
-                  {% if link_url != blank %}
+                {% if link_url != blank %}
                   </a>
                 {% endif %}
               {% endif %}
             </div>
 
             <div class="featured-link__content-body featured-link-content {% if block.settings.heading_on_image %}featured-link-content__margin-top{% endif %} tile-{{forloop.index}}">
-              {% unless block.settings.heading_on_image %}
-                {{ featured_link_heading_content }}
-              {% endunless %}
+                {% unless block.settings.heading_on_image %}
+                  {{ featured_link_heading_content }}
+                {% endunless %}
 
-              {% if block.settings.description != blank %}
-                <div class="featured-link-content__description rte {{ block.settings.text_style }}" {%- if block.settings.text_color != 'rgba(0,0,0,0)' -%}style="color: {{ block.settings.text_color }}"{%- endif -%}>
-                  {{ block.settings.description }}
-                </div>
-              {% endif %}
+                {% if block.settings.description != blank %}
+                  <div class="featured-link-content__description rte {{ block.settings.text_style }}"
+                  {%- if block.settings.text_color != 'rgba(0,0,0,0)' -%}style="color: {{ block.settings.text_color }}"{%- endif -%}>
+                    {{ block.settings.description }}
+                  </div>
+                {% endif %}
 
               {% if block.settings.button_label != blank %}
                 {% render 'button', label: block.settings.button_label, link: link_url, variation: block.settings.button_style %}
@@ -111,31 +124,31 @@
           </div>
 
           {% style %}
-            #featured-block-{{ block.id}}.featured-link.animated.active {
-              animation-duration: {{ block.settings.featured_animation_time}};
+            #featured-block-{{block.id}}.featured-link.animated.active {
+              animation-duration: {{block.settings.featured_animation_time}};
               animation-fill-mode: both;
-              -webkit-animation-duration: {{ block.settings.featured_animation_time}};
+              -webkit-animation-duration: {{block.settings.featured_animation_time}};
               -webkit-animation-fill-mode: both;
             }
           {% endstyle %}
           {% if section.settings.mobile_tile_layout == "image-on-side" %}
-            {% style %}
-              @media screen and (max-width:749px) {
-                .tile-{{ forloop.index}}{
-                  background-color: {{ block.settings.background_color }} !important;
+              {% style %}
+                @media screen and (max-width:749px) {
+                .tile-{{forloop.index}} {
+                  background-color: {{ block.settings.background_color }}!important;
                 }
-              }
-            {% endstyle %}
+            }
+             {% endstyle %}
           {% endif %}
 
           {% if section.settings.desktop_tile_layout == "image-on-side" %}
-            {% style %}
-              @media screen and (min-width:750px) {
-                .tile-{{ forloop.index}}{
-                  background-color: {{ block.settings.background_color }} !important;
+              {% style %}
+                @media screen and (min-width:750px) {
+                .tile-{{forloop.index}} {
+                  background-color: {{ block.settings.background_color }}!important;
                 }
               }
-            {% endstyle %}
+              {% endstyle %}
           {% endif %}
         {% endfor %}
       </div>
@@ -144,15 +157,15 @@
 </div>
 
 {% style %}
-  #shopify-section-{{ section.id }}.featured-links__heading-wrapper.animated.active {
-    animation-duration: {{ section.settings.heading_wrapper_animation_time}};
+  #shopify-section-{{ section.id }} .featured-links__heading-wrapper.animated.active {
+    animation-duration: {{section.settings.heading_wrapper_animation_time}};
     animation-fill-mode: both;
-    -webkit-animation-duration: {{ section.settings.heading_wrapper_animation_time}};
+    -webkit-animation-duration: {{section.settings.heading_wrapper_animation_time}};
     -webkit-animation-fill-mode: both;
   }
 
   @media screen and (max-width: 749px) {
-    #shopify-section-{{ section.id }}.featured-links {
+    #shopify-section-{{ section.id }} .featured-links {
       {%- if section.settings.mobile_top_padding -%}
         padding-top: {{ section.settings.mobile_top_padding }}px;
       {%- endif -%}
@@ -163,13 +176,13 @@
 
     {% if section.settings.mobile_tile_layout == 'image-on-side' %}
       .featured-links__content {
-        padding: 0;
+        padding:0;
       }
     {% endif %}
   }
 
   @media screen and (min-width: 750px) {
-    #shopify-section-{{ section.id }}.featured-links {
+    #shopify-section-{{ section.id }} .featured-links {
       {%- if section.settings.desktop_top_padding -%}
         padding-top: {{ section.settings.desktop_top_padding }}px;
       {%- endif -%}
