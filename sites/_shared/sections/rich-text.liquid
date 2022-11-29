@@ -9,7 +9,7 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'eyebrow' -%}
-          <div class="rich-text__eyebrow frye-eyebrow" {{ block.shopify_attributes }} id="block-section-{{ block.id }}"
+          <div class="rich-text__eyebrow {{ block.settings.eyebrow_style }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}"
             {% if block.settings.eyebrow_color != 'rgba(0,0,0,0)' %} style="color: {{ block.settings.eyebrow_color }};"{% endif %}>
             <span>{{ block.settings.text | escape }}</span>
           </div>
@@ -250,6 +250,22 @@
           "label": "Text"
         },
         {
+          "type": "select",
+          "id": "eyebrow_style",
+          "label": "Eyebrow style",
+          "default": "frye-eyebrow",
+          "options": [
+            {
+              "value": "frye-eyebrow",
+              "label": "Eyebrow - Small"
+            },
+            {
+              "value": "frye-eyebrow-large",
+              "label": "Eyebrow - Large"
+            }
+          ]
+        },
+        {
           "type": "color",
           "id": "eyebrow_color",
           "label": "Text color"
@@ -404,10 +420,6 @@
             }, {
               "value": "subtitle",
               "label": "Subtitle"
-            },
-            {
-              "value": "frye-headline-9",
-              "label": "Headline"
             }
           ]
         },
