@@ -36,7 +36,7 @@
     {% if section.settings.eyebrow != blank or section.settings.heading != blank %}
       <div class="featured-links__heading-wrapper animated {{section.settings.heading_wrapper_animation}}">
         {% if section.settings.eyebrow != blank %}
-          <p class="featured-links__eyebrow frye-eyebrow"
+          <p class="featured-links__eyebrow {{ section.settings.eyebrow_style }}"
             {%- if section.settings.eyebrow_color != 'rgba(0,0,0,0)' -%}style="color: {{ section.settings.eyebrow_color }}"{%- endif -%}>
             {{ section.settings.eyebrow }}
           </p>
@@ -196,6 +196,7 @@
 {% schema %}
 {
   "name": "Featured links",
+  "class": "featured-links__section",
   "max_blocks": 8,
   "settings": [
     {
@@ -280,6 +281,22 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "eyebrow_style",
+      "label": "Eyebrow style",
+      "default": "frye-eyebrow",
+      "options": [
+        {
+          "value": "frye-eyebrow",
+          "label": "Eyebrow - Small"
+        },
+        {
+          "value": "frye-eyebrow-large",
+          "label": "Eyebrow - Large"
+        }
+      ]
     },
     {
       "type": "color",
@@ -587,16 +604,24 @@
             {
               "value": "text-body-large",
               "label": "Body - Large"
-            }, {
+            },
+            {
               "value": "frye-eyebrow",
-              "label": "Eyebrow"
-            }, {
+              "label": "Eyebrow - Small"
+            },
+            {
+              "value": "frye-eyebrow-large",
+              "label": "Eyebrow - Large"
+            },
+            {
               "value": "frye-pullquote",
               "label": "Pullquote"
-            }, {
+            },
+            {
               "value": "caption",
               "label": "Caption"
-            }, {
+            },
+            {
               "value": "subtitle",
               "label": "Subtitle"
             }
@@ -624,35 +649,35 @@
           "options": [
             {
               "value": "primary",
-              "label": "Primary"
+              "label": "Button Primary"
             },
             {
               "value": "primary-dark",
-              "label": "Primary on Dark Background"
+              "label": "Button Primary on Dark Background"
             },
             {
               "value": "secondary",
-              "label": "Secondary"
+              "label": "Button Secondary"
             },
             {
               "value": "secondary-dark",
-              "label": "Secondary on Dark Background"
+              "label": "Button Secondary on Dark Background"
             },
             {
               "value": "link-1",
-              "label": "Link style 1"
+              "label": "Link to New Page"
             },
             {
               "value": "link-1-dark",
-              "label": "Link style 1 on Dark Background"
+              "label": "Link to New Page on Dark Background"
             },
             {
               "value": "link-2",
-              "label": "Link style 2"
+              "label": "Link to Different Page or Modal"
             },
             {
               "value": "link-2-dark",
-              "label": "Link style 2 on Dark Background"
+              "label": "Link to Different Page or Modal on Dark Background"
             }
           ]
         },
