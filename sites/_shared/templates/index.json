@@ -295,7 +295,7 @@
           "type": "description",
           "settings": {
             "text": "<p>Discover how Frye fashion helps Abby, an artist, musician, and traveler, take on new opportunities.<\/p>",
-            "text_style": "frye-body-small",
+            "text_style": "frye-body",
             "text_color": "#000000"
           }
         },

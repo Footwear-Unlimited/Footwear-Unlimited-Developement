@@ -300,7 +300,7 @@
           "type": "description",
           "settings": {
             "text": "<p>Discover how Frye fashion helps Abby, an artist, musician, and traveler, take on new opportunities.<\/p>",
-            "text_style": "frye-body-small",
+            "text_style": "frye-body",
             "text_color": "#000000"
           }
         },
@@ -327,10 +327,11 @@
       "settings": {
         "background_color": "",
         "image": "shopify:\/\/shop_images\/frye_meet-abby-desktop.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/frye_meet-abby-mobile_87c41336-bdef-406e-9b95-a7a1dff09408.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_meet-abby-mobile_1829717a-ba79-4a63-a2c6-05458a248b76.jpg",
         "content_background_color": "#f5f5f5",
         "layout": "image_first",
         "layout_mobile": "image_first",
+        "layout_mobile_width": "mobile-content-narrow",
         "show_timeline": false,
         "desktop_top_padding": 80,
         "desktop_bottom_padding": 80,
