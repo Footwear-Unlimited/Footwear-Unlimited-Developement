@@ -7,6 +7,7 @@
           "type": "eyebrow",
           "settings": {
             "eyebrow": "FALL 2022",
+            "eyebrow_style": "frye-eyebrow",
             "eyebrow_color": "#ffffff"
           }
         },
@@ -43,6 +44,7 @@
         "mobile_image": "shopify:\/\/shop_images\/frye_homepage-hero-mobile.jpg",
         "section_background_color": "rgba(0,0,0,0)",
         "content_background_color": "#000000",
+        "content_background_opacity": 100,
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
@@ -59,17 +61,21 @@
         "bd429c37-3e8f-480c-bea9-baba0993fc6b": {
           "type": "link",
           "settings": {
-            "heading": "WOMEN'S BOOTS",
-            "heading_size": "frye-headline-5",
-            "heading_color": "#000000",
-            "heading_on_image": false,
             "link_url": "",
             "image": "shopify:\/\/shop_images\/frye_homepage-womens-boots.jpg",
             "image_hover": "noeffect",
+            "heading": "WOMEN'S BOOTS",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
+            "eyebrow": "",
+            "eyebrow_color": "",
             "description": "",
+            "text_style": "frye-body",
+            "text_color": "",
             "button_label": "",
-            "background_color": "",
             "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -77,17 +83,21 @@
         "f974ce0c-68be-41d2-b6df-3c4522008847": {
           "type": "link",
           "settings": {
-            "heading": "MEN'S BOOTS",
-            "heading_size": "frye-headline-5",
-            "heading_color": "",
-            "heading_on_image": false,
             "link_url": "",
             "image": "shopify:\/\/shop_images\/frye_homepage-mens-boots.jpg",
             "image_hover": "noeffect",
+            "heading": "MEN'S BOOTS",
+            "heading_size": "frye-headline-5",
+            "heading_color": "",
+            "eyebrow": "",
+            "eyebrow_color": "",
             "description": "",
+            "text_style": "frye-body",
+            "text_color": "",
             "button_label": "",
-            "background_color": "",
             "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -95,17 +105,21 @@
         "918c25d9-96d3-42e2-8318-a4f699977a9c": {
           "type": "link",
           "settings": {
-            "heading": "BAGS & ACCESSORIES",
-            "heading_size": "frye-headline-5",
-            "heading_color": "#000000",
-            "heading_on_image": false,
             "link_url": "",
             "image": "shopify:\/\/shop_images\/frye_homepage-bags-accessories.jpg",
             "image_hover": "noeffect",
+            "heading": "BAGS & ACCESSORIES",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
+            "eyebrow": "",
+            "eyebrow_color": "",
             "description": "",
+            "text_style": "frye-body",
+            "text_color": "",
             "button_label": "",
-            "background_color": "",
             "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -122,6 +136,7 @@
         "heading_size": "frye-headline-1",
         "heading_color": "#000000",
         "eyebrow": "SHOP OUR BEST SELLING",
+        "eyebrow_style": "frye-eyebrow",
         "eyebrow_color": "#000000",
         "heading_wrapper_animation": "NoEffect",
         "heading_wrapper_animation_time": "0.2s",
@@ -144,6 +159,7 @@
           "type": "eyebrow",
           "settings": {
             "text": "TIMELESS",
+            "eyebrow_style": "frye-eyebrow",
             "text_color": "#fffdf7"
           }
         },
@@ -210,6 +226,7 @@
           "type": "eyebrow",
           "settings": {
             "text": "CELEBRATING 160 YEARS OF FRYE",
+            "eyebrow_style": "frye-eyebrow",
             "text_color": "#ffffff"
           }
         },
@@ -270,12 +287,66 @@
         "mobile_content_alignment": "center",
         "mobile_image_width": "large"
       }
+    },
+    "2eae1544-330a-4b26-a0d3-b97fd84cd84c": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "00605c52-8a84-4d69-81d0-882a2d57cf14": {
+          "type": "heading",
+          "settings": {
+            "text": "MEET ABBY",
+            "text_color": "#000000",
+            "text_size": "frye-headline-3"
+          }
+        },
+        "24a89f07-bd64-4d9e-93b3-324b20337a80": {
+          "type": "description",
+          "settings": {
+            "text": "<p>Discover how Frye fashion helps Abby, an artist, musician, and traveler, take on new opportunities.<\/p>",
+            "text_style": "frye-body-small",
+            "text_color": "#000000"
+          }
+        },
+        "491a7909-5b23-428f-8cf8-5b11bf0b05c2": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop Abby’s Picks",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "00605c52-8a84-4d69-81d0-882a2d57cf14",
+        "24a89f07-bd64-4d9e-93b3-324b20337a80",
+        "491a7909-5b23-428f-8cf8-5b11bf0b05c2"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_meet-abby-desktop.png",
+        "image_mobile": "shopify:\/\/shop_images\/frye_meet-abby-mobile.jpg",
+        "content_background_color": "#f2ebe5",
+        "layout": "image_first",
+        "layout_mobile": "image_first",
+        "show_timeline": false,
+        "desktop_top_padding": 80,
+        "desktop_bottom_padding": 80,
+        "mobile_top_padding": 50,
+        "mobile_bottom_padding": 50
+      }
     }
   },
   "order": [
     "image_banner",
     "511aedf5-a6b6-4601-ac83-12e99befa7ab",
     "f10bf129-5ce1-45ec-8780-3420a45a3a91",
-    "9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff"
+    "9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff",
+    "2eae1544-330a-4b26-a0d3-b97fd84cd84c"
   ]
 }
