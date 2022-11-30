@@ -458,6 +458,7 @@
 @media screen and (max-width: 749px) {
   .banner--mobile-bottom .banner__content {
     order: 2;
+    padding: 0;
   }
 }
 
