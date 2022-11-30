@@ -29,13 +29,15 @@
 .list-social {
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.4rem;
+  gap: .5rem;
 }
 
 @media screen and (max-width: 989px) {
   .footer__list-social.list-social {
-    justify-content: space-evenly;
+    justify-content: center;
     width: 90%;
+    margin-bottom: 4rem;
+    gap: 1rem;
   }
 
   .footer-mobile--socials {

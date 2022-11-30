@@ -1853,7 +1853,7 @@ details[open] > .share-button__fallback {
   background-color: var(--color-styleguide-white);
   border: 0.1rem solid var(--color-styleguide-black);
   border-radius: 0;
-  color: var(--color-foreground);
+  color: var(--color-styleguide-black);
   font-size: 1.6rem;
   width: 100%;
   box-shadow: 0 0 0 0.1rem var(--color-accent-2);
