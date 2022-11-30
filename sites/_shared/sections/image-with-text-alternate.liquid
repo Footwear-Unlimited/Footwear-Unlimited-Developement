@@ -70,7 +70,7 @@
     </div>
 
     <div class="grid__item grid__item--text-content">
-      <div class="image-with-text-alternate__content image-with-text-alternate__content--adapt" style="background-color: {{ section.settings.content_background_color }};">
+      <div class="image-with-text-alternate__content image-with-text-alternate__content--adapt {{ section.settings.layout_mobile_width }}" style="background-color: {{ section.settings.content_background_color }};">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
@@ -256,6 +256,22 @@
       ],
       "default": "image_first",
       "label": "Mobile layout options"
+    },
+    {
+      "type": "select",
+      "id": "layout_mobile_width",
+      "options": [
+        {
+          "value": "mobile-content-default",
+          "label": "Content full width"
+        },
+        {
+          "value": "mobile-content-narrow",
+          "label": "Content narrow"
+        }
+      ],
+      "default": "mobile-content-default",
+      "label": "Mobile content options"
     },
     {
       "type": "header",
