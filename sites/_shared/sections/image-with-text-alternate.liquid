@@ -1,6 +1,6 @@
 {{ 'section-image-with-text-alternate.css' | asset_url | stylesheet_tag }}
 
-<div class="image-with-text-alternate">
+<div class="image-with-text-alternate page-width page-width--narrow">
   <div class="image-with-text-alternate__background">
 
     {%- if section.settings.background_image != blank -%}
@@ -42,7 +42,7 @@
   </div>
 
   <div class="image-with-text-alternate__grid image-with-text-alternate__grid--img-padding-large {% if section.settings.layout == 'text_first' %} image-with-text-alternate__grid--reverse{% endif %} {% if section.settings.layout_mobile == 'text_first' %} image-with-text-alternate__grid--reverse--col{% endif %} grid grid--gapless grid--1-col grid--2-col-tablet">
-    <div class="grid__item grid__item--padding-large grid__item--image-content">
+    <div class="grid__item grid__item--padding-large grid__item--image-content {{ section.settings.image_size }}">
       <div class="image-with-text-alternate__media {% if section.settings.image != blank %}media {% else %}image-with-text-alternate__media--placeholder placeholder{% endif %}"
         {% if section.settings.image != blank%} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
@@ -226,6 +226,16 @@
       "default": "#000"
     },
     {
+      "type": "checkbox",
+      "id": "show_timeline",
+      "default": false,
+      "label": "Display Timeline line below section"
+    },
+    {
+      "type": "header",
+      "content": "Layout options - desktop"
+    },
+    {
       "type": "select",
       "id": "layout",
       "options": [
@@ -239,7 +249,31 @@
         }
       ],
       "default": "image_first",
-      "label": "Desktop layout options"
+      "label": "Display option"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "options": [
+        {
+          "value": "image-narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "image-default",
+          "label": "Default"
+        },
+        {
+          "value": "image-wide",
+          "label": "Wide"
+        }
+      ],
+      "default": "image-default",
+      "label": "Image size option"
+    },
+    {
+      "type": "header",
+      "content": "Layout options - mobile"
     },
     {
       "type": "select",
@@ -255,7 +289,7 @@
         }
       ],
       "default": "image_first",
-      "label": "Mobile layout options"
+      "label": "Display option"
     },
     {
       "type": "select",
@@ -272,16 +306,6 @@
       ],
       "default": "mobile-content-default",
       "label": "Mobile content options"
-    },
-    {
-      "type": "header",
-      "content": "Timeline options"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_timeline",
-      "default": false,
-      "label": "Display line below section content"
     },
     {
       "type": "header",

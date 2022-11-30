@@ -4,6 +4,16 @@
   padding-bottom: 5rem;
 }
 
+.image-with-text-alternate.page-width.page-width--narrow {
+  max-width: 96rem;
+}
+
+@media screen and (min-width: 990px) {
+  .image-with-text-alternate.page-width.page-width--narrow {
+    max-width: 127.5rem;
+  }
+}
+
 .section-image-with-text-alternate {
   position: relative;
 }
@@ -355,6 +365,14 @@
   .grid--2-col-tablet .grid__item.grid__item--image-content  {
     width: 50%;
     padding-left: 8rem;
+  }
+
+  .grid--2-col-tablet .grid__item--image-content.image-narrow {
+    width: 33%;
+  }
+
+  .grid--2-col-tablet .grid__item--image-content.image-wide {
+    width: 65%;
   }
 
   .grid--2-col-tablet .grid__item.grid__item--text-content {
