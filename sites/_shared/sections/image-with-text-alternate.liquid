@@ -320,7 +320,8 @@
         {
           "type": "text",
           "id": "text",
-          "label": "Text"
+          "label": "Text",
+          "default": "Headline"
         },
         {
           "type": "color",
@@ -382,6 +383,7 @@
         {
           "type": "richtext",
           "id": "text",
+          "default": "<p>Give customers details about the image or content on the template.</p>",
           "label": "Text"
         },
         {
@@ -629,7 +631,21 @@
   ],
   "presets": [
     {
-      "name": "Image with text alternate"
+      "name": "Image with text alternate",
+      "blocks": [
+        {
+          "type": "eyebrow"
+        },
+        {
+          "type": "heading"
+        },
+        {
+          "type": "description"
+        },
+        {
+          "type": "button"
+        }
+      ]
     }
   ]
 }

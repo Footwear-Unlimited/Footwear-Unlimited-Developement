@@ -130,7 +130,7 @@
 }
 
 .image-with-text-alternate__text {
-  margin: 0.75rem 0;
+  margin: 0.25rem 0 1rem;
 }
 
 .image-with-text-alternate__text p {
@@ -202,7 +202,6 @@
 .image-with-text-alternate__content .button {
   min-width: 21.5rem;
   height: auto;
-  margin-right: 2rem;
 }
 
 .image-with-text-alternate__box > * + .image-with-text-alternate__text {
@@ -256,11 +255,14 @@
   object-fit: cover;
 }
 
+.image-with-text-alternate__eyebrow.frye-eyebrow-large {
+  margin-bottom: 1rem;
+}
+
 .image-with-text-alternate__button-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
 }
 
 .image-with-text-alternate__button-wrapper .image-with-text-alternate__button + .image-with-text-alternate__button {
@@ -339,7 +341,7 @@
 
 @media screen and (min-width: 960px) {
   .image-with-text-alternate__content {
-    padding: 5.75rem 3rem;
+    padding: 5.75rem 5rem;
   }
 
   .image-with-text-alternate__box {

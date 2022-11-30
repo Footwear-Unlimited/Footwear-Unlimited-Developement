@@ -536,8 +536,9 @@ h6,
 
 .frye-eyebrow-large {
   font-family: var(--font-body-family);
-  font-size: calc(var(--font-body-scale) * 1.6rem);
-  letter-spacing: 0.3rem;
+  font-size: calc(var(--font-body-scale) * 1.8rem);
+  line-height: 1.45;
+  letter-spacing: -0.034rem;
 }
 
 .frye-pullquote {
