@@ -39,8 +39,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 6.2rem;
-  width: 6.2rem;
+  height: 10.9rem;
+  width: 12.4rem;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -50,16 +50,16 @@
 }
 
 .deferred-media__poster-button:hover {
-  height: calc(6.2rem + 20px);
-  width: calc(6.2rem + 20px);
+  height: calc(10.9rem + 20px);
+  width: calc(12.4rem + 20px);
 }
 
 .deferred-media__poster-button:hover .icon{
-  height: calc(6.2rem + 20px);
-  width: calc(6.2rem + 20px);
+  height: calc(10.9rem + 20px);
+  width: calc(12.4rem + 20px);
 }
 
 .deferred-media__poster-button .icon {
-  width: 6.2rem;
-  height: 6.2rem;
+  width: 12.4rem;
+  height: 10.9rem;
 }

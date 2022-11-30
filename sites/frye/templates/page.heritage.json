@@ -96,7 +96,7 @@
           "type": "text",
           "settings": {
             "text": "<p>In March 1863, John A. Frye opened the doors of a small shop on Elm Street in Marlboro, Massachusetts. This is our history and our heritage, told in every stitch of every shoe we’ve made for nearly 160 years: across cultural shifts and changes in fashion, for generation upon generation.<\/p>",
-            "text_style": "text-body-medium",
+            "text_style": "frye-body",
             "text_color": "#ffffff",
             "richtext_animation": "NoEffect",
             "richtext_animation_time": "0.2s"
@@ -115,10 +115,31 @@
         "mobile_bottom_padding": 30
       }
     },
-    "6a9c7c0c-61f1-4e67-995c-3b3f0fc15da7": {
+    "50064351-4f50-44e7-974c-89337fc6f26c": {
+      "type": "video",
+      "settings": {
+        "cover_image": "shopify:\/\/shop_images\/frye_heritage-video-thumbnail.jpg",
+        "image_hover": "noeffect",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=0lsuQufRzRA",
+        "description": "The Frye Story",
+        "full_width": true,
+        "enable_autoplay": false,
+        "background_color": "#000000",
+        "button_fill_color": "#ffffff",
+        "desktop_top_padding": 0,
+        "desktop_right_padding": 75,
+        "desktop_bottom_padding": 90,
+        "desktop_left_padding": 75,
+        "mobile_top_padding": 0,
+        "mobile_right_padding": 20,
+        "mobile_bottom_padding": 50,
+        "mobile_left_padding": 20
+      }
+    },
+    "764c6aff-ffe3-4891-9ae0-bac16ec30580": {
       "type": "rich-text",
       "blocks": {
-        "e74c52a3-adbc-425b-83bb-adda6d058b2b": {
+        "71e9ec54-a341-45be-ae44-e1d5ab5b3819": {
           "type": "eyebrow",
           "settings": {
             "text": "THE FRYE STORY",
@@ -126,7 +147,7 @@
             "eyebrow_color": "#000000"
           }
         },
-        "template--17038883914005__6a9c7c0c-61f1-4e67-995c-3b3f0fc15da7-1669699585c34e76a9-0": {
+        "template--17038883914005__764c6aff-ffe3-4891-9ae0-bac16ec30580-1669776681c188577a-0": {
           "type": "heading",
           "settings": {
             "heading": "INNOVATION IN THE PURSUIT OF TIMELESSNESS",
@@ -138,15 +159,15 @@
         }
       },
       "block_order": [
-        "e74c52a3-adbc-425b-83bb-adda6d058b2b",
-        "template--17038883914005__6a9c7c0c-61f1-4e67-995c-3b3f0fc15da7-1669699585c34e76a9-0"
+        "71e9ec54-a341-45be-ae44-e1d5ab5b3819",
+        "template--17038883914005__764c6aff-ffe3-4891-9ae0-bac16ec30580-1669776681c188577a-0"
       ],
       "settings": {
         "background_color": "",
-        "desktop_top_padding": 55,
-        "desktop_bottom_padding": 30,
-        "mobile_top_padding": 40,
-        "mobile_bottom_padding": 15
+        "desktop_top_padding": 60,
+        "desktop_bottom_padding": 60,
+        "mobile_top_padding": 45,
+        "mobile_bottom_padding": 45
       }
     }
   },
@@ -154,6 +175,7 @@
     "16484545291ecbe325",
     "0cd1157c-e548-458c-856c-52c1d3484c58",
     "28bd5bd3-f0a6-448b-afb0-7433b5c28946",
-    "6a9c7c0c-61f1-4e67-995c-3b3f0fc15da7"
+    "50064351-4f50-44e7-974c-89337fc6f26c",
+    "764c6aff-ffe3-4891-9ae0-bac16ec30580"
   ]
 }
