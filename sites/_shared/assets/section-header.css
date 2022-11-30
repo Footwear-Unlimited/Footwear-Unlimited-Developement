@@ -104,7 +104,7 @@ summary.list-menu__item {
     grid-template-areas: 'heading navigation icons';
     grid-template-columns: auto 1fr auto;
     column-gap: 1rem;
-    padding: 1rem 9.8rem;
+    padding: 1rem 8.5rem;
   }
 
   .header .header__inline-menu {

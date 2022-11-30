@@ -10,6 +10,13 @@
   max-width: 82.75rem;
 }
 
+
+@media screen and (min-width: 990px) {
+  .featured-links__content.page-width--narrow {
+    max-width: 104rem;
+  }
+}
+
 /** Top content **/
 
 .featured-links__heading-wrapper {
@@ -64,6 +71,12 @@
   .featured-links__link-grid {
     flex-direction: column;
     gap: 2rem;
+  }
+}
+
+@media screen and (min-width:990px) {
+  .featured-links__link-grid.featured-links__link--style-margins {
+    gap: 3rem;
   }
 }
 
