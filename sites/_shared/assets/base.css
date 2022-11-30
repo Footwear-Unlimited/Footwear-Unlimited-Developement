@@ -67,6 +67,7 @@ body {
 @media screen and (min-width: 750px) {
   body {
     font-size: 1.6rem;
+    line-height: 2.2rem;
   }
 }
 
@@ -245,44 +246,48 @@ p,
 }
 
 .text-body-small,
- .frye-body-small {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  letter-spacing: normal;
+.frye-body-small {
+  font-size: 1.3rem !important;
+  line-height: 1.8 !important;
+  letter-spacing: normal !important;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
 }
 
-.text-body-medium {
-  font-size: 1.6rem;
-  line-height: 2rem;
-  letter-spacing: normal;
+.text-body-medium,
+.frye-body-medium {
+  font-size: 1.4rem !important;
+  line-height: 2.6rem !important;
+  letter-spacing: normal !important;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
 }
 
 @media only screen and (min-width: 750px) {
-  .text-body-medium {
-    font-size: 2.4rem;
-    line-height: 3.7rem;
+  .text-body-medium,
+  .frye-body-medium {
+    font-size: 1.7rem !important;
+    line-height: 2.7rem !important;
   }
 }
 
-.text-body-large {
-  font-size: 2.4rem;
-  line-height: 3.7rem;
-  letter-spacing: normal;
+.text-body-large,
+.frye-body-large {
+  font-size: 2.4rem !important;
+  line-height: 3.7rem !important;
+  letter-spacing: normal !important;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
 }
 
 @media only screen and (min-width: 750px) {
-  .text-body-large {
-    font-size: 3.2rem;
-    line-height: 4.5rem;
+  .text-body-large,
+  .frye-body-large {
+    font-size: 3.2rem !important;
+    line-height: 4.5rem !important;
   }
 }
 
@@ -306,16 +311,16 @@ h6,
   line-height: calc(1 + 0.15 / max(1, var(--font-heading-scale)));
 }
 
-.h0, 
- .frye-headline0 {
+.h0,
+ .frye-headline-0 {
   font-size: calc(var(--font-heading-scale) * 4.5rem);
   font-family: var(--font-heading-family);
-  line-height: 0.95;
+  line-height: 5rem;
 }
 
 @media only screen and (min-width: 750px) {
- .h0, 
-  .frye-headline0 {
+ .h0,
+  .frye-headline-0 {
     font-size: calc(var(--font-heading-scale) * 8rem);
   }
 }
@@ -344,12 +349,14 @@ h1,
 .frye-headline-1 {
   font-size: calc(var(--font-heading-scale) * 4rem);
   font-family: var(--font-heading-family);
-  line-height: 0.95;
+  line-height: 4rem;
+  letter-spacing: normal;
 }
 
 @media only screen and (min-width: 750px) {
   .frye-headline-1 {
     font-size: calc(var(--font-heading-scale) * 5.5rem);
+    letter-spacing: -0.11rem;
   }
 }
 
@@ -518,9 +525,15 @@ h6,
   letter-spacing: 0.3rem;
 }
 
+.frye-eyebrow-large {
+  font-family: var(--font-body-family);
+  font-size: calc(var(--font-body-scale) * 1.6rem);
+  letter-spacing: 0.3rem;
+}
+
 .frye-pullquote {
   font-family: var(--font-heading-family);
-  font-size: calc(var(--font-body-scale) * 2.5rem); 
+  font-size: calc(var(--font-body-scale) * 2.5rem);
   line-height: 1.375;
 }
 
@@ -1351,7 +1364,7 @@ deferred-media {
   box-shadow: 0 0 0 0.1rem var(--color-button);
   color: var(--color-foreground);
   min-width: 12rem;
-  min-height: 4.5rem;
+  min-height: 3.5rem;
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
@@ -1384,12 +1397,18 @@ deferred-media {
 .shopify-challenge__button,
 .customer button {
   font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: calc(1 + 0.2 / var(--font-body-scale));
+  font-weight: 600;
+  letter-spacing: normal;
 }
 
 .button--small {
-  padding: 1.2rem 2.6rem;
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 750px) {
+  .button--small {
+    padding: 1rem 4rem;
+  }
 }
 
 .button--primary {
@@ -1514,37 +1533,6 @@ deferred-media {
   background-color: var(--color-styleguide-charcoal);
   color: var(--color-styleguide-white);
   border-color: var(--color-styleguide-charcoal);
-  text-decoration: none;
-}
-
-.button--tertiary {
-  background-color: var(--color-button-background-3);
-  color: var(--color-button-foreground-3);
-  border-color: var(--color-button-foreground-3);
-  text-decoration: none;
-}
-
-.button--tertiary:hover,
-.button--tertiary.hover {
-  background-color: var(--color-button-background-3);
-  color: var(--color-button-hover-3);
-  border-color: var(--color-button-hover-3);
-  text-decoration: none;
-}
-
-.button--tertiary:active,
-.button--tertiary.active {
-  background-color: var(--color-button-background-3);
-  color: var(--color-button-active-3);
-  border-color: var(--color-button-active-3);
-  text-decoration: none;
-}
-
-.button--tertiary:disabled,
-.button--tertiary.disabled {
-  background-color: var(--color-button-background-3);
-  color: var(--color-button-foreground-3);
-  border-color: var(--color-button-background-3);
   text-decoration: none;
 }
 
