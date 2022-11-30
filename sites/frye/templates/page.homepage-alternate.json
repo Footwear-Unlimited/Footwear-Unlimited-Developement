@@ -145,10 +145,146 @@
         "mobile_top_padding": 40,
         "mobile_bottom_padding": 30
       }
+    },
+    "dc6d5294-0bc8-4c8d-9e2d-49b522bf1024": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-0": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "CARSON",
+            "text_color": "#fffdf7"
+          }
+        },
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "BELTED BOOTIE",
+            "heading_size": "frye-headline-1",
+            "heading_color": "#fffdf7"
+          }
+        },
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A variation of the top selling, full grain leather Carson Piping Bootie with an inside zipper.<\/p>",
+            "text_style": "text-body-medium",
+            "text_color": "#fffdf7"
+          }
+        },
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-3": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop Belted Booties",
+            "button_link_1": "",
+            "button_style_1": "primary-dark",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-0",
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-1",
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-2",
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-3"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "image": "shopify:\/\/shop_images\/frye_homepage-belt-desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_homepage-belt-mobile.jpg",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "height": "adapt",
+        "image_hover": "noeffect",
+        "section_padding": "none",
+        "content_layout": "no-overlap",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "desktop_image_width": "normal",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "mobile_image_width": "large"
+      }
+    },
+    "fb5b897d-9cf6-4a00-bf05-33aea556095b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-0": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "CELEBRATING 160 YEARS OF FRYE",
+            "text_color": "#ffffff"
+          }
+        },
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "MADE IN THE USA",
+            "heading_size": "frye-headline-1",
+            "heading_color": "#ffffff"
+          }
+        },
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pellentesque laoreet consequat dolor. <br\/>Maecenas rhoncus orci ut sapien posuere.<\/p>",
+            "text_style": "text-body-medium",
+            "text_color": "#ffffff"
+          }
+        },
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-3": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop Made in the USA",
+            "button_link_1": "",
+            "button_style_1": "primary-dark",
+            "button_label_2": "Learn About Our Heritage  →",
+            "button_link_2": "",
+            "button_style_2": "link-1-dark",
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-0",
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-1",
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-2",
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-3"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "background_desktop_image": "shopify:\/\/shop_images\/frye_pattern-bg-desktop.jpg",
+        "background_mobile_image": "shopify:\/\/shop_images\/frye_pattern-bg-mobile.jpg",
+        "image": "shopify:\/\/shop_images\/frye_usa-boot-desktop_bff9bb8a-3295-4279-8905-7a315b5cbb19.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_usa-boot-mobile_777e025f-c652-451b-80eb-10e73ad08fa9.jpg",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "height": "adapt",
+        "image_hover": "noeffect",
+        "section_padding": "none",
+        "content_layout": "no-overlap",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "desktop_image_width": "normal",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "center",
+        "mobile_image_width": "large"
+      }
     }
   },
   "order": [
     "image_banner",
-    "48609194-81a2-43e2-8337-c6df1727220f"
+    "48609194-81a2-43e2-8337-c6df1727220f",
+    "dc6d5294-0bc8-4c8d-9e2d-49b522bf1024",
+    "fb5b897d-9cf6-4a00-bf05-33aea556095b"
   ]
 }
