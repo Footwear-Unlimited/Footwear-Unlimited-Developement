@@ -368,7 +368,7 @@
 }
 
 .banner__content {
-  padding: 0;
+  padding: 4rem;
   display: flex;
   position: relative;
   width: 100%;
@@ -501,7 +501,7 @@
 
 @media screen and (min-width: 750px) {
   .banner__box {
-    padding: 3.5rem;
+    padding: 3.5rem 4rem;
     width: auto;
     max-width: 71rem;
     min-width: 45rem;
