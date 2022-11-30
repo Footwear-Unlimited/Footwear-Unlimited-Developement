@@ -61,9 +61,94 @@
         "show_text_below": true,
         "show_container_mobile": true
       }
+    },
+    "48609194-81a2-43e2-8337-c6df1727220f": {
+      "type": "featured-links",
+      "blocks": {
+        "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-0": {
+          "type": "link",
+          "settings": {
+            "heading": "BAGS & ACCESSORIES",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
+            "heading_on_image": false,
+            "link_url": "",
+            "image": "shopify:\/\/shop_images\/frye_spring-homepage-bags-accessories.jpg",
+            "image_hover": "noeffect",
+            "description": "",
+            "button_label": "",
+            "background_color": "",
+            "button_style": "primary",
+            "featured_animation": "NoEffect",
+            "featured_animation_time": "0.2s"
+          }
+        },
+        "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-1": {
+          "type": "link",
+          "settings": {
+            "heading": "BELTS",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
+            "heading_on_image": false,
+            "link_url": "",
+            "image": "shopify:\/\/shop_images\/frye_spring-homepage-belts.jpg",
+            "image_hover": "noeffect",
+            "description": "",
+            "button_label": "",
+            "background_color": "",
+            "button_style": "primary",
+            "featured_animation": "NoEffect",
+            "featured_animation_time": "0.2s"
+          }
+        },
+        "2159c6d4-83e7-46cb-aea6-908e7075de0b": {
+          "type": "link",
+          "settings": {
+            "heading": "WOMEN'S BOOTS",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
+            "heading_on_image": false,
+            "link_url": "",
+            "image": "shopify:\/\/shop_images\/frye_spring-homepage-womens-boots.jpg",
+            "image_hover": "noeffect",
+            "description": "",
+            "button_label": "",
+            "background_color": "",
+            "button_style": "primary",
+            "featured_animation": "NoEffect",
+            "featured_animation_time": "0.2s"
+          }
+        }
+      },
+      "block_order": [
+        "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-0",
+        "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-1",
+        "2159c6d4-83e7-46cb-aea6-908e7075de0b"
+      ],
+      "settings": {
+        "background_color": "",
+        "heading": "SPRING COLLECTIONS",
+        "heading_size": "frye-headline-1",
+        "heading_color": "#000000",
+        "eyebrow": "WILD AND FREE",
+        "eyebrow_color": "#000000",
+        "heading_wrapper_animation": "NoEffect",
+        "heading_wrapper_animation_time": "0.2s",
+        "link_display": "margins",
+        "desktop_columns": "3",
+        "desktop_tile_layout": "image-on-top",
+        "desktop_content_alignment": "center",
+        "mobile_tile_layout": "image-on-top",
+        "mobile_content_alignment": "center",
+        "desktop_top_padding": 60,
+        "desktop_bottom_padding": 45,
+        "mobile_top_padding": 40,
+        "mobile_bottom_padding": 30
+      }
     }
   },
   "order": [
-    "image_banner"
+    "image_banner",
+    "48609194-81a2-43e2-8337-c6df1727220f"
   ]
 }
