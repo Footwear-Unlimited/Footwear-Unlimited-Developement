@@ -7,6 +7,7 @@
           "type": "eyebrow",
           "settings": {
             "eyebrow": "OUR HERITAGE IS BACKED BY",
+            "eyebrow_style": "frye-eyebrow",
             "eyebrow_color": "#ffffff"
           }
         },
@@ -28,7 +29,7 @@
         "mobile_image": "shopify:\/\/shop_images\/frye_heritage-hero-mobile.jpg",
         "section_background_color": "",
         "content_background_color": "rgba(0,0,0,0)",
-        "content_background_color_opacity": 100,
+        "content_background_opacity": 100,
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
@@ -59,7 +60,7 @@
           "type": "text",
           "settings": {
             "text": "<p>With a heritage rooted in craftsmanship, Frye awakens the curious, the courageous, the adventurous in all of us.<\/p>",
-            "text_style": "frye-headline-9",
+            "text_style": "frye-pullquote",
             "text_color": "#000000",
             "richtext_animation": "NoEffect",
             "richtext_animation_time": "0.2s"
@@ -121,6 +122,7 @@
           "type": "eyebrow",
           "settings": {
             "text": "THE FRYE STORY",
+            "eyebrow_style": "frye-eyebrow",
             "eyebrow_color": "#000000"
           }
         },
