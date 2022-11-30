@@ -7,6 +7,7 @@
           "type": "eyebrow",
           "settings": {
             "eyebrow": "FRYE STYLES ARE",
+            "eyebrow_style": "frye-eyebrow",
             "eyebrow_color": "#ffffff"
           }
         },
@@ -52,6 +53,7 @@
         "mobile_image": "shopify:\/\/shop_images\/frye_spring-homepage-hero-mobile.jpg",
         "section_background_color": "rgba(0,0,0,0)",
         "content_background_color": "#000000",
+        "content_background_opacity": 100,
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
@@ -68,17 +70,17 @@
         "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-0": {
           "type": "link",
           "settings": {
-            "heading": "BAGS & ACCESSORIES",
-            "heading_size": "frye-headline-5",
-            "heading_color": "#000000",
-            "heading_on_image": false,
             "link_url": "",
             "image": "shopify:\/\/shop_images\/frye_spring-homepage-bags-accessories.jpg",
             "image_hover": "noeffect",
+            "heading": "BAGS & ACCESSORIES",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
             "description": "",
             "button_label": "",
-            "background_color": "",
             "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -86,17 +88,17 @@
         "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-1": {
           "type": "link",
           "settings": {
-            "heading": "BELTS",
-            "heading_size": "frye-headline-5",
-            "heading_color": "#000000",
-            "heading_on_image": false,
             "link_url": "",
             "image": "shopify:\/\/shop_images\/frye_spring-homepage-belts.jpg",
             "image_hover": "noeffect",
+            "heading": "BELTS",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
             "description": "",
             "button_label": "",
-            "background_color": "",
             "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -104,17 +106,17 @@
         "2159c6d4-83e7-46cb-aea6-908e7075de0b": {
           "type": "link",
           "settings": {
-            "heading": "WOMEN'S BOOTS",
-            "heading_size": "frye-headline-5",
-            "heading_color": "#000000",
-            "heading_on_image": false,
             "link_url": "",
             "image": "shopify:\/\/shop_images\/frye_spring-homepage-womens-boots.jpg",
             "image_hover": "noeffect",
+            "heading": "WOMEN'S BOOTS",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
             "description": "",
             "button_label": "",
-            "background_color": "",
             "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -131,6 +133,7 @@
         "heading_size": "frye-headline-1",
         "heading_color": "#000000",
         "eyebrow": "WILD AND FREE",
+        "eyebrow_style": "frye-eyebrow",
         "eyebrow_color": "#000000",
         "heading_wrapper_animation": "NoEffect",
         "heading_wrapper_animation_time": "0.2s",
@@ -153,6 +156,7 @@
           "type": "eyebrow",
           "settings": {
             "text": "CARSON",
+            "eyebrow_style": "frye-eyebrow",
             "text_color": "#fffdf7"
           }
         },
@@ -219,6 +223,7 @@
           "type": "eyebrow",
           "settings": {
             "text": "CELEBRATING 160 YEARS OF FRYE",
+            "eyebrow_style": "frye-eyebrow",
             "text_color": "#ffffff"
           }
         },
@@ -279,12 +284,67 @@
         "mobile_content_alignment": "center",
         "mobile_image_width": "large"
       }
+    },
+    "da95d8a8-5502-4071-9630-088acb3e89a7": {
+      "type": "image-with-text-alternate",
+      "blocks": {
+        "ea01038c-3ee9-4938-abe8-ed4c14d42594": {
+          "type": "heading",
+          "settings": {
+            "text": "MEET ABBY",
+            "text_color": "#000000",
+            "text_size": "frye-headline-3"
+          }
+        },
+        "f6570201-f6ae-40d6-9604-038d43719a4c": {
+          "type": "description",
+          "settings": {
+            "text": "<p>Discover how Frye fashion helps Abby, an artist, musician, and traveler, take on new opportunities.<\/p>",
+            "text_style": "frye-body",
+            "text_color": "#000000"
+          }
+        },
+        "c3bb8ff8-8073-41b9-836f-404fdbbf19fd": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Shop Abby’s Picks",
+            "button_link_1": "",
+            "button_style_1": "primary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_2": "primary",
+            "show_side_by_side": false,
+            "show_separator": false,
+            "separator_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "ea01038c-3ee9-4938-abe8-ed4c14d42594",
+        "f6570201-f6ae-40d6-9604-038d43719a4c",
+        "c3bb8ff8-8073-41b9-836f-404fdbbf19fd"
+      ],
+      "settings": {
+        "background_color": "",
+        "image": "shopify:\/\/shop_images\/frye_meet-abby-desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_meet-abby-mobile_1829717a-ba79-4a63-a2c6-05458a248b76.jpg",
+        "content_background_color": "#f5f5f5",
+        "layout": "image_first",
+        "layout_mobile": "image_first",
+        "layout_mobile_width": "mobile-content-narrow",
+        "show_timeline": false,
+        "desktop_top_padding": 80,
+        "desktop_bottom_padding": 80,
+        "mobile_top_padding": 50,
+        "mobile_bottom_padding": 50
+      }
     }
   },
   "order": [
     "image_banner",
     "48609194-81a2-43e2-8337-c6df1727220f",
     "dc6d5294-0bc8-4c8d-9e2d-49b522bf1024",
-    "fb5b897d-9cf6-4a00-bf05-33aea556095b"
+    "fb5b897d-9cf6-4a00-bf05-33aea556095b",
+    "da95d8a8-5502-4071-9630-088acb3e89a7"
   ]
 }

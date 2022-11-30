@@ -122,7 +122,7 @@ html.no-js .no-js-hidden {
 
 @media screen and (min-width: 990px) {
   .page-width--narrow {
-    max-width: 104rem;
+    max-width: 82.75rem;
     padding: 0;
   }
 
@@ -237,12 +237,20 @@ html.no-js .no-js-hidden {
 p,
 .text-body,
 .frye-body {
-  font-size: calc(var(--font-body-scale) * 1.5rem);
+  font-size: calc(var(--font-body-scale) * 1.4rem);
   letter-spacing: normal;
   line-height: 1.8;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
+}
+
+@media only screen and (min-width: 750px) {
+  p,
+  .text-body,
+  .frye-body {
+    font-size: calc(var(--font-body-scale) * 1.5rem);
+  }
 }
 
 .text-body-small,
