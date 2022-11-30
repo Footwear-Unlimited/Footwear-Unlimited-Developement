@@ -7,6 +7,7 @@
           "type": "eyebrow",
           "settings": {
             "eyebrow": "OUR HERITAGE IS BACKED BY",
+            "eyebrow_style": "frye-eyebrow",
             "eyebrow_color": "#ffffff"
           }
         },
@@ -28,7 +29,7 @@
         "mobile_image": "shopify:\/\/shop_images\/frye_heritage-hero-mobile.jpg",
         "section_background_color": "",
         "content_background_color": "rgba(0,0,0,0)",
-        "content_background_color_opacity": 100,
+        "content_background_opacity": 100,
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
@@ -38,9 +39,121 @@
         "show_text_below": false,
         "show_container_mobile": false
       }
+    },
+    "0cd1157c-e548-458c-856c-52c1d3484c58": {
+      "type": "rich-text",
+      "blocks": {
+        "ceffdcaa-847a-4ce1-86da-0ac678c17a7b": {
+          "type": "logo_list",
+          "settings": {
+            "logo_image__1": "shopify:\/\/shop_images\/Group_7.png",
+            "logo_link__1": "",
+            "logo_link__2": "",
+            "logo_link__3": "",
+            "logo_link__4": "",
+            "logo_link__5": "",
+            "logo_animation": "NoEffect",
+            "animation_time": "0.2s"
+          }
+        },
+        "template--17038883914005__0cd1157c-e548-458c-856c-52c1d3484c58-1669695444539477d4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With a heritage rooted in craftsmanship, Frye awakens the curious, the courageous, the adventurous in all of us.<\/p>",
+            "text_style": "frye-pullquote",
+            "text_color": "#000000",
+            "richtext_animation": "NoEffect",
+            "richtext_animation_time": "0.2s"
+          }
+        }
+      },
+      "block_order": [
+        "ceffdcaa-847a-4ce1-86da-0ac678c17a7b",
+        "template--17038883914005__0cd1157c-e548-458c-856c-52c1d3484c58-1669695444539477d4-1"
+      ],
+      "settings": {
+        "background_color": "rgba(0,0,0,0)",
+        "desktop_top_padding": 35,
+        "desktop_bottom_padding": 55,
+        "mobile_top_padding": 5,
+        "mobile_bottom_padding": 25
+      }
+    },
+    "28bd5bd3-f0a6-448b-afb0-7433b5c28946": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17038883914005__28bd5bd3-f0a6-448b-afb0-7433b5c28946-166969799436d4c761-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE ORIGINAL. THE AUTHENTIC. THE ONLY.",
+            "heading_size": "frye-headline-2",
+            "heading_color": "#ffffff",
+            "headline_animation": "NoEffect",
+            "headline_animation_time": "0.2s"
+          }
+        },
+        "template--17038883914005__28bd5bd3-f0a6-448b-afb0-7433b5c28946-166969799436d4c761-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In March 1863, John A. Frye opened the doors of a small shop on Elm Street in Marlboro, Massachusetts. This is our history and our heritage, told in every stitch of every shoe we’ve made for nearly 160 years: across cultural shifts and changes in fashion, for generation upon generation.<\/p>",
+            "text_style": "text-body-medium",
+            "text_color": "#ffffff",
+            "richtext_animation": "NoEffect",
+            "richtext_animation_time": "0.2s"
+          }
+        }
+      },
+      "block_order": [
+        "template--17038883914005__28bd5bd3-f0a6-448b-afb0-7433b5c28946-166969799436d4c761-0",
+        "template--17038883914005__28bd5bd3-f0a6-448b-afb0-7433b5c28946-166969799436d4c761-1"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "desktop_top_padding": 45,
+        "desktop_bottom_padding": 35,
+        "mobile_top_padding": 25,
+        "mobile_bottom_padding": 30
+      }
+    },
+    "6a9c7c0c-61f1-4e67-995c-3b3f0fc15da7": {
+      "type": "rich-text",
+      "blocks": {
+        "e74c52a3-adbc-425b-83bb-adda6d058b2b": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "THE FRYE STORY",
+            "eyebrow_style": "frye-eyebrow",
+            "eyebrow_color": "#000000"
+          }
+        },
+        "template--17038883914005__6a9c7c0c-61f1-4e67-995c-3b3f0fc15da7-1669699585c34e76a9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "INNOVATION IN THE PURSUIT OF TIMELESSNESS",
+            "heading_size": "frye-headline-2",
+            "heading_color": "#000000",
+            "headline_animation": "NoEffect",
+            "headline_animation_time": "0.2s"
+          }
+        }
+      },
+      "block_order": [
+        "e74c52a3-adbc-425b-83bb-adda6d058b2b",
+        "template--17038883914005__6a9c7c0c-61f1-4e67-995c-3b3f0fc15da7-1669699585c34e76a9-0"
+      ],
+      "settings": {
+        "background_color": "",
+        "desktop_top_padding": 55,
+        "desktop_bottom_padding": 30,
+        "mobile_top_padding": 40,
+        "mobile_bottom_padding": 15
+      }
     }
   },
   "order": [
-    "16484545291ecbe325"
+    "16484545291ecbe325",
+    "0cd1157c-e548-458c-856c-52c1d3484c58",
+    "28bd5bd3-f0a6-448b-afb0-7433b5c28946",
+    "6a9c7c0c-61f1-4e67-995c-3b3f0fc15da7"
   ]
 }

@@ -10,7 +10,6 @@
   max-width: 82.75rem;
 }
 
-
 @media screen and (min-width: 990px) {
   .featured-links__content.page-width--narrow {
     max-width: 104rem;
