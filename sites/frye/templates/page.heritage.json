@@ -1,4 +1,5 @@
 {
+  "wrapper": "div.heritage-page",
   "sections": {
     "16484545291ecbe325": {
       "type": "image-banner",
@@ -164,10 +165,10 @@
       ],
       "settings": {
         "background_color": "",
-        "desktop_top_padding": 60,
-        "desktop_bottom_padding": 60,
-        "mobile_top_padding": 45,
-        "mobile_bottom_padding": 45
+        "desktop_top_padding": 55,
+        "desktop_bottom_padding": 30,
+        "mobile_top_padding": 35,
+        "mobile_bottom_padding": 30
       }
     },
     "bc7d21aa-201e-4dd1-b6ed-0daf5a9e2815": {
@@ -213,9 +214,9 @@
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     },
     "c7950c52-9501-4918-905e-5e50a2b09172": {
@@ -261,9 +262,9 @@
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     },
     "670922c6-0764-46ca-b60e-1c7dbc84250d": {
@@ -309,9 +310,9 @@
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     },
     "3daa5459-eedd-4d00-9ef8-d52c877d37bd": {
@@ -357,9 +358,9 @@
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     },
     "03a45906-2d3f-4b5c-b14f-d83c3a85ed28": {
@@ -405,9 +406,9 @@
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     },
     "5ff94512-e689-419d-8f47-55cff166aae4": {
@@ -468,9 +469,9 @@
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     },
     "712c2637-7b1b-41ce-a8da-1d2514589fb4": {
@@ -516,9 +517,9 @@
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     },
     "e594f31b-e75b-443a-8f91-d56c563207f5": {
@@ -579,9 +580,9 @@
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     },
     "cb101aec-8f91-404f-9b24-397ef0ed4d23": {
@@ -621,15 +622,15 @@
         "background_color": "",
         "image": "shopify:\/\/shop_images\/frye_heritage-timeline-9.jpg",
         "content_background_color": "#000000",
-        "show_timeline": false,
+        "show_timeline": true,
         "layout": "image_first",
         "image_size": "image-narrow",
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     },
     "3ffe4aed-77bc-4f0d-91b8-9c1068870a15": {
@@ -675,15 +676,15 @@
         "background_color": "",
         "image": "shopify:\/\/shop_images\/frye_heritage-timeline-10.jpg",
         "content_background_color": "#f5f5f5",
-        "show_timeline": true,
+        "show_timeline": false,
         "layout": "text_first",
         "image_size": "image-narrow",
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-default",
         "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
+        "desktop_bottom_padding": 40,
         "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
+        "mobile_bottom_padding": 50
       }
     }
   },

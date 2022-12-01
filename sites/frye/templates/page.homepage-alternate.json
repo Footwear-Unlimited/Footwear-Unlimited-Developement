@@ -70,6 +70,9 @@
         "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-0": {
           "type": "link",
           "settings": {
+            "link_url": "",
+            "image": "shopify:\/\/shop_images\/frye_spring-homepage-bags-accessories.jpg",
+            "image_hover": "noeffect",
             "heading": "BAGS & ACCESSORIES",
             "heading_size": "frye-headline-5",
             "heading_color": "#000000",
@@ -77,9 +80,6 @@
             "button_label": "",
             "button_style": "primary",
             "heading_on_image": false,
-            "link_url": "",
-            "image": "shopify:\/\/shop_images\/frye_spring-homepage-bags-accessories.jpg",
-            "image_hover": "noeffect",
             "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
@@ -88,6 +88,9 @@
         "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-1": {
           "type": "link",
           "settings": {
+            "link_url": "",
+            "image": "shopify:\/\/shop_images\/frye_spring-homepage-belts.jpg",
+            "image_hover": "noeffect",
             "heading": "BELTS",
             "heading_size": "frye-headline-5",
             "heading_color": "#000000",
@@ -95,9 +98,6 @@
             "button_label": "",
             "button_style": "primary",
             "heading_on_image": false,
-            "link_url": "",
-            "image": "shopify:\/\/shop_images\/frye_spring-homepage-belts.jpg",
-            "image_hover": "noeffect",
             "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
@@ -106,6 +106,9 @@
         "2159c6d4-83e7-46cb-aea6-908e7075de0b": {
           "type": "link",
           "settings": {
+            "link_url": "",
+            "image": "shopify:\/\/shop_images\/frye_spring-homepage-womens-boots.jpg",
+            "image_hover": "noeffect",
             "heading": "WOMEN'S BOOTS",
             "heading_size": "frye-headline-5",
             "heading_color": "#000000",
@@ -113,9 +116,6 @@
             "button_label": "",
             "button_style": "primary",
             "heading_on_image": false,
-            "link_url": "",
-            "image": "shopify:\/\/shop_images\/frye_spring-homepage-womens-boots.jpg",
-            "image_hover": "noeffect",
             "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
@@ -329,10 +329,10 @@
         "image": "shopify:\/\/shop_images\/frye_meet-abby-desktop.jpg",
         "image_mobile": "shopify:\/\/shop_images\/frye_meet-abby-mobile_1829717a-ba79-4a63-a2c6-05458a248b76.jpg",
         "content_background_color": "#f5f5f5",
+        "show_timeline": false,
         "layout": "image_first",
         "layout_mobile": "image_first",
         "layout_mobile_width": "mobile-content-narrow",
-        "show_timeline": false,
         "desktop_top_padding": 80,
         "desktop_bottom_padding": 80,
         "mobile_top_padding": 50,
