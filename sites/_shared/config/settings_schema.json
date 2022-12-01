@@ -127,6 +127,24 @@
         "label": "Frye Red"
       },
       {
+        "type": "color",
+        "id": "color_border",
+        "default": "#E6E6E6",
+        "label": "Border Color"
+      },
+      {
+        "type": "color",
+        "id": "color_border_styleguide",
+        "default": "#E6E6E6",
+        "label": "Border Color"
+      },
+      {
+        "type": "color",
+        "id": "background_accent",
+        "default": "#F5F5F5",
+        "label": "Background Accent"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__2.content"
       },
@@ -212,6 +230,43 @@
         "unit": "%",
         "label": "t:settings_schema.typography.settings.body_scale.label",
         "default": 100
+      }
+    ]
+  },
+  {
+    "name": "Animations",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Global animations"
+      },
+      {
+        "type": "select",
+        "id": "scroll_appear",
+        "options": [
+          {
+            "value": "fadein",
+            "label": "Fade in"
+          },
+          {
+            "value": "noeffect",
+            "label": "No effect"
+          }
+        ],
+        "default": "noeffect",
+        "label": "Scroll appear default"
+      },
+      {
+        "type": "text",
+        "id": "scroll_appear_timing",
+        "default": ".3",
+        "label": "Scroll appear timing (seconds)"
+      },
+      {
+        "type": "text",
+        "id": "image_hover_timing",
+        "default": ".3",
+        "label": "Image hover timing (seconds)"
       }
     ]
   },
