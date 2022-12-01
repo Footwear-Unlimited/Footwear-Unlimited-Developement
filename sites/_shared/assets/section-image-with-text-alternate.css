@@ -507,5 +507,5 @@
   left: 50%;
   min-height: 13rem;
   max-height: 23rem;
-  border-left: 0.1rem solid #999;
+  border-left: 0.1rem solid var(--color-styleguide-darkgray);
 }

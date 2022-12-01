@@ -22,15 +22,15 @@
         "a5ee69df-7aa4-4637-b3a1-26afbea68dd5": {
           "type": "button",
           "settings": {
-            "button_label_1": "Shop the Fall Collection",
-            "button_link_1": "#",
+            "button_label_1": "Shop Classic Styles",
+            "button_link_1": "",
             "button_style_1": "primary-dark",
             "button_label_2": "",
             "button_link_2": "",
             "button_style_2": "primary",
             "show_side_by_side": false,
             "show_separator": false,
-            "separator_color": "#ffffff"
+            "separator_color": ""
           }
         }
       },
@@ -64,18 +64,14 @@
             "heading": "WOMEN'S BOOTS",
             "heading_size": "frye-headline-5",
             "heading_color": "#000000",
-            "eyebrow": "",
-            "eyebrow_color": "",
-            "description": "",
-            "text_style": "frye-body",
-            "text_color": "",
-            "button_label": "",
-            "button_style": "primary",
             "heading_on_image": false,
             "link_url": "",
             "image": "shopify:\/\/shop_images\/frye_homepage-womens-boots.jpg",
             "image_hover": "noeffect",
+            "description": "",
+            "button_label": "",
             "background_color": "",
+            "button_style": "primary",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -128,7 +124,6 @@
         "heading_size": "frye-headline-1",
         "heading_color": "#000000",
         "eyebrow": "SHOP OUR BEST SELLING",
-        "eyebrow_style": "frye-eyebrow",
         "eyebrow_color": "#000000",
         "heading_wrapper_animation": "NoEffect",
         "heading_wrapper_animation_time": "0.2s",

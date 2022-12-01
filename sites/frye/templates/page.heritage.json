@@ -8,7 +8,6 @@
           "type": "eyebrow",
           "settings": {
             "eyebrow": "OUR HERITAGE IS BACKED BY",
-            "eyebrow_style": "frye-eyebrow",
             "eyebrow_color": "#ffffff"
           }
         },
@@ -29,11 +28,10 @@
         "desktop_image": "shopify:\/\/shop_images\/frye_heritage-hero-desktop.jpg",
         "mobile_image": "shopify:\/\/shop_images\/frye_heritage-hero-mobile.jpg",
         "section_background_color": "",
-        "content_background_color": "rgba(0,0,0,0)",
-        "content_background_opacity": 100,
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
+        "content_background_color": "rgba(0,0,0,0)",
         "mobile_content_alignment": "center",
         "animation": "NoEffect",
         "animation_time": "0.2s",

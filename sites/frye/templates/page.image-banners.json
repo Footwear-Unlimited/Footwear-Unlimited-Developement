@@ -23,14 +23,14 @@
           "type": "button",
           "settings": {
             "button_label_1": "Shop the Fall Collection",
-            "button_link_1": "#",
+            "button_link_1": "",
             "button_style_1": "primary-dark",
             "button_label_2": "",
             "button_link_2": "",
             "button_style_2": "primary",
             "show_side_by_side": false,
             "show_separator": false,
-            "separator_color": "#ffffff"
+            "separator_color": ""
           }
         }
       },
@@ -78,22 +78,22 @@
           "type": "text",
           "settings": {
             "text": "<p>An exciting description to support this headline that will make the user want to click the CTA.<\/p>",
-            "text_style": "text-body-medium",
+            "text_style": "frye-body",
             "text_color": "#ffffff"
           }
         },
         "a5ee69df-7aa4-4637-b3a1-26afbea68dd5": {
           "type": "button",
           "settings": {
-            "button_label_1": "Shop New Arrivals",
-            "button_link_1": "#",
+            "button_label_1": "Shop Belted Booties",
+            "button_link_1": "",
             "button_style_1": "primary-dark",
             "button_label_2": "",
             "button_link_2": "",
             "button_style_2": "primary",
             "show_side_by_side": false,
             "show_separator": false,
-            "separator_color": "#ffffff"
+            "separator_color": ""
           }
         }
       },
@@ -299,7 +299,7 @@
           "type": "text",
           "settings": {
             "text": "<p>An exciting description to support this headline that will make the user want to click the CTA.<\/p>",
-            "text_style": "text-body-medium",
+            "text_style": "frye-body",
             "text_color": "#ffffff"
           }
         },
