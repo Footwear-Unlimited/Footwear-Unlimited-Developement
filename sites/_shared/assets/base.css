@@ -496,7 +496,7 @@ h5,
 }
 
 @media only screen and (min-width: 750px) {
-  .frye-headline-4 {
+  .frye-headline-5 {
     letter-spacing: 0.2rem;
   }
 }
@@ -546,6 +546,12 @@ h6,
   line-height: 1.375;
 }
 
+@media only screen and (min-width: 750px) {
+  .frye-pullquote {
+    font-size: calc(var(--font-heading-scale) * 4rem);
+  }
+}
+
 .frye-headline-7 {
   font-family: var(--font-body-secondary-bold);
   font-size: calc(var(--font-body-scale) * 4rem);
@@ -581,12 +587,6 @@ h6,
   .frye-headline-8 {
     font-size: calc(var(--font-heading-scale) * 7rem);
     line-height: 1.1;
-  }
-}
-
-@media only screen and (min-width: 750px) {
-  .frye-pullquote {
-    font-size: calc(var(--font-heading-scale) * 4rem);
   }
 }
 
