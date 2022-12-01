@@ -451,7 +451,7 @@ details > .header__menu-item:hover {
 
 .list-menu--inline > li > details-disclosure > details[open] > .header__menu-item {
   color: var(--color-styleguide-tan);
-} 
+}
 
 .list-menu--inline > li > details-disclosure > details[open] > summary:before {
   content: "";
@@ -488,6 +488,7 @@ details > .header__menu-item:hover {
 }
 
 .header__submenu .header__submenu .header__menu-item.parent-item {
+  display: inline-block;
   color: var(--color-styleguide-black);
   font-weight: 700;
   padding-bottom: 0.75rem;
@@ -527,7 +528,8 @@ details-disclosure > details > .header__submenu-contents {
 details-disclosure > details .header__submenu-contents-inner {
   display: flex;
   justify-content: end;
-  padding: 0 10rem;
+  width: 100%;
+  max-width: 112rem;
 }
 
 @media screen and (min-width: 990px) and (max-width: 1100px) {
@@ -544,13 +546,15 @@ details-disclosure > details .header__submenu-contents-inner {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  padding: 2.75rem 0;
+  padding: 3rem 0 1.5rem;
   overflow: hidden;
 }
 
 
 .header__image-blocks .header__submenu.list-menu li.grid__item {
-  padding-left: 2rem;
+  width: calc(25% - 1.5rem);
+  margin-left: 1rem;
+  flex-grow: 0;
 }
 
 .header__image-blocks .header__menu-item {
@@ -576,16 +580,11 @@ details-disclosure > details .header__submenu-contents-inner {
   object-fit: cover;
 }
 
-@media screen and (min-width: 990px) and (max-width: 1200px) {
-  .header__image-blocks .header__submenu .header__menu-item img {
-    max-width: 20rem;
-  }
-}
-
 .header__link-lists .header__submenu {
   display: flex;
+  position: relative;
   min-width: initial;
-  padding: 2.75rem 0;
+  padding: 1rem 0 2.75rem;
   background-color: inherit;
   font-size: 1.6rem;
   line-height: 1.9rem;
@@ -608,6 +607,8 @@ details-disclosure > details .header__submenu-contents-inner {
   font-family: var(--font-heading-family);
   line-height: 1.8rem;
   text-transform: uppercase;
+  min-height: 5.2rem;
+  align-items: flex-end;
 }
 
 .header__link-lists .header__submenu-has-children > .header__menu-item:hover {

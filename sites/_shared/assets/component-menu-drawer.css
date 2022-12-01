@@ -335,9 +335,12 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .header__shop-all .icon-arrow-right,
 .menu-drawer__menu-item .icon-arrow-right {
-  margin: .5rem 0 0 .5rem;
+  margin: 0.5rem 0 0 0.5rem;
 }
 
 .header__shop-all .icon-arrow {
   width: 1.2rem;
+  margin: 0 0 0 0.5rem;
+  position: absolute;
+  bottom: 0.8rem;
 }
