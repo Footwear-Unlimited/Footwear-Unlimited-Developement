@@ -253,7 +253,8 @@
         "other": "{{ count }} items"
       },
       "store_locator": "Store Locator",
-      "customer_care": "Customer Care"
+      "customer_care": "Customer Care",
+      "wishlist": "Wishlist"
     },
     "cart": {
       "title": "Your cart",

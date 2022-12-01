@@ -216,6 +216,43 @@
     ]
   },
   {
+    "name": "Animations",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Global animations"
+      },
+      {
+        "type": "select",
+        "id": "scroll_appear",
+        "options": [
+          {
+            "value": "fadein",
+            "label": "Fade in"
+          },
+          {
+            "value": "noeffect",
+            "label": "No effect"
+          }
+        ],
+        "default": "noeffect",
+        "label": "Scroll appear default"
+      },
+      {
+        "type": "text",
+        "id": "scroll_appear_timing",
+        "default": ".3",
+        "label": "Scroll appear timing (seconds)"
+      },
+      {
+        "type": "text",
+        "id": "image_hover_timing",
+        "default": ".3",
+        "label": "Image hover timing (seconds)"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.styles.name",
     "settings": [
       {
