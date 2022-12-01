@@ -23,33 +23,32 @@
   style: "max-width: 100%;"
   link_class: "small-hide",
   do_not_lazy_load: true
-  %}
-{% endcomment %}
+  %}{% endcomment %}
 
-{% unless image == blank %}
-  {% if link != blank %}
-    <a href="{{ link }}" class="{{ link_class }}" target="_blank">
-    {% endif %}
-
-    {% if image_max_height != blank %}
-      {% assign img_height = image.height | at_most: image_max_height %}
-      {% assign height_param = img_height | prepend: "x" %}
-
-      <img src="{{ image | img_url: height_param }}" srcSet="{% if src_set != blank %}{{ src_set }}{% else %}{{ image | img_url: height_param }} 1x, {{ image | img_url: height_param, scale: 2 }} 2x, {{ image | img_url: height_param, scale: 3 }} 3x{% endif %}" width="{{ img_height | times: image.aspect_ratio | ceil }}" height="{{ img_height }}" alt="{{ image.alt }}" class="{{ class }}" style="width: auto; {{ style }}" {% unless do_not_lazy_load %}loading="lazy"{% endunless %}>
-    {% else %}
-      {% assign img_max_width = image_max_width | default: image.width %}
-      {% assign img_width = image.width | at_most: img_max_width %}
-      {% if image_desired_width != blank and image_desired_width != 0 %}
-        {% assign img_width = image_desired_width | at_most: img_width %}
-      {% endif %}
-      {% assign width_param = img_width | append: "x" %}
-
-
-      <img src="{{ image | img_url: width_param }}" srcSet="{% if src_set != blank %}{{ src_set }}{% else %}{{ image | img_url: width_param }} 1x, {{ image | img_url: width_param, scale: 2 }} 2x, {{ image | img_url: width_param, scale: 3 }} 3x{% endif %}" width="{{ img_width }}" height="{{ img_width | divided_by: image.aspect_ratio | ceil }}" alt="{{ image.alt }}" class="{{ class }}" style="height: auto; {{ style }}" {% unless do_not_lazy_load %}loading="lazy"{% endunless %}>
-    {% endif %}
-
+  {% unless image == blank %}
     {% if link != blank %}
-    </a>
-  {% endif %}
+      <a href="{{ link }}" class="{{ link_class }}" target="_blank">
+      {% endif %}
 
-{% endunless %}
+      {% if image_max_height != blank %}
+        {% assign img_height = image.height | at_most: image_max_height %}
+        {% assign height_param = img_height | prepend: "x" %}
+
+        <img src="{{ image | img_url: height_param }}" srcSet="{% if src_set != blank %}{{ src_set }}{% else %}{{ image | img_url: height_param }} 1x, {{ image | img_url: height_param, scale: 2 }} 2x, {{ image | img_url: height_param, scale: 3 }} 3x{% endif %}" width="{{ img_height | times: image.aspect_ratio | ceil }}" height="{{ img_height }}" alt="{{ image.alt }}" class="{{ class }}" style="width: auto; {{ style }}" {% unless do_not_lazy_load %}loading="lazy"{% endunless %}>
+      {% else %}
+        {% assign img_max_width = image_max_width | default: image.width %}
+        {% assign img_width = image.width | at_most: img_max_width %}
+        {% if image_desired_width != blank and image_desired_width != 0 %}
+          {% assign img_width = image_desired_width | at_most: img_width %}
+        {% endif %}
+        {% assign width_param = img_width | append: "x" %}
+
+
+        <img src="{{ image | img_url: width_param }}" srcSet="{% if src_set != blank %}{{ src_set }}{% else %}{{ image | img_url: width_param }} 1x, {{ image | img_url: width_param, scale: 2 }} 2x, {{ image | img_url: width_param, scale: 3 }} 3x{% endif %}" width="{{ img_width }}" height="{{ img_width | divided_by: image.aspect_ratio | ceil }}" alt="{{ image.alt }}" class="{{ class }}" style="height: auto; {{ style }}" {% unless do_not_lazy_load %}loading="lazy"{% endunless %}>
+      {% endif %}
+
+      {% if link != blank %}
+      </a>
+    {% endif %}
+
+  {% endunless %}

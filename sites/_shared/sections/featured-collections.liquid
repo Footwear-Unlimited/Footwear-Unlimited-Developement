@@ -10,7 +10,7 @@
       {% for block in section.blocks %}
 
         {% assign tab_nav_label = block.settings.tab_nav_label | default: block.settings.collection.title %}
-        
+
         <button class="featured-collections__collection-selector button {% if forloop.first %} active{% endif %}" data-block-id="{{ block.id }}">
           <p>{{ tab_nav_label }}</p>
         </button>
@@ -21,7 +21,7 @@
   <div class="featured-collections__collection-carousels">
     {% for block in section.blocks %}
       <div class="featured-collections__collection{% if forloop.first %} active{% endif %}" data-block-id="{{ block.id }}">
-        
+
         <div class="featured-collections__collection-inner page-width">
           {% for product in block.settings.collection.products %}
             <div class="product-card">
@@ -52,10 +52,11 @@
     {% endfor %}
   </div>
 </div>
+
 {% assign section_selector = '#shopify-section-' | append: section.id %}
 {% style %}
   {% if section.settings.heading_color != 'rgba(0,0,0,0)' %}
-  .featured-collections__heading {
+  {{ section_selector }}.featured-collections__heading {
     color: {{ section.settings.heading_color }};
   }
   {% endif %}

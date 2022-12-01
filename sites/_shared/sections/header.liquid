@@ -140,8 +140,17 @@
         </details>
       </details-modal>
 
+      <a href="/pages/wishlist" class="header__icon header__icon--locator link focus-inset">
+        {% render 'icon-wishlist' %}
+        <span class="visually-hidden">
+          {%- liquid
+            echo 'sections.header.wishlist' | t
+          -%}
+        </span>
+      </a> 
+
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="small-hide medium-hide header__icon header__icon--account link focus-inset">
           {% render 'icon-account' %}
           <span class="visually-hidden">
             {%- liquid
@@ -154,15 +163,6 @@
           </span>
         </a>
       {%- endif -%}
-
-      <a href="/pages/store-locator" class="header__icon header__icon--locator link focus-inset {% if section.settings.menu != blank %} small-hide{% endif %}">
-        {% render 'icon-location' %}
-        <span class="visually-hidden">
-          {%- liquid
-            echo 'sections.header.store_locator' | t
-          -%}
-        </span>
-      </a>
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
