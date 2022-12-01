@@ -361,25 +361,6 @@
         "media_text_animation": "NoEffect",
         "media_text_time": "0.2s"
       }
-    },
-    "dae3bbc1-3419-4b3d-b2e0-6024a2a44d10": {
-      "type": "social-media-feed",
-      "settings": {
-        "heading": "#INMYFRYE",
-        "heading_size": "frye-headline-2",
-        "description": "<p>Follow us on Instagram for a glimpse into our world →<\/p>",
-        "text_style": "frye-body-small",
-        "integration": "<div\n\tclass=\"yotpo yotpo-pictures-widget\"\n\tdata-gallery-id=\"617813d3fd96504429907639\">\n<\/div>",
-        "background_color": "",
-        "heading_color": "#000000",
-        "text_color": "#000000",
-        "desktop_top_padding": 60,
-        "desktop_bottom_padding": 60,
-        "mobile_top_padding": 45,
-        "mobile_bottom_padding": 45,
-        "media_text_animation": "NoEffect",
-        "media_text_time": "0.2s"
-      }
     }
   },
   "order": [
