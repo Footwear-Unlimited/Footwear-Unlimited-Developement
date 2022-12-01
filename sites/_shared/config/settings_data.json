@@ -197,7 +197,8 @@
               "settings": {
                 "text_color": "#ffffff",
                 "link_color": "#0092ff",
-                "background_color": "#000000"
+                "background_color": "#000000",
+                "menu_link_color": "#ffffff"
               }
             }
           },
