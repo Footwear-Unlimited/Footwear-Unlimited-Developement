@@ -56,6 +56,7 @@
                                       <li>
                                         <a href="{{ childlink.url }}" class="menu-drawer__menu-item parent-item list-menu__item link link--text focus-inset {% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                           {{ 'sections.header.menu_list_shop_all' | t }} {{ childlink.title | escape }}
+                                          {% render 'icon-arrow-right' %}
                                         </a>
                                       </li>
                                     {%- endif -%}
@@ -135,7 +136,6 @@
         <div class="menu-drawer__utility-links">
           {%- if shop.customer_accounts_enabled -%}
             <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account menu-drawer__secondary link focus-inset">
-              {% render 'icon-account' %}
               {%- liquid
                 if customer
                   echo 'customer.account_fallback' | t
@@ -146,19 +146,24 @@
             </a>
           {%- endif -%}
 
-          <a href="/pages/store-locator" class="menu-drawer__secondary link focus-inset">
-            {% render 'icon-location' %}
-            {%- liquid
-              echo 'sections.header.store_locator' | t
-            -%}
-          </a>
-
           <a href="/pages/customer-care" class="menu-drawer__secondary link focus-inset">
-            {% render 'icon-chat' %}
             {%- liquid
               echo 'sections.header.customer_care' | t
             -%}
           </a>
+
+          <a href="/pages/frye-exchange" class="menu-drawer__secondary link focus-inset">
+            {%- liquid
+              echo 'sections.header.exchange' | t
+            -%}
+          </a>
+
+          <a href="/pages/frye-vip" class="menu-drawer__secondary link focus-inset">
+            {%- liquid
+              echo 'sections.header.vip' | t
+            -%}
+          </a>
+
         </div>
       </nav>
     </div>

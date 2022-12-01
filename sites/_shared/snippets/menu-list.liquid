@@ -51,9 +51,10 @@
                                   {%- endfor -%}
 
                                   {%- if block.settings.parent_menu_item_all -%}
-                                    <li>
+                                    <li class="header__shop-all">
                                       <a href="{{ childlink.url }}" class="header__menu-item parent-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                         {{ 'sections.header.menu_list_shop_all' | t }} {{ childlink.title | escape }}
+                                        {% render 'icon-arrow-right' %}
                                       </a>
                                     </li>
                                   {%- endif -%}
