@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: .5rem 3.8rem;
+  padding: .5rem 0;
   height: 3rem;
 }
 
@@ -48,6 +48,13 @@ a.announcement-bar__link {
 
 @media screen and (min-width:990px) {
   .announcement-bar_menu-wrapper {
-    right: 9.8rem;
+    right: 8.5rem;
   }
+}
+
+.announcement-bar-inner {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
 }
