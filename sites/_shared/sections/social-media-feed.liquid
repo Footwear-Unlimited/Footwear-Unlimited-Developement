@@ -65,31 +65,27 @@
 {% assign section_selector = '#shopify-section-' | append: section.id %}
 {% style %}
   {% if section.settings.heading_color != 'rgba(0,0,0,0)' %}
-    {{ section_selector }}
-    .social-media-feed__heading, {{ section_selector }}
-    .social-media-feed-container {
+    {{ section_selector }} .social-media-feed__heading,
+    {{ section_selector }} .social-media-feed-container {
       color: {{ section.settings.heading_color }};
     }
   {% endif %}
 
   {% if section.settings.text_color != 'rgba(0,0,0,0)' %}
-    {{ section_selector }}
-    .social-media-feed__description {
+    {{ section_selector }} .social-media-feed__description {
       color: {{ section.settings.text_color }};
     }
   {% endif %}
 
-  @media screen and (max-width: 750px) {
-    {{ section_selector }}
-    .social-media-feed {
+  @media screen and (max-width: 749px) {
+    {{ section_selector }}.social-media-feed {
       padding-top: {{ section.settings.mobile_top_padding }}px;
       padding-bottom: {{ section.settings.mobile_bottom_padding }}px;
     }
   }
 
-  @media screen and (min-width: 749px) {
-    {{ section_selector }}
-    .social-media-feed {
+  @media screen and (min-width: 750px) {
+    {{ section_selector }}.social-media-feed {
       padding-top: {{ section.settings.desktop_top_padding }}px;
       padding-bottom: {{ section.settings.desktop_bottom_padding }}px;
       padding-left: 2rem;

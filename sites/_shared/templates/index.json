@@ -340,7 +340,7 @@
         "desktop_top_padding": 80,
         "desktop_bottom_padding": 80,
         "mobile_top_padding": 50,
-        "mobile_bottom_padding": 50
+        "mobile_bottom_padding": 30
       }
     },
     "dae3bbc1-3419-4b3d-b2e0-6024a2a44d10": {
@@ -354,10 +354,10 @@
         "background_color": "",
         "heading_color": "#000000",
         "text_color": "#000000",
-        "desktop_top_padding": 60,
-        "desktop_bottom_padding": 60,
-        "mobile_top_padding": 45,
-        "mobile_bottom_padding": 45,
+        "desktop_top_padding": 15,
+        "desktop_bottom_padding": 50,
+        "mobile_top_padding": 15,
+        "mobile_bottom_padding": 25,
         "media_text_animation": "NoEffect",
         "media_text_time": "0.2s"
       }
