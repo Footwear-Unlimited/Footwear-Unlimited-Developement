@@ -458,15 +458,9 @@ details > .header__menu-item:hover {
   display: block;
   position: absolute;
   width: calc(100% - 4.4rem);
-<<<<<<< HEAD
   height: 0.2rem;
   background-color: var(--color-styleguide-tan);
   bottom: 0.5rem;
-=======
-  height: 0.3rem;
-  background-color: var(--color-styleguide-tan);
-  bottom: 0;
->>>>>>> 3d7d526 (FUFB-114 Global: Header Nav)
 }
 
 .header__submenu {
