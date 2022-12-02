@@ -9,6 +9,11 @@
     "colors_background_2": "#F3F3F3",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "page_width": "1200",
+    "social_facebook_link": "https:\/\/facebook.com\/",
+    "social_pinterest_link": "https:\/\/pinterest.com\/",
+    "social_instagram_link": "http:\/\/instagram.com\/",
+    "social_tiktok_link": "https:\/\/tiktok.com\/",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -135,6 +140,19 @@
       },
       "promos-banner": {
         "type": "promos-banner",
+        "blocks": {
+          "befda07a-fb80-44a2-bdd7-4aa2fb369503": {
+            "type": "promo",
+            "settings": {
+              "message": "",
+              "link_label": "<b>JOIN FRYE VIP<\/b> for exclusive offers and early access to new products →",
+              "link_url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "befda07a-fb80-44a2-bdd7-4aa2fb369503"
+        ],
         "settings": {}
       },
       "footer": {
@@ -143,35 +161,43 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "SHOP",
+              "menu": "footer-shop"
             }
           },
-          "footer-1": {
-            "type": "text",
+          "ec6fceeb-062a-42cb-9009-d97ebb442d4b": {
+            "type": "link_list",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+              "heading": "Support",
+              "menu": "footer-support"
+            }
+          },
+          "cad74a79-4e28-46cd-84cc-9a047dafc9c3": {
+            "type": "link_list",
+            "settings": {
+              "heading": "About",
+              "menu": "footer-about"
             }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "ec6fceeb-062a-42cb-9009-d97ebb442d4b",
+          "cad74a79-4e28-46cd-84cc-9a047dafc9c3"
         ],
         "settings": {
+          "logo_image": "shopify:\/\/shop_images\/frye_primary-logo-white.png",
           "logo_text": "",
-          "color_scheme": "background-1",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
-          "newsletter_text": "",
-          "show_social": false,
-          "enable_country_selector": true,
-          "enable_language_selector": true,
-          "payment_enable": true,
-          "copyright_menu": "",
+          "newsletter_heading": "Connect With Us",
+          "newsletter_text": "<p>Stay on top of our product releases, promotions, & announcements! <\/p>",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false,
+          "copyright_menu": "copywrite-menu",
           "copyright_menu_display_mobile": "column",
-          "copyright_text": ""
+          "copyright_text": "FRYE ALL RIGHTS RESERVED"
         }
       }
     },
