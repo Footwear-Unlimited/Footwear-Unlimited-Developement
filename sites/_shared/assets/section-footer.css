@@ -142,7 +142,7 @@
   .copyright__linklist {
     font-weight: 400;
   }
-  
+
   .footer__content-bottom {
     flex-wrap: wrap;
     padding-top: 0;
@@ -179,7 +179,7 @@
   }
 
   div.copyright__linklist {
-    gap: 0.9rem;
+    gap: 0;
     align-items: center;
   }
 
