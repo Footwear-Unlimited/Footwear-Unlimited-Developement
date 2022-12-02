@@ -6,7 +6,7 @@
         "41452bf7-d425-4ba9-b34a-daabec40e0a0": {
           "type": "eyebrow",
           "settings": {
-            "eyebrow": "FALL 2022",
+            "eyebrow": "FRYE STYLES ARE",
             "eyebrow_style": "frye-eyebrow",
             "eyebrow_color": "#ffffff"
           }
@@ -14,15 +14,23 @@
         "3479bdec-2fa9-4d3e-9b75-11c686d9253b": {
           "type": "heading",
           "settings": {
-            "heading": "ICONIC FALL STYLES",
+            "heading": "FREE & UNTAMED",
             "heading_size": "frye-headline-1",
             "heading_color": "#ffffff"
+          }
+        },
+        "60e6093f-3f64-4208-bfdf-458940269bde": {
+          "type": "text",
+          "settings": {
+            "text": "<p>An exciting description to support this headline that will make the user want to click the CTA.<\/p>",
+            "text_style": "frye-body",
+            "text_color": "#ffffff"
           }
         },
         "a5ee69df-7aa4-4637-b3a1-26afbea68dd5": {
           "type": "button",
           "settings": {
-            "button_label_1": "Shop Classic Styles",
+            "button_label_1": "Shop Belted Booties",
             "button_link_1": "",
             "button_style_1": "primary-dark",
             "button_label_2": "",
@@ -37,93 +45,107 @@
       "block_order": [
         "41452bf7-d425-4ba9-b34a-daabec40e0a0",
         "3479bdec-2fa9-4d3e-9b75-11c686d9253b",
+        "60e6093f-3f64-4208-bfdf-458940269bde",
         "a5ee69df-7aa4-4637-b3a1-26afbea68dd5"
       ],
       "settings": {
-        "desktop_image": "shopify:\/\/shop_images\/frye_homepage-hero-desktop.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/frye_homepage-hero-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/frye_spring-homepage-hero-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/frye_spring-homepage-hero-mobile.jpg",
         "section_background_color": "rgba(0,0,0,0)",
         "content_background_color": "#000000",
         "content_background_opacity": 100,
-        "desktop_content_position": "bottom-left",
-        "desktop_content_alignment": "left",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
         "show_text_box": false,
         "mobile_content_alignment": "center",
         "animation": "fadeInLeft",
         "animation_time": "1s",
-        "show_text_below": false,
-        "show_container_mobile": false
+        "show_text_below": true,
+        "show_container_mobile": true
       }
     },
-    "511aedf5-a6b6-4601-ac83-12e99befa7ab": {
+    "48609194-81a2-43e2-8337-c6df1727220f": {
       "type": "featured-links",
       "blocks": {
-        "bd429c37-3e8f-480c-bea9-baba0993fc6b": {
+        "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-0": {
           "type": "link",
           "settings": {
-            "heading": "WOMEN'S BOOTS",
-            "heading_size": "frye-headline-5",
-            "heading_color": "#000000",
-            "heading_on_image": false,
             "link_url": "",
-            "image": "shopify:\/\/shop_images\/frye_homepage-womens-boots.jpg",
+            "image": "shopify:\/\/shop_images\/frye_spring-homepage-bags-accessories.jpg",
             "image_hover": "noeffect",
-            "description": "",
-            "button_label": "",
-            "background_color": "",
-            "button_style": "primary",
-            "featured_animation": "NoEffect",
-            "featured_animation_time": "0.2s"
-          }
-        },
-        "f974ce0c-68be-41d2-b6df-3c4522008847": {
-          "type": "link",
-          "settings": {
-            "heading": "MEN'S BOOTS",
-            "heading_size": "frye-headline-5",
-            "heading_color": "",
-            "heading_on_image": false,
-            "link_url": "",
-            "image": "shopify:\/\/shop_images\/frye_homepage-mens-boots.jpg",
-            "image_hover": "noeffect",
-            "description": "",
-            "button_label": "",
-            "background_color": "",
-            "button_style": "primary",
-            "featured_animation": "NoEffect",
-            "featured_animation_time": "0.2s"
-          }
-        },
-        "918c25d9-96d3-42e2-8318-a4f699977a9c": {
-          "type": "link",
-          "settings": {
             "heading": "BAGS & ACCESSORIES",
             "heading_size": "frye-headline-5",
             "heading_color": "#000000",
-            "heading_on_image": false,
-            "link_url": "",
-            "image": "shopify:\/\/shop_images\/frye_homepage-bags-accessories.jpg",
-            "image_hover": "noeffect",
+            "eyebrow": "",
+            "eyebrow_color": "",
             "description": "",
+            "text_style": "frye-body",
+            "text_color": "",
             "button_label": "",
-            "background_color": "",
             "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "",
+            "featured_animation": "NoEffect",
+            "featured_animation_time": "0.2s"
+          }
+        },
+        "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-1": {
+          "type": "link",
+          "settings": {
+            "link_url": "",
+            "image": "shopify:\/\/shop_images\/frye_spring-homepage-belts.jpg",
+            "image_hover": "noeffect",
+            "heading": "BELTS",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
+            "eyebrow": "",
+            "eyebrow_color": "",
+            "description": "",
+            "text_style": "frye-body",
+            "text_color": "",
+            "button_label": "",
+            "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "",
+            "featured_animation": "NoEffect",
+            "featured_animation_time": "0.2s"
+          }
+        },
+        "2159c6d4-83e7-46cb-aea6-908e7075de0b": {
+          "type": "link",
+          "settings": {
+            "link_url": "",
+            "image": "shopify:\/\/shop_images\/frye_spring-homepage-womens-boots.jpg",
+            "image_hover": "noeffect",
+            "heading": "WOMEN'S BOOTS",
+            "heading_size": "frye-headline-5",
+            "heading_color": "#000000",
+            "eyebrow": "",
+            "eyebrow_color": "",
+            "description": "",
+            "text_style": "frye-body",
+            "text_color": "",
+            "button_label": "",
+            "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
         }
       },
       "block_order": [
-        "bd429c37-3e8f-480c-bea9-baba0993fc6b",
-        "f974ce0c-68be-41d2-b6df-3c4522008847",
-        "918c25d9-96d3-42e2-8318-a4f699977a9c"
+        "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-0",
+        "template--17032863187221__48609194-81a2-43e2-8337-c6df1727220f-16696657884c0fd6d5-1",
+        "2159c6d4-83e7-46cb-aea6-908e7075de0b"
       ],
       "settings": {
-        "background_color": "rgba(0,0,0,0)",
-        "heading": "FALL FAVORITES",
+        "background_color": "",
+        "heading": "SPRING COLLECTIONS",
         "heading_size": "frye-headline-1",
         "heading_color": "#000000",
-        "eyebrow": "SHOP OUR BEST SELLING",
+        "eyebrow": "WILD AND FREE",
+        "eyebrow_style": "frye-eyebrow",
         "eyebrow_color": "#000000",
         "heading_wrapper_animation": "NoEffect",
         "heading_wrapper_animation_time": "0.2s",
@@ -139,37 +161,37 @@
         "mobile_bottom_padding": 30
       }
     },
-    "f10bf129-5ce1-45ec-8780-3420a45a3a91": {
+    "dc6d5294-0bc8-4c8d-9e2d-49b522bf1024": {
       "type": "image-with-text",
       "blocks": {
-        "70e507f9-fc6e-4953-ac3c-83a1bc724b56": {
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-0": {
           "type": "eyebrow",
           "settings": {
-            "text": "TIMELESS",
+            "text": "CARSON",
             "eyebrow_style": "frye-eyebrow",
             "text_color": "#fffdf7"
           }
         },
-        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-0": {
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-1": {
           "type": "heading",
           "settings": {
-            "heading": "CLASSICS",
+            "heading": "BELTED BOOTIE",
             "heading_size": "frye-headline-1",
             "heading_color": "#fffdf7"
           }
         },
-        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-1": {
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <\/p>",
+            "text": "<p>A variation of the top selling, full grain leather Carson Piping Bootie with an inside zipper.<\/p>",
             "text_style": "text-body-medium",
             "text_color": "#fffdf7"
           }
         },
-        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-2": {
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-3": {
           "type": "button",
           "settings": {
-            "button_label_1": "Shop Classic Styles",
+            "button_label_1": "Shop Belted Booties",
             "button_link_1": "",
             "button_style_1": "primary-dark",
             "button_label_2": "",
@@ -182,15 +204,15 @@
         }
       },
       "block_order": [
-        "70e507f9-fc6e-4953-ac3c-83a1bc724b56",
-        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-0",
-        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-1",
-        "template--16969309323541__f10bf129-5ce1-45ec-8780-3420a45a3a91-1669686087ab54e0f9-2"
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-0",
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-1",
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-2",
+        "template--17032863187221__dc6d5294-0bc8-4c8d-9e2d-49b522bf1024-1669693449550f59df-3"
       ],
       "settings": {
         "background_color": "#000000",
-        "image": "shopify:\/\/shop_images\/frye_homepage-classics-desktop.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/frye_homepage-classics-mobile.jpg",
+        "image": "shopify:\/\/shop_images\/frye_homepage-belt-desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_homepage-belt-mobile.jpg",
         "animation": "NoEffect",
         "animation_time": "0.2s",
         "height": "adapt",
@@ -206,10 +228,10 @@
         "mobile_image_width": "large"
       }
     },
-    "9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff": {
+    "fb5b897d-9cf6-4a00-bf05-33aea556095b": {
       "type": "image-with-text",
       "blocks": {
-        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-0": {
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-0": {
           "type": "eyebrow",
           "settings": {
             "text": "CELEBRATING 160 YEARS OF FRYE",
@@ -217,7 +239,7 @@
             "text_color": "#ffffff"
           }
         },
-        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-1": {
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-1": {
           "type": "heading",
           "settings": {
             "heading": "MADE IN THE USA",
@@ -225,7 +247,7 @@
             "heading_color": "#ffffff"
           }
         },
-        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-2": {
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-2": {
           "type": "text",
           "settings": {
             "text": "<p>Pellentesque laoreet consequat dolor. <br\/>Maecenas rhoncus orci ut sapien posuere.<\/p>",
@@ -233,15 +255,15 @@
             "text_color": "#ffffff"
           }
         },
-        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-3": {
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-3": {
           "type": "button",
           "settings": {
             "button_label_1": "Shop Made in the USA",
             "button_link_1": "",
             "button_style_1": "primary-dark",
-            "button_label_2": "Learn About Our Heritage",
+            "button_label_2": "Learn About Our Heritage  →",
             "button_link_2": "",
-            "button_style_2": "secondary-dark",
+            "button_style_2": "link-1-dark",
             "show_side_by_side": false,
             "show_separator": false,
             "separator_color": ""
@@ -249,17 +271,17 @@
         }
       },
       "block_order": [
-        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-0",
-        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-1",
-        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-2",
-        "template--16969309323541__9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff-16696924408037019e-3"
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-0",
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-1",
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-2",
+        "template--17032863187221__fb5b897d-9cf6-4a00-bf05-33aea556095b-1669693449550f59df-3"
       ],
       "settings": {
         "background_color": "#000000",
         "background_desktop_image": "shopify:\/\/shop_images\/frye_pattern-bg-desktop.jpg",
         "background_mobile_image": "shopify:\/\/shop_images\/frye_pattern-bg-mobile.jpg",
-        "image": "shopify:\/\/shop_images\/frye_usa-boot-desktop.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/frye_usa-boot-mobile.jpg",
+        "image": "shopify:\/\/shop_images\/frye_usa-boot-desktop_bff9bb8a-3295-4279-8905-7a315b5cbb19.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_usa-boot-mobile_777e025f-c652-451b-80eb-10e73ad08fa9.jpg",
         "animation": "NoEffect",
         "animation_time": "0.2s",
         "height": "adapt",
@@ -275,10 +297,10 @@
         "mobile_image_width": "large"
       }
     },
-    "2eae1544-330a-4b26-a0d3-b97fd84cd84c": {
+    "da95d8a8-5502-4071-9630-088acb3e89a7": {
       "type": "image-with-text-alternate",
       "blocks": {
-        "00605c52-8a84-4d69-81d0-882a2d57cf14": {
+        "ea01038c-3ee9-4938-abe8-ed4c14d42594": {
           "type": "heading",
           "settings": {
             "text": "MEET ABBY",
@@ -286,7 +308,7 @@
             "text_size": "frye-headline-3"
           }
         },
-        "24a89f07-bd64-4d9e-93b3-324b20337a80": {
+        "f6570201-f6ae-40d6-9604-038d43719a4c": {
           "type": "description",
           "settings": {
             "text": "<p>Discover how Frye fashion helps Abby, an artist, musician, and traveler, take on new opportunities.<\/p>",
@@ -294,7 +316,7 @@
             "text_color": "#000000"
           }
         },
-        "491a7909-5b23-428f-8cf8-5b11bf0b05c2": {
+        "c3bb8ff8-8073-41b9-836f-404fdbbf19fd": {
           "type": "button",
           "settings": {
             "button_label_1": "Shop Abby’s Picks",
@@ -310,20 +332,20 @@
         }
       },
       "block_order": [
-        "00605c52-8a84-4d69-81d0-882a2d57cf14",
-        "24a89f07-bd64-4d9e-93b3-324b20337a80",
-        "491a7909-5b23-428f-8cf8-5b11bf0b05c2"
+        "ea01038c-3ee9-4938-abe8-ed4c14d42594",
+        "f6570201-f6ae-40d6-9604-038d43719a4c",
+        "c3bb8ff8-8073-41b9-836f-404fdbbf19fd"
       ],
       "settings": {
         "background_color": "",
-        "image": "shopify:\/\/shop_images\/frye_meet-abby-desktop.png",
-        "image_mobile": "shopify:\/\/shop_images\/frye_meet-abby-mobile_1.jpg",
-        "content_background_color": "#f2ebe5",
+        "image": "shopify:\/\/shop_images\/frye_meet-abby-desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/frye_meet-abby-mobile_1829717a-ba79-4a63-a2c6-05458a248b76.jpg",
+        "content_background_color": "#f5f5f5",
         "show_timeline": false,
         "layout": "image_first",
         "image_size": "image-default",
         "layout_mobile": "image_first",
-        "layout_mobile_width": "mobile-content-default",
+        "layout_mobile_width": "mobile-content-narrow",
         "desktop_top_padding": 80,
         "desktop_bottom_padding": 80,
         "mobile_top_padding": 50,
@@ -333,9 +355,9 @@
   },
   "order": [
     "image_banner",
-    "511aedf5-a6b6-4601-ac83-12e99befa7ab",
-    "f10bf129-5ce1-45ec-8780-3420a45a3a91",
-    "9a1fc8e6-3d20-4ab8-9da5-66b1da35bcff",
-    "2eae1544-330a-4b26-a0d3-b97fd84cd84c"
+    "48609194-81a2-43e2-8337-c6df1727220f",
+    "dc6d5294-0bc8-4c8d-9e2d-49b522bf1024",
+    "fb5b897d-9cf6-4a00-bf05-33aea556095b",
+    "da95d8a8-5502-4071-9630-088acb3e89a7"
   ]
 }

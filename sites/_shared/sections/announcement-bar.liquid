@@ -1,10 +1,11 @@
 {{ 'section-announcement-bar.css' | asset_url | stylesheet_tag }}
 
 <div id="announcement-bar-wrapper" class="{% if section.blocks.size > 1 %}carousel{% endif %}">
-  {%- for block in section.blocks -%}
+    {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'announcement' -%}
-        <div class="announcement-bar" style="background-color: {{ block.settings.background_color }};" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>      
+        <div class="announcement-bar" style="background-color: {{ block.settings.background_color }};" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+          <div class="announcement-bar-inner page-width">      
             {%- if block.settings.message != blank -%}
               <p class="announcement-bar__message" style="color: {{ block.settings.text_color }};">{{ block.settings.message }}&nbsp;</p>
               {%- if block.settings.link_label != blank and block.settings.link_url != blank -%}
@@ -18,6 +19,7 @@
                 </div>
               {% endif %}
             {%- endif -%}   
+            </div>
         </div>
     {%- endcase -%}
   {%- endfor -%}

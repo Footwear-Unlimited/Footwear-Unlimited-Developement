@@ -1,11 +1,12 @@
 {{ 'section-video.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
-<div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}  
-  {% if settings.scroll_appear == "fadein" %} fadeIn {% endif %} 
-  {% if section.settings.image_hover == 'easein' %} hoverAnimation {% endif %}">
+<div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}
+  {% if settings.scroll_appear == "fadein" %} fadeIn {% endif %}
+  {% if section.settings.image_hover == 'easein' %} hoverAnimation {% endif %}"
+  {% if section.settings.background_color != 'rgba(0,0,0,0)' %} style="background-color: {{ section.settings.background_color }};"{% endif %}>
   <noscript>
-    <div class="video-section__media"
+    <div class="video-section__media page-width"
       {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
     >
       <a href="{{ section.settings.video_url }}" class="video-section__poster media media--transparent media--landscape{% if section.settings.cover_image == blank %} video-section__placeholder{% endif %}">
@@ -41,11 +42,32 @@
   {% endif %}
 </div>
 
+{% assign section_selector = '#shopify-section-' | append: section.id %}
+{% style %}
+  @media screen and (max-width: 750px) {
+    {{ section_selector }} .video-section {
+      padding-top: {{ section.settings.mobile_top_padding }}px;
+      padding-right: {{ section.settings.mobile_right_padding }}px;
+      padding-bottom: {{ section.settings.mobile_bottom_padding }}px;
+      padding-left: {{ section.settings.mobile_left_padding }}px;
+    }
+  }
+
+  @media screen and (min-width: 749px) {
+    {{ section_selector }} .video-section {
+      padding-top: {{ section.settings.desktop_top_padding }}px;
+      padding-right: {{ section.settings.desktop_right_padding }}px;
+      padding-bottom: {{ section.settings.desktop_bottom_padding }}px;
+      padding-left: {{ section.settings.desktop_left_padding }}px;
+    }
+  }
+{% endstyle %}
+
 {% schema %}
 {
   "name": "Video",
   "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "video-section__wrapper",
   "settings": [
     {
       "type": "image_picker",
@@ -81,6 +103,10 @@
       "info": "Video plays in the page."
     },
     {
+      "type": "header",
+      "content": "Video options"
+    },
+    {
       "type": "text",
       "id": "description",
       "label": "Video alt text",
@@ -99,10 +125,71 @@
       "default": false
     },
     {
+      "type": "header",
+      "content": "Section colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
       "type": "color",
       "id": "button_fill_color",
       "label": "Button fill color",
       "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "number",
+      "id": "desktop_top_padding",
+      "label": "Desktop top padding (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "desktop_right_padding",
+      "label": "Desktop right padding (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "desktop_bottom_padding",
+      "label": "Desktop bottom padding (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "desktop_left_padding",
+      "label": "Desktop left padding (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "mobile_top_padding",
+      "label": "Mobile top padding (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "mobile_right_padding",
+      "label": "Mobile right padding (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "mobile_bottom_padding",
+      "label": "Mobile bottom padding (px)",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "mobile_left_padding",
+      "label": "Mobile left padding (px)",
+      "default": 0
     }
   ],
   "presets": [

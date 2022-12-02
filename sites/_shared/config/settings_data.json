@@ -41,9 +41,94 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "f59d7d3b-c3b3-4e46-bc3f-425841bf3e7b": {
+            "type": "megamenu_link_lists",
+            "settings": {
+              "parent_menu_item_name": "Women",
+              "parent_menu_item_all": true,
+              "promo_override": "",
+              "promo_image__1": "shopify:\/\/shop_images\/Screenshot_2022-11-22_at_12.09.52.png",
+              "promo_label__1": "The Sascha Collection",
+              "promo_link__1": "#",
+              "promo_label__2": "",
+              "promo_link__2": "",
+              "promo_label__3": "",
+              "promo_link__3": "",
+              "promo_label__4": "",
+              "promo_link__4": ""
+            }
+          },
+          "2073604c-6ca3-48b7-86a0-cd6cc7886627": {
+            "type": "megamenu_link_lists",
+            "settings": {
+              "parent_menu_item_name": "Men",
+              "parent_menu_item_all": true,
+              "promo_override": "",
+              "promo_image__1": "shopify:\/\/shop_images\/Bitmap_Copy_5.jpg",
+              "promo_label__1": "The Paul Collection",
+              "promo_link__1": "",
+              "promo_label__2": "",
+              "promo_link__2": "",
+              "promo_label__3": "",
+              "promo_link__3": "",
+              "promo_label__4": "",
+              "promo_link__4": ""
+            }
+          },
+          "47a856be-4d57-4ea1-a92e-bf15016d530a": {
+            "type": "megamenu_image_blocks",
+            "settings": {
+              "parent_menu_item_name": "New Arrivals",
+              "block_image__1": "shopify:\/\/shop_images\/frye_nav-new-arrivals-women.jpg",
+              "block_label__1": "Women",
+              "block_image__2": "shopify:\/\/shop_images\/frye_nav-new-arrivals-men.jpg",
+              "block_label__2": "Men",
+              "block_image__3": "shopify:\/\/shop_images\/frye_nav-new-arrivals-collection-1.jpg",
+              "block_label__3": "Out West",
+              "block_image__4": "shopify:\/\/shop_images\/frye_nav-new-arrivals-collection-2.jpg",
+              "block_label__4": "The Melissa Collection"
+            }
+          },
+          "41be1b34-1028-4f89-b884-290b69960ca6": {
+            "type": "megamenu_image_blocks",
+            "settings": {
+              "parent_menu_item_name": "Sale",
+              "block_image__1": "shopify:\/\/shop_images\/frye_nav-sale-women.jpg",
+              "block_label__1": "Women",
+              "block_image__2": "shopify:\/\/shop_images\/frye_nav-sale-men.jpg",
+              "block_label__2": "Men",
+              "block_image__3": "shopify:\/\/shop_images\/frye_nav-sale-summer.jpg",
+              "block_label__3": "Summer Sale",
+              "block_label__4": ""
+            }
+          },
+          "41d0a90f-8ce5-4f3d-bc73-7eb6beb55346": {
+            "type": "megamenu_image_blocks",
+            "settings": {
+              "parent_menu_item_name": "Heritage",
+              "block_image__1": "shopify:\/\/shop_images\/frye_nav-heritage-story.jpg",
+              "block_label__1": "The Frye Story",
+              "block_image__2": "shopify:\/\/shop_images\/frye_nav-heritage-usa-her.jpg",
+              "block_label__2": "Made in the USA for Her",
+              "block_image__3": "shopify:\/\/shop_images\/frye_nav-heritage-usa-him.jpg",
+              "block_label__3": "Made in the USA for Him",
+              "block_image__4": "shopify:\/\/shop_images\/frye_nav-heritage-shop-the-campaign.jpg",
+              "block_label__4": "Shop the Campaign"
+            }
+          }
+        },
+        "block_order": [
+          "f59d7d3b-c3b3-4e46-bc3f-425841bf3e7b",
+          "2073604c-6ca3-48b7-86a0-cd6cc7886627",
+          "47a856be-4d57-4ea1-a92e-bf15016d530a",
+          "41be1b34-1028-4f89-b884-290b69960ca6",
+          "41d0a90f-8ce5-4f3d-bc73-7eb6beb55346"
+        ],
         "settings": {
-          "logo_width": 100,
-          "logo_width_mobile": 100,
+          "logo": "shopify:\/\/shop_images\/frye_primary-logo-black.png",
+          "logo_width": 70,
+          "logo_width_mobile": 50,
           "logo_width_mobile_sticky": 100,
           "menu": "main-menu",
           "show_line_separator": true,
