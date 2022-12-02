@@ -14,3 +14,9 @@
   letter-spacing: inherit;
   font-weight: inherit;
 }
+
+/* Yotpo integration */
+
+.yotpo-pictures-gallery-title-wrapper {
+  display: none;
+}
