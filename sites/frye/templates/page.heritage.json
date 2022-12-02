@@ -8,6 +8,7 @@
           "type": "eyebrow",
           "settings": {
             "eyebrow": "OUR HERITAGE IS BACKED BY",
+            "eyebrow_style": "frye-eyebrow",
             "eyebrow_color": "#ffffff"
           }
         },
@@ -439,7 +440,7 @@
         "e49002b6-a4f1-444d-8c51-0b0e8777bd34": {
           "type": "button",
           "settings": {
-            "button_label_1": "View 1940s Vintage Archive  →",
+            "button_label_1": "View 1940s Vintage Archive",
             "button_link_1": "",
             "button_style_1": "link-1",
             "button_label_2": "",
@@ -550,7 +551,7 @@
         "template--17038883914005__e594f31b-e75b-443a-8f91-d56c563207f5-1669834856c7232977-3": {
           "type": "button",
           "settings": {
-            "button_label_1": "View 1950s Vintage Archive  →",
+            "button_label_1": "View 1950s Vintage Archive",
             "button_link_1": "",
             "button_style_1": "link-1",
             "button_label_2": "",
@@ -653,7 +654,7 @@
         "template--17038883914005__3ffe4aed-77bc-4f0d-91b8-9c1068870a15-1669835007a6d38d04-3": {
           "type": "button",
           "settings": {
-            "button_label_1": "View 1960s Vintage Archive  →",
+            "button_label_1": "View 1960s Vintage Archive",
             "button_link_1": "",
             "button_style_1": "link-1",
             "button_label_2": "",
