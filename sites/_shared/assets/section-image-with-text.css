@@ -333,6 +333,18 @@
   margin: 0 2rem;
 }
 
+@media screen and (min-width: 750px) {
+  .image-with-text__button-wrapper .image-with-text__button + .image-with-text__button {
+    margin: 2rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .image-with-text__button-wrapper.side-by-side .image-with-text__button + .image-with-text__button {
+    margin: 2rem 0 0 0;
+  }
+}
+
 /* Category Landing */
 
 .category-landing .image-with-text__content {
