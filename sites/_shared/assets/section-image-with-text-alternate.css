@@ -529,3 +529,7 @@
   max-height: 23rem;
   border-left: 0.1rem solid var(--color-styleguide-darkgray);
 }
+
+.image-with-text-alternate .icon-button-arrow--right {
+  margin-top: .3rem;
+}
