@@ -144,7 +144,7 @@
           "befda07a-fb80-44a2-bdd7-4aa2fb369503": {
             "type": "promo",
             "settings": {
-              "message": "",
+              "message": "<p><\/p>",
               "link_label": "<b>JOIN FRYE VIP<\/b> for exclusive offers and early access to new products →",
               "link_url": "#"
             }
@@ -187,7 +187,7 @@
         ],
         "settings": {
           "logo_image": "shopify:\/\/shop_images\/frye_primary-logo-white.png",
-          "logo_text": "",
+          "logo_text": "<p><\/p>",
           "newsletter_enable": true,
           "newsletter_heading": "Connect With Us",
           "newsletter_text": "<p>Stay on top of our product releases, promotions, & announcements! <\/p>",
@@ -195,7 +195,7 @@
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": false,
-          "copyright_menu": "copywrite-menu",
+          "copyright_menu": "copyright-menu",
           "copyright_menu_display_mobile": "column",
           "copyright_text": "FRYE ALL RIGHTS RESERVED"
         }

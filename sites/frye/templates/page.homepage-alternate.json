@@ -78,7 +78,7 @@
             "heading_color": "#000000",
             "eyebrow": "",
             "eyebrow_color": "",
-            "description": "",
+            "description": "<p><\/p>",
             "text_style": "frye-body",
             "text_color": "",
             "button_label": "",
@@ -100,7 +100,7 @@
             "heading_color": "#000000",
             "eyebrow": "",
             "eyebrow_color": "",
-            "description": "",
+            "description": "<p><\/p>",
             "text_style": "frye-body",
             "text_color": "",
             "button_label": "",
@@ -122,7 +122,7 @@
             "heading_color": "#000000",
             "eyebrow": "",
             "eyebrow_color": "",
-            "description": "",
+            "description": "<p><\/p>",
             "text_style": "frye-body",
             "text_color": "",
             "button_label": "",
@@ -351,6 +351,25 @@
         "mobile_top_padding": 50,
         "mobile_bottom_padding": 50
       }
+    },
+    "1d809508-1065-4943-ad81-75e1e1d9f06c": {
+      "type": "social-media-feed",
+      "settings": {
+        "heading": "#INMYFRYE",
+        "heading_size": "frye-headline-2",
+        "description": "<p>Follow us on Instagram for a glimpse into our world<\/p>",
+        "text_style": "frye-body",
+        "integration": "<div\n\tclass=\"yotpo yotpo-pictures-widget\"\n\tdata-gallery-id=\"6388e471e28aa24cfa2da2df\">\n<\/div>",
+        "background_color": "",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "desktop_top_padding": 15,
+        "desktop_bottom_padding": 50,
+        "mobile_top_padding": 15,
+        "mobile_bottom_padding": 25,
+        "media_text_animation": "NoEffect",
+        "media_text_time": "0.2s"
+      }
     }
   },
   "order": [
@@ -358,6 +377,7 @@
     "48609194-81a2-43e2-8337-c6df1727220f",
     "dc6d5294-0bc8-4c8d-9e2d-49b522bf1024",
     "fb5b897d-9cf6-4a00-bf05-33aea556095b",
-    "da95d8a8-5502-4071-9630-088acb3e89a7"
+    "da95d8a8-5502-4071-9630-088acb3e89a7",
+    "1d809508-1065-4943-ad81-75e1e1d9f06c"
   ]
 }
