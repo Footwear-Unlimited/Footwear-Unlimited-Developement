@@ -135,7 +135,7 @@
 
 .footer__copyright .copyright__content,
 .copyright__linklist {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 989px) {
@@ -182,9 +182,9 @@
     gap: 0;
     align-items: center;
   }
-
+ 
   .copyright__linklist a {
-    margin: 0;
+    margin: 0 0 1rem 0;
   }
 }
 
@@ -285,10 +285,13 @@
 @media screen and (min-width: 1100px) {
   .footer-block--newsletter {
     min-width: 30rem;
+    margin-left: auto;
   }
 }
 
-
+.footer-block--newsletter {
+  margin-left: auto;
+}
 
 .footer-block__heading {
   margin-top: 0;
@@ -326,6 +329,20 @@
   .footer .grid--5-col-desktop .grid__item {
     max-width: 15rem;
   }
+
+  .footer__content-top {
+    max-width: 135rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .footer-block--menu {
+    max-width: 18rem!important;
+  }
+  
+  .footer-block--newsletter {
+    margin-left: auto;
+  }
 }
 
 
@@ -360,12 +377,6 @@
 
 .newsletter-form__field-wrapper {
   max-width: 36rem;
-}
-
-@media screen and (min-width: 990px) and (max-width: 1025px) {
-  .footer-block__newsletter:not(:only-child) {
-    margin-right: 5rem;
-  }
 }
 
 @media screen and (min-width: 990px) {
@@ -605,7 +616,7 @@ noscript .localization-selector.link {
   .footer__copyright.caption p {
     text-align: left;
     font-size: 1.2rem;
-    line-height: 3rem;
+    line-height: 1.8rem;
   }
 }
 
@@ -653,14 +664,13 @@ noscript .localization-selector.link {
   color: var(--color-accent-2);
 }
 
-@media screen and (min-width: 990px) {
-  .footer-block__details-content .list-menu__item--link:hover,
-  .copyright__content a:hover {
-    color: var(--color-accent-2);
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
-  }
+.footer-block__details-content .list-menu__item--link:hover {
+  color: var(--color-styleguide-tan);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
 
+@media screen and (min-width: 990px) {
   .footer-block__details-content .list-menu__item--active:hover {
     text-decoration-thickness: 0.2rem;
   }
@@ -670,7 +680,7 @@ noscript .localization-selector.link {
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
     font-size: 1.4rem;
-    padding: 0;
+    padding: 0 0 .5rem;
   }
 }
 
@@ -685,7 +695,7 @@ noscript .localization-selector.link {
   }
 
   .footer__column--info {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     padding-bottom: 1.2rem;
   }
 }
@@ -754,20 +764,27 @@ noscript .localization-selector.link {
   color: var(--color-styleguide-tan);
   text-decoration: none;
   font-size: 1.2rem;
-  line-height: 3rem;
+  line-height: 1.8rem;
 }
 
 .copyright__linklist a:hover {
-  color: var(--color-accent-2);
+  color: var(--color-styleguide-bright-tan);
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
 
 @media screen and (min-width: 990px) {
+  .footer .list-menu__item--link {
+    line-height: 2rem;
+  }
+
   .footer__copyright-inner {
     flex-direction: row;
     gap: 5rem;
     width: 100%;
+    max-width: 135rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
   }
 
   .copyright__linklist {
@@ -783,22 +800,20 @@ noscript .localization-selector.link {
     background-color: transparent;
     color: var(--color-styleguide-tan);
     border: .1rem solid var(--color-styleguide-tan);
-    right: -6rem;
+    position: unset;
+    margin-left: 1rem;
   }
 
-  .footer .newsletter-form__field-wrapper .field {
-    max-width: 24rem;
-  }
 }
 
-
 .footer .newsletter-form__button {
-  width: 5rem;
+  min-width: 5rem;
 }
 
 .footer .newsletter-form__field-wrapper .field__input {
   border: none;
   font-size: 1.4rem;
+  padding-right: 1.5rem;
 }
 
 .footer .newsletter-form__field-wrapper .field__label {
@@ -815,7 +830,16 @@ noscript .localization-selector.link {
   }
 }
 
-@media screen and (min-width: 990px) and (max-width: 1100px) {
+@media screen and (min-width: 990px) and (max-width: 1050px) {
+  .footer .newsletter-form__field-wrapper .field__label {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 6rem; 
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1100px) {
   .footer .newsletter-form__field-wrapper .field__label {
     text-overflow: ellipsis;
     overflow: hidden; 

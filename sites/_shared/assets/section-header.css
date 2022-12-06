@@ -444,9 +444,13 @@ details > .header__menu-item:hover {
 }
 
 .header__menu-item:hover {
-  color: var(--color-styleguide-tan);
+  color: var(--color-styleguide-black);
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+}
+
+.header__image-blocks .header__menu-item:hover {
+  color: var(--color-styleguide-tan);
 }
 
 .header__menu-item span {
@@ -536,7 +540,7 @@ details-disclosure > details .header__submenu-contents-inner {
   display: flex;
   justify-content: end;
   width: 100%;
-  max-width: 112rem;
+  max-width: 110rem;
 }
 
 @media screen and (min-width: 990px) and (max-width: 1100px) {
@@ -560,7 +564,8 @@ details-disclosure > details .header__submenu-contents-inner {
 
 .header__image-blocks .header__submenu.list-menu li.grid__item {
   width: calc(25% - 1.5rem);
-  margin-left: 1rem;
+  margin-left: 0;
+  padding-left: 0;
   flex-grow: 0;
 }
 
@@ -590,7 +595,7 @@ details-disclosure > details .header__submenu-contents-inner {
 .header__link-lists .header__submenu {
   display: flex;
   position: relative;
-  min-width: initial;
+  min-width: 15rem;
   padding: 1rem 0 2.75rem;
   background-color: inherit;
   font-size: 1.6rem;
@@ -639,7 +644,7 @@ details-disclosure > details .header__submenu-contents-inner {
   flex-direction: column;
   max-width: fit-content;
   padding: 0 0 2rem 2rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.7rem;
   text-align: center;
   text-decoration: none;
@@ -698,7 +703,7 @@ details-disclosure > details .header__submenu-contents-inner {
   }
 
   .header__image-blocks > ul {
-    gap: unset;
+    gap: 2rem;
   }
 
 }
@@ -801,3 +806,35 @@ details-disclosure > details .header__submenu-contents-inner {
   transition: transform .3s ease;
 }
 /* End mobile menu icons spin/fade effect */
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .header__menu-promos {
+    width: 100%;
+  }
+
+  .header__menu-promos .promo__link {
+    display: unset;
+    width: 50%;
+  }
+
+  .header__menu-promos .promo__link {
+    padding: 0;
+  }
+
+  .header__menu-promos .promo__link img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .header {
+    max-width: 135rem;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1070px){
+  .header__link-lists .header__submenu {
+    min-width: initial;
+  }
+}
