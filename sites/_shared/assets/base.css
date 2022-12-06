@@ -395,14 +395,19 @@ h2,
 .frye-headline-2 {
   font-size: calc(var(--font-heading-scale) * 3.5rem);
   font-family: var(--font-heading-family);
-  line-height: 0.96;
+  line-height: 1.2;
 }
 
-@media only screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 989px) {
   .frye-headline-2 {
     font-size: calc(var(--font-heading-scale) * 4.5rem);
-    line-height: 1;
     letter-spacing: normal;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .frye-headline-2 {
+    line-height: 1;
   }
 }
 

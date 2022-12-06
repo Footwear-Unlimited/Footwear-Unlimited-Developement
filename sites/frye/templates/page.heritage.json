@@ -110,7 +110,7 @@
       ],
       "settings": {
         "background_color": "#000000",
-        "desktop_top_padding": 45,
+        "desktop_top_padding": 50,
         "desktop_bottom_padding": 35,
         "mobile_top_padding": 25,
         "mobile_bottom_padding": 30
@@ -128,9 +128,9 @@
         "background_color": "#000000",
         "button_fill_color": "#ffffff",
         "desktop_top_padding": 0,
-        "desktop_right_padding": 75,
+        "desktop_right_padding": 60,
         "desktop_bottom_padding": 90,
-        "desktop_left_padding": 75,
+        "desktop_left_padding": 60,
         "mobile_top_padding": 0,
         "mobile_right_padding": 20,
         "mobile_bottom_padding": 50,

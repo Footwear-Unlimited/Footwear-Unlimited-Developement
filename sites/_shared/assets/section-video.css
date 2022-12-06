@@ -79,3 +79,10 @@
 .video-section__soundSelect:hover {
   opacity: 1;
 }
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .video-section__wrapper {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
