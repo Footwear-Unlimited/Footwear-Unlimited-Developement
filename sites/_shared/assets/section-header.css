@@ -540,7 +540,7 @@ details-disclosure > details .header__submenu-contents-inner {
   display: flex;
   justify-content: end;
   width: 100%;
-  max-width: 112rem;
+  max-width: 110rem;
 }
 
 @media screen and (min-width: 990px) and (max-width: 1100px) {
