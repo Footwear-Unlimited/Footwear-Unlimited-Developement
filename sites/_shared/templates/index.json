@@ -61,7 +61,7 @@
         "bd429c37-3e8f-480c-bea9-baba0993fc6b": {
           "type": "link",
           "settings": {
-            "link_url": "",
+            "link_url": "#",
             "image": "shopify:\/\/shop_images\/frye_homepage-womens-boots.jpg",
             "image_hover": "noeffect",
             "heading": "WOMEN'S BOOTS",
@@ -83,7 +83,7 @@
         "f974ce0c-68be-41d2-b6df-3c4522008847": {
           "type": "link",
           "settings": {
-            "link_url": "",
+            "link_url": "#",
             "image": "shopify:\/\/shop_images\/frye_homepage-mens-boots.jpg",
             "image_hover": "noeffect",
             "heading": "MEN'S BOOTS",
@@ -105,7 +105,7 @@
         "918c25d9-96d3-42e2-8318-a4f699977a9c": {
           "type": "link",
           "settings": {
-            "link_url": "",
+            "link_url": "#",
             "image": "shopify:\/\/shop_images\/frye_homepage-bags-accessories.jpg",
             "image_hover": "noeffect",
             "heading": "BAGS & ACCESSORIES",
@@ -149,7 +149,7 @@
         "desktop_top_padding": 60,
         "desktop_bottom_padding": 45,
         "mobile_top_padding": 40,
-        "mobile_bottom_padding": 30
+        "mobile_bottom_padding": 40
       }
     },
     "f10bf129-5ce1-45ec-8780-3420a45a3a91": {

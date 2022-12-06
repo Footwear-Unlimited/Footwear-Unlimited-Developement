@@ -6,6 +6,12 @@
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1366px) {
+  .featured-links {
+    padding-bottom: 6rem !important; /* overrides admin settings */
+  }
+}
+
 .featured-links__content.page-width--narrow {
   max-width: 82.75rem;
 }
