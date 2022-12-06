@@ -49,7 +49,7 @@
               "parent_menu_item_all": true,
               "promo_override": "",
               "promo_image__1": "shopify:\/\/shop_images\/Screenshot_2022-11-22_at_12.09.52.png",
-              "promo_label__1": "The Sascha Collection",
+              "promo_label__1": "The Sacha Collection",
               "promo_link__1": "#",
               "promo_label__2": "",
               "promo_link__2": "",
@@ -262,9 +262,7 @@
             "menu",
             "text"
           ],
-          "settings": {
-            "color_scheme": "accent-1"
-          }
+          "settings": {}
         }
       }
     }

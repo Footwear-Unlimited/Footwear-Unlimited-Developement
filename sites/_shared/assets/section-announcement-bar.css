@@ -57,4 +57,5 @@ a.announcement-bar__link {
   position: relative;
   width: 100%;
   justify-content: center;
+  max-width: 135rem;
 }
