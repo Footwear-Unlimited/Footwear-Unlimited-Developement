@@ -32,7 +32,7 @@
   gap: .5rem;
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 749px) {
   .footer__list-social.list-social {
     justify-content: center;
     width: 90%;
@@ -45,5 +45,17 @@
     margin: 0 auto;
     padding-top: 1rem;
     visibility: visible;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .footer__list-social.list-social {
+    justify-content: flex-start;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+  }
+
+  .footer-mobile--socials {
+    margin: unset;
   }
 }
