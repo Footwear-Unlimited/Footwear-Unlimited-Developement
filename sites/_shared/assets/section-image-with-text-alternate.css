@@ -191,7 +191,10 @@
 }
 
 .image-with-text-alternate__media > img {
+  height: 100% !important;
+  object-fit: cover;
   object-position: top center;
+  width: auto;
 }
 
 .image-with-text-alternate__media .placeholder-svg {
@@ -264,17 +267,6 @@
 .image-with-text-alternate__media .deferred-media {
   width: 100%;
   height: 100%;
-}
-
-.image-with-text-alternate__media > img {
-  height: auto!important;
-  object-fit: fill;
-  width: 100%;
-}
-
-.image-with-text-alternate__grid .image-with-text-alternate__media > img {
-  /* height: 100%!important; */
-  object-fit: contain;
 }
 
 .image-with-text-alternate__eyebrow.frye-eyebrow-large {
