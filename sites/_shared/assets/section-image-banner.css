@@ -345,6 +345,7 @@
 
   .banner:not(.banner--mobile-content):not(.banner--mobile-bottom) .banner__box {
     background-color: transparent !important;
+    padding: 0;
   }
 
   .banner:not(.banner--mobile-bottom) .banner__box {
@@ -382,6 +383,7 @@
 
 .banner:not(.banner--mobile-bottom) .banner__content {
   min-height: 30.5rem;
+  padding: 4rem 0;
 }
 
 @media screen and (min-width: 500px) {
@@ -398,6 +400,7 @@
   .banner.banner--mobile-bottom .banner__content,
   .banner:not(.banner--mobile-bottom) .banner__content {
     min-height: 58rem;
+    padding: 4rem;
   }
 }
 
@@ -461,6 +464,11 @@
     order: 2;
     padding: 0;
   }
+
+  .banner--mobile-bottom::after,
+  .banner--mobile-bottom .banner__media::after {
+    display: none;
+  }
 }
 
 .banner__box {
@@ -472,13 +480,6 @@
   text-align: center;
   width: 100%;
   word-wrap: break-word;
-}
-
-@media screen and (max-width: 749px) {
-  .banner--mobile-bottom::after,
-  .banner--mobile-bottom .banner__media::after {
-    display: none;
-  }
 }
 
 .banner::after,
@@ -524,18 +525,12 @@
 
 .banner__heading {
   max-width: 60rem;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .banner__box .banner__heading + * {
-  margin: 1.5rem 0 0;
-}
-
-@media screen and (min-width: 750px) {
-  .banner__box .banner__heading + * {
-    margin: 2.25rem 0 0;
-  }
+  margin: 1rem 0 0;
 }
 
 @media screen and (max-width: 749px) {

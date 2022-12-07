@@ -1,6 +1,6 @@
 <div class="banner__media media">
   {%- if desktop_image != blank -%}
-    <div class="banner__media media {% if mobile_image != blank %}small-hide{% endif %}">
+    <div class="banner__media media {% if mobile_image != blank %}medium-hide small-hide{% endif %}">
       {% render 'image',
         image: desktop_image,
         image_max_width: 2800,
@@ -11,7 +11,7 @@
   {%- endif -%}
 
   {%- if mobile_image != blank -%}
-    <div class="banner__media media medium-hide large-up-hide">
+    <div class="banner__media media large-up-hide">
       {% render 'image',
         image: mobile_image,
         image_max_width: 1100,
