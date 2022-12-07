@@ -9,7 +9,7 @@
     "colors_background_2": "#F3F3F3",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
-    "page_width": "1200",
+    "page_width": "1350",
     "social_facebook_link": "https:\/\/facebook.com\/",
     "social_pinterest_link": "https:\/\/pinterest.com\/",
     "social_instagram_link": "http:\/\/instagram.com\/",
@@ -187,7 +187,7 @@
         ],
         "settings": {
           "logo_image": "shopify:\/\/shop_images\/frye_primary-logo-white.png",
-          "logo_text": "",
+          "logo_text": "<p><\/p>",
           "newsletter_enable": true,
           "newsletter_heading": "Connect With Us",
           "newsletter_text": "<p>Stay on top of our product releases, promotions, & announcements! <\/p>",
