@@ -76,7 +76,7 @@
         "background_color": "rgba(0,0,0,0)",
         "desktop_top_padding": 35,
         "desktop_bottom_padding": 55,
-        "mobile_top_padding": 5,
+        "mobile_top_padding": 15,
         "mobile_bottom_padding": 25
       }
     },
