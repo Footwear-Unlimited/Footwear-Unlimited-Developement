@@ -352,11 +352,15 @@
         "options": [
           {
             "value": "1200",
-            "label": "t:settings_schema.layout.settings.page_width.options__1.label"
+            "label": "1200"
+          },
+          {
+            "value": "1350",
+            "label": "1350"
           },
           {
             "value": "1600",
-            "label": "t:settings_schema.layout.settings.page_width.options__2.label"
+            "label": "1600"
           }
         ],
         "default": "1600",

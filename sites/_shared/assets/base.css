@@ -357,7 +357,7 @@ h1,
 .frye-headline-1 {
   font-size: calc(var(--font-heading-scale) * 4rem);
   font-family: var(--font-heading-family);
-  line-height: 4rem;
+  line-height: 6rem;
   letter-spacing: normal;
 }
 

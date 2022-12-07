@@ -78,7 +78,7 @@
             "heading_color": "#000000",
             "eyebrow": "",
             "eyebrow_color": "",
-            "description": "",
+            "description": "<p><\/p>",
             "text_style": "frye-body",
             "text_color": "",
             "button_label": "",
@@ -100,7 +100,7 @@
             "heading_color": "#000000",
             "eyebrow": "",
             "eyebrow_color": "",
-            "description": "",
+            "description": "<p><\/p>",
             "text_style": "frye-body",
             "text_color": "",
             "button_label": "",
@@ -122,7 +122,7 @@
             "heading_color": "#000000",
             "eyebrow": "",
             "eyebrow_color": "",
-            "description": "",
+            "description": "<p><\/p>",
             "text_style": "frye-body",
             "text_color": "",
             "button_label": "",
@@ -184,7 +184,7 @@
           "type": "text",
           "settings": {
             "text": "<p>A variation of the top selling, full grain leather Carson Piping Bootie with an inside zipper.<\/p>",
-            "text_style": "text-body-medium",
+            "text_style": "frye-body",
             "text_color": "#fffdf7"
           }
         },
@@ -217,7 +217,7 @@
         "animation_time": "0.2s",
         "height": "adapt",
         "image_hover": "noeffect",
-        "section_padding": "none",
+        "section_padding": "normal",
         "content_layout": "no-overlap",
         "layout": "text_first",
         "desktop_content_position": "middle",
@@ -251,7 +251,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Pellentesque laoreet consequat dolor. <br\/>Maecenas rhoncus orci ut sapien posuere.<\/p>",
-            "text_style": "text-body-medium",
+            "text_style": "frye-body",
             "text_color": "#ffffff"
           }
         },
@@ -286,7 +286,7 @@
         "animation_time": "0.2s",
         "height": "adapt",
         "image_hover": "noeffect",
-        "section_padding": "none",
+        "section_padding": "normal",
         "content_layout": "no-overlap",
         "layout": "image_first",
         "desktop_content_position": "middle",

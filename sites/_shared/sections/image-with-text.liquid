@@ -4,11 +4,11 @@
       image-with-text--{{ section.settings.section_padding }}
       image-with-text--{{ section.settings.content_layout }}"
     style="background-color: {{ section.settings.background_color }};">
-    <div class="{% unless section.settings.section_padding == 'none' %}page-width{% endunless %}
-      {% if section.settings.full_width %}image-with-text--full-width{% endif %}">
+    <div class="{% if section.settings.full_width %}image-with-text--full-width{% endif %}">
         <div class="{% unless section.settings.animation contains 'No' %} animated{% endunless%} {{ section.settings.animation }} image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet
             {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}
-            {% if section.settings.mobile_layout == 'text_first' %} image-with-text__grid--reverse-mobile{% endif %}">
+            {% if section.settings.mobile_layout == 'text_first' %} image-with-text__grid--reverse-mobile{% endif %}
+            {% unless section.settings.section_padding == 'none' %}page-width{% endunless %}">
           {%- render 'image-with-text-media', image_hover: section.settings.image_hover -%}
           {%- render 'image-with-text-content', blocks: section.blocks -%}
         </div>
