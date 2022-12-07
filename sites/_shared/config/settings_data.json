@@ -195,7 +195,7 @@
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": false,
-          "copyright_menu": "",
+          "copyright_menu": "copyright-menu",
           "copyright_menu_display_mobile": "column",
           "copyright_text": "FRYE ALL RIGHTS RESERVED"
         }

@@ -6,6 +6,7 @@
   -webkit-animation-fill-mode: both;
 }
 {% endstyle %}
+
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 <div id="Banner-{{ section.id }}"
@@ -22,7 +23,7 @@
   {%- endif -%}
 
   {%- if section.blocks -%}
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+  <div class="banner__content {% if section.settings.section_background_color != 'rgba(0,0,0,0)' %} banner__content-container {% else %} banner__content-container-transparent{% endif %} banner__content--{{ section.settings.desktop_content_position }} page-width">
     {% assign backgroundOpacity = section.settings.content_background_opacity | divided_by: 100.00 %}
 
     <div class="banner__box"
