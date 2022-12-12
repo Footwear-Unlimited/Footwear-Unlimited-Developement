@@ -1466,3 +1466,11 @@ html {
   display: none !important;
   visibility: hidden !important;
 }
+
+.product__modal-opener .media {
+  background-color: var(--color-styleguide-light-tan);
+}
+
+.product__modal-opener .media > img {
+  mix-blend-mode: darken;
+}
