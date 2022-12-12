@@ -444,8 +444,8 @@ details > .header__menu-item:hover {
 }
 
 .header__menu-item:hover {
-  color: var(--color-styleguide-black);
-  text-decoration: underline;
+  color: var(--color-styleguide-tan);
+  text-decoration: none;
   text-underline-offset: 0.3rem;
 }
 
@@ -503,6 +503,11 @@ details > .header__menu-item:hover {
   color: var(--color-styleguide-black);
   font-weight: 700;
   padding-bottom: 0.75rem;
+}
+
+.header__submenu .header__submenu .header__menu-item.parent-item:hover {
+  color: var(--color-styleguide-tan);
+  text-decoration: none;
 }
 
 .header__menu-item .icon-caret {
@@ -653,7 +658,8 @@ details-disclosure > details .header__submenu-contents-inner {
 }
 
 .header__menu-promos .promo__link:hover {
-  text-decoration: underline;
+  color: var(--color-styleguide-tan);
+  text-decoration: none;
   text-underline-offset: 0.3rem;
 }
 
