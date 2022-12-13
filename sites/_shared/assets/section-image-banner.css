@@ -315,6 +315,12 @@
   width: 100%;
 }
 
+@media screen and (min-width: 749px) and (max-width: 989px) {
+  .banner__media > img {
+    object-fit: fill;
+  }
+}
+
 .banner__media-half {
   width: 50%;
 }
