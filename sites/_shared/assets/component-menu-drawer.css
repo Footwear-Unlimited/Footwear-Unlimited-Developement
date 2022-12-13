@@ -309,7 +309,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 
   .js .menu-drawer__menu li {
-    margin: 0 2rem 0rem 4rem;
+    margin: 0 4rem;
   }
 
   .menu-drawer__close-button .icon-caret {
