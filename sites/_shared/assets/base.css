@@ -1565,8 +1565,8 @@ deferred-media {
 
 .button--link-1:hover,
 .button--link-1.hover {
-  color: var(--color-styleguide-brown);
-  text-decoration: none;
+  color: var(--color-styleguide-brown) !important;
+  text-decoration: none !important;
 }
 
 .button--link-1:active,

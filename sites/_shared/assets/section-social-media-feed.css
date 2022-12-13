@@ -9,6 +9,7 @@
 
 .social-media-feed__description {
   display: inline-flex;
+  padding: 0 4rem;
 }
 
 .social-media-feed__description .icon-wrap {
@@ -20,11 +21,20 @@
   font-size: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  font-weight: inherit;
+  font-weight: 400 !important;
 }
 
 /* Yotpo integration */
 
 .yotpo-pictures-gallery-title-wrapper {
   display: none;
+}
+
+.yotpo-pictures-gallery,
+.yotpo-pictures-widget {
+  margin: 0 !important;
+}
+
+.yotpo-wrapper {
+  margin-top: -1rem;
 }
