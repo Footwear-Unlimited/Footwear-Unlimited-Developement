@@ -20,16 +20,28 @@
         {%- endif -%}
 
         {%- if section.settings.description != blank -%}
-          <div class="social-media-feed__description rte {{ section.settings.text_style }}">
-            {{ section.settings.description }}
+          {%- capture icon -%}
             <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+          {%- endcapture %}
+          {% assign descriptionTextSize = section.settings.description.size | minus: 4 %}
+          {% assign descriptionContent = section.settings.description | slice: 0, descriptionTextSize %}
+          {% assign descriptionContent = descriptionContent | append: icon | append: '</p>' %}
+
+          <div class="social-media-feed__description rte {{ section.settings.text_style }}">
+            {%- if settings.social_instagram_link != blank -%}
+              <a href="{{ settings.social_instagram_link }}" class="button button--link-1">{{ descriptionContent }}</a>
+            {% else %}
+              {{ descriptionContent }}
+            {%- endif -%}
           </div>
         {%- endif -%}
       </header>
     {%- endif -%}
 
     {% if section.settings.integration != blank %}
-      {{ section.settings.integration }}
+      <div class="yotpo-wrapper page-width">
+        {{ section.settings.integration }}
+      </div>
     {% else %}
       <div class="social-media-feed__content rte grid grid--2-col {% if section.blocks.size == 4 %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}">
         {%- for block in section.blocks -%}
@@ -100,7 +112,7 @@
   {
     "name": "Social Media Feed",
     "tag": "section",
-    "class": "social-media-feed page-width",
+    "class": "social-media-feed",
     "settings": [
       {
         "type": "text",
