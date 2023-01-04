@@ -110,9 +110,9 @@
       ],
       "settings": {
         "background_color": "#000000",
-        "desktop_top_padding": 50,
+        "desktop_top_padding": 60,
         "desktop_bottom_padding": 35,
-        "mobile_top_padding": 25,
+        "mobile_top_padding": 40,
         "mobile_bottom_padding": 30
       }
     },
