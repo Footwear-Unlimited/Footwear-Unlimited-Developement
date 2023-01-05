@@ -64,7 +64,13 @@
           </a>
 
           <div class="ProductItem__LabelList">
-            {{ product_labels }}
+            {{product_labels}}
+          </div>
+
+          <div class="ProductItem__Badge">
+            {% if product.metafields.cql.country_of_origin == 'United States' %}
+              <img src="https://cdn.shopify.com/s/files/1/0666/3929/8837/files/frye_made-in-the-usa-badge.png"  width="80" height="auto" class="product__country-origin" style="height: auto;">
+            {% endif %}
           </div>
 
           <ul id="Slider-Gallery-{{ section.id }}" class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
