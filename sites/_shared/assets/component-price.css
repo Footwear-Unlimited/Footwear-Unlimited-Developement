@@ -75,7 +75,7 @@
 
 .price--on-sale .price-item--regular {
   text-decoration: line-through;
-  opacity: 60%;
+  opacity: 50%;
   font-size: 1.3rem;
 }
 
