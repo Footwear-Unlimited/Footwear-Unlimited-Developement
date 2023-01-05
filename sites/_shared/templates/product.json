@@ -7,7 +7,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "{{ product.metafields.cql.gender.value }}"
           }
         },
         "title": {
@@ -26,6 +26,10 @@
         },
         "e72fe689-767e-4ef2-8086-f86e9e1d5726": {
           "type": "short_description",
+          "settings": {}
+        },
+        "f64c22f1-288a-4b4d-8c9f-c10514bc2f6d": {
+          "type": "separator",
           "settings": {}
         },
         "c7caa4c0-ada8-4157-82e3-40aa32f26f06": {
@@ -89,6 +93,7 @@
         "c1fa7ef7-1b07-456f-a987-41d5a54b7e01",
         "price",
         "e72fe689-767e-4ef2-8086-f86e9e1d5726",
+        "f64c22f1-288a-4b4d-8c9f-c10514bc2f6d",
         "c7caa4c0-ada8-4157-82e3-40aa32f26f06",
         "variant_picker",
         "quantity_selector",
