@@ -64,7 +64,13 @@
           </a>
 
           <div class="ProductItem__LabelList">
-            {{ product_labels }}
+            {{product_labels}}
+          </div>
+
+          <div class="ProductItem__Badge">
+            {% if product.metafields.cql.country_of_origin == 'United States' %}
+              <img src="https://cdn.shopify.com/s/files/1/0666/3929/8837/files/frye_made-in-the-usa-badge.png"  width="80" height="auto" class="product__country-origin" style="height: auto;">
+            {% endif %}
           </div>
 
           <ul id="Slider-Gallery-{{ section.id }}" class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
@@ -219,7 +225,7 @@
           {%- when '@app' -%}
             {% render block %}
           {%- when 'text' -%}
-             <p class="product__text pdp__eyebrow" {{ block.shopify_attributes }}>
+             <p class="product__text frye-eyebrow" {{ block.shopify_attributes }}>
               {{- block.settings.text -}}
              </p>
           {%- when 'title' -%}
@@ -254,9 +260,9 @@
               {%- endform -%}
             </div>
           {%- when 'short_description' -%}
-            {%- if product.metafields.cql.short_description != blank -%}
+            {%- if product.metafields.descriptors.subtitle != blank -%}
               <div class="product__description rte">
-                {{product.metafields.cql.short_description}}
+                {{product.metafields.descriptors.subtitle}}
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
@@ -309,6 +315,8 @@
                 </button>
               </quantity-input>
             </div>
+          {% when 'separator' %}
+            <hr>
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
@@ -1010,6 +1018,10 @@
           "label": "Addon heading"
         }
       ]
+    },
+    {
+      "type": "separator",
+      "name": "Separator"
     },
     {
       "type": "popup",

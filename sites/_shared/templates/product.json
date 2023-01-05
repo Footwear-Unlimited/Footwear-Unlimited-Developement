@@ -7,7 +7,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "{{ product.metafields.cql.gender.value }}"
           }
         },
         "title": {
@@ -28,6 +28,10 @@
           "type": "short_description",
           "settings": {}
         },
+        "f64c22f1-288a-4b4d-8c9f-c10514bc2f6d": {
+          "type": "separator",
+          "settings": {}
+        },
         "c7caa4c0-ada8-4157-82e3-40aa32f26f06": {
           "type": "featured_description",
           "settings": {
@@ -37,7 +41,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown",
+            "picker_type": "button",
             "show_swatches": true
           }
         },
@@ -70,10 +74,8 @@
         "13988f0d-58fa-4811-b0a6-b5e5932ffe0c": {
           "type": "configurable_links",
           "settings": {
-            "link_1_icon": "shopify:\/\/shop_images\/Screenshot_2022-04-07_at_11.09.31.png",
             "link_1_text": "Size & Specifications",
             "link_1_url": "",
-            "link_2_icon": "shopify:\/\/shop_images\/Screenshot_2022-04-07_at_11.09.41.png",
             "link_2_text": "Owner’s Manuals",
             "link_2_url": ""
           }
@@ -91,6 +93,7 @@
         "c1fa7ef7-1b07-456f-a987-41d5a54b7e01",
         "price",
         "e72fe689-767e-4ef2-8086-f86e9e1d5726",
+        "f64c22f1-288a-4b4d-8c9f-c10514bc2f6d",
         "c7caa4c0-ada8-4157-82e3-40aa32f26f06",
         "variant_picker",
         "quantity_selector",
@@ -140,7 +143,6 @@
           "settings": {
             "heading": "Lightweight, Aluminum Frame",
             "description": "<p>Designed to self-seal upon puncture with a greater range of pressure adjustment, providing you with a superior, more dynamic riding experience.<\/p>",
-            "icon": "shopify:\/\/shop_images\/Screenshot_2022-03-21_at_17.15.30.png",
             "icon_width": 160,
             "v_pos": 15,
             "h_pos": 79,
@@ -152,7 +154,6 @@
           "settings": {
             "heading": "Second Lightweight, Aluminum Frame",
             "description": "<p>Designed to self-seal upon puncture with a greater range of pressure adjustment, providing you with a superior, more dynamic riding experience.<\/p>",
-            "icon": "shopify:\/\/shop_images\/Screenshot_2022-03-21_at_17.15.30.png",
             "icon_width": 160,
             "v_pos": 26,
             "h_pos": 55,
@@ -164,7 +165,6 @@
           "settings": {
             "heading": "Third Lightweight, Aluminum Frame",
             "description": "<p>Designed to self-seal upon puncture with a greater range of pressure adjustment, providing you with a superior, more dynamic riding experience.<\/p>",
-            "icon": "shopify:\/\/shop_images\/Screenshot_2022-03-21_at_17.15.30.png",
             "icon_width": 160,
             "v_pos": 50,
             "h_pos": 61,
@@ -214,7 +214,6 @@
         "0b2b5c78-dccd-4b7c-b482-14d92def582a"
       ],
       "settings": {
-        "diagram__image": "shopify:\/\/shop_images\/Screenshot_2022-03-01_at_12.51.26.png",
         "diagram_img_animation": "fadeInUp",
         "diagram_img_animation_time": "4s",
         "diagram_text_animation_time": "4s",
@@ -238,7 +237,6 @@
         "38ad9e1a-18a6-4bbe-b9cc-214d5741528e": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-Beginner-Bike.png",
             "image_hover": "noeffect",
             "heading": "Beginner &  Intermediate Riders",
             "description": "",
@@ -249,7 +247,6 @@
         "fcd6d028-fa8a-4de1-a215-5629ecd56148": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-High-Speed-Trails.png",
             "image_hover": "noeffect",
             "heading": "High-speed  Trails",
             "description": "",
@@ -260,7 +257,6 @@
         "0d9dd525-3152-4319-ad6b-25e6a6e8685b": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-Steep-Climbs.png",
             "image_hover": "noeffect",
             "heading": "Steep Climbs &  Inclines",
             "description": "",
@@ -399,7 +395,6 @@
         "description": "<p>Measured from size medium<\/p>",
         "specs_animation": "NoEffect",
         "text_animation_time": "1s",
-        "specs_image": "shopify:\/\/shop_images\/pdp-specs.jpg",
         "image_animation_time": "2s",
         "columns": "two-column",
         "accor_animation_time": "3s",
@@ -415,17 +410,20 @@
         "595d60b2-b2b3-4a5a-bac4-ccec8aa29855": {
           "type": "link",
           "settings": {
+            "link_url": "",
+            "image_hover": "noeffect",
             "heading": "FREE SHIPPING. ALWAYS.",
             "heading_size": "h2",
             "heading_color": "rgba(0,0,0,0)",
-            "heading_on_image": false,
-            "link_url": "",
-            "image": "shopify:\/\/shop_images\/pdp-free-shipping.jpg",
-            "image_hover": "noeffect",
+            "eyebrow": "",
+            "eyebrow_color": "",
             "description": "<p>All bikes arrive preassebled for your convenience.<\/p>",
+            "text_style": "frye-body",
+            "text_color": "",
             "button_label": "Test",
-            "background_color": "#f5f4f9",
             "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "#f5f4f9",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -433,17 +431,20 @@
         "24b099de-8dc6-4fb9-a016-cfa659ab2bfa": {
           "type": "link",
           "settings": {
+            "link_url": "",
+            "image_hover": "noeffect",
             "heading": "LIFETIME WARRANTY",
             "heading_size": "h2",
             "heading_color": "",
-            "heading_on_image": false,
-            "link_url": "",
-            "image": "shopify:\/\/shop_images\/pdp-warranty.jpg",
-            "image_hover": "noeffect",
+            "eyebrow": "",
+            "eyebrow_color": "",
             "description": "<p>Because we stand behind our products… and you.<\/p>",
+            "text_style": "frye-body",
+            "text_color": "",
             "button_label": "",
-            "background_color": "#f5f4f9",
             "button_style": "primary",
+            "heading_on_image": false,
+            "background_color": "#f5f4f9",
             "featured_animation": "NoEffect",
             "featured_animation_time": "0.2s"
           }
@@ -459,6 +460,7 @@
         "heading_size": "h2",
         "heading_color": "",
         "eyebrow": "",
+        "eyebrow_style": "frye-eyebrow",
         "eyebrow_color": "",
         "heading_wrapper_animation": "NoEffect",
         "heading_wrapper_animation_time": "0.2s",
