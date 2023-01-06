@@ -741,7 +741,7 @@ class VariantSelects extends HTMLElement {
     this.setColorVariantLabel();
     this.setPriceLabelAddButton();
     this.updateVariantMedia();
-    this.addOutOfStockClass();
+    //this.addOutOfStockClass();
   }
 
   onVariantChange() {
@@ -752,7 +752,7 @@ class VariantSelects extends HTMLElement {
     this.removeErrorMessage();
     this.setColorVariantLabel();
     this.removeColorVariantLabel();
-    this.addOutOfStockClass();
+    //this.addOutOfStockClass();
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
@@ -852,7 +852,7 @@ class VariantSelects extends HTMLElement {
           if(thumbs.length > 0) {
             thumbs.forEach(t => {
               let searchValue = i.value.split(" ").join("-").toLowerCase();
-              // console.log(searchValue)
+              
               if(t.src.includes(searchValue)) {
                 t.parentElement.parentElement.style.display = "block";
               } else {
@@ -863,12 +863,19 @@ class VariantSelects extends HTMLElement {
 
           if (stackedThumbs.length > 0 ) {
             stackedThumbs.forEach(t => {
-              let searchValue = i.value.split(" ").join("-").toLowerCase();
-              // console.log(searchValue)
-              if(t.src.includes(searchValue)) {
+              let searchValue;
+              if (i.value.includes("/")) {
+                 searchValue = i.value.split("/").join("-").toLowerCase();
+              } else if (i.value.includes("-")) {
+                 searchValue = i.value.split("-").join("-").toLowerCase().replace(/\s/g,'');
+              } else {
+                searchValue = i.value.split(" ").join("-").toLowerCase();
+              }
+              
+              if(t.src.split("__")[1].split("_")[0].toLowerCase() === searchValue) {
                 t.parentElement.parentElement.parentElement.style.display = "block";
               } else {
-                t.parentElement.parentElement.parentElement.style.display = "none"
+                t.parentElement.parentElement.parentElement.style.display = "none";
               }
             })
           }

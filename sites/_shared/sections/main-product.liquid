@@ -369,7 +369,7 @@
                         {%- for value in option.values -%}
                           {% if option.name == "Color" and block.settings.show_swatches  %}
 
-                            {% assign value_name = value | remove: ' ' %}
+                            {% assign value_name = value | remove: ' ' | remove: '/' | remove: '-' %}
                             {% assign swatch_image_name = "product_color" |  append: '_' | append: value_name  | append: '.png' | downcase %}
                             {% assign swatch_img = images[swatch_image_name] %}
 
@@ -783,6 +783,33 @@
     assign seo_media = product.featured_media
   endif
 -%}
+
+<script type="text/javascript">
+  class ColorSwatchPDP extends HTMLElement {
+    constructor() {
+      super();
+      this.sliderReInit = this.sliderReInit.bind(this);
+    }
+
+    sliderReInit(visibleMediaItems, slideDots) {
+      for(let i = 0; i <= slideDots.length; i++) {
+        if(typeof slideDots[i] !== "undefined") {
+          if(slideDots[i].classList.contains("hidden")) {
+            slideDots[i].classList.remove("hidden");
+          }
+        }
+      }
+
+      for(let j = visibleMediaItems.length; j <= slideDots.length; j++) {
+        if(typeof slideDots[j] !== "undefined") {
+          slideDots[j].classList.add("hidden");
+        }
+      }
+    }
+  }
+
+  customElements.define('color-swatch', ColorSwatchPDP);
+</script>
 
 <script type="application/ld+json">
   {
