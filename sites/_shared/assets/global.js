@@ -739,9 +739,10 @@ class VariantSelects extends HTMLElement {
     this.addEventListener('change', this.onVariantChange);
     this.additionalVariantData = JSON.parse(document.getElementById('additionalVariantData').textContent);
     this.setColorVariantLabel();
+    this.setSizeVariantLabel();
     this.setPriceLabelAddButton();
     this.updateVariantMedia();
-    this.addOutOfStockClass();
+    //this.addOutOfStockClass();
   }
 
   onVariantChange() {
@@ -751,8 +752,10 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
     this.setColorVariantLabel();
+    this.setSizeVariantLabel();
     this.removeColorVariantLabel();
-    this.addOutOfStockClass();
+    this.removeSizeVariantLabel();
+    //this.addOutOfStockClass();
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
@@ -852,7 +855,7 @@ class VariantSelects extends HTMLElement {
           if(thumbs.length > 0) {
             thumbs.forEach(t => {
               let searchValue = i.value.split(" ").join("-").toLowerCase();
-              // console.log(searchValue)
+              
               if(t.src.includes(searchValue)) {
                 t.parentElement.parentElement.style.display = "block";
               } else {
@@ -863,12 +866,19 @@ class VariantSelects extends HTMLElement {
 
           if (stackedThumbs.length > 0 ) {
             stackedThumbs.forEach(t => {
-              let searchValue = i.value.split(" ").join("-").toLowerCase();
-              // console.log(searchValue)
-              if(t.src.includes(searchValue)) {
+              let searchValue;
+              if (i.value.includes("/")) {
+                 searchValue = i.value.split("/").join("-").toLowerCase();
+              } else if (i.value.includes("-")) {
+                 searchValue = i.value.split("-").join("-").toLowerCase().replace(/\s/g,'');
+              } else {
+                searchValue = i.value.split(" ").join("-").toLowerCase();
+              }
+              
+              if(t.src.split("__")[1].split("_")[0].toLowerCase() === searchValue) {
                 t.parentElement.parentElement.parentElement.style.display = "block";
               } else {
-                t.parentElement.parentElement.parentElement.style.display = "none"
+                t.parentElement.parentElement.parentElement.style.display = "none";
               }
             })
           }
@@ -1029,7 +1039,7 @@ class VariantSelects extends HTMLElement {
 
     for (var i = 0; i < colorInputs.length; i++) {
       if (colorInputs[i].checked) {
-      colorLabel.innerHTML += "<span class='color__variant'>: " + colorInputs[i].value + "</span>"
+      colorLabel.innerHTML += "<span class='color__variant'> " + colorInputs[i].value + "</span>"
       }
     }
   }
@@ -1038,6 +1048,24 @@ class VariantSelects extends HTMLElement {
     let colorVariant = document.querySelector(".color__variant");
       if (colorVariant !== 'undefined' && colorVariant !== null) {
       colorVariant.remove()
+    }
+  }
+
+  setSizeVariantLabel() {
+    let sizeLabel = document.querySelector(".size_label");
+    let sizeInputs = document.querySelectorAll("input[name=Size]")
+
+    for (var i = 0; i < sizeInputs.length; i++) {
+      if (sizeInputs[i].checked) {
+      sizeLabel.innerHTML += "<span class='size__variant'> " + sizeInputs[i].value + "</span>"
+      }
+    }
+  }
+
+  removeSizeVariantLabel() {
+    let sizeVariant = document.querySelector(".size__variant");
+      if (sizeVariant !== 'undefined' && sizeVariant !== null) {
+      sizeVariant.remove()
     }
   }
 }

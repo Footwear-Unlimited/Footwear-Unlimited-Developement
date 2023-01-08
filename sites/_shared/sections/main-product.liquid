@@ -64,7 +64,13 @@
           </a>
 
           <div class="ProductItem__LabelList">
-            {{ product_labels }}
+            {{product_labels}}
+          </div>
+
+          <div class="ProductItem__Badge">
+            {% if product.metafields.cql.country_of_origin == 'United States' %}
+              <img src="https://cdn.shopify.com/s/files/1/0666/3929/8837/files/frye_made-in-the-usa-badge.png"  width="80" height="auto" class="product__country-origin" style="height: auto;">
+            {% endif %}
           </div>
 
           <ul id="Slider-Gallery-{{ section.id }}" class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
@@ -219,7 +225,7 @@
           {%- when '@app' -%}
             {% render block %}
           {%- when 'text' -%}
-             <p class="product__text pdp__eyebrow" {{ block.shopify_attributes }}>
+             <p class="product__text frye-eyebrow" {{ block.shopify_attributes }}>
               {{- block.settings.text -}}
              </p>
           {%- when 'title' -%}
@@ -254,9 +260,9 @@
               {%- endform -%}
             </div>
           {%- when 'short_description' -%}
-            {%- if product.metafields.cql.short_description != blank -%}
+            {%- if product.metafields.descriptors.subtitle != blank -%}
               <div class="product__description rte">
-                {{product.metafields.cql.short_description}}
+                {{product.metafields.descriptors.subtitle}}
               </div>
             {%- endif -%}
           {%- when 'custom_liquid' -%}
@@ -309,6 +315,8 @@
                 </button>
               </quantity-input>
             </div>
+          {% when 'separator' %}
+            <hr>
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
@@ -357,11 +365,11 @@
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
-                        <legend class="form__label  {% if option.name == "Color" %} color_label {% endif %}">{{ option.name }}</legend>
+                        <legend class="form__label  {% if option.name == "Color" %} color_label {% endif %}{% if option.name == "Size" %} size_label {% endif %}">{{ option.name }}:</legend>
                         {%- for value in option.values -%}
                           {% if option.name == "Color" and block.settings.show_swatches  %}
 
-                            {% assign value_name = value | remove: ' ' %}
+                            {% assign value_name = value | remove: ' ' | remove: '/' | remove: '-' %}
                             {% assign swatch_image_name = "product_color" |  append: '_' | append: value_name  | append: '.png' | downcase %}
                             {% assign swatch_img = images[swatch_image_name] %}
 
@@ -414,7 +422,7 @@
 
                     {% if option.name == "Color" and block.settings.show_swatches  %}
                       <fieldset class="js product-form__input" node-index="{{ forloop.index0 }}">
-                        <legend class="form__label {% if option.name == "Color" %} color_label {% endif %}">{{ option.name }}</legend>
+                        <legend class="form__label {% if option.name == "Color" %}color_label{% endif %}{% if option.name == "Size" %}size_label{% endif %}">{{ option.name }}:</legend>
                         {%- for value in option.values -%}
                           {% assign value_name = value | remove: ' ' %}
                           {% assign swatch_image_name = "product_color" |  append: '_' | append: value_name  | append: '.png' | downcase %}
@@ -428,7 +436,7 @@
                                 {% if option.selected_value == value %}checked{% endif %}
                               >
                               <label class="swatch_label" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                                <img class="swatch" src="{{swatch_img | image_url: width: 37, height:37 }}" alt="{{swatch_img.alt}}" height="{{swatch_img.height}}" width="{{swatch_img.width}}" loading="lazy">
+                                <img class="swatch" src="{{swatch_img | image_url: width: 40, height:40 }}" alt="{{swatch_img.alt}}" height="{{swatch_img.height}}" width="{{swatch_img.width}}" loading="lazy">
                               </label>
                             {% endif %}
                         {% endfor %}
@@ -776,6 +784,33 @@
   endif
 -%}
 
+<script type="text/javascript">
+  class ColorSwatchPDP extends HTMLElement {
+    constructor() {
+      super();
+      this.sliderReInit = this.sliderReInit.bind(this);
+    }
+
+    sliderReInit(visibleMediaItems, slideDots) {
+      for(let i = 0; i <= slideDots.length; i++) {
+        if(typeof slideDots[i] !== "undefined") {
+          if(slideDots[i].classList.contains("hidden")) {
+            slideDots[i].classList.remove("hidden");
+          }
+        }
+      }
+
+      for(let j = visibleMediaItems.length; j <= slideDots.length; j++) {
+        if(typeof slideDots[j] !== "undefined") {
+          slideDots[j].classList.add("hidden");
+        }
+      }
+    }
+  }
+
+  customElements.define('color-swatch', ColorSwatchPDP);
+</script>
+
 <script type="application/ld+json">
   {
     "@context": "http://schema.org/",
@@ -1010,6 +1045,10 @@
           "label": "Addon heading"
         }
       ]
+    },
+    {
+      "type": "separator",
+      "name": "Separator"
     },
     {
       "type": "popup",
