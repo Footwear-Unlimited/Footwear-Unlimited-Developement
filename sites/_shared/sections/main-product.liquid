@@ -365,7 +365,7 @@
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
-                        <legend class="form__label  {% if option.name == "Color" %} color_label {% endif %}">{{ option.name }}</legend>
+                        <legend class="form__label  {% if option.name == "Color" %} color_label {% endif %}{% if option.name == "Size" %} size_label {% endif %}">{{ option.name }}:</legend>
                         {%- for value in option.values -%}
                           {% if option.name == "Color" and block.settings.show_swatches  %}
 
@@ -422,7 +422,7 @@
 
                     {% if option.name == "Color" and block.settings.show_swatches  %}
                       <fieldset class="js product-form__input" node-index="{{ forloop.index0 }}">
-                        <legend class="form__label {% if option.name == "Color" %} color_label {% endif %}">{{ option.name }}</legend>
+                        <legend class="form__label {% if option.name == "Color" %}color_label{% endif %}{% if option.name == "Size" %}size_label{% endif %}">{{ option.name }}:</legend>
                         {%- for value in option.values -%}
                           {% assign value_name = value | remove: ' ' %}
                           {% assign swatch_image_name = "product_color" |  append: '_' | append: value_name  | append: '.png' | downcase %}
@@ -436,7 +436,7 @@
                                 {% if option.selected_value == value %}checked{% endif %}
                               >
                               <label class="swatch_label" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                                <img class="swatch" src="{{swatch_img | image_url: width: 37, height:37 }}" alt="{{swatch_img.alt}}" height="{{swatch_img.height}}" width="{{swatch_img.width}}" loading="lazy">
+                                <img class="swatch" src="{{swatch_img | image_url: width: 40, height:40 }}" alt="{{swatch_img.alt}}" height="{{swatch_img.height}}" width="{{swatch_img.width}}" loading="lazy">
                               </label>
                             {% endif %}
                         {% endfor %}

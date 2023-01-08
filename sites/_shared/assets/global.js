@@ -739,6 +739,7 @@ class VariantSelects extends HTMLElement {
     this.addEventListener('change', this.onVariantChange);
     this.additionalVariantData = JSON.parse(document.getElementById('additionalVariantData').textContent);
     this.setColorVariantLabel();
+    this.setSizeVariantLabel();
     this.setPriceLabelAddButton();
     this.updateVariantMedia();
     //this.addOutOfStockClass();
@@ -751,7 +752,9 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
     this.setColorVariantLabel();
+    this.setSizeVariantLabel();
     this.removeColorVariantLabel();
+    this.removeSizeVariantLabel();
     //this.addOutOfStockClass();
 
     if (!this.currentVariant) {
@@ -1036,7 +1039,7 @@ class VariantSelects extends HTMLElement {
 
     for (var i = 0; i < colorInputs.length; i++) {
       if (colorInputs[i].checked) {
-      colorLabel.innerHTML += "<span class='color__variant'>: " + colorInputs[i].value + "</span>"
+      colorLabel.innerHTML += "<span class='color__variant'> " + colorInputs[i].value + "</span>"
       }
     }
   }
@@ -1045,6 +1048,24 @@ class VariantSelects extends HTMLElement {
     let colorVariant = document.querySelector(".color__variant");
       if (colorVariant !== 'undefined' && colorVariant !== null) {
       colorVariant.remove()
+    }
+  }
+
+  setSizeVariantLabel() {
+    let sizeLabel = document.querySelector(".size_label");
+    let sizeInputs = document.querySelectorAll("input[name=Size]")
+
+    for (var i = 0; i < sizeInputs.length; i++) {
+      if (sizeInputs[i].checked) {
+      sizeLabel.innerHTML += "<span class='size__variant'> " + sizeInputs[i].value + "</span>"
+      }
+    }
+  }
+
+  removeSizeVariantLabel() {
+    let sizeVariant = document.querySelector(".size__variant");
+      if (sizeVariant !== 'undefined' && sizeVariant !== null) {
+      sizeVariant.remove()
     }
   }
 }

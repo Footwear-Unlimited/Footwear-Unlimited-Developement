@@ -142,7 +142,7 @@
         "play_video": "Play video"
       },
       "quantity": {
-        "label": "Quantity",
+        "label": "Quantity:",
         "input_label": "Quantity for {{ product }}",
         "increase": "Increase quantity for {{ product }}",
         "decrease": "Decrease quantity for {{ product }}"
