@@ -161,6 +161,63 @@
         "mobile_image_width": "large"
       }
     },
+    "b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16969309487381__b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb-1673276726ec904e5a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "FINDING THE PERFECT FIT",
+            "heading_size": "frye-headline-2",
+            "heading_color": "#000000",
+            "headline_animation": "fadeInUp",
+            "headline_animation_time": "3s"
+          }
+        },
+        "template--16969309487381__b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb-1673276726ec904e5a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe that our extraordinary craftsmanship translates into a near perfect fit, which with time gets even better as it molds to your foot. Learn what to look for when trying on your boots.<\/p>",
+            "text_style": "frye-body",
+            "text_color": "#000000",
+            "richtext_animation": "fadeInUp",
+            "richtext_animation_time": "3s"
+          }
+        }
+      },
+      "block_order": [
+        "template--16969309487381__b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb-1673276726ec904e5a-0",
+        "template--16969309487381__b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb-1673276726ec904e5a-1"
+      ],
+      "settings": {
+        "background_color": "",
+        "desktop_top_padding": 60,
+        "desktop_bottom_padding": 25,
+        "mobile_top_padding": 30,
+        "mobile_bottom_padding": 25
+      }
+    },
+    "b1393c84-d484-4042-8344-7ead16c7fa29": {
+      "type": "video",
+      "settings": {
+        "cover_image": "shopify:\/\/shop_images\/frye-fit-tips-video-thumbnail.jpg",
+        "image_hover": "noeffect",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=aCJ7pqLyEI8",
+        "description": "Fit Your Boots",
+        "full_width": false,
+        "enable_autoplay": false,
+        "background_color": "",
+        "button_fill_color": "#ffffff",
+        "desktop_top_padding": 0,
+        "desktop_right_padding": 0,
+        "desktop_bottom_padding": 60,
+        "desktop_left_padding": 0,
+        "mobile_top_padding": 0,
+        "mobile_right_padding": 0,
+        "mobile_bottom_padding": 40,
+        "mobile_left_padding": 0
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -203,6 +260,8 @@
   "order": [
     "main",
     "6b9af907-9180-4128-9c29-49e1fc5989af",
+    "b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb",
+    "b1393c84-d484-4042-8344-7ead16c7fa29",
     "product-recommendations",
     "165027139154812f9c"
   ]
