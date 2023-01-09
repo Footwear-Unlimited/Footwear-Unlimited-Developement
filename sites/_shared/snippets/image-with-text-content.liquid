@@ -21,7 +21,7 @@
           {% endif %}
           {% endstyle %}
 
-          {%- when 'heading' -%}
+        {%- when 'heading' -%}
           <h2 class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">
             {{ block.settings.heading | escape }}
           </h2>
@@ -35,7 +35,7 @@
           {% endif %}
           {% endstyle %}
 
-          {%- when 'caption' -%}
+        {%- when 'caption' -%}
           <p class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">
             {{ block.settings.caption | escape }}
           </p>
@@ -49,19 +49,19 @@
           {% endif %}
           {% endstyle %}
 
-          {%- when 'text' -%}
+        {%- when 'text' -%}
           <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }} id="block-section-{{ block.id }}">{{ block.settings.text }}</div>
 
           {% assign block_selector = '#block-section-' | append: block.id %}
           {% style %}
-          {{ block_selector }}.image-with-text__text p {
+          {{ block_selector }}.image-with-text__text {
             {% if block.settings.text_color != 'rgba(0,0,0,0)' %}
               color: {{ block.settings.text_color }};
             {% endif %}
           }
           {% endstyle %}
 
-          {%- when 'button' -%}
+        {%- when 'button' -%}
           <div class="image-with-text__button-wrapper {% if block.settings.show_side_by_side %}side-by-side{% endif %}" {{ block.shopify_attributes }} data-block-id="{{ block.id }}" id="block-section-{{ block.id }}">
           {%- if block.settings.button_label_1 != blank -%}
               {% assign showArrow1 = '' %}
