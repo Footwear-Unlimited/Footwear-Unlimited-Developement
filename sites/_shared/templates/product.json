@@ -144,8 +144,9 @@
       "settings": {
         "background_color": "#000000",
         "background_desktop_image": "shopify:\/\/shop_images\/frye-fit-tips-50-50-background.jpg",
-        "background_mobile_image": "shopify:\/\/shop_images\/frye_pattern-bg-mobile.jpg",
+        "background_mobile_image": "shopify:\/\/shop_images\/mobile-fit-tips-background.jpg",
         "image": "shopify:\/\/shop_images\/frye-fit-tips-50-50-image.png",
+        "image_mobile": "shopify:\/\/shop_images\/frye-pdp-fit-tips-mobile.jpg",
         "animation": "NoEffect",
         "animation_time": "0.2s",
         "height": "adapt",
