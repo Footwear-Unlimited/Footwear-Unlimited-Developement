@@ -284,12 +284,28 @@
   max-width: 44rem;
 }
 
-.image-with-text__text p {
+.image-with-text__text p,
+.image-with-text__text ul,
+.image-with-text__text li {
   margin: 0 auto 1rem;
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
   letter-spacing: inherit;
+}
+
+.image-with-text__text ul {
+  max-width: 40rem;
+}
+
+.image-with-text__text li {
+  line-height: 2.4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .image-with-text__text li {
+    line-height: 2.2rem;
+  }
 }
 
 .image-with-text__button-wrapper {

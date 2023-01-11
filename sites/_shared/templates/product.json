@@ -70,10 +70,8 @@
         "13988f0d-58fa-4811-b0a6-b5e5932ffe0c": {
           "type": "configurable_links",
           "settings": {
-            "link_1_icon": "shopify:\/\/shop_images\/Screenshot_2022-04-07_at_11.09.31.png",
             "link_1_text": "Size & Specifications",
             "link_1_url": "",
-            "link_2_icon": "shopify:\/\/shop_images\/Screenshot_2022-04-07_at_11.09.41.png",
             "link_2_text": "Owner’s Manuals",
             "link_2_url": ""
           }
@@ -110,17 +108,127 @@
         "enable_video_looping": false
       }
     },
+    "6b9af907-9180-4128-9c29-49e1fc5989af": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16969309487381__6b9af907-9180-4128-9c29-49e1fc5989af-167327460298531668-0": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "FIT TIPS",
+            "eyebrow_style": "frye-eyebrow",
+            "text_color": "#be9b7b"
+          }
+        },
+        "template--16969309487381__6b9af907-9180-4128-9c29-49e1fc5989af-167327460298531668-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "FINDING THE PERFECT PAIR OF BOOTS",
+            "heading_size": "frye-headline-2",
+            "heading_color": "#ffffff"
+          }
+        },
+        "template--16969309487381__6b9af907-9180-4128-9c29-49e1fc5989af-167327460298531668-2": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>1\/8” to 1\/2” of heel lift is proper fit for pull on boots.<\/li><li>Your entire foot should feel snug except for the heel which should slip a little, which is necessary for getting your boots on and off.<\/li><li>The ball of your foot should always sit at the widest part of the sole. If it sits too far forward, your toes will hurt.<\/li><li>The vamp of a boot should fit snug over the top of your arch. <\/li><\/ul>",
+            "text_style": "frye-body",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--16969309487381__6b9af907-9180-4128-9c29-49e1fc5989af-167327460298531668-0",
+        "template--16969309487381__6b9af907-9180-4128-9c29-49e1fc5989af-167327460298531668-1",
+        "template--16969309487381__6b9af907-9180-4128-9c29-49e1fc5989af-167327460298531668-2"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "background_desktop_image": "shopify:\/\/shop_images\/frye-fit-tips-50-50-background.jpg",
+        "background_mobile_image": "shopify:\/\/shop_images\/mobile-fit-tips-background.jpg",
+        "image": "shopify:\/\/shop_images\/frye-fit-tips-50-50-image.png",
+        "image_mobile": "shopify:\/\/shop_images\/frye-pdp-fit-tips-mobile.jpg",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "height": "adapt",
+        "image_hover": "noeffect",
+        "section_padding": "normal",
+        "content_layout": "no-overlap",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "desktop_image_width": "normal",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "mobile_image_width": "large"
+      }
+    },
+    "b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16969309487381__b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb-1673276726ec904e5a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "FINDING THE PERFECT FIT",
+            "heading_size": "frye-headline-2",
+            "heading_color": "#000000",
+            "headline_animation": "fadeInUp",
+            "headline_animation_time": "3s"
+          }
+        },
+        "template--16969309487381__b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb-1673276726ec904e5a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe that our extraordinary craftsmanship translates into a near perfect fit, which with time gets even better as it molds to your foot. Learn what to look for when trying on your boots.<\/p>",
+            "text_style": "frye-body",
+            "text_color": "#000000",
+            "richtext_animation": "fadeInUp",
+            "richtext_animation_time": "3s"
+          }
+        }
+      },
+      "block_order": [
+        "template--16969309487381__b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb-1673276726ec904e5a-0",
+        "template--16969309487381__b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb-1673276726ec904e5a-1"
+      ],
+      "settings": {
+        "background_color": "",
+        "desktop_top_padding": 60,
+        "desktop_bottom_padding": 25,
+        "mobile_top_padding": 30,
+        "mobile_bottom_padding": 25
+      }
+    },
+    "b1393c84-d484-4042-8344-7ead16c7fa29": {
+      "type": "video",
+      "settings": {
+        "cover_image": "shopify:\/\/shop_images\/frye-fit-tips-video-thumbnail.jpg",
+        "image_hover": "noeffect",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=aCJ7pqLyEI8",
+        "description": "Fit Your Boots",
+        "full_width": false,
+        "enable_autoplay": false,
+        "background_color": "",
+        "button_fill_color": "#ffffff",
+        "desktop_top_padding": 0,
+        "desktop_right_padding": 0,
+        "desktop_bottom_padding": 60,
+        "desktop_left_padding": 0,
+        "mobile_top_padding": 0,
+        "mobile_right_padding": 0,
+        "mobile_bottom_padding": 40,
+        "mobile_left_padding": 0
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
       "settings": {
-        "text_color": "",
+        "text_color": "#000000",
         "background_color": "",
-        "heading": "You may also like",
-        "heading_size": "h2",
+        "heading": "Recommended for You",
+        "heading_size": "h1",
         "image_ratio": "adapt",
         "image_hover": "noeffect",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
@@ -130,495 +238,6 @@
         "desktop_bottom_padding": 60,
         "mobile_top_padding": 45,
         "mobile_bottom_padding": 45
-      }
-    },
-    "1647879286087e9d74": {
-      "type": "feature-diagram",
-      "blocks": {
-        "0dfce395-7b80-450b-8aed-5dfb9fd24537": {
-          "type": "feature_carousel",
-          "settings": {
-            "heading": "Lightweight, Aluminum Frame",
-            "description": "<p>Designed to self-seal upon puncture with a greater range of pressure adjustment, providing you with a superior, more dynamic riding experience.<\/p>",
-            "icon": "shopify:\/\/shop_images\/Screenshot_2022-03-21_at_17.15.30.png",
-            "icon_width": 160,
-            "v_pos": 15,
-            "h_pos": 79,
-            "image_hover": "noeffect"
-          }
-        },
-        "a568507d-3765-416d-87f1-1309f391bdce": {
-          "type": "feature_carousel",
-          "settings": {
-            "heading": "Second Lightweight, Aluminum Frame",
-            "description": "<p>Designed to self-seal upon puncture with a greater range of pressure adjustment, providing you with a superior, more dynamic riding experience.<\/p>",
-            "icon": "shopify:\/\/shop_images\/Screenshot_2022-03-21_at_17.15.30.png",
-            "icon_width": 160,
-            "v_pos": 26,
-            "h_pos": 55,
-            "image_hover": "noeffect"
-          }
-        },
-        "6690dd21-117d-47dc-add2-8bf00c06d01b": {
-          "type": "feature_carousel",
-          "settings": {
-            "heading": "Third Lightweight, Aluminum Frame",
-            "description": "<p>Designed to self-seal upon puncture with a greater range of pressure adjustment, providing you with a superior, more dynamic riding experience.<\/p>",
-            "icon": "shopify:\/\/shop_images\/Screenshot_2022-03-21_at_17.15.30.png",
-            "icon_width": 160,
-            "v_pos": 50,
-            "h_pos": 61,
-            "image_hover": "noeffect"
-          }
-        },
-        "6bc5c472-d260-4902-b4e7-262781ac31e1": {
-          "type": "feature",
-          "disabled": true,
-          "settings": {
-            "icon_heading": "",
-            "icon_description": "",
-            "image_hover": "noeffect",
-            "list_text_animation": "fadeInUp",
-            "list_text_animation_time": "0.2s"
-          }
-        },
-        "bb72a14f-8ed2-439b-94fa-ec4da88f6fbb": {
-          "type": "feature",
-          "disabled": true,
-          "settings": {
-            "icon_heading": "",
-            "icon_description": "",
-            "image_hover": "noeffect",
-            "list_text_animation": "fadeInUp",
-            "list_text_animation_time": "0.2s"
-          }
-        },
-        "0b2b5c78-dccd-4b7c-b482-14d92def582a": {
-          "type": "feature",
-          "disabled": true,
-          "settings": {
-            "icon_heading": "",
-            "icon_description": "",
-            "image_hover": "noeffect",
-            "list_text_animation": "fadeInUp",
-            "list_text_animation_time": "0.2s"
-          }
-        }
-      },
-      "block_order": [
-        "0dfce395-7b80-450b-8aed-5dfb9fd24537",
-        "a568507d-3765-416d-87f1-1309f391bdce",
-        "6690dd21-117d-47dc-add2-8bf00c06d01b",
-        "6bc5c472-d260-4902-b4e7-262781ac31e1",
-        "bb72a14f-8ed2-439b-94fa-ec4da88f6fbb",
-        "0b2b5c78-dccd-4b7c-b482-14d92def582a"
-      ],
-      "settings": {
-        "diagram__image": "shopify:\/\/shop_images\/Screenshot_2022-03-01_at_12.51.26.png",
-        "diagram_img_animation": "fadeInUp",
-        "diagram_img_animation_time": "4s",
-        "diagram_text_animation_time": "4s",
-        "image_hover": "noeffect",
-        "diagram__heading": "Bike Technology",
-        "diagram__description": "",
-        "diagram_head_animation": "fadeInUp",
-        "diagram_head_animation_time": "0.2s",
-        "diagram__background_color": "#000000",
-        "diagram__heading_color": "#ffffff",
-        "diagram__text_color": "#ffffff",
-        "diagram__selectors_color": "#0092ff",
-        "diagram__selectors_text_color": "#ffffff",
-        "diagram__selectors_nav_color": "#ffffff",
-        "carousel": true
-      }
-    },
-    "1647773014f06fdaad": {
-      "type": "features-list",
-      "blocks": {
-        "38ad9e1a-18a6-4bbe-b9cc-214d5741528e": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-Beginner-Bike.png",
-            "image_hover": "noeffect",
-            "heading": "Beginner &  Intermediate Riders",
-            "description": "",
-            "features_list_animation": "NoEffect",
-            "features_list_animation_time": "0.2s"
-          }
-        },
-        "fcd6d028-fa8a-4de1-a215-5629ecd56148": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-High-Speed-Trails.png",
-            "image_hover": "noeffect",
-            "heading": "High-speed  Trails",
-            "description": "",
-            "features_list_animation": "NoEffect",
-            "features_list_animation_time": "0.2s"
-          }
-        },
-        "0d9dd525-3152-4319-ad6b-25e6a6e8685b": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CQL-Theme-Steep-Climbs.png",
-            "image_hover": "noeffect",
-            "heading": "Steep Climbs &  Inclines",
-            "description": "",
-            "features_list_animation": "NoEffect",
-            "features_list_animation_time": "0.2s"
-          }
-        }
-      },
-      "block_order": [
-        "38ad9e1a-18a6-4bbe-b9cc-214d5741528e",
-        "fcd6d028-fa8a-4de1-a215-5629ecd56148",
-        "0d9dd525-3152-4319-ad6b-25e6a6e8685b"
-      ],
-      "settings": {
-        "heading": "BEST FOR...",
-        "heading_size": "h1",
-        "features_head_animation": "NoEffect",
-        "features_head_animation_time": "0.2s",
-        "background_color": "rgba(0,0,0,0)",
-        "heading_color": "#4a4a4a",
-        "feature_heading_color": "#4a4a4a",
-        "feature_text_color": "#4a4a4a",
-        "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
-        "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
-      }
-    },
-    "164976306743e5c62f": {
-      "type": "specifications",
-      "blocks": {
-        "1a70fc76-e1f8-4cf9-bc2e-d25cf59f9139": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "4195cb87-13dd-4764-b7bf-7b21b616f5d9": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "d185a50c-f8f0-4eb2-978b-73db8c5036a5": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "394ba349-8ca6-4ea0-8074-4f700488eaea": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "cc1157bd-f0b3-48b9-a74e-efd070fe7668": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "bd3052e6-c3f9-4110-ab00-201167d110ce": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "82950056-1d68-487d-80e4-29630353f1fa": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "579752f2-ecf0-47c4-b4a6-52c1b734d971": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "448ccc4d-d206-435a-bd61-4a7d00a2e92c": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "a1cd6dec-0e69-4ba4-9f5f-17d47b54a011": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "875ddd9d-14dd-4177-b188-f337ed8ffd8d": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        },
-        "14e5d97f-bfb7-4f53-a0ef-704546fd3cf5": {
-          "type": "specification",
-          "settings": {
-            "spec_type": "",
-            "spec_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "1a70fc76-e1f8-4cf9-bc2e-d25cf59f9139",
-        "4195cb87-13dd-4764-b7bf-7b21b616f5d9",
-        "d185a50c-f8f0-4eb2-978b-73db8c5036a5",
-        "394ba349-8ca6-4ea0-8074-4f700488eaea",
-        "cc1157bd-f0b3-48b9-a74e-efd070fe7668",
-        "bd3052e6-c3f9-4110-ab00-201167d110ce",
-        "82950056-1d68-487d-80e4-29630353f1fa",
-        "579752f2-ecf0-47c4-b4a6-52c1b734d971",
-        "448ccc4d-d206-435a-bd61-4a7d00a2e92c",
-        "a1cd6dec-0e69-4ba4-9f5f-17d47b54a011",
-        "875ddd9d-14dd-4177-b188-f337ed8ffd8d",
-        "14e5d97f-bfb7-4f53-a0ef-704546fd3cf5"
-      ],
-      "settings": {
-        "background_color": "#131313",
-        "text_color": "#ffffff",
-        "heading": "SIZE & SPECIFICATIONS",
-        "heading_size": "h1",
-        "description": "<p>Measured from size medium<\/p>",
-        "specs_animation": "NoEffect",
-        "text_animation_time": "1s",
-        "specs_image": "shopify:\/\/shop_images\/pdp-specs.jpg",
-        "image_animation_time": "2s",
-        "columns": "two-column",
-        "accor_animation_time": "3s",
-        "desktop_top_padding": 80,
-        "desktop_bottom_padding": 60,
-        "mobile_top_padding": 25,
-        "mobile_bottom_padding": 25
-      }
-    },
-    "16481214511332b8c6": {
-      "type": "featured-links",
-      "blocks": {
-        "595d60b2-b2b3-4a5a-bac4-ccec8aa29855": {
-          "type": "link",
-          "settings": {
-            "heading": "FREE SHIPPING. ALWAYS.",
-            "heading_size": "h2",
-            "heading_color": "rgba(0,0,0,0)",
-            "heading_on_image": false,
-            "link_url": "",
-            "image": "shopify:\/\/shop_images\/pdp-free-shipping.jpg",
-            "image_hover": "noeffect",
-            "description": "<p>All bikes arrive preassebled for your convenience.<\/p>",
-            "button_label": "Test",
-            "background_color": "#f5f4f9",
-            "button_style": "primary",
-            "featured_animation": "NoEffect",
-            "featured_animation_time": "0.2s"
-          }
-        },
-        "24b099de-8dc6-4fb9-a016-cfa659ab2bfa": {
-          "type": "link",
-          "settings": {
-            "heading": "LIFETIME WARRANTY",
-            "heading_size": "h2",
-            "heading_color": "",
-            "heading_on_image": false,
-            "link_url": "",
-            "image": "shopify:\/\/shop_images\/pdp-warranty.jpg",
-            "image_hover": "noeffect",
-            "description": "<p>Because we stand behind our products… and you.<\/p>",
-            "button_label": "",
-            "background_color": "#f5f4f9",
-            "button_style": "primary",
-            "featured_animation": "NoEffect",
-            "featured_animation_time": "0.2s"
-          }
-        }
-      },
-      "block_order": [
-        "595d60b2-b2b3-4a5a-bac4-ccec8aa29855",
-        "24b099de-8dc6-4fb9-a016-cfa659ab2bfa"
-      ],
-      "settings": {
-        "background_color": "",
-        "heading": "",
-        "heading_size": "h2",
-        "heading_color": "",
-        "eyebrow": "",
-        "eyebrow_color": "",
-        "heading_wrapper_animation": "NoEffect",
-        "heading_wrapper_animation_time": "0.2s",
-        "link_display": "margins",
-        "desktop_columns": "2",
-        "desktop_tile_layout": "image-on-side",
-        "desktop_content_alignment": "left",
-        "mobile_tile_layout": "image-on-side",
-        "mobile_content_alignment": "left",
-        "desktop_top_padding": 50,
-        "desktop_bottom_padding": 50,
-        "mobile_top_padding": 25,
-        "mobile_bottom_padding": 25
-      }
-    },
-    "16496633540e80645b": {
-      "type": "featured-products",
-      "blocks": {
-        "e8310ba6-c1c2-46a6-90d6-200882716eff": {
-          "type": "featured_product",
-          "settings": {
-            "product": "apex-kom-mountain-bike",
-            "image_hover": "noeffect",
-            "image_animation_time": "2s",
-            "image_first": true,
-            "product_description": "",
-            "info_animation_time": "3s",
-            "cta_text": "SHOP THE BIKE",
-            "button_style": "secondary",
-            "product_title_color": "#ffffff",
-            "product_price_color": "#ffffff",
-            "product_description_color": "#ffffff"
-          }
-        },
-        "d59d4a56-fac1-4d04-ad5f-98336456bdf7": {
-          "type": "featured_product",
-          "settings": {
-            "product": "brooks-city-cruiser-road-bike",
-            "image_hover": "noeffect",
-            "image_animation_time": "2s",
-            "image_first": true,
-            "product_description": "",
-            "info_animation_time": "3s",
-            "cta_text": "SHOP THE BIKE",
-            "button_style": "secondary",
-            "product_title_color": "#ffffff",
-            "product_price_color": "#ffffff",
-            "product_description_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "e8310ba6-c1c2-46a6-90d6-200882716eff",
-        "d59d4a56-fac1-4d04-ad5f-98336456bdf7"
-      ],
-      "settings": {
-        "product_animation": "fadeInUp",
-        "headline_animation_time": "1s",
-        "heading": "EXPLORE SIMILAR BIKES",
-        "heading_size": "h1",
-        "headline_color": "#ffffff",
-        "background_color": "#000000",
-        "body_text_color": "#ffffff"
-      }
-    },
-    "35f519b6-1400-4c0d-b204-3fb8a89dde51": {
-      "type": "searchspring-recommendations",
-      "blocks": {
-        "87422786-65c8-457b-8955-bff9ff39ab37": {
-          "type": "recommendations",
-          "settings": {
-            "profile_id": "accessories",
-            "max_recommendations": 8,
-            "tab_title": ""
-          }
-        }
-      },
-      "block_order": [
-        "87422786-65c8-457b-8955-bff9ff39ab37"
-      ],
-      "settings": {
-        "heading": "RECOMMENDED ACCESSORIES",
-        "heading_size": "brighton-h1",
-        "content_alignment": "center",
-        "background_color": "",
-        "text_color": "",
-        "desktop_top_padding": 60,
-        "desktop_bottom_padding": 60,
-        "mobile_top_padding": 45,
-        "mobile_bottom_padding": 45
-      }
-    },
-    "1649946187ec687a9c": {
-      "type": "recommendations",
-      "disabled": true,
-      "blocks": {
-        "5983229b-6569-43f2-b61c-eb70b2e51215": {
-          "type": "product",
-          "settings": {
-            "product": "aero-d-max-road-bike"
-          }
-        },
-        "b6795e9e-e05c-4664-b6c0-465b931b18aa": {
-          "type": "product",
-          "settings": {
-            "product": "bk5k-road-bike"
-          }
-        },
-        "3694cc28-55eb-46eb-b535-db65dbe696fb": {
-          "type": "product",
-          "settings": {
-            "product": "cadence-spin-cycling-shoe"
-          }
-        },
-        "3c215ac9-c282-4053-a0f6-32c7695b65a0": {
-          "type": "product",
-          "settings": {
-            "product": "elite-team-womens-gel-glove-gloves"
-          }
-        },
-        "eb73d270-c15f-45c0-81a3-7cc17b69d3b7": {
-          "type": "product",
-          "settings": {
-            "product": "elite-team-mens-gel-glove-gloves"
-          }
-        },
-        "dd0726be-a11d-4c9c-9b99-32f9a00ec136": {
-          "type": "product",
-          "settings": {
-            "product": "propel-100-womens-cycling-jersey-jersey"
-          }
-        },
-        "5f5fefd3-365d-48f8-9e62-2efea18a82a1": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "5983229b-6569-43f2-b61c-eb70b2e51215",
-        "b6795e9e-e05c-4664-b6c0-465b931b18aa",
-        "3694cc28-55eb-46eb-b535-db65dbe696fb",
-        "3c215ac9-c282-4053-a0f6-32c7695b65a0",
-        "eb73d270-c15f-45c0-81a3-7cc17b69d3b7",
-        "dd0726be-a11d-4c9c-9b99-32f9a00ec136",
-        "5f5fefd3-365d-48f8-9e62-2efea18a82a1"
-      ],
-      "settings": {
-        "heading": "RECOMMENDED ACCESSORIES",
-        "text_color": "",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "background_color": "",
-        "image_hover": "noeffect",
-        "desktop_top_padding": 0,
-        "desktop_bottom_padding": 0,
-        "mobile_top_padding": 0,
-        "mobile_bottom_padding": 0
       }
     },
     "165027139154812f9c": {
@@ -637,25 +256,14 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "d9611309-1cdc-4e9b-9700-c840861fc2ab": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div\n\tclass=\"yotpo yotpo-pictures-widget\"\n\tdata-gallery-id=\"635ac5a563f1995b9ee663ac\"\n\tdata-product-id=\"{{ product.id }}\">\n<\/div>"
-      }
     }
   },
   "order": [
     "main",
+    "6b9af907-9180-4128-9c29-49e1fc5989af",
+    "b7f4df1f-14ae-4bc9-b2b4-2c5847efd7bb",
+    "b1393c84-d484-4042-8344-7ead16c7fa29",
     "product-recommendations",
-    "1647879286087e9d74",
-    "1647773014f06fdaad",
-    "164976306743e5c62f",
-    "16481214511332b8c6",
-    "16496633540e80645b",
-    "35f519b6-1400-4c0d-b204-3fb8a89dde51",
-    "1649946187ec687a9c",
-    "165027139154812f9c",
-    "d9611309-1cdc-4e9b-9700-c840861fc2ab"
+    "165027139154812f9c"
   ]
 }
