@@ -108,6 +108,81 @@
         "enable_video_looping": false
       }
     },
+    "77f20424-e718-46e6-a89d-5540331282f9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16969309487381__77f20424-e718-46e6-a89d-5540331282f9-1673452277e6c2c0d2-0": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "FIT TIPS",
+            "eyebrow_style": "frye-eyebrow",
+            "text_color": "#BE8756"
+          }
+        },
+        "template--16969309487381__77f20424-e718-46e6-a89d-5540331282f9-1673452277e6c2c0d2-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "FINDING THE PERFECT PAIR OF BOOTS",
+            "heading_size": "frye-headline-2",
+            "heading_color": "#ffffff"
+          }
+        },
+        "template--16969309487381__77f20424-e718-46e6-a89d-5540331282f9-1673452277e6c2c0d2-2": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>1\/8” to 1\/2” of heel lift is proper fit for pull on boots.<\/li><li>Your entire foot should feel snug except for the heel which should slip a little, which is necessary for getting your boots on and off.<\/li><li>The ball of your foot should always sit at the widest part of the sole. If it sits too far forward, your toes will hurt.<\/li><li>The vamp of a boot should fit snug over the top of your arch. <\/li><\/ul>",
+            "text_style": "frye-body",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--16969309487381__77f20424-e718-46e6-a89d-5540331282f9-1673452277e6c2c0d2-0",
+        "template--16969309487381__77f20424-e718-46e6-a89d-5540331282f9-1673452277e6c2c0d2-1",
+        "template--16969309487381__77f20424-e718-46e6-a89d-5540331282f9-1673452277e6c2c0d2-2"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "background_desktop_image": "shopify:\/\/shop_images\/desktop-large-pattern.jpg",
+        "background_mobile_image": "shopify:\/\/shop_images\/mobile-large-pattern.jpg",
+        "image": "shopify:\/\/shop_images\/frye-fit-tips-50-50-image.png",
+        "image_mobile": "shopify:\/\/shop_images\/mobile-image-large-pattern.jpg",
+        "animation": "NoEffect",
+        "animation_time": "0.2s",
+        "height": "adapt",
+        "image_hover": "noeffect",
+        "section_padding": "none",
+        "content_layout": "no-overlap",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "desktop_image_width": "normal",
+        "mobile_layout": "image_first",
+        "mobile_content_alignment": "left",
+        "mobile_image_width": "large"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "text_color": "#000000",
+        "background_color": "",
+        "heading": "Recommended for You",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "image_hover": "noeffect",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_product_labels": true,
+        "desktop_top_padding": 60,
+        "desktop_bottom_padding": 60,
+        "mobile_top_padding": 45,
+        "mobile_bottom_padding": 45
+      }
+    },
     "6b9af907-9180-4128-9c29-49e1fc5989af": {
       "type": "image-with-text",
       "blocks": {
@@ -143,7 +218,7 @@
       ],
       "settings": {
         "background_color": "#000000",
-        "background_desktop_image": "shopify:\/\/shop_images\/frye-fit-tips-50-50-background.jpg",
+        "background_desktop_image": "shopify:\/\/shop_images\/desktop-small-pattern.jpg",
         "background_mobile_image": "shopify:\/\/shop_images\/mobile-fit-tips-background.jpg",
         "image": "shopify:\/\/shop_images\/frye-fit-tips-50-50-image.png",
         "image_mobile": "shopify:\/\/shop_images\/frye-pdp-fit-tips-mobile.jpg",
@@ -151,7 +226,7 @@
         "animation_time": "0.2s",
         "height": "adapt",
         "image_hover": "noeffect",
-        "section_padding": "normal",
+        "section_padding": "none",
         "content_layout": "no-overlap",
         "layout": "text_first",
         "desktop_content_position": "middle",
@@ -160,27 +235,6 @@
         "mobile_layout": "image_first",
         "mobile_content_alignment": "left",
         "mobile_image_width": "large"
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "text_color": "#000000",
-        "background_color": "",
-        "heading": "Recommended for You",
-        "heading_size": "h1",
-        "image_ratio": "adapt",
-        "image_hover": "noeffect",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_product_labels": true,
-        "desktop_top_padding": 60,
-        "desktop_bottom_padding": 60,
-        "mobile_top_padding": 45,
-        "mobile_bottom_padding": 45
       }
     },
     "165027139154812f9c": {
@@ -203,8 +257,9 @@
   },
   "order": [
     "main",
-    "6b9af907-9180-4128-9c29-49e1fc5989af",
+    "77f20424-e718-46e6-a89d-5540331282f9",
     "product-recommendations",
+    "6b9af907-9180-4128-9c29-49e1fc5989af",
     "165027139154812f9c"
   ]
 }
